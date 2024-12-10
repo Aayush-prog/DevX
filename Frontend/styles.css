@@ -1,0 +1,139 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #2c2a4a;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+/* Container styling */
+.container {
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+/* Header styles */
+.header h1 {
+  font-size: 2.5rem;
+  margin: 0 0 10px;
+}
+
+.header h1 .highlight {
+  color: #0081a7; /* Vibrant blue highlight for branding */
+}
+
+.header p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #63c132;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #58b12b;
+}
+
+/* Filter Section */
+.filter-section {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.filter-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #0081a7; /* Blue for section titles */
+}
+
+.filter-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filter-form label {
+  flex-basis: 100%;
+  font-weight: bold;
+}
+
+.filter-form input,
+.filter-form select,
+.filter-button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.filter-button {
+  background-color: #0081a7; /* Blue for filter button */
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.filter-button:hover {
+  background-color: #00688b; /* Darker blue for hover */
+}
+
+/* Job Listings Section */
+.job-listings {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.job-listings h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #0081a7; /* Blue for section titles */
+}
+
+.job-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-left: 5px solid #0081a7; /* Accent blue border */
+}
+
+.job-card h3 {
+  margin: 0 0 10px;
+  color: #0081a7; /* Blue for job titles */
+}
+
+.job-card p {
+  margin: 5px 0;
+}
+
+.apply-button {
+  background-color: #63c132;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.apply-button:hover {
+  background-color: #58b12b;
+}

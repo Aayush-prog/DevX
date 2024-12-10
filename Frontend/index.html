@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Freelancing Platform</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>Welcome to <span class="highlight">FreelancePro</span></h1>
+        <p>Find and post jobs with ease.</p>
+        <button class="cta-button">Get Started</button>
+      </header>
+
+      <!-- Filter Section -->
+      <section class="filter-section">
+        <h2 class="section-title">Filter Jobs</h2>
+        <form class="filter-form">
+          <label for="category">Category:</label>
+          <select id="category">
+            <option value="all">All</option>
+            <option value="design">Design</option>
+            <option value="development">Development</option>
+            <option value="writing">Writing</option>
+            <option value="marketing">Marketing</option>
+          </select>
+
+          <label for="location">Location:</label>
+          <input type="text" id="location" placeholder="Enter location" />
+
+          <label for="salary">Minimum Salary:</label>
+          <input type="number" id="salary" placeholder="Enter amount" />
+
+          <button type="submit" class="filter-button">Apply Filters</button>
+        </form>
+      </section>
+
+      <!-- Job Listings Section -->
+      <section class="job-listings">
+        <h2 class="section-title">Available Jobs</h2>
+        <div class="job-card">
+          <h3 class="job-title">Graphic Designer</h3>
+          <p><strong>Category:</strong> Design</p>
+          <p><strong>Location:</strong> Remote</p>
+          <p><strong>Salary:</strong> $50/hour</p>
+          <button class="apply-button">Apply Now</button>
+        </div>
+
+        <div class="job-card">
+          <h3 class="job-title">Web Developer</h3>
+          <p><strong>Category:</strong> Development</p>
+          <p><strong>Location:</strong> New York</p>
+          <p><strong>Salary:</strong> $70/hour</p>
+          <button class="apply-button">Apply Now</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
