@@ -1,0 +1,306 @@
+--- Page 1 ---
+MAHESHWAR
+KUCHANA
+
+MACHINE LEARNING
+SPECIALIST
+
+Skilled ML Engineer with expertise in
+designing and developing computer vision
+systems. Professional in popular ML
+frameworks. Adept in researching and
+architecting Al models.
+
+CONTACT
+
+Email: kmaheshwarl998@gmail.com
+Mob. No: +44 (0) 782 595 8328
+Place: London, UK
+
+ML TASKS
+
+Semantic Segmentation
+Classification, Clustering
+Transfer Learning
+Multi-modal Learning
+Auto Encoders
+Ensemble Learning
+Regression
+
+Super Resolution
+
+TOOLS & SKILLS
+
+Python
+
+PyTorch
+
+TensorFlow
+
+Keras
+
+OpencCV, Scikit-image
+Scikit-learn
+
+NumPy, Pandas, Matplotlib
+
+AWS EC2, S3, Elastic IP, SNS, SQS
+Flask - API
+
+MONAI Library (Medical-related)
+Nginx
+
+MySQL
+
+Git
+
+Python testing (PyTest, Unit test)
+Computer Vision
+
+Machine Learning (ML), Deep Learning
+(DL)
+
+Agile Working
+
+PUBLICATIONS
+
+1.Machine Learning predicts live birth occurrence before In-vitro
+fertilisation treatment
+© Scientific Reports - Nature
+o Cited by 10
+© DOI: 10.1038/s41598-020-76928-z
+
+2.Al aiding in diagnosing, tracking recovery of COVID-19 using deep
+
+learning on Chest CT scans
+
+© Cited by 10
+© DOI: 10.1007/s11042-020-10010-8
+3.Fingerprint Matching - An Experimental Approach
+© IJRASET
+© DOI: 10.22214/ijraset.2020.6283
+
+ACADEMICS
+
+King's College London (2021 - Present)
+
+Master of Research in Healthcare Technologies (Artificial
+Intelligence)
+Research Projects:
+
+¢ Quantitative Imaging of the shared placenta in twin pregnancies
+
+e Exploring self-supervised pre-training for data-efficient retinal and
+sub-retinal fluid segmentation in Optical Coherence Tomography
+scans
+
+WORK EXPERIENCE
+
+Data Engineer
+
+eMoodie (UK) | June 2022 - Present
+
+e Developing ETL pipelines for the company in two products. Making the
+data ready for data scientists, business analysts.
+
+e Skills include: Python, PySpark, Azure Cloud, Databricks, MLFlow.
+
+Al Software Engineer
+
+Nimblr Data (London) | July 2021 - January 2022
+
+¢ Created a MVP that served for pre-seed funding series.
+
+e Conceptualised, Architected, Developed the Al-based platform (MVP) that
+
+recommends IT solutions to banks.
+
+e Developed REST API (Python), caters user authentication, authorisation,
+database, notifications; deployed in AWS.
+
+e Headed MVP development phase from UI/UX designing, front-end,
+backend development to deployment.
+
+e Defined timelines, deliverables, milestones and resource allocation.
+
+e Skills include: Python, Flask API, Git, AWS EC2, Elastic IP, MySQL, Ngnix,
+Agile, MS Office.
+
+Machine Learning Engineer
+
+Scienaptic Systems Pvt Ltd (India) | October 2020 - July 2021
+
+e Devised an Al-based document processing pipeline that automates credit
+
+underwriting.
+
+e Utilised Amazon Textract for optical character recognition to digitise
+transactions in bank statements. Worked for 30 types of bank statements
+(table detection).
+
+e Employed PDF parse engines like PDFMiner, PyPDF2.
+
+--- Page 2 ---
+CERTIFICATIONS
+
+Neural Networks and Convolutional Neural
+Networks Essential Training - LinkedIn
+Deep Learning - Face Recognition - LinkedIn
+Structuring Machine Learning Projects
+
+- Coursera
+
+Convolutional Neural Networks in
+TensorFlow - Coursera
+
+Improving Deep Neural Networks:
+Hyperparameter tuning, Regularization and
+Optimization - Coursera
+
+Introduction to TensorFlow for Artificial
+Intelligence, Machine Learning, and Deep
+Learning - Coursera
+
+Al for Medical Diagnosis - Coursera
+
+Intro to TensorFlow - Coursera
+
+Neural Networks and Deep Learning
+
+- deeplearning.ai
+
+Machine Learning - Coursera
+
+Python for Data Science - IBM
+
+Machine Learning with Python - IBM
+Applied Data Science with Python - IBM
+Data Science Hands-On with Open Source
+Tools - Cognitive Class
+
+Data Science Methodology - Cognitive Class
+Data Visualization with Python - Cognitive
+Class
+
+Building RESTful APIs with Flask - LinkedIn
+Secure Coding in Python - LinkedIn
+DevOps for Data Scientists - LinkedIn
+
+Data Engineering Foundations - LinkedIn
+Image Super resolution using Auto
+Encoders in Keras - Coursera
+
+Launching into Machine Learning
+
+- Coursera
+
+SOCIAL DETAILS:
+
+GitHub:
+https://github.com/maheshwarkuchana
+LinkedIn:
+https://www.linkedin.com/in/maheshwarkuch
+ana/
+
+Portfolio: https://www.maheshwark.com
+Google Scholar:
+https://scholar.google.com/citations?
+user=8AevgCUAAAAI&hl=en
+
+IN NEWS
+
+Al In The Battle Against Cancer
+
+Link: https://replica.substack.com/p/ai-in-the-
+battle-against-cancer
+
+Study ML/AI Abroad - Leap Scholar
+
+Link: https://youtu.be/HklgSpktV90
+
+e Developed & tested REST API that gives Al predictions, extracted
+transactional data, and analytics.
+
+e Streamlined a scalable, robust solution in AWS Cloud.
+
+e Released first version in 2 months for 3 large banks.
+
+e Involved in Operations, Software development and ML teams.
+
+e Skills include: Python, ML, Flask API, AWS EC2, S3, SQS, SNS, Lambda,
+Amazon Textract, MySQL, Pandas, Git, Nginx, Agile, PyTest.
+
+Artificial Intelligence Engineer
+
+Adventum Advanced Solutions (India) | May 2019 - Sep 2020
+
+e Developed an end-to-end Al-powered diagnostics platform for eye diseases
+like diabetic retinopathy and glaucoma.
+
+¢ Took part in data collection, annotation, pre-processing, ML research, model
+development and deployment.
+
+e Architected custom convolutional neural networks to solve semantic
+segmentation and anomaly classification.
+
+e Trained, analysed, and tested the models. Conducted clinical trials for
+validation.
+
+e Worked on 3D optical coherence tomography (OCT) and fundus scans.
+Utilised DICOM files from PACS (different vendors).
+
+e Retinal fluid segmentation, Volume quantification, Layer segmentation, and
+biomarker classification were notable tasks.
+
+e Designed model monitoring dashboards and evaluation metrics in real-time
+deployment.
+
+e Streamlined REST APIs in AWS Cloud.
+
+e Worked with Ophthalmologists, Biomedical Engineers, and Software
+Engineers.
+
+e ML tasks include: Multi-modal learning, Transfer Learning, and Ensemble
+Learning.
+
+e Medical softwares: ITK-Snap, 3D Slicer, MONAI, Orthanc.
+
+e ML, DL algorithms: SVM, Random Forests, ResNet, Attention units,
+AdaBoost, Auto Encoders, U-Net.
+
+e Tools include: PyTorch, TensorFlow, Keras, OpenCV, Scikit-learn, Scikit-
+image, NumPy, Pandas, Matplotlib, Seaborn, Python, AWS Cloud, MySQL,
+Flask API, Ngnix, Git.
+
+Research Intern - Machine Learning
+
+BML Munjal University (India) | May 2018 - July 2018
+
+e Published a research paper that demonstrates a technique to find a region
+of interest (ROI) in fingerprints.
+
+e Reduces the computation time for fingerprint recognition.
+
+e Employed machine learning techniques to identify patterns.
+
+¢ Skills include: OpencCV, Scikit-learn, Scikit-image, NumPy, Matplotlib,
+Python, SVM, Random Forests, Dimensionality reduction, Pattern
+recognition, Git, Research writing.
+
+PROJECTS
+
+Quantitative Imaging of the shared placenta in twin
+pregnancies
+
+¢ Developed a prototype pipeline that aids in surgery planning for Twin
+to Twin transfusion syndrome surgery.
+
+e Utilised 3D t2-MRI and Perfusion scans to detect blood vasculature in
+shared placenta. Segmented 3D vessel network is used for surgical
+planning.
+
+e Employed Super resolution, reconstruction, semantic segmentation.
+
+e Tools used: MONAI Library, PyTorch, U-Net, ResNet, Python, Nifty-MIC,
+Git, Google Colab, Transfer learning.
+

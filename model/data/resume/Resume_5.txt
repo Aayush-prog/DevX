@@ -1,0 +1,78 @@
+--- Page 1 ---
+Jyothikrishna
+
+Frontend Developer | Content Creator
+
+EXPERIENCE
+Self Employed — Content Creator
+
+DEC 2022 - PRESENT
+
+e Contributed engaging frontend articles on DEV COMMUNITY,
+building a 2k+ follower base.
+
+Tiny Banyan, — Freelance Frontend DEV
+JUL 2023 - OCT 2023
+
+CS CLUB, IIITDM — Core
+AUG 2023 - PRESENT.
+
+e Organised engaging events (BugHunt, typing contest) at Vashisht
+tech fest.
+e Conducted workshops on version control.
+
+e Built the website for Samgatha cultural fest.
+
+EDUCATION
+
+IIITDM Kancheepuram, Chennai - BTech
+DEC 2021 - Present
+
+Iam a pre final year student at IIITDM Kancheepuram pursuing BTech in
+Electronics and Communication.
+
+PROJECTS
+
+TailwindCSS-Display Modes
+
+Tailwind plugin for PWA display mode styling! Customise classes for
+different display modes. Find it on npm.
+
+Fastfolio — A quicker and reliable way to create your portfolio
+
+Built with React, TailwindCSS and Framer motion fastfolio can help you
+build your portfolio in less than 30 min. Check it on github.
+
+Vashisht Hackathon Website
+
+I have collaborated with the GDSC, IIITDM team to build a website for a
+hackathon which had 700+ participants.
+
+Chennai
+
+Linkedin
+jyothikrishna.vercel.app
+bhendiisgreen@gmail.com
+
+SKILLS
+
+Front-End Development .
+HTML .CSS . Javascript .
+Typescript . React . NextJS.
+Vite. Astro. React three fiber.
+Tailwind . Framer Motion.
+Git. GitHub
+
+AWARDS
+
+Winner - Reversing
+Engineering - Secured first
+place in reverse engineering
+event conducted by GDSC,
+IIITDM during our annual
+tech fest Vashisht 2023
+
+LANGUAGES
+
+English, Telugu, Hindi
+

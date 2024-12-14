@@ -1,0 +1,126 @@
+--- Page 1 ---
+Luis Paredes | Fullstack Developer
+lualdevelopment@gmail.com | Bogota,Colombia | https://lual.dev/
+
+Senior fullstack web developer with over 9 years of experience building web apps and websites from
+scratch all the way up to production deployment.
+
+Skills
+
+Frontend: ReactJS, Apollo Client, React Query, CSS, TypeScript, JavaScript, MaterialUl, Hugo, Tailwind,
+Vue, Axios, Redux, SCSS, Storybook. Backend: Django, NodeJS, ExpressJS. Databases: PostgreSQL,
+MongoDB, Redis. DevOps: Docker, Cl/CD, Git, AWS, Render, Nginx, GitLab, GitHub. Testing: Jest, Vitest,
+Supertest, Cypress, Testing Library, Mocha, Chai, Enzyme, Sinon. Miscellaneous: GraphQL, NextJS,
+Python, Stripe, Figma.
+
+Personal Projects
+
+Flashcards app, February 2023 - Present
+
+* Frontend client built using React and Material UI.
+
+- Backend API built using Node (Express) and TypeScript.
+
+* Backend integrated with Mongo and Redis for data storage.
+« Automated functional test suite using Cypress.
+
+Lual Dev website, September 2022 - Present
+
+* SSG website built using NextJS.
+* Supports Markdown blog posts.
+« Automated build and deployment with custom Cl/CD pipeline.
+
+Expenses app, February 2023
+
+* Frontend client built using React and Material UI.
+- Backend API built using Node (Express) and TypeScript.
+* Backend integrated with Mongo for data storage.
+
+World Atlas app, September 2022 - October 2022
+
+* Frontend client built using React and Material UI.
+* GraphQL client.
+* Features interactive map.
+
+Work Experience
+
+Senior Frontend Engineer, EPAM Systems, September 2023 - Present
+
+- Implement new frontend features on several NextJS (TypeScript) apps leveraging a micro-frontends
+architecture.
+
+* Write comprehensive unit test suites for every feature implemented using Jest and Testing Library.
+
+« Architect every new UI feature using modular components that are thoroughly documented using
+Storybook and TypeScript.
+
+Web Developer, Alora Labs, Independent Consultant, July 2023 - September 2023
+
++ Implemented new website features using Hugo and SCSS.
+
+* Fixed website issues ranging from logic problems to UI related problems.
+
+* Developed a Hugo/ Tailwind website from scratch for a client in the technology industry.
+
+* Designed a simple markdown based content management solution for a Hugo website leveraging the
+native Hugo API.
+
+* Set up Netlify deployment including form handling using Netlify’s serverless solution.
+
+
+--- Page 2 ---
+JavaScript Tutor, Independent Consultant, November 2022 - February 2023
+
+Created syllabi tailored to the student’s needs.
+
+Taught 30+ JavaScript classes.
+
+Created 30+ exercises and projects meant to resemble real life scenarios.
+Supported the student in the execution of the exercises and projects if needed.
+
+Frontend Developer, ServiceNow, September 2021 - May 2022
+
+Refined features through coordination between different teams and stakeholders.
+Converted mockups (Figma) into usable web Ul using React embedded in an Adobe Experience Man-
+ager (AEM) environment.
+
+Fullstack Developer, Talpor, July 2019 - September 2021
+
+Converted dozens of mockups (InVision, Zeplin, Figma) into usable web UI using React, Redux and
+Material UI.
+
+Created hundreds of tests using Mocha, Chai, SinonJS, Enzyme, Jest and Testing Library.
+
+Created functional / regression test suite for frontend UI using Selenium, OpenCV and AWS’ S3.
+Worked as main fullstack (Django, React) maintainer for an app with 3000+ active users.
+
+Maintained AWS Lambda's microservices for a startup.
+
+Fullstack Developer (Volunteer), UPchieve, March 2018 - March 2019
+
+Solved dozens of backend and frontend bugs and implemented new features for a chat app using the
+stack: Socket.lIO, NodeJS, VueJS.
+Implemented initial code quality checks.
+
+Designer & Web UI Developer, Independent Consultant, March 2014 - April 2017
+
+Created management processes to run operations smoothly.
+
+Managed timelines to make sure to comply with clients’ requests in a timely manner.
+
+Developed graphic identities for clients.
+
+Designed and developed brochure sites and landing pages, including contact form backend integra-
+tion.
+
+Designed and built WordPress site with custom theme (developed from scratch) featuring SVG logo
+animation intro.
+
+Designed and developed blog websites using a static site generator (SSG), Disqus integration, MailChimp
+integration, basic search engine optimization (SEO), and custom social media share widgets.
+
+Education
+
+Computer Engineering (not completed), Universidad Simon Bolivar. Relevant courses: Algorithms and
+Data Structures, Symbolic Logic, Linear Algebra.
+

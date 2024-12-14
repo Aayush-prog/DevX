@@ -1,0 +1,98 @@
+--- Page 1 ---
+Luca Pagliaro
+
+Experienced web developer with over a decade in the industry, including 3+ years as a
+team leader. I’ve a focus for continuous growth and crafting valuable resources to inspire
+other developers.
+
+& Website - @ Linkedin - Email - & Catania, Italy - € +393349743923
+
+Spoken languages: §f J Italian (Native), BZ English (Professional)
+
+Languages & Libraries: JavaScript (pro), TypeScript (pro), RxJS (pro), PHP (good), CSS (SASS, PostCSS) (pro)
+Frontend: React (pro), Angular (pro), Vue (good), Unit testing Jest, Vitest) (pro)
+
+Backend: Node.js (good), WordPress (pro), MySQL (basic), MongoDB (basic)
+
+Core experiences (2019-today)
+
+Senior Software Engineer @ Daily.dev
+(07/2024 - today)
+
+Responsible for developing and maintaining product’s open source React/Node.js/Next.js platform, focusing on
+performance-oriented best practices in order to minimize technical debt for the long run.
+
+Tech stack: [TypeScript, React, Next.js, TailwindCSS, Jest, Node.js, TypeORM, Docker]
+
+Senior Developer & Teacher @ Sentiero.digital / Edgemony / Start2Impact
+(02/2022 - 07/2024)
+
+As acontractor, I successfully led numerous projects including guiding small teams. Worked on a sophisticated data
+dashboard, comprehensive design system for a bank, crafted several web applications and headless e-commerce
+platforms. Additionally, I Teached 100+ developers Typescript, React and Angular from scratch at 5 bootcamps.
+
+Tech stack: [TypeScript, Angular, Vue, React, Redux, NgRx, PHP, WordPress, Node.js, Jest, Vitest, Docker]
+
+Lead Web Developer @ The Wave
+(01/2019 - 02/2022)
+
+I led the web dev team (12 members) while keeping coding on high-impact projects when the technical challenge
+demands strong execution, in-depth development knowledge, and collaboration across various roles.
+
+My responsibilities include continuous research and development, exploring new languages, patterns, CMS, and
+libraries for new implementation within the company projects. Managed all aspects of the team, including hiring,
+onboarding, training, and code reviews.
+
+Tech stack: [TypeScript, RxJs, Angular, Vue, React, PHP, WordPress, Node.js, Jest, Docker]
+
+--- Page 2 ---
+Other experiences (2013-2019)
+
+Senior Frontend Developer @ Motorsquare
+
+(09/2017 - 01/2019)
+
+Developed and maintained the startup's web/desktop applications in Angular,Vue.js and Electron. Applying all the
+good rules of web development such as client-side cache (also via database in browser), skeleton, accessibility.
+Tech Stack: [HTML, SASS, JavaScript, TypeScript, RxJs, Angular, Vue, Electron]
+
+Founder & CTO @ HereToday
+
+(11/2015 - 08/2017)
+
+Built a full-stack restaurant recommendation app that uses NLP to analyze reviews and pinpoint user preferences.
+Designed and developed the landing page, web platform, and mobile app using cross-platform technology. Deployed
+the entire architecture on Microsoft Azure.
+
+Tech Stack: [HTML, LESS, SASS, JavaScript, Meteor.js, Angular, Ionic, Node.js, MongoDB, Azure (cloud)]
+
+Frontend Developer & UI Designer @ LovePedia/ eADV
+
+(01/2015 - 11/2015)
+
+In charge of the complete redesign and frontend development of the LovePedia portal. Built and implemented the UI
+components using mainly vanilla JS with a focus on performance and user experience.
+
+Tech Stack: [HTML, LESS, JavaScript, jQuery, PHP]
+
+WordPress Developer @ Yithemes
+
+(09/2013 - 09/2014)
+
+Built and maintained themes and plugins for popular marketplaces (yithemes & themeforest), with a focus on
+performance, multi language compatibility and best practices. Provided remote support to customers,
+troubleshooting and resolving technical issues.
+
+Tech Stack: [PHP, MySQL, WordPress, JavaScript]
+
+Education, Licenses & Certifications
+
+International High IQ Society certificate
+International High IO Society — (Dec 2023)
+
+SAFe® Scrum master course
+Scaled Agile - (May 2023)
+
+I authorize the processing of my personal data present in the curriculum vitae pursuant to Legislative Decree 30 June 2003, n. 196 and of the GDPR (EU Regulation
+2016/679).
+

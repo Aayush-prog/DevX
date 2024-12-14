@@ -1,0 +1,96 @@
+--- Page 1 ---
+Shubhanshu Gupta
+
+LinkedIn | GitHub | Google Scholar | Twitter | Stack Overflow | Blog
+
+E-503, Orchid Enclave, Chandivali, Powai, Mumbai, Maharashtra - 400072
+Contact: +91 9663166177 | Email: shubhanshu.gupta93@qmail.com | Date of birth: 17 Aug, 1993
+
+Dhirubhai Ambani Institute of Information and Communication Technology (DA-IICT), Gujarat
+BTech in Information and Communication Technology | JULY 2011 - MAY 2015 | CPI: 7.58/10
+
+Cambridge Court High School, Jaipur, Rajasthan
+Intermediate/+2 | 2010-2011 | 82.6%
+High School | 2008-2009 | 93.0%
+
+“Music Data Analysis: A State-of-the-art Survey”, Shubhanshu Gupta, ASE, Fourth International Conference on
+BigData, Harvard University, USA 2014 (Acceptance Rate “8.5%).
+
+“Social Data Analysis: A Study on Friend Rating Influence”, Shubhanshu Gupta, Vaibhavi Desai, Harsh Thakkar,
+WWC Connect, VMWare, India 2017.
+
+Truebil.com, Mumbai -
+January 2017 - Present
+e Designed and implemented the Identity Access Management and Role-Based Access Management System
+for Truebil admin webapp in CakePHP
+e Designed and implemented a module to log and track user activity and derive insights out of them through
+ELK (Elastic-Logstash-Kibana) ecosystem in CakePHP
+e Handling the end-to-end backend of Truebil’s Progressive Web App (PWA) in Python Django
+
+LaughGuru.com, Mumbai -
+January 2016 - January 2017
+e Wrote Unit Testing modules in Python Django
+Handled the design and development of the entire user and sales analytics platform in Python
+Handled the end-to-end integration of 3rd party services through RESTful APIs
+Optimized images and served as per user landing device
+Implemented a system to scan through millions of files in AWS s3 bucket and reported the missing ones from
+database using Python Boto library, AWS Lambda, AWS CLI & S3 API
+
+MuSigma Business Solutions Pvt Ltd (employer), Singtel Optus Pty Limited (client) -
+
+June 2015 - October 2015
+e Restructured the Loyalty and Rewards Scheme of the client through Principal Component Analysis and
+Factor Analysis using R and Teradata
+e Built a decision board for measuring the performance of client’s campaign for Apple’s iPhone - 6s
+
+DA-IICT -
+
+January 2015 - April 2015
+e Taught concepts of C/Java, solved queries and provided practice questions to freshman year students
+
+--- Page 2 ---
+Kensemble Tech Labs, Gujarat, India; Organization: ProMusicDB, CA, USA -
+October 2013 - May 2015
+
+Worked with Dr Vikram Sorathia to build a tool for standards based curation of professional music using
+Ruby on Rails, Hydra, Blacklight, Fedora Commons open source communities, RDF and Linked Open data
+technologies
+
+The tool centralizes the credits & metadata of all artists in music industry, and allows easy access to the
+information with the help of deep knowledge graph
+
+Studied and published a paper on how people engage, consume, purchase music and their listening habits
+through Big Data, Machine Learning, Social Network Analysis & Linked Open Data techniques
+
+Web Data Management, Data structures, Algorithms, Operating Systems, Human Computer Interactions,
+Logic for Computer Science, Database Management Systems, Computer Networks, Software Engineering,
+Introduction to Coding Theory and Applications
+
+Areas of interest: Big Data and Machine Learning
+Programming: Python | Django | SQL | CakePHP | Javascript
+Tools and technologies: Git | postgreSQL | MySQL | R! SAS | Teradata
+
+SRISTI and Honey Bee Network, IIM-Ahmedabad, India (December 2012)
+
+Systematically documented, disseminated and developed grassroots green innovations
+Provided resources to acquire intellectual property rights to grassroots innovators, in-situ and ex-situ
+conservation of local biodiversity
+
+Google Startup Launch Program selected TheCollegeStore.in - Bookly Web National 2015
+LLP for its mentoring program
+
+Seed funding of INR 50,000 by International Center for Entrepreneurship and Regional 2015
+Technology, India for TheCollegeStore.in - Bookly Web LLP
+
+Mudra Institute of Communications Anmedabad (MICA), India incubated Regional 2015
+TheCollegeStore.in - Bookly Web LLP
+
+114th rank in Maths Talent Search Examination by Indian Institute for Studies in National 2009
+Mathematics all over India
+
+Founder, TheCollegeStore.in - Bookly Web LLP Aug12-June’15
+Member, DA-IICT Alumni Association Aug’14-May’15
+Editorial Head, IEEE Student Branch Core Committee, DA-IICT Jan-May’13
+
+Event Manager, IEEE Student Branch Core Committee, DA-IICT Aug-Dec'12
+

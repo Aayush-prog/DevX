@@ -1,0 +1,247 @@
+--- Page 1 ---
+Lead Software Engineer, Architect, Scrum Master SKILLS
+
+Technical Skills:
+Software architect with 11+ years of experience in leading teams of engineers in
+
+designing, developing and delivering high-quality, scalable cloud-based software
+products promptly and under budget.
+
+e Web Development
+e Software Architecture
+
+e Event Driven Architecture
+
+RELEVANT WORK EXPERIENCE * Event Sourcing
+e Requirements Analysis
+. . e Object-Oriented
+ArtBanx AG, Zurich, Switzerland :
+ArtTech startup focused on providing revolutionary, industry-leading technologies to make o litnelsrernmacnes koe)
+art a bankable asset class, unlock its value and empower financial decisions when trading ¢ Scrum Master
+art.
+
+e Software Project
+
+. . e Management
+Team Leader, Senior Software Engineer 03/2022 — Present
+
+Project 1: artbanx.io
+
+e Supervised a team of 12 software engineers who developed and maintained an Software Languages:
+
+enterprise-level web application with Big Data processing of over 1M artworks . EE
+
+daily.
+e Teamed with 6 software engineers and lead the designs of integrations for three main * Kotlin
+
+platform products (shipping, payments and KYC), the first month on the job. + Groovy
+
++ CSharp
+e Implemented Software Guidelines, Static Code checks and Development Standards + TypeScript
+that improved Software Quality by 80%. - SQL
+
+e Slashed manual work actions on the infrastructure by 76% via enhanced CICD
+
+Dart
+pipelines and automation jobs developed with the DevOps Engineer.
+Project 2: arkefi.com Development Technologies:
+e Lead the backend team to deliver a pilot project showcasing the capabilities of + Spring Framework
+finance and blockchain cooperation. Build the backend platform on ASP.NET Core - Ktor
+
+with integration to the blockchain using TypeScript backend services and React.js
+
+. + ASP.NET Core
+as a frontend client
+
++ ASP.NET Blazor
+Project 3: Redesigned artbanx.io
+
+Deno
+e —_ Building a new and improved version of the current ArtBanx Collection Fastyfi
+management system. Build an entirely new platform on the ASP.NET Core stack Baresi
+with Blazor pages, improving on the predecessor, fixing some of the architecture a
+eact..
+and design decisions that have been made while developing the first version of the
++ Flutter
+system.
+Kubernetes
+Build the entire infrastructure for the new platform running on-prem with Docker .
+. . os . . Hyperleader Fabric
+Swarm, using Portainer for monitoring and GitOps operations.
+Portainer
++ ARGO CD
++ GitLab Cl
+* GitHub Actions
+Kafka Stack
+- AWS Cloud
+
+- Google Cloud Platform
+Database Technologies:
+PostgreSQL
+MongoDB
+DynamoDB
++ CouchDB
+
++ Oracle
+
+--- Page 2 ---
+Raiffeisen Bank, Ukraine (Remote) commissioned by BlueSoft
+Building a new modern mobile app for Raiffeisen Bank Ukraine customers.
+
+09/2021 - 0/2022
+e Leadateam of 7 cross platform developers (iOS, Android and Backend) on
+building a new platform for mobile banking.
+e Working closely with the Security Team to design security-proof features.
+e Introduced new features, deployed new CMS system for the business.
+e Managed development cycles of the team.
+PANKE Car Sharing S.A. commissioned by ITDS,
+
+Warsaw, Poland
+A leader in the rental and car sharing of cars and vans in Poland.
+
+Architect, Team Leader
+
+03/2021 — 09/2021
+
+Architect, Team Leader
+
+e Lead a team of 10 who developed an entirely new car sharing and rental
+platform for the organization.
+
+e Defining each team member with specific roles and responsibilities, making
+itateam effort to deliver the platform in the best way.
+
+e Redesigned the new microservice-based architecture to adopt Design
+Patterns and Event-Driven technics.
+
+e Migrated all 30 projects to new, more modern build tools like Gradle,
+improving build times by 60%.
+
+e Introduced advanced testing techniques for mocking and_ testing
+communication with external services in tests. Decreasing testing time
+execution by 40%, making tests fully independent from external factors.
+
+e Migrating all 30 projects to GitLab from AWS CodeCommit, enabling full
+control over code reviews, improving code quality by introducing static code
+analyzers and proper CICD pipelines.
+
+e Managed the delivery of the entire platform infrastructure build by an
+external company. Creating proper communication channels with well-
+defined rules and responsibilities between the development team and the
+DevOps improving cooperation by 87%. Before the two barely were able to
+cooperate.
+
+Amvox International commissioned by ITDS,
+Warsaw, Poland
+
+FinTech with a soul purpose of creating a transparent and secure connection between
+banking, Renewable energy sources and financial institutions.
+
+Architect, Team Leader, Scrum Master 02/2020 — 03/2021
+
+e Lead the company from the technology side. Created both the company
+road map and vision of the product from a technology and architecture
+perspective. Building a team of 6 developers to create a blockchain based
+platform for real time reporting and monitoring. Connecting banking and
+financial institutions with renewable energy sources operators.
+
+e Cooperating with potential partners and clients, preparing platform pilots
+showcasing key features that would be in demand to the consumers.
+
+e Working with the Product Owner on creating the platform road map.
+
+Languages
+
+- English (Advanced)
+- Polish (Native)
+- German (Elementary)
+
+EDUCATION
+
+Polish-Japanese Academy
+of Information Technology
+Master Degree in Software
+Engineering
+
+Warsaw, Poland
+2013-2015
+
+Silesian University of
+Technology
+
+Bachelor Degree in Computer
+Science (taught in English)
+
+Gliwice, Poland
+2008 - 2012
+
+OTHER
+
+e AWS Certified Solutions
+e Architect
+
+e AWS Certified Solutions
+e Architect Professional
+
+e Professional Scrum Master |
+
+--- Page 3 ---
+Creating company development guidelines. Cooperating with the team to
+ensure best practices. Mentoring team members, initiating discussions to
+find alternative solution approaches.
+
+e Used the ADR methodology to ensure transparency and clear vision of the
+architecture.
+
+e Build an end-2-end automated testing framework allowing deploy the
+environment on an independent environment and test our critical features
+before deployments/review/presentations.
+
+e Build the off-chain infrastructure based on AWS Fargate, deployed with
+GitLab CICD pipelines, while the on-chain part of the system would be
+deployed on an AWS EKS cluster managed by our Argo CD instance.
+
+e Building a true team atmosphere, encouraging each team member to speak
+
+freely and taking initiatives whenever there is place.
+
+Banyan Infrastructure, commissioned by ITDS
+San Francisco, United States
+Architect, Team Leader, Scrum Master 08/2019 — 02/2020
+
+e Tasked with building a Polish development hub (starting of 3 developers and
+a business analyst) that purpose would be to collaborate with the US based
+team and build a project for injesting data to the platform and private
+blockchain network.
+
+e Closely worked with the company CTO, introduced the ADR concept to
+persist our architecture decisions.
+
+e Working with the Product Owner on creating the platform road map.
+
+e Audit the existing solution build in Haskell, created critical issues and road
+map to ensure critical platform issues are resolved.
+
+e Ensuring best practices are met when developing the platform, mentoring
+team members on correct usage of design and architecture platforms, TDD
+and usage of RDS maintained tools like Flyway.
+
+e Migrated the platform to use Flyway for schema management.
+
+e Created automated backups of the PostgreSQL on a regular basis.
+
+PREVIOUS EXPERIENCE
+
+Circle K Europe, commissioned by j-labs
+Warsaw, Poland
+Senior Software Engineer 06/2016 - 08/2019
+
+Software Engineer
+Altkom Software & Consulting, Warsaw, Poland 08/2014 - 05/2016
+
+Software Engineer
+Acxiom Global Service Center Poland, Warsaw, Poland 01/2012 - 08/2014
+
+Software Engineer (Internship)
+Samsung R&D, Warsaw, Poland 06/2012 — 09/2012
+

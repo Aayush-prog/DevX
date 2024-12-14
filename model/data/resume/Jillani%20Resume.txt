@@ -1,0 +1,136 @@
+--- Page 1 ---
+Muhammad Ghulam Jillani
+[Linkedin | 1+92-321-1174167 | ®@ +92-321-1179584 | JillaniPortfolio.com |! m.g.jillani123@gmail.com | {« Kaggle | GitHub |@# Medium
+
+Professional Summary
+
+Senior Data Scientist and Machine Learning Engineer with a strong focus on Generative Al LLMs, specializing in developing and deploying cutting-edge Al
+solutions that drive innovation in SaaS and PaaS environments. Expert in enhancing data processing capabilities, optimizing workflows, and creating
+intuitive Al applications to solve complex business challenges and boost operational efficiency. Recognized as a 24x LinkedIn Top Voice, Top 100 Global
+Kaggle Master, KaggleX BIPOC Mentor, and a contributor to both the NVIDIA Developer Program and Google Developer Group, | am an industry-
+recognized leader committed to advancing Al-driven growth.
+
+Technical Skills
+
+¢ Programming & Development: Proficient in Python, Scikit-Learn, TensorFlow, Keras, PyTorch, NLTK, Transformers, EDA, ETL, PySpark, Matplotlib, Plotly, OpenCVv,
+SQL, Vector Databases, Flask, Streamlit, Docker, GitHub Actions, CI/CD pipelines, NoSQL, and Git.
+
+e Data Science & Al: Expertise in Machine Learning, Deep Learning, Data Analysis, Predictive Modeling, Artificial Intelligence, Statistical Modeling, Data
+Visualization, Data Engineering, Model Deployment, Time Series Analysis, Cloud Machine Learning, Big Data Technologies, Natural Language Processing (NLP),
+Prompt Engineering, Generative Al, LangChain, Llama-Index, LangGraph, Crew-Al, LangSmith, and Retrieval-Augmented Generation (RAG) with both open-
+source and paid LLM models.
+
+¢ Management & Operations: Skilled in Business Analysis, Cloud Platforms (Heroku, GCP, Azure, AWS), MLOps, AlOps, MLflow, AutoML, PyCaret, Process
+Automation, Stakeholder Management, Decision-Making, Power BI, Agile Methodologies, Microservices Architecture, Team Building, Project
+Management, and Product Management.
+
+¢ Communication & Collaboration: Strong in Effective Communication, Collaboration, Stakeholder Management, and Team Building.
+
+¢ Languages: Fluent in English and Urdu with full professional proficiency.
+Experience
+
+Sr. Data Scientist & Machine Learning Engineer BlocBelt Maryland, USA 12/2022 - Currently
+
+¢ Strategic Al Leadership & Team Management: Led the development of Al-driven SaaS and PaaS solutions, managing a team of three, with a focus on Big Data,
+Data Analysis, and Al Engineering. This initiative enhanced operational efficiency, resulting in $2M in cost savings for clients.
+
+e Sales Forecasting & Market Analysis: Improved sales forecasting accuracy by 80-90% through data analysis across 120+ market entities, leading to actionable
+growth strategies and enhanced sales workflows.
+
+¢ E-Commerce Platform Innovation & Sales Growth: Successfully launched a client-focused personalized fashion e-commerce platform featuring an advanced
+recommendation engine. This initiative led to an 80% increase in sales and a 200% surge in online orders, surpassing project goals by three months ahead of
+schedule.
+
+¢ Operational Excellence & Cost Reduction: Streamlined data processing and optimized workflows using OpenCV, leading to significant cost savings and
+improved efficiency.
+
+¢ Data-Driven Strategy & Revenue Growth: Led the development of statistical models and predictive analytics, resulting in an 18% increase in company revenue.
+Enhanced data visibility by 45% with strategic dashboards, fostering cross-functional collaboration.
+
+¢ Al Integration & Enhanced Digital Sales Experience: Integrated Al into SaaS and PaaS offerings, focusing on distributed systems and conducting over 25 A/B
+tests to refine the e-commerce experience, driving technological advancements.
+
+Al Kaggle Master Mentor Google-Kaggle San Francisco, USA 12/2022 - 11/2023
+
+e Engaged part-time, dedicating 18-22 hours weekly, representing Jillani SoftTech as a Data Scientist and ML Engineer. Provided expertise in Tech Life and
+Coding through the Kaggle-X BIPOC Mentorship Program.
+
+¢ Achieved recognition as the first Pakistani in the Kaggle-X BIPOC Mentorship Program, ranking within the top 100 Kaggle contributors globally.
+
+e Led a team of four, enhancing their technical skills, confidence, and community contributions.
+
+e Played a key role in advancing the data science community, driving technological and data-driven innovations.
+
+Data Scientist Crypto Express Thailand 01/2022 - 12/2022
+
+¢ Developed an Anti-spoofing Face-App, enhancing digital identity security and reducing identity fraud by 70%.
+
+¢ Applied Al and ML techniques to solve industry-critical issues, improving efficiency by 25% and reducing operational costs by 15%.
+
+e Engineered predictive models and provided actionable insights, leading to a 20% revenue increase through data-driven decision-making.
+e Advanced expertise in EDA, Machine Learning, and Deep Learning, saving over 250+ hours of manual analysis annually.
+
+e Successfully deployed Al/ML projects remotely, adapting to dynamic conditions and gaining significant experience in the Al/ML field.
+
+Artificial Intelligence Engineer Pakistan Freelancing Training Center Lahore, Pakistan 01/2021 - 12/2021
+¢ Led Al and Data Science training sessions, preparing students to tackle real-world challenges.
+¢ Designed and deployed models using TensorFlow and Keras, improving system efficiency and accuracy.
+¢ Bridged the gap between academic learning and industry skills, driving practical applications of Al technologies.
+e Automated repetitive data tasks using Python, significantly reducing manual labor and error rates.
+e Engaged in ongoing Al research to apply cutting-edge methodologies to projects.
+
+Projects
+
+¢ Health Assistance Application (LLM): Developed a comprehensive health assistance application leveraging the Gemini Pro LLM model, RAG, and LangChain.
+This solution supports doctors and patients by providing detailed medical information, symptom diagnosis, treatment suggestio ns, and preventive healthcare
+advice. The integration of generative Al ensures accurate and personalized health recommendations, significantly enhancing patient care and medical
+consultations.
+
+Al-Powered Blog Generator with Bedrock and Streamlit (LLM): Created an Al-powered blog generator using Llama 3 8B and AWS Bedrock services, integrated
+with Streamlit for a seamless user experience. Utilized Retrieval Augmented Generation (RAG) for dynamic fine-tuning on updated datasets, enabling the
+creation of realistic Al-generated blog content. The solution automates content creation, editing, and publishing, enhancing content marketing and
+
+engagement.
+
+Legal Document Analysis Chatbot (LLM): Designed a Python Flask-based web application utilizing the Gemini Pro LLM model for Al-driven legal document
+analysis. This chatbot facilitates efficient document management by providing a custom Al chat interface for querying legal PDFs. Deployed on AWS, the
+solution enhances legal research and document review processes with scalability and reliability.
+
+Low-Code No-Code Predictive Analytics Platform (LLM): Developed an intuitive predictive analytics platform powered by the GPT-40 LLM Model and PyCaret,
+hosted on GCP. The platform empowers non-technical users to perform both supervised and unsupervised tasks, including time series analysis, on CSV datasets
+with ease. It supports data cleaning, exploratory data analysis (EDA), automated machine learning, and hyperparameter optimization, democratizing advanced
+analytics and accelerating data-driven decision-making.
+
+DocuWiz Al (LLM): Built DocuWiz Al, a document intelligence application capable of analyzing various document formats, including PDFs, DOCX, TXT, PPTX,
+CSV, and XLSX. Integrated advanced NLP models like BART and DistiIBERT for text extraction, summarization, sentiment analysis, and topic modeling. The
+solution also incorporates RAG and LLMs for enhanced document analysis, and provides statistical insights and visualizations for data analysis, deployed with
+an interactive Streamlit Ul on GitHub.
+
+Harvestify-Al-Powered-Plant-Health-Assistant: Developed "Harvestify," an Al-driven application that diagnoses plant leaf diseases through image analysis,
+recommends crops based on soil and weather data, and suggests appropriate fertilizers. The application is powered by machine learning and deep learning
+models and is deployed on Microsoft Azure cloud, ensuring real-time analysis and accessibility.
+
+Customer Satisfaction Prediction System (MLOps): Created a Customer Satisfaction Prediction System using ZenML and MLflow within an MLOps framework.
+Achieved 93% accuracy in predicting customer satisfaction through robust predictive models. Enhanced pipeline management and deployment efficiency,
+leading to improved customer insights and decision-making processes.
+
+Education
+
+Bachelor in Computer Science (Major: Artificial Intelligence and Computer Science) Institute of Management Sciences
+CERTIFICATIONS
+
+e IBM Machine Learning Specialization Professional Certificate, IBM. e Generative Adversarial Networks (GANs) Specialization, DeepLearning.ai.
+
+¢ Deep Learning Specialization, DeepLearning.ai. e Machine Learning Engineering for Production(MLOps), DeepLearning.ai.
+
+¢ Machine Learning Specialization, DeepLearning.Al. e Microsoft Azure Al Fundamentals Al-900 Exam Prep Specialization, Microsoft.
+¢ Google Advanced Data Analytics Professional Certificate, Google. e Preparing for Google Cloud Certification: Machine Learning Engineer, Google.
+¢ Google Business Intelligence Professional Certificate, Google. © Google Project Management: Professional Certificate, Google.
+
+e Advanced Machine Learning on Google Cloud Specialization, Google Cloud. e Prompt Engineering for ChatGPT, Vanderbilt University.
+
+¢ MLOps | Machine Learning Operations Specialization, Duke University. e AWS Cloud Solutions Architect Professional Certificate, Amazon Web Services.
+e Al Product Management, Duke University. e PracticalData Science on the AWS Cloud Specialization, DeepLearning.ai.
+
+¢ IBM Al Product Manager, IBM. e IBM Generative Al Product Managers, IBM.
+

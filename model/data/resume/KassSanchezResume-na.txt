@@ -1,0 +1,296 @@
+--- Page 1 ---
+RESUME
+
+KASSANDRA SANCHEZ
+
+FRONT END DEVELOPER
+
+kassandra.sanch@gmail.com // Twitter:KassandraSanch //
+view my designs & work @ www.cssartist.com // codepen.io/kassandrasanch
+
+EDUCATION
+2009 - 2011 ARCHITECTURE
+University of Texas at San Antonio
+Relevant Courses Included:
+3 years of design study and studio.
+EXPERIENCE
+
+2022 - Present
+
+2021 - 2022
+
+EXTREME ARTS & SCIENCES
+
+Senior Front-End Developer
+
+¢ Handled multiple projects from start to finish
+as the single developer
+
+¢ Worked with numerous marketing teams from
+different companies to create web content that
+supported their marketing initiatives
+
+¢ Developed highly customized interactive
+experiences ranging from interactive maps,
+customer tablet registration experiences to an
+April fools ChatGPT project titled “CatGPT” for a
+pet insurance company
+
+¢ Worked directly with multiple high profile
+clients including Microsoft and Docusign to build
+out projects and experiences for them according
+to their specifications
+
+¢ Brought on new clients for the company with
+my social media contacts
+
+¢ Collaborated with multiple teams to build out
+a cohesive design from concept to deployment
+°Created websites using a variety of tools and
+frameworks based on customer needs including
+using Hubspot and Webflow. Was able to learn
+these products and get up and running quick
+while meeting the deadlines.
+
+FAIRWAY INDEPENDENT MORTGAGE
+
+Associate Software Engineer
+
+¢ Collaborated with different departments to
+create and implement front end designs (includ-
+ing calculators) from concept to deployment
+
+¢ Create multiple dashboards for different proj-
+ects using React and TypeScript
+
+Fix CSS issues in Citrix
+
+¢ Work on the IT Branding Team to implement a
+uniform look for the IT team
+
+¢ Designed and implemented HTML email
+templates
+
+¢ Test front-end code in multiple browsers to
+ensure cross- browser compatibility
+
+ABOUT
+
+Creative front-end developer with 8+
+years of experience in web and print
+design. Skilled at creating and designing
+websites and marketing materials. Love
+learning new things and taking on new
+challenges. Very proficient in CSS and
+enjoy learning new things.
+
+SKILLS
+
+ JavaScript/jQuery/ Ajax
+¢ TypeScript
+
+¢ JavaScript Animation
+
+¢ HTML/CSS/SCSS
+
+e Responsive Design
+
+¢ WordPress
+
+¢ MEAN stack knowledge
+e Figma
+
+¢ Adobe Creative Suite (Photoshop,
+Illustrator. InDesign)
+
+¢ Webflow / Hubspot
+
+¢ ADA Compliance
+
+° Git
+
+¢ RESTful API
+
+¢ Python
+
+e ReactJS
+
+¢ ThreeJS
+
+e PHP
+
+ADDITIONAL INFORMATION
+
+¢ Enjoy helping developers troubleshoot
+their CSS, regularly meet with aspiring
+developers from all over the world to
+help them with any questions
+
+¢ | have given talks on what it is to be a
+front end developer/designer
+
+¢ Currently creating a CSS course with
+over 1,000 subscribers already signed up
+¢ Enjoy making photo-realistic HTML &
+CSS drawings in my spare time which
+has led to multiple presentations and
+talks with different outlets
+
+¢ Enjoy making animated website
+concepts and learning new animation
+libraries (including GSAP and AnimeJS)
+
+--- Page 2 ---
+RESUME
+
+KASSANDRA SANCHEZ
+
+FRONT END DEVELOPER
+
+525 W 24th St, Apt 3161, Houston, TX, 77008 ¢ 817.719.5701 //
+kassandra.sanch@gmail.com // Twitter:KassandraSanch //
+
+view my designs @ www.cssartist.com // https://codepen.io/kassandrasanch
+
+YouTube: https://youtube.com/@Cssartist_
+
+EXPERIENCE
+
+2019 - 2021
+
+2014 - 2019
+
+CORNERSTONE HOME LENDING, INC.
+
+Web Content Administrator
+
+¢ Concepted and implemented marketing cam-
+paigns while collaborating with different teams
+on their needs
+
+¢ Reworked hundreds of pages to make them
+accessible and bring them up to ADA standards
+¢ Work directly with multiple loan officer teams
+on redesigning and reworking their websites.
+This includes adding features such as a flyer
+catalog. separate landing pages for different
+marketing campaigns or a new salesforce form
+with validation.
+
+¢ Created new features and functionality to
+bring a more uniform experience.
+
+¢ Created a locations database using JSON and
+JS to make everything more streamlined and
+ensure scalability
+
+¢ Designed and implemented HTML email tem-
+plates that reached thousands of people
+
+¢ Designed and created reusable and custom-
+ized website templates
+
+¢ Audit website Google lighthouse speed and
+implement changes to improve score
+
+¢ Collaborate with outside vendors to make
+websites more SEO friendly
+
+¢ Test front-end code in multiple browsers to
+ensure cross- browser compatibility
+
+SAT Energy
+
+Web Developer & Graphic Designer
+
+¢ Concepted and implemented complete
+rebranding/style- guide (web design, mar-
+keting materials, promotional products and
+packaging design).
+
+¢ Migrate old SQL database to MongoDB and
+improve database design to reduce query
+processing time.
+
+¢ Work closely with product designers to
+bring ideas to life.
+
+¢ Design and develop digital content with
+HTML, CSS, JavaScript & jQuery.
+
+¢ Maintain and manage WordPress website
+and analytics.
+
+¢ Write/Edit Social Media Marketing Cam-
+paigns
+
+¢ Design user interface components using
+JavaScript ES6.
+
+e Assist in developing a marketing strategy for
+a wide range of products
+
+Creative front-end developer with 8+
+years of experience in web and print
+design. Skilled at creating and designing
+websites and marketing materials. Love
+learning new things and taking on new
+challenges. Very proficient in CSS and
+enjoy learning new things.
+
+SKILLS
+
+ JavaScript/jQuery/ Ajax
+
+¢ JavaScript Animation
+
+¢ HTML/CSS/SASS
+
+e Responsive Design
+
+¢ WordPress
+
+¢ MEAN stack knowledge
+
+¢ Proficient in Bootstrap
+
+¢ Adobe Creative Suite (Photoshop,
+Illustrator. InDesign)
+
+¢ Microsoft Office Suite
+
+¢ ADA Compliance
+
+° Git
+
+¢ RESTful API
+
+¢ Python
+
+¢ ReactJS (currently learning)
+
+¢ ThreeJS
+
+e JavaScript Animation Libraries
+
+ADDITIONAL INFORMATION
+
+¢ Enjoy helping developers troubleshoot
+their CSS, regularly meet with aspiring
+developers from all over the world to
+help them with any questions
+
+¢ | have given talks on what it is to be a
+front end developer/designer
+
+¢ Currently creating a CSS course with
+over 1,000 subscribers already signed up
+¢ Enjoy making photo-realistic HTML &
+CSS drawings in my spare time which
+has led to multiple presentations and
+talks with different outlets
+
+¢ Enjoy making animated website
+concepts and learning new animation
+libraries (including GSAP and AnimeJS)
+

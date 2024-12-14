@@ -1,0 +1,88 @@
+--- Page 1 ---
+MICHAEL
+HARVEY
+
+FRONT-END ENGINEER
+
+CAREER GOALS
+
+Always up for a challenge, | have been working as a
+web developer for 6 years now. Currently, I'ma
+Front-End engineer at Clearlink. My team is
+building tools using modern front-end technologies
+like Gatsby, Next-JS & Contentful that help build
+websites for big-name brands that will sell their
+products.
+
+MAIN INTERESTS
+
+NNN
+
+Family
+Programming
+Music
+Woodworking
+Fitness
+
+Books
+
+Film / TV shows
+
+REACH ME AT
+
+Cj
+@
+9
+
+linkedin.com/in/michaeljamesharvey
+mikeharvey.me
+mikeytownl9@gmail.com
+
+Ogden, UT
+
+CAREER
+
+Front-end Engineer
+Clearlink: Dec 2020 - Present
+
+Was promoted to a different department to help build a
+custom CMS that will increase production in creating
+new websites and pages for all our brands.
+
+The project we are working on uses React, GatsbyJS,
+Emotion, Next-JS, GraphQL, Cloudinary, and Contentful.
+Utilizing modern practices and technologies like yarn
+workspaces, webpack bundling, cypress (for testing),
+and storybook. We were able to significantly increase
+our site's speeds and performance and overall process in
+getting a site created and deployed.
+
+Front-end Developer
+Clearlink: July 2017 - Dec 2020
+
+Created & maintained dozens of big brand websites while
+updating legacy code to meet better accessibility
+standards and increase performance metrics.
+
+Was put into a position to learn unfamiliar languages ina
+short amount of time which ended up really benefiting
+me and teaching me to love the journey of development.
+
+UI Designer & Information Technology Analyst
+State of Utah : May 2016 - July 2017
+
+Worked with different departments within the State of
+Utah to build websites using HTML, CSS, Wordpress and
+jQuery.
+
+EDUCATION
+Devmountain
+2015-2016
+
+Web Dev Bootcamp
+
+Weber State University
+2011 - 2014
+
+General Studies
+

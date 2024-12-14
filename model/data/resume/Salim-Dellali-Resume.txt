@@ -1,0 +1,126 @@
+--- Page 1 ---
+Salim Dellali
+
+Software Engineer & Typescript Node.js Backend Developer (Bilingual)
+9 Ottawa, Ontario, Canada % (438)-773-7407 M4 dellalisalim@gmail.com MAM linkedin.com/in/dellalisalim
+@ https://salimdellali.com ©) https://github.com/salimdellali
+
+Passionate and experienced Software Engineer and Typescript Node.js Backend Developer, proficient in building
+
+robust web applications and web services. Specialized in Javascript ecosystem, particularly Node.js backend
+
+development, with a track record of delivering high-quality solutions. Eager learner, committed to excellence in
+software craftsmanship.
+
+Work Expertise
+Typescript - Node.js - NestJS - Express.js - Prisma - MongoDB - React.js - REST API - Jest - GitHub
+
+Work Experience
+Intermediate Backend Node.js Developer @Combyne Ag | Remote, Canada [MAR 2023 - MAR 2024]
+e With the help of 2 teammates, built Combyne Connect REST API from scratch using NestJS
+e Ensuring rigorous REST API’s unit, integration and e2e testing using Jest
+e Implemented “black box” automated test for the REST API using Mocha and Chai
+Key achievements
+Y We initiated and launched the inaugural iteration of Combyne Connect REST API, driving a 25% uptick in
+both free and premium user engagement via Combyne App
+VY Following the successful Combyne Connect REST API launch, this positioned the company to attract
+corporate interest in bulk subcontracting of Combyne App accounts
+Main technologies used at Combyne Ag
+Typescript . Node.js - NestJS . Prisma - AWS Cognito - Swagger - Jest - REST API . GitHub
+
+Backend Node.js Developer @YASSIR (YC W20) | Remote, Algeria [MAR 2022 - FEB 2023]
+
+e Developed new features and fixed bugs on the Referral REST API using Express.js
+e Crafted missing Swagger documentation to enhance new developers team’s integration
+e Implemented automated tests for the REST API using Postman
+e Actively engaged in the technical recruitment process of new developers
+
+Key achievements
+Y Accelerated the progress of the Referral project, elevating its completion status from 50% to 80%
+~Y Spearheaded the recruitment efforts, strategically onboarding 3 highly skilled Node.js backend developers,
+
+augmenting the team's capabilities and fortifying project execution
+
+Main technologies used at YASSIR (YC W20)
+
+Typescript - Node.js . Express.js -MongoDB - Mongoose.js - Swagger - REST API . GitHub
+
+Javascript Developer @Data Impact | Remote, Algeria [SEP 2021 - JAN 2022]
+
+e Engaged with legacy Javascript code to maintain a proper execution of the dashboard
+e Assisted Product Owners in bug detection and resolution while cleaning the code
+e Participated in releases to the pre-production and production environments
+
+Key achievement
+VY Unearthed and swiftly remedied a concealed bug disrupting dashboard calculations
+
+Main technologies used at Data Impact
+Javascript ES6 - Git - BitBucket
+
+--- Page 2 ---
+Salim Dellali
+
+Software Engineer & Typescript Node.js Backend Developer (Bilingual)
+9 Ottawa, Ontario, Canada % (438)-773-7407 M4 dellalisalim@gmail.com MAM linkedin.com/in/dellalisalim
+@ https://salimdellali.com ©) https://github.com/salimdellali
+
+Fullstack MERN Developer (MongoDB - Express.js - React.js - Node.js) [APR 2020 - SEP 2021]
+
+e Demonstrated proactive skill development in Web Development during the Covid-19 pandemic, extensively
+exploring the JavaScript ecosystem and mastering the MERN Stack through rigorous self-guided study
+and practical application in side projects
+
+Main technologies Learned
+
+Javascript ES6 - Gulp.js - Nom - MongoDB . Express.js - React.js - Node.js -Mongoose.js - Typescript - Redux -
+
+Axios - Sass - React-bootstrap - Material-ui - Styled-components - Git - Github - JWT - Jest - REST API. Postman -
+
+WebStorm - VSCode - Netlify - Heroku
+
+Fullstack Web Developer @Mediafex | On-site, Algeria [FEB 2019 - MAY 2020]
+
+e Built websites and web services for Mediafex's products and services
+
+e Coordinated with a graphic designer to create assets for websites development
+
+Key achievements
+
+~Y Developed Mediafex's impactful presentation website to effectively showcase its product and service
+offerings, attracting 4 new clients.
+
+Y Engineered a sophisticated website featuring advanced fuzzy search functionality for Line-x Algeria,
+optimizing user experience and facilitating seamless navigation through extensive product catalogs,
+resulting in selling Line-x products and services to 25+ individual clients and 5+ companies
+
+Main technologies used at Mediafex
+HTMLS5 - CSS3 - Javascript ES5 - PHP. MySQL - Bootstrap - JQuery - FileZilla - BitBucket
+
+Personal side-projects
+Amidst the Covid-19 lockdown, leveraged the opportunity to immerse myself in the dynamic Javascript ecosystem,
+resulting in the successful execution of several side projects
+
+Y Mini Twitter REST API: GitHub repo
+Y Dummy React Conference MERN Stack project: Vi resentation on LinkedIn
+
+o Dummy React Conference REST API: GitHub repo | Hosted on Render
+
+o Dummy React Conference Dashboard: GitHub repo | Live demo on Netlify
+
+o Dummy React Conference Website: GitHub repo | Live demo on Netlify
+VY Parking Lot REST API: GitHub repo | Hosted on Render
+Y Text Storing and Processing REST API: GitHub repo | Hosted on Render
+~Y Personal Website and portfolio: GitHub Repo | Visit Website
+
+Education
+e Master’s degree equivalency in Software Engineering by WES - Canada [SEP 2023]
+Master’s degree in Software Engineering @USTHB- Algeria [SEP 2015 - JUN 2017]
+
+e Bachelor degree in Computer science @USTHB - Algeria [SEP 2012 - JUN 2015]
+
+Volunteering experience
+AIESEC - Local Committee Benak, Algeria [OCT 2014 - MAY 2018]
+
+Languages
+Full professional proficiency in English and French and professional proficiency in Arabic and Russian
+

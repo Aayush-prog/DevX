@@ -1,0 +1,115 @@
+--- Page 1 ---
+Surya Teja Menta
+
+Data Scientist / ML Engineer / Al Engineer
+
+“ +91 8309584461 @ mentasuryateja oO Surya-Teja-Menta in) surya-teja-menta ® suryatejamenta.co.in
+
+Address: 3-12-16, Kotha Bazar, Kavali (524201), Andhra Pradesh, India
+
+Summary
+
+I’m Surya Teja Menta, an experienced professional with 3 years in Data Science & ML. Industrial
+background in data analysis and ML as a Data Analyst. Al/ML project expertise on GitHub. Certified IBM Professional
+Data Scientist with a Computer Science & Engineering degree. Adept in scientific models, statistics, and passionate
+about Al/ML knowledge-sharing through blogs.
+
+Work Experience
+
+- Senior Data Scientist - Robert Bosch (Jan 2024 - preset)
+
+Worked on different levels of Al systems. Trained the Custom YOLOv8 Model on custom dataset for Customer Use
+Case and Deployed successfully. Working on Signal processing and applying the ML algos on sensor Vibration data.
+Building different levels of RAG pipelines for different kinds of data (pdfs, csv. excel, tabular and image). working on
+different levels of Gen Al and fine-tuning the LLMs.
+
+- Subject Matter Expert (Data Analyst) - Tudip Technologies (Oct 2020 - Oct 2023)
+
+During my tenure of 3 years as a Data Analyst at Tudip, | collaborated with Google on the Google LX project. My role
+encompassed crafting analytics dashboards and reports using Google Datastudio for a content management
+platform. | also enhanced project efficiency by implementing NLP Transformer (BART) for text generation tasks and
+deployed the docker image in Google Cloud Run and then Google Sheet Integration to make it available for
+everyone. The team's dedication earned us the Best Team Award for the most client appreciations received.
+
+Projects
+1. Github Automated Analysis (OpenAl, Langchain, LLM)
+
+Automated Complexity Analysis: Engineered a Python tool using GPT and LangChain to pinpoint intricate GitHub
+repositories. Memory Optimization: Implemented efficient memory management for processing extensive files while
+adhering to token limits. Enhanced Complexity Scoring: Utilized prompt engineering to elevate accuracy in
+evaluating repository complexity, refining the precision of the tool.
+
+2. Re-Enhance.Al (Opencv, ESRGAN, Pytorch)
+
+The Re-Enhance.Al project is a set of tools and algorithms that can be used to improve the quality of your
+Image for Space & Research Purposes. Even though the model accepts only images with (256x256x3) dimensions,
+this framework manages the higher dimensions by Split and Send Policy.
+
+3. Al - CAPS (Streamlit, Text-speech-Text)
+
+This Project is to recognize the Voice (Speech - to - text)and then translate the voice to another 18 Languages using
+Streamlit. This app allows you to record your voice/choose an audio file, Visualize the embedding of the speaker,
+Synthesize speech based on the recorded voice and, Text Translation
+
+4. QA_Summerization (Huggingface,OpenAl)
+This is a QA and summarization Web App built on Streamlit that allows you to quickly and easily create a
+Paraphrasing and summarization of your QA data. The main features of the app are: Paraphrasing & Summarization
+
+--- Page 2 ---
+Professional skills
+
+Knowledge: Data Science, Machine Learning, Deep, NLP & CV, LLMs, GPT
+
+Languages: Python, SQL, HTML, CSS, Web development,SQL, NoSQL
+
+Frameworks: Tensorflow, Pytorch, Keras, Langchain
+
+Cloud: GCP Cloud Run, Amazon Sage Maker(AWS) basic
+
+Libraries: Numpy, Pandas, Sklearn, Spacy, NLTK, Opencv, Matplotlib / Seaborn, scipy
+
+Tools: Jupyter notebooks, docker, GitHub, Git, Google DataStudio
+
+Others: Statistics & Probability, Calculus, Mathematics, Linear Algebra, Worked on Complex Datasets, Statistical
+Analysis, Data Mining, Model Building and Deploying, Hypothesis Testing, Data Analytics.
+
+Education
+
+Bachelor's Degree(CS) - PBR VITS, Kavali, AP (June 2016 - May 2020)
+
+| have done my Bachelor's degree in Computer Science with 78.3%. | have participated in paper
+presentations and won prizes too.
+
+HSC - Narayana Junior College, Kavali, AP (June 2014 - May 2016)
+| have completed my HSC education with a 92.5%
+
+SSC - Kranthi EM School, Kavali, AP (June 2004 - May 2014)
+| have done my schooling with 87%. | also participated in school dramas, sports, etc.
+
+Certificates & Courses
+e IBM Professional Data Scientist Certificate
+
+e Advanced Deep Learning course in Ineuron.Al
+e Python & Web Development
+
+Soft Skills
+
+Analytical Thinking: Demonstrated through experience in data analysis, statistical techniques, and training on
+complex datasets.
+
+Problem Solving: Interpret data, Implementing algorithms, and finding solutions. used problem-solving skills to
+solve challenges.
+
+Collaboration: Highlighted by working with Google on the Google LX Project, collaborating with clients, and creating
+analytics dashboards and reports to meet their requirements.
+
+Communication: Evident through writing Al/ML blogs, presenting papers, and effectively communicating complex
+concepts to both technical and non-technical stakeholders.
+
+Continuous Learning: Exhibited by pursuing advanced courses and certifications in data science, machine learning,
+and deep learning.
+
+Adaptability: learning new technologies, and actively contributing to Al/ML communities. I'm tech savvy.
+
+Time Management: Proven ability to handle multiple projects simultaneously while meeting deadlines
+

@@ -1,0 +1,139 @@
+--- Page 1 ---
+Tom
+
+https://tomsoderling.github.io
+
+Soderling
+
+Profile
+
+Experience
+
+I’m a senior Xamarin certified mobile developer that is passionate about building apps that delight
+people and make their lives better by meeting their needs. I’ve been using the Microsoft .NET
+platform for 12 of its 15 years to build desktop, web, and most recently, cross platform mobile apps
+for enterprise using the Microsoft technology stack + Xamarin in C#.
+
+I think you'll find that | have strong interpersonal communication and leadership skills backed by an
+enthusiastic attitude.
+
+Senior Mobile Developer @ Mobile Composer; Minneapolis, MN - April 2016 - Feb 2017
+
+As employee #1, | led the mobile development on our flagship product, Orchestrate, by designing and
+implementing new features, fixing defects, mobile DevOps, and through POC projects using emerging
+technology.
+
+- Consumed and developed for our RESTful WebApi and SQL Server backend hosted on Azure.
+
+- Using C# and Xamarin.Forms | was solely responsible for bringing the app to the Windows Universal
+Platform (UWP) and into the Windows App Store for public adoption.
+
+- Built an automated continuous iteration (Cl) build pipeline using Visual Studio Team Services (VSTS),
+that re-signed and rebranded our app, performed automated UI tests using Xamarin Test Cloud, and
+deployed to iOS and UWP for testers using Hockey App.
+
+- Contributed UWP support for the open source NGraphics and NControl drawing libraries.
+https://www.mcomposer.com/orchestrate/
+
+Senior Mobile Consultant @ Zebra Technologies (Formerly ITR Mobility); Mendota Heights, MN
+2013 - March 2016
+As a consultant and lead developer, | designed and developed enterprise mobile app solutions using
+iFactr (our mobile cross platform framework), Xamarin, and Microsoft technologies.
+Work with UI designers and Business Analysts to translate functional requirements into code.
+Select Project Experience:
+Spaniel — 3 months
+A health check for your RESTful service endpoints. Spaniel will interrogate your endpoints,
+ensure they’re responding as expected, and capture response data for remote service mocking
+Platforms: iOS and Android
+Tech: Xamarin.Forms using XAML in MVVM pattern
+
+mSTAR 4.0, by Medtronic - 9 months
+
+MSTAR is a critical, high-revenue offline-capable field productivity app for about 3,000 company
+sales reps that integrates with back-end systems for product sales and device registration. |
+participated in the development effort of the largest MSTAR release since version 1.
+
+Featured by Apple: iPad in Business - Medtronic
+
+Platforms: iOS & Windows
+
+Tech: C#, iFactr + Data Stack, Push Notifications, NUnit testing, Cl Builds via Jenkins
+
+--- Page 2 ---
+Education
+
+Certifications
+
+Skills
+
+Publications
+
+IRMS 360 Warehouse Management, by Upp -— 1 month
+
+A complete, end-to-end supply chain & warehouse management app.
+| was the lead developer of a project to port the existing Windows CE Warehouse Management
+app to iPad leveraging our iFactr framework.
+Platforms: iOS
+
+G360 Service Manager, by Ecolab — 9 months
+Offline-capable app for field associates performing service calls.
+
+Lead developer of 6 person dev team for the “Manhattan” feature set. This Innovation Platforms
+
+project was designed to allow field technicians to wirelessly interface with on-premise laundry
+(OPL) dispensing systems to perform installation and service from their mobile device.
+
+- Worked closely with UI Architect starting with initial design concept and wireframes
+
+- Provided day-to-day technical direction and guidance based on extensive domain knowledge.
+Mentored new project developers, performed regular code review sessions. Led sprint iteration
+planning sessions. Shielded dev team from PM & director flak.
+- Due to my ability to effectively communicate, | was the point person for handling any technical
+issues between Ecolab and our internal iFactr Product Team back at HQ.
+
+Platforms: Windows 7 and iOS
+
+Tech: iFactr + in-house MVC Framework, C#, SAP SQL Anywhere 16, Automated unit testing
+
+Software Engineer @ TASC (Formerly Benesyst Inc); Minneapolis, MN - 2009 - 2013
+TASC is a third-party administrator (TPA) of employee benefits
+
+- Build, troubleshoot, and enhance new and existing internal and external facing systems
+
+- Design and develop web and desktop solutions using Microsoft technologies like ASP.Net,
+WinForms, BizTalk, WCF Services, SQL Server. Select project experience available on request
+
+Consultant @ Magenic - Delivery Center; Golden Valley, MN — 2006 - 2009
+
+- Develop web, desktop, and corporate intranet solutions using Microsoft technologies
+
+- Experience working with diverse clients and varying technologies like ASP Net, WinForms, CSLA
+framework, SQL Server, EDI. Select project experience available on request
+
+University of Wisconsin - Superior - B.S. Computer Science, 2006
+Mesabi Range Community College, Virginia MN — A.A.S. Computer Programming, 2003
+
+Three-time Xamarin Certified Mobile Developer (XCMD). Dates: 8/2016, 8/2015, 8/2014
+
+Mobile: C#, Xamarin.Forms, Xamarin.iOS/Android, Prism MVVM, SQLite
+DevOps: Automated Cl builds, deployment, and UI testing using Visual Studio Team Services (VSTS),
+Xamarin Test Cloud, HockeyApp, Mobile Center (some)
+
+IDE: Xamarin Studio, Visual Studio for Mac and Windows
+
+Database: Microsoft SQL Server, SQLite
+
+Source: Git, Microsoft TFS System, SVN
+
+Methodologies: Agile, Scrum, OOP, OO Analysis and Design
+
+Favorite Patterns: loC (Inversion of Control), MVVM (Model-View-ViewModel)
+
+Mobile Development Blog: http://bit.ly/MobileAsMuse
+Personal Apps
+
+How Deep Is It?, iOS App Store
+
+Pickster, iOS App Store
+
+

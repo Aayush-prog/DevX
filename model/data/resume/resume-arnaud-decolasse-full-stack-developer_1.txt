@@ -1,0 +1,126 @@
+--- Page 1 ---
+ARNAUD
+DECOLASSE
+
+FULL-STACK DEVELOPER
+
+A Master’s degree graduate in computer science, | now have 15 years of experience as software engineer. |
+worked in companies of various sizes and domains, in France and in the United States. | mostly developed in
+Java environments on the back-end side, but | also have some experiences on the front-end using JS
+frameworks. On top of my full-stack skills, | made extensive usage of Agile and DevOps concepts during my
+
+different assignments. Recently, I've been promoted to leaderships roles (tech lead, manager) inside
+development teams, where | organized the way of working and made important architectural and technical
+
+decisions.
+
+DETAILS
+
+PHONE
+(+33) 06 98 75 5991
+
+EMAIL
+arnaud.decolasse@gmail.com
+
+ONLINE RESUME
+adecolasse.com/en
+
+ADDRESS
+Paris, France
+
+SKILLS
+
+JAVA/KOTLIN
+REACT/NODE
+REST API
+
+DB/SQL
+
+AGILE/DEVOPS
+GRAPHQL
+
+CLOUD AWS/AZURE
+PEOPLE MANAGEMENT
+PROJECT MANAGEMENT
+
+PYTHON/SCRIPTING
+
+EXPERIENCE
+
+Full-Stack Developer
+2024
+
+Senior Engineering
+Manager
+
+2020 - 2023
+
+Full-Stack Developer
+2015 - 2020
+
+Integration Developer
+2013 - 2015
+
+Full-Stack Developer
+2011 - 2013
+
+EDUCATION
+
+MASTER'S DEGREE,
+Computer Science
+
+2006 - 2008
+
+BACHELOR'S DEGREE,
+Computer Science
+
+2005 - 2006
+
+BeeMyFlex | Paris
+
+BeeMyFlex is a startup providing web and mobile applications for office
+management (flex office, desk reservation, etc). | joined the team as
+contractor for three months and developed new features for the calendar
+application. Front-end technologies: Next.js, React and Typescript. Back-end
+technologies: C#, REST API and SQL Server. Deployment/Runtime: Docker,
+Azure DevOps and Azure Cloud.
+
+Traveldoo, Expedia Group | Paris
+
+Leader of a 5 to 9 people team developing the expense and administration
+applications at Traveldoo. Beside my manager role, | largely contributed to
+the developments and the technical evolution of the project, specifically on
+the REST microservices migration.
+
+Traveldoo, Expedia Group | Paris
+
+Full-stack developer in the agile development team for the expense
+applications at Traveldoo. | worked on all layers of the application: back-end,
+front-end, batch. | progressively took on a technical leadership role
+contributing on the new microservices architecture and the Ci/Cd migration.
+
+Sefas USA, Groupe Docapost | Boston
+
+Integration developer on ADF (Automated Document Factory) technologies.
+Product customization for the customers’ needs. Creation of workflows to
+handle documents creation, merging, processing, printing and mailing.
+Python and Java languages.
+
+Bouygues Telecom | Paris
+
+Full-stack developer on the middle-office application (Gallium) managing
+millions of mobile phone's clients and contracts. Conception and
+development leader on new versions, quality and assurance tests, support
+and bug fixes in the production version.
+
+Java and Flex technologies.
+
+Université Paris Cité
+Grade: “Mention Bien”, Option: Information Systems
+
+Université Paris Sorbonne
+
+‘in| linkedin/arnaud-decolasse
+
+C)) github/adecolasse
+

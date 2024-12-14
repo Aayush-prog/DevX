@@ -1,0 +1,134 @@
+--- Page 1 ---
+Zain Khalid
+
+Toronto, ON |zain@zainkhalid.me
+
+zainkhalid.me
+
+OBJECTIVE & PERSONAL SUMMARY
+
+e 4months of professional experience as a Full Stack Developer in Winter co-op term
+
+e Studying Software Development & Network Engineering (Co-Op), Advanced Diploma (Overall GPA 3.86) at
+Sheridan College, began January 2019
+
+Bachelor of Computer Science from University of Wollongong
+
+Proficient in JavaScript (ES5+, TypeScript), HTML5+CSS3, Responsive Web & Mobile Design, PHP, MySQL,
+
+oSQL, MongoDB, LAMP Stack, MERN Stack, UNIX and Linux CLI, Windows CLI, Sketch & Adobe Illustrator,
+
+various Content Management Systems (headful & headless)
+
+e Worked with React, Apollo, GraphQL, Angular, Gatsby, Node.js, Express.js, Firebase (Cloud Firestore, Cloud
+
+Functions, Analytics, crash logs), Git
+
+1.5 years of practical experience as a freelance software developer, working on multiple projects on various
+
+platforms (Web, Android)
+
+e Good time management, strong interpersonal skills, work well individually and on teams, goal oriented, enjoy
+solving problems, creative
+
+EDUCATION
+
+Advanced Diploma, Software Development &
+
+Network Engineering (Co-Op)
+
+Current Overall GPA: 3.86 January 2019 -Present
+Sheridan College | Oakville, ON
+
+e Coursework - Web Development (HTML/CSS/JS/Angular), Network Design, UI Design, Linux, Software
+Design, Mobile Web-Based Applications
+
+e Extracurricular - Sheridan Toastmasters @ Trafalgar, Coding Syndicate of Sheridan
+
+Bachelor of Computer Science, Computer Science
+
+WES Evaluated Canadian CGPA: 3.22 Graduated December 2017
+
+University of Wollongong | Dubai, UAE
+
+e Coursework - Algorithms & Data Structures (C++), Operating Systems (C, shell-scripting), Computer
+Architecture (Assembly language), Databases (MySQL, PL/SQL), Final Project (Team Leader)
+
+e Electives - Mobile Application Development (Android), Artificial Intelligence (Java, LISP, R), Human-Computer
+Interaction, Java Development, Network Security, Distributed Systems
+
+e Extracurricular - Microsoft Student Partner (2016), University Microsoft Community, C# Tutoring for an
+Object-Oriented course in C#, participated in multiple hackathons outside university
+
+KS
+
+EXPERIENCE
+
+Neelands Group Ltd.
+Full Stack Developer | Burlington, ON January 2020 - May 2020
+
+mplemented core feature on one of the primary projects, CAM, working with Node.JS and Express (ES6) on
+the backend, and older JS (ES5) and jQuery on the frontend
+
+Developed a brand new in-house web based mobile application using ReactJS, Material Design, MongoDB and
+GraphQ_. This application will be linked with existing major projects (RAM & CAM) for remote access
+
+
+--- Page 2 ---
+Oomama
+Web Developer Volunteer | Oakville, ON February 2019 - Present
+
+e Manage website which is currently running on Drupal
+
+e Perform monthly content updates involving creating and editing HTML and specific CSS styling to meet client
+demands, content management of project assets
+
+Various August 2017 - Present
+Freelance Android & Web Developer | Remote
+
+e Created Android application, String Me, for placing orders to re-string tennis rackets and buying additional
+products. Developed using Kotlin and published on Play Store
+
+External Present
+
+e Involved in the tech community, attend external meetups regularly which usually are Android or web related.
+- Developed a movie viewing application on Flutter similar to the Android application mentioned just below
+
+e Developed an Android side project (December ’19) to learn working with the Retrofit library and using REST
+with Android [Incomplete]
+- Movie viewing application where users can infinite scroll through movies, sort by various options
+- Implemented new UI components in Android such as CoordinatorLayout, Floating Action Button, custom
+Toolbars (with hiding animation on scroll), general animations
+
+PROJECTS
+
+PERSONAL BLOG / PORTFOLIO April 2020 - May 2020
+Freelance, Remote
+
+e Developed my personal site to showcase my full stack web development skills and to use as a portfolio and blog
+site
+
+e Created site using Gatsby.js, React, GraphQL and CosmicJS, React-Material UI (Material Design for React)
+
+e Designed personal logo and customized assets to specification using Sketch
+
+e Hosted on Netlify via GitHub repo
+
+SCHOOLCYCLE & OFFICECYCLE August 2017 - October 2017
+Freelance, Dubai, UAE
+
+e Created two structurally identical websites with different theming for recycling waste in Dubai
+
+e Learnt & coded Javascript for integrating 3rd party libraries (Highcharts & ChartPHP) into user dashboard
+
+e Utilized PHP for accessing data to query specific user data for statistics, creating a dynamic rankings table, and
+writing a custom plugin to input waste entries into database
+
+e Designed custom graphics for sites Sketch, creating a contact information banner from scratch, editing images
+to standardized specifications for site
+
+e Collaborated with front-end design, optimizing CSS for project needs
+
+e Completed project in 2 months, performing regular checks to keep up to date
+
+

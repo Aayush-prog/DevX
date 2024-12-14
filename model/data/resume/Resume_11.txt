@@ -1,0 +1,149 @@
+--- Page 1 ---
+Muhammad Hilmi Asyrofi
+3 mhilmiasyrofi@gmail.com | % (+65) 85472451
+
+©) github.com/mhilmiasyrofi | £9 linkedin.com/in/mhilmiasyrofi/ | Portfolio | Google Scholar
+Fa Architecting Machine Learning in the Cloud | Kaggle Data Science Expert | Certified Solution Architect
+
+QUALIFICATION SUMMARY
+e Over 5 years of experience as a Machine Learning Engineer, specializing in transforming
+complex challenges into business-driven solutions leveraging data science.
+
+e Expert in software development and cloud-based machine learning, with a track record of
+leading cross-functional teams to deliver high-impact & scalable projects.
+
+e Committed to continuous learning by staying at the forefront of technology through active
+engagement in industry events, while balancing my life with passions like tennis and golf.
+
+EXPERIENCES
+Machine Learning Engineer Singapore
+PropertyGuru - Data Science Center of Excellence Jun 2022 - present
+
+e Regional Dynamic Pricing System: Architected an automated pricing system, boosting operational efficiency
+and increasing update frequency from bi-weekly to daily, optimizing market responsiveness. [ref]
+
+e Enterprise Data Product: Collaborated with cross-functional teams to commercialize data science projects,
+including an Automated Valuation Model for banks and real estate consultants. [ref]
+
+e Address Matching System: Developed an advanced NLP-based system that matches external client addresses
+with internal address records, improving matching accuracy by over 70%.
+
+e Business Metrics Framework: Spearheaded the integration of online metrics into DS projects, directly
+aligning pricing algorithms with revenue goals and enhancing reliability by reducing volatility by over 90%.
+
+e Innovation: Promoted Generative AI capabilities to internal stakeholders for business adoptions, including
+RAG for chatbot use cases and multi-modal Gen AI for image-text moderation.
+
+AI Research Engineer Singapore
+
+School of Computing and Information System, Singapore Management University | Nov 2019 - May 2022
+
+e Contributed to cutting-edge research on Software Engineering for AI-Enabled Systems (SE4AI) supervised
+by ACM Distinguished Scientist Prof David Lo, Director of Information Systems & Technology Cluster
+
+e Published 7 papers in top-tier international conferences and journals, 1.e., IEEE TSE (Ql, CCF Rank A,
+Impact Factor: 9.32), ACM ESEC/FSE (CORE A*), IEEE ICSME (CORE A), and IEEE SANER (CORE A)
+
+e Pioneered the adoption of Dockerized environments to manage ML projects on Nvidia DGX AI Supercomputer
+
+Co-Founder & CTO Indonesia
+
+Alinamed - Pitch Deck, Playstore Jan 2019 - Jul 2020
+
+e Managed the end-to-end software development lifecycle, including requirements analysis, design,
+implementation, code review, testing, deployment, maintenance, and feedback & improvement.
+
+e Led the selection of programming languages, frameworks, cloud services, and databases.
+
+e Won prestigious startup competitions, e.g., 18t Winner at WMM by Bank Mandiri, and Winner at Tech-
+to-Impact by UK-ID Tech Hub. Secured IDR 750 million funding from Telkom Indonesia.
+
+EDUCATION
+Institut Teknologi Bandung (ITB) Indonesia
+Bachelor of Computer Science 2015 - 2019
+
+e Graduated Cum Laude with a GPA 3.68 / 4.00
+
+e Recognized as an inspiring graduate for academic excellence and extracurricular achievements. [ref]
+
+Page | of 2
+
+--- Page 2 ---
+HONORS & AWARDS
+
+2022 Bronze Medal | Top 7% (170 from 2,654) | Evaluating Written Essays | NLP | Kaggle Leaderboard
+The challenge was to assess the language proficiency of students by analyzing their written essays. I leveraged
+DeBERTa language models to extract the feature embeddings from the essays. Then, I trained neural network layers
+to predict the proficiency scores from extracted features.
+
+2021 Silver Medal | Top 5% (101 from 2,426) | Shopee Product Matching | NLP + CV | Kaggle Leaderboard
+The task was predicting similar e-commerce products by using product images and titles. I utilized EfficientNet and
+NFNet to extract feature embeddings from images and utilized BERT and TFIDF to extract feature embeddings
+from texts. I calculated the cosine distance between products and employed k-NN to find similar products
+
+2021 Top 3% (28 from 1,034) | Information Extraction - Shopee Data Science Challenge | Kaggle Leaderboard
+The challenge was extracting Point of Interest (POI) names and street names from unformatted Indonesia addresses
+collected by Shopee. I framed the challenge as NER (Named Entity Recognition), where POI and street are the
+extracted entities. Then, I fine-tuned the IndoNLU model on the customized dataset.
+
+2011 Bronze Medal | Mathematics Competition at 2"! National Science Camp | Certificate
+Awarded by Ministry of Education - Indonesia
+
+CERTIFICATIONS
+AWS AWS Certified Solution Architect - Associate
+Credential ID: ECHZM6M1XEE4QDSB
+
+Deeplearning.AI Neural Network and Deep Learning
+Credential ID: D3GK6SD6Y5TG
+
+Deeplearning.AI Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization
+Credential ID: SGC98U3G8K6P
+
+TECHNICAL SKILLS
+Programming Python, C++, Java, PHP, JavaScript, HTML, React, Golang, C, C#
+
+Cloud AWS Amazon Web Services, GCP Google Cloud Platform
+
+ML Library Scikit-Learn, PyTorch, TensorFlow, OpenCV
+
+Database BigQuery, MongoDB, DocumentDB, MySQL
+
+CI/CD Github Action, Buildkite, ArgoCD
+
+Data Pipeline Airflow, Google Cloud Composer, AWS MWAA
+
+SRE DataDog, AWS CloudWatch, StatusCake
+
+Tool Git, Docker, Kubernetes, FastAPI, ElasticSearch, Lambda
+PUBLICATIONS
+
+Muhammad Hilmi Asyrofi, Yang Zhou, Imam Nur Bani Yusuf, Hong Jin Kang, Ferdian Thung, and David Lo. “BiasFinder:
+Metamorphic Test Generation to Uncover Bias for Sentiment Analysis Systems”. [EEE Transaction on Software
+Engineering (Q1, CCF Rank A, Impact Factor 9.32). PDF GitHub DOI
+
+Zhou Yang, Jieke Shi, Muhammad Hilmi Asyrofi, and David Lo. “Revisiting Neuron Coverage Metrics and Quality of
+Deep Neural Networks”. 28th IEEE International Conference on Software Analysis, Evolution and Reengineering
+(SANER). Honolulu, Hawai. March 2022. PDF GitHub DOI
+
+Muhammad Hilmi Asyrofi, Zhou Yang, Jieke Shi, Chu Wei Quan, and David Lo. “Can Differential Testing Improve
+Automatic Speech Recognition Systems?”. 37th IEEE International Conference on Software Maintenance and
+Evolution (ICSME). Luxembourg. September 2021. PDF GitHub DOI
+
+Zhou Yang, Harshit Jain, Jieke Shi, Muhammad Hilmi Asyrofi, and David Lo. “BiasHeal: On-the-Fly Black-Box Healing
+of Bias in Sentiment Analysis Systems”. 37th IEEE International Conference on Software Maintenance and Evolution
+(ICSME). Luxembourg. September 2021. PDF GitHub DOI
+
+Google Scholar for more publications
+
+INTERPERSONAL SKILLS
+2018 Granted Scholarship from Rumah Amal Salman ITB. Recognized as a top 10 awardee for capacity
+building and leadership development.
+
+2017 — Selected for leadership training by Siam Cement Group (SCG), focusing on fundamental leadership
+concepts and interpersonal skills.
+
+I declare the details stated to be true and complete.
+(This resume is updated on September 17", 2024)
+
+Page 2 of 2
+

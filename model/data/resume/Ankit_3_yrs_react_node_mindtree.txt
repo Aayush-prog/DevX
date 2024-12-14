@@ -1,0 +1,91 @@
+--- Page 1 ---
+ANKIT GUPTA
+
+E-MAIL: ankitgupta2594@qmail.com
+Website: www.gupta-ankit.com
+
+LinkedIn: https://www.linkedin.com/in/ankit-gupta-976b77194
+Phone: +91-7566888319
+
+OBJECTIVE
+
+To be associated with an organization where | can develop myself professionally in a work
+environment that offers continuous challenges, thereby enhancing my own skills as an
+individual and act as a key player in the organization’s development.
+
+SUMMARY
+
+e Having almost 3 years of experience in Web Application Development and have passion to
+solve challenging problems and want to contribute my potential in growth of the company.
+
+e Exposure of both frontend and backend technologies (MERN stack).
+
+e Experience in executing projects involving: REST API integration / creation, Building React
+components using hooks, Creating Node JS servers using express, Mongo database creation
+/ integrating using mongoose, User Interface & Usability and Built real time chat messaging
+using socket.
+
+e Technically Sophisticated Professional with almost 3 years of experience in the areas
+of Software Development and Team Management.
+
+e Adapt in end-to-end development of software applications from requirement analysis to
+system study, designing, coding, testing, debugging, documentation and implementation.
+
+e Strong algorithmic and debugging skills.
+
+SKILLS
+e React JS / Redux e Node JS
+e JavaScript / ES6 e Next JS
+e REST API creation / Integration e React Native
+e Data source- Mongo DB / JSON e Graph QL
+e Azure (CI/CD) e HTML/CSS
+
+e Versioning tool - Git
+
+EDUCATION
+
+Bachelors of Engineering (BE) in Electronics & Communication Engineering, 2013 — 2017
+from Oriental Institute of sc. & tech. affiliated to RGPV, Bhopal, India.
+
+--- Page 2 ---
+WORK EXPERIENCE
+
+Mindtree Limited, Bengaluru, India
+Nov 2017 — Present
+
+Senior Engineer
+
+Mindtree Limited is a multinational information technology and outsourcing company. The
+company Specializes in Application Development and Maintenance, Data Analytics, Digital
+Services, Enterprise Application Integration and Business Process Management, Engineering R&D,
+Enterprise Application Services, Independent Testing, Infrastructure Management Services and IT
+Strategy & Consulting.
+
+Job Responsibilities (Full Stack Developer)-
+
+Creating reusable React components using hooks.
+
+Creation and Integration of REST API.
+
+Performing client side validation efficiently.
+
+Creating pages in Next JS (SSR / SSG)
+
+Writing Graph QL queries and fragments to fetch data from content management
+platform called Contentful.
+
+Creating Node JS servers using express.
+
+Creating Cl/CD pipelines in Azure.
+
+Worked on a python script to format text using Google NLP.
+Understanding of Mongo DB, Azure Cosmos, Google Firebase.
+Beginner stage of React Native, Vue JS & Devops.
+
+PERSONAL DETAILS
+
+Date of Birth :Dec 19, 1995
+Nationality : Indian
+
+Language : English
+

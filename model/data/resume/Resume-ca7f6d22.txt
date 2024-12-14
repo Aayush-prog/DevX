@@ -1,0 +1,82 @@
+--- Page 1 ---
+CONTACT
+
+Phone: (316) 796-2215
+
+Email:
+leningaldamezbusiness@gmail.com
+Location: Wichita, KS
+
+Portfolio: httos://leningaldamez.com/
+
+EDUCATION
+
+Butler Community College
+Associates of Applied Science
+Majored in Web Development
+2021-2023
+
+Andover, KS
+
+SKILLS
+
+e Proficient in the following web
+development languages and
+frameworks: HTML, CSS, Tailwind
+CSS, JavaScript, React.js, Sass,
+Bootstrap, jQuery, and SQL
+Responsive Web Design
+
+User Interface (Ul) Development
+Cross-browser Compatibility
+Version Control (e.g., Git)
+Problem Solving &
+Troubleshooting
+
+e Collaborative Teamwork
+
+Lenin Galdamez
+Front-End Web Developer
+
+SUMMARY/OBJECTIVE
+
+Dedicated front-end developer with an Associate's degree and a strong
+foundation in a variety of front-end languages and frameworks. Passionate
+about creating intuitive and visually appealing user interfaces, adept at
+translating design concepts into responsive and functional web
+applications. Proven ability to collaborate effectively in team environments
+and adapt quickly to emerging technologies, aiming to contribute expertise
+in crafting engaging digital experiences.
+
+WORK EXPERIENCE
+
+Booze Bashers Game
+Web Developer, Andover, KS, Aug 2022- May 2023
+e Led the development of the landing page for the Booze Bashers
+web game, a collaborative capstone project. The project involved
+designing and creating a web presence to promote the game and
+provide an engaging user experience.
+e As the web developer and designer for the project, | was
+responsible for:
+
+- Creating an interactive and visually appealing landing page using
+HTML, CSS, and JavaScript.
+
+- Implementing responsive design principles to ensure optimal
+user experience across various devices and screen sizes.
+
+- Collaborating with team members to integrate game-related
+content and assets into the web page.
+
+- Conducting usability testing to gather feedback and make
+iterative improvements to the landing page.
+
+UserTesting
+Product Tester, Remote, May 2023 - Present
+e Contributed to the UserTesting team for the past year, gaining
+valuable experience in usability testing and quality assurance
+processes.
+e |conducted usability tests and provided feedback on digital
+products in order to identify and document user experience issues
+and software defects.
+

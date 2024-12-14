@@ -1,0 +1,210 @@
+--- Page 1 ---
+Education
+University of California, Los Angeles (UCLA) | B.S. Computer Science Sept 2019 - Expected Jun 2023
+Tech-Breadth in Urban Planning GPA: 3.389
+
+Sci-Tech in Technology & Society
+
+Technical Coursework: Database Systems, Programming Languages, Introduction to Algorithms & Complexity, Software
+Construction Lab, Fundamentals of Artificial Intelligence, Data Science, Urban Data Science, Using Data to Learn about Society,
+Computer Network Fundamentals, Intro to Computer Graphics, Operating Systems Principles, Computer Architecture
+
+Non-Technical Coursework: Internet & Society, Computer Mediated Communication, Social Networks, Introduction to Digital
+Humanities, Introduction to Cities & Planning
+
+Awards: UCLA Stanton & Stockwell Architects Scholarship Fund (2023), UCLA Faculty Fund for Undergraduate Students (2023),
+UCLA Levi James Knight, Jr. Scholarship (2022), UCLA Smita Pankaj Patel Scholarship (2021), UCLA Muriel & Robert B. Allan
+Scholarship (2020), Ann Kardell Scholarship Fund (2019-2023)
+
+Programming Languages: JavaScript » TypeScript » HTML/CSS « Python » Ruby « SQL « C/C++ « Swift « LaTex
+Frameworks: React « React Native « Redux « Ruby on Rails » Node.js « Express.js » GraphQL
+Development Tools: Git « Jira » Agile/Scrum Methods » MongoDB « Firebase « GCP + Heroku » XCode « Figma
+
+School Projects
+Latino Serving Nonprofit Organizations in California | Urban Data Science URBN PL 229 Spring 2022
+
+About: Group Project analyzing Latino community characteristics in California cities using 50+ Latino-Seriving Organization Data
+
+e Performed K-Means clustering analysis to identify cities with common living conditions and quality of life for Latino
+populations and current Latino-Serving NPOs in those areas using Python and Jupyter Notebook, presented in ArcGIS
+
+e Joined, cleaned, and formed the final dataframe used for clustering, containing 7 variables found from various data sources
+including Census API and CalEnviroScreen. Variables included Bachelor Degree Educational Attainment, CES 4.0 Percentile,
+% of households receiving SNAP food stamps, % of population that only speak English
+
+Airbnbs in Los Angeles | Introduction to Digital Humanities DGT HUM 101 Spring 2022
+
+About: Group Research Project centered around impact of Airbnbs in Los Angeles housing market using “Inside Airbnb” dataset
+
+e Analyzed Airbnb pricing by creating 6+ data visualizations on Tableau analyzing current listing prices and conducting research
+on host pricing strategies and notable listing characteristics such as room type and neighborhood location
+
+e Served as the website specialist creating initial Ul wireframes using Figma and assisted team members with setting up
+Tableau and creating first visualizations
+
+Narra | Software Construction Lab CS 97 Fall 2020
+
+About: Group Project developing a social media web app matching users based on the compatibility of their MBTI personality type
+
+e Served as the lead backend developer working on the login and registration features by creating RESTful APIs for the User
+model using the MERN stack
+
+e Collaborated with frontend developers to link backend with the frontend, implement error handling, and fix bugs
+
+e Utilized Git for version control management and code review
+
+Brewin Interpreter | Programming Languages CS 131 Fall 2022
+About: Quarter-long individual project building an interpreter for Brewin, an OOP statically-typed (made up) programming language
+e Developed core functionality including variable declaration/assignment, expression evaluation, and function calls in Python
+e Implemented lexical scoping and parameter passing by ref & value using data structures like nested dictionaries and stacks
+
+e Designed and coded support for first class/higher-order functions & creation and passing of lambda and closure functions
+
+--- Page 2 ---
+Work Experience
+
+Handshake | Full Stack Software Engineering Intern, 40 hours per week Jun 2022 - Aug 2022
+About: Handshake democratizes access to opportunity by serving as the #1 website for college students to find jobs & internships
+e Built a full-stack filter to search for users by language proficiency enabling 30+ premium UK partners to discover and identify
+candidates that match their needs for international job roles using React, Ruby on Rails, Redux, Elasticsearch & PostgreSQL
+e Served as the Subject Matter Expert of the existing filter dropdown by linking component to fetch data from backend while
+proposing alternative UX and tech implementations to accommodate with existing functionality and time constraints
+Updated 3 webpages to display correct date time formats based on user’s location for US and UK product using Moment.js
+Wrote Rails callback hooks in target segments model to handle archiving of over 100+ existing objects
+Followed Agile/Scrum development practices and utilized Git for version control management and code reviews
+
+BlackLine | Software Engineering Intern, 40 hours per week Jun 2021 - Aug 2021
+
+About: BlackLine is a leading provider of B2B cloud software that automates and controls financial close & accounting processes
+
+e Developed and restyled 5+ components in company’s next generation UI component library hosted on Storybook for the
+Platform Engineering team’s UI refresh and modernization project using React, Less/CSS, and Ant Design Library
+
+e@ Spearheaded the addition of a new tree-structured filter type to Table component by creating a dropdown component that
+accordingly displays the tree hierarchy of fetched data and incorporates parent-child relationships into filter selection
+
+e Wrote 10+ unit tests to validate component functionality and identify bugs using Jest, Enzyme, and React Testing Library
+
+UCLA Events & Transportation | Junior Data Analyst, 8 10 hours per week Mar 2021 - Present
+
+About: UCLA Commuter & Parking Data Lab works on business intelligence projects to support department operations
+
+e Created 7+ Tableau dashboards analyzing parking occupancy, Salesforce CRM data, & permit sales used by 50+ employees
+
+e Performed exploratory data analysis on student micro-mobility trends from 3 years worth of ride data provided by Bird, Lyft,
+and Wheels, allowing transportation planners to understand increased electric scooter usage on campus
+Developing a script to geocode customer addresses and store in a new database using Python and Google Maps API
+Implemented new layout and styling standards in Dashboard UI/UX Guide to improve usability and aesthetics
+
+Projects i! is
+
+Hussle | Co Founder, 20 hours per week Jun 2020 - Present
+
+About: Hussle is a startup (team of 11) that is developing a freelance marketplace app for college students to monetize their skills
+
+Full-Stack Mobile Developer
+
+e Developing a mobile app built in React Native, Expo, Express.js, Node.js and MongoDB Atlas for college students to start
+their own small businesses offering services and selling handmade products with the campus community. in
+
+e Built 20+ screens and various reusable Ul components, including home screen, user profile, gig description screen.
+Incorporated Redux to manage global state, Stripe for payment, SendGrid for email support & GCP Storage for image upload
+
+e Led the design and development of in-app chat implementation. Researched third-party Javascript chat libraries and decided
+on the CometChat library. Integrated its APIs providing instant-messaging between sellers and buyers during order process
+
+e Published in iOS App Store and deployed on Heroku for development and production environments in April 2022. Gained
+250+ users within 1 month of operation at UCLA with major efforts to grow during the 2022-2023 school year
+
+e Accepted into 2022 Startup UCLA Summer Accelerator Program, UCLA’s premier accelerator program, and received a $5K grant
+
+Frontend Web Developer
+
+e Designed and developed a full-stack web dashboard for internal use to perform login + registration, manage gig approvals +
+gig edits, handle reports, send push notifications to all users, and track marketplace activity using MERN stack
+
+e Created 8+ pages using Material Ul as the component library, Redux, and React Navigation
+
+e Partnered with backend developers to gather requirements on dashboard’s internal use and design web app’s Restful APIs,
+and JWT authentication implementations
+
+Customer Success Lead
+
+e Recruiting and managing 40+ student sellers (20% of the marketplace) on the app ensuring a positive app experience by
+providing on-demand support, providing marketing & advertising opportunities, writing guides on best practices, and
+supporting the overall growth of sellers’ customer bases and businesses
+
+--- Page 3 ---
+e@ Conducted market research on supply side by interviewing 30+ student small business owners, resulting in influencing
+product direction by adding business management features for sellers and strengthening relationships with recruited sellers
+Communicates with dev, design, customer success teams to maintain prioritized backlog & align on shared product goals
+Launched the Start-your-Own-Side-Hussle program, assisting 3 students with creating their own small businesses this quarter
+
+Other Awards: UCLA Startup Labs (2021), 10K Entrepreneurs Grant (2021), 1000 Pitches Finalist (2020), 2nd Place BruinLabs (2020)
+
+Nova, Tech for Good | Project Co Lead, Software Developer Oct 2020 - Present
+
+About: Nova is a team of UCLA students who create technical solutions that empowers nonprofits to better serve their communities
+
+e Leading the development of an instant messaging iOS app for victims of sexual assault to connect and chat with other victims
+of the same offender for nonprofit iiDecide. Led team of 12 to complete app’s beta version with 10+ users involved in testing
+Utilized UIKit, SwiftUl, MessageKit, and CryptoKit to develop 10+ view controllers for messaging feature
+Collaborated with backend developers to incorporate AES encryption into APIs for real-time chat functionality
+
+Activities & Volunteer Experience
+
+Sigma Eta Pi | Alumni Relations Director Oct 2021 - Present
+
+About: SEP is UCLA’s premier entrepreneurship fraternity dedicated to supporting members in fearlessly pursuing their ambitions
+
+e@ Revamping the alumni database of 250+members from a plain spreadsheet with empty and outdated information to an
+Airtable database populated with detailed characteristics and attributes, significantly improving organization, searchability,
+and overall usability for the organization’s alumni relations and outreach
+
+e Automated the database update process by creating a Linkedin Web Scraping Bot using Python, Selenium, Pandas, and
+Jupyter Notebook, eliminating manual maintenance and significantly reducing the process by hours
+
+e Performing data analysis and visualization to understand current makeup & demographic of alumni using Pandas
+
+Congressional App Challenge Alumni Advisory Board | Workshops Director Jun 2021 - May 2022
+
+About: CAC AAB is a group of CAC alumni that support App Challenge operations and plan educational programs for participants
+
+e Pioneered the organization’s first workshop series offered to hundreds of middle & high school students across the nation
+
+e Crafted workshops in App Ideation/Design Thinking & hosted drop-in Office Hours sessions providing feedback and guidance
+for participants towards completing their projects
+
+UCLA SWE Advocacy Committee | Diversity Outreach Director Oct 2020 - Jun 2021
+
+About: SWE Advocacy Committee serves to advocate for the inclusion and success of underrepresented communities across STEM
+
+e Advocated for AB 1125 - Dignity for Incarcerated Women Act, recommending provisions to the act. Presented work to 3
+Congressional Staff Members, including staff of author of the act
+
+e Organized the annual Diversity Showcase where students of different backgrounds share their experiences of pursuing STEM.
+Successfully shifted event to a remote setting by making a supplemental website in Wix to spotlight students
+
+Exploretech.la | Content Member Team, Workshop Lead Oct 2019 - Apr 2021
+
+About: Exploretech.la is an annual STEM education event with high school attendees from underserved communities in LA County
+
+e Organized educational sessions for in-person event in 2020 and successfully shifting event to a remote setting in 2021 with a
+total of 110+ attendees across California
+
+e Led creation of 3 new workshops (Tech & Society, Data Science, Internet) and 1 panel (Diversity in CS) during two events
+
+Nova, Tech for Good | Director of Workshops Oct 2020 - Oct 2021
+About: Nova is a team of UCLA students who create technical solutions that empowers nonprofits to better serve their communities
+e Pioneered Nova’s first workshops (Data Vis, Web Scraping & Data Analysis in Python, Al Mental Health Chatbots)
+
+Professional Memberships:
+
+Society of Women Engineers National Center for Women in Technology & Computing
+Sigma Eta Pi Rewriting the Code
+Awards:
+
+NJ-11 Congressional App Challenge Winner (2018) | House of Representatives - Created sPeach
+Engineering Scholarship & Fellowship Brunch Speaker (2022) | UCLA Engineering - Featured in UCLA Engineering news
+Lockheed Martin STEM Scholar (2019) | Lockheed Martin - Selected 200 out of 6,333 applicants, $40,000 scholarship across 4 years
+

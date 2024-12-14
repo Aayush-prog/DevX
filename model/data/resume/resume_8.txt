@@ -1,0 +1,75 @@
+--- Page 1 ---
+Adeel Ahmad
+
+@ adeel.ahmad.3a@gmail.com | adl1995.github.io @
+
+WORK EXPERIENCE
+
+Fellow in Authentication Team, European Organization for Nuclear Research (CERN) September 2020 — Present
+* Built permanent 2FA for Keycloak. Rolled new SSO to 10k+ users with 80k logins per day. Geneva, Switzerland
+
++ Setup compromised password check to protect $100M LHC control machines from unauthorized access;
+resolved 1,177 compromised accounts.
+
++ Maintained 99.9% service availability of Keycloak, troubleshooted time-critical issues manually.
+* Built Cl/CD pipelines with custom Dockerfiles; reduced deploy time by 4 minutes, saving 200+ dev hours per year.
++ Setup Grafana using Prometheus metrics to alert for system downtime via email, Slack, and Telegram.
+
+* Created a custom Flask JSON logger @' to improve log monitoring using Kibana; saved at least 5 dev hours per week.
++ Automated Keycloak configuration management using Puppet, reducing deploy time by 50%.
+* Developed an API to manage OIDC and SAML registrations, reducing manual efforts significantly.
+
+Technical Student in Computer Security, European Organization for Nuclear Research (CERN) September 2018 — October 2019
+
++ Developed an incidence response system for copyright infringements (average 50 cases per week). Geneva, Switzerland
+* Built an anomalous login activity system in Golang for CERN VMs; alerted user within 10 seconds of login breach.
+* Created Puppet modules to install and configure RPM packages, reducing manual effort by 50%.
+
+C++ Software Developer, Google Summer of Code 2018 (Boost C++ Libraries 7) May 2018 — August 2018
+
++ Implemented a distance algorithm in Boost C++ library and demonstrated existing inaccuracy in a blog post @. (Remote)
+* Improved accuracy by 5% and reduced execution time by 10% over the existing approach.
+« Wrote unit tests achieving 95% code coverage and performed system benchmarks.
+
+Python Software Developer, Google Summer of Code 2017 (Open Astronomy (4) May 2017 - August 2017
+* Developed a Python tool to visualize astronomical images, supporting numerous geographical systems. (Remote)
+» Used asynchronous programming to reduce fetch latency by 75%.
+
+EDUCATION
+
+Georgia Institute of Technology, Masters of Computer Science, GPA: 3.57/4.0 2021 — Present
+
+Courses: ML for Trading, Network Science, Computer Vision, Al for Robotics, Advanced Operating Systems, Atlanta, GA, US
+
+Computational Photography, Software Analysis & Testing
+
+National University of Computer and Emerging Sciences, Bachelors of Computer Science, GPA: 3.01/4.0 2014 — 2018
+
+Thesis: “Analysis of Structure from Motion Techniques” 4 Islamabad, Pakistan
+
+FEATURED BLOG POSTS
+
+Passwordless Logins with Yubikey 4 (CERN Lightning talk (4) February 2021
+Trip Planner - A tool for planning a trip itinerary using Google Maps 4 (CERN Lightning talk “) October 2019
+COURSE PROJECTS
+
+Machine Learning for Trading September 2022
+Created a trading simulator using Q-learning approach. Studied Technical Indicators for finding trends in stock prices.
+
+Computational Photography 4% March 2022
+
+Implemented an image in-painting algorithm to remove objects from pictures, similar to Pixel 6 Magic Eraser.
+
+OPEN-SOURCE PROJECTS
+
+Trip Planner [Python] @ — Queries Google Maps places based on an input query and exports them to a CSV file (featured on HNews (4).
+Edge detectors [Python]  — Image edge detection algorithms.
+
+TRAININGS AND CONFERENCES
+
+CHEP 2023 May 2023
+Presented my work on improving the two factor authentication (2FA) deployment at CERN (Talk 4). Norfolk, VA, US
+SKILLS
+
+Python, C++, C#, Go, IAM, OAuth2, OIDC, SAML, LDAP, MySQL, Puppet, Docker, Nginx, Grafana, Kibana, PostgreSQL, AWS, GCP
+

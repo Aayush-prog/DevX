@@ -1,0 +1,67 @@
+--- Page 1 ---
+Richard Dushime Iradukunda
+
+(514) 431-5748 . iradukundadushime@gmail.com . github.com/richy-irad . linkedin.com/in/richy-irad/ .
+richardiradukunda.com (portfolio)
+
+With 5+ years as a Fullstack Engineer, I'm skilled in Python, JavaScript, and team collaboration, focusing
+on adaptable and efficient project delivery.
+
+SKILLS
+
+Programming Languages: Python, JavaScript, TypeScript, HTML5, CSS3, Dart, bash.
+
+Databases: MongoDB, SQL, ORM, PostgreSQL Database Design.
+
+Libraries & Frameworks: Django, Django Rest Framework, Next.js, React.js 18+, Node.js, Express.js,
+TailwindCSS, Bootstrap CSS, Sanity, Wagtail.
+
+Tools & Platforms: Git, Github, Docker, Kubernetes, Algolia, Figma, Vercel, Heroku, AWS, Selenium, Jest,
+Cypress, Jira.
+
+WORK EXPERIENCE
+
+Top Talent Software Engineer, HABSNS Inc. Apr 2024 - Present
+
+Develop and deploy a fintech application, enhancing system reliability and performance.
+
+Design intuitive user interfaces, improving user experience and visual consistency.
+
+Lead database architecture and optimization, ensuring efficient data processing.
+
+Streamline integration of communication tools and testing for seamless functionality and high-quality
+standards.
+
+Skills: Python, Django, Django Rest Framework, React.js, Next.js, Bootstrap, WhatsApp API, Docker, Git, PostgreSQL
+
+Senior Fullstack Software Engineer, Kicstoms Sneakers Ltd Jun 2020 - Apr 2024
+Implemented advanced search functionality to enhance e-commerce experience.
+Designed intuitive web applications for Kicstoms.
+
+Led a team in developing robust applications using modern full-stack tools.
+Automated testing to ensure quality, security, and responsiveness.
+
+Streamlined Cl/CD with automated deployment on cloud platforms.
+
+Coordinated collaboration through version control and project management tools.
+
+Skills: Next.js, ReactUS, TypeScript, CSS3, Python, Django, Django Rest Framework, PostgreSQL, Algolia, Jest,
+Cypress, Pytest, Selenium, Docker, Kubernetes, Heroku, AWS, Git, GitHub, Jira.
+
+Fullstack Software Engineer, Golive Interactive Ltd Jan 2020 - May 2020
+e Contributed to design concepts to enhance user experience.
+
+Integrated CMS platforms to streamline content updates for clients.
+Developed custom CMS solutions tailored to client needs.
+Collaborated on visually engaging web applications using modern frontend technologies.
+
+Skills: Figma, Sanity, Wagtail, WordPress, Python, Django, React.js, TypeScript, Bootstrap CSS
+EDUCATION
+
+Jomo Kenyatta University of Agriculture and Technology - Bachelor of Science in Computer Technology -
+May 2016 - June 2022.
+
+LANGUAGES
+
+English - Advanced, French - Intermediate, Swahili - Advanced/Native, Kinywarwanda - Advance/Native
+

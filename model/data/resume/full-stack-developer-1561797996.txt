@@ -1,0 +1,71 @@
+--- Page 1 ---
+ROBERT SMITH
+
+Junior Full stack Developer
+
+info@qwikresume.com | https://Qwikresume.com
+
+Full stack development/ front-end development position emphasizing strong web
+UI (angular.js, node.js, dojo, JavaScript, html5, css3, etc.) And general full-stack
+development skills including J2EE and databases. Bring to the team a solid track
+record of success in the delivery of software applications, hands-on experience,
+and diverse industry background. Equally strong in the front end web UI, middle-
+tier and back-end technologies.
+
+MARCH 2014 - AUGUST 2015
+JUNIOR FULL STACK DEVELOPER - ABC CORPORATION
+
+201
+
+Responsibilities Define architecture and present to customer technology
+managers.
+
+Participate with Functional Requirement team to understand requirement.
+Responsible for the implementation of Web Design based on CSS3, HTML4,
+XHTML, Bootstrap, React JS and AngularJS.
+
+Design Frontend with in object oriented JavaScript Framework like Angular.js,
+and Node.js Extensively used extJS with Rich User Interface for presentation tier
+development.
+
+Developed very rich user interface with Rich Faces, ajax4jsf tags and MS Excel
+for template design.
+
+Developed token based authentication system using Spring Security.
+Implemented Backbone.js and React.Js to create a dynamically changing
+website.
+
+1 - 2014
+
+FULL STACK DEVELOPER - ABC CORPORATION
+
+Developed and maintained custom content management systems, cross
+browser web designs, WordPress solutions and WordPress themes for over 50
+clients.
+
+Designed/developed new features in object-oriented PHP and JavaScript/jQuery.
+Developed new and improved upon existing PHP web applications for data
+presentation and input.
+
+Integrated content management systems.
+
+Designed and developed companys new employee check-in/checkout system.
+Skills Used PHP, MySQL, Linux, WordPress, XHTML, CSS3, Java,
+JavaScript/jQuery, Ajax, JSON.
+
+This is Dummy Description data, Replace with job description relevant to your
+current role.
+
+© This Free Resume Template is the copyright of Qwikresume.com. Usage Guidelines
+
+
+--- Page 2 ---
+EDUCATION
+
+Master of Science in Computer Science - (Texas A & M University)
+
+SKILLS
+
+Java Development, C/C++, Python, SQL Server 2012, HTML, XML, JavaScript, IT-
+Related tasks, Math/Accounting, Microsoft Office.
+

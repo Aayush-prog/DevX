@@ -1,0 +1,82 @@
+--- Page 1 ---
+matheswaarans@gqmail.com
+
+Matheswaaran S 1919025923103
+
+Full stack Developer Website + Github + LinkedIn « Medium
+
+About Me
+
+With over 4 years of experience as a fullstack developer, I've built and worked on a variety of projects from
+Chennai to Denver, Colorado. | have been working in agile development, closely with the Design, Backend, and
+QA teams. | have a strong background in web application analysis, development, deployment, and debugging.
+
+Notable Projects
+
+e Avalara: AP! Documentation & developer guides for Avalara’s APIs and SDKs using Next.js, React
+TailwindCSS and Swagger.
+
+e Edison: Multiple PMS integrations into Edison’s backend using Node.js, Google cloud and Cloud functions
+
+e Testpress: Features for validating exams and assignments using Javascript, Tailwind CSS, Python and
+Django.
+
+e OroCorp: An admin app for managing gold loans, agents and customers using React.js, TailwindCSS, Hasura
+and GraphQL.
+
+Experience
+
+Independent Freelance Developer
+
+Chennai | Mar 2022 - Present
+
+e Worked on 13+ contracts and freelance projects within a year.
+
+e Collaborated with clients to determine project requirements and delivered high-quality results within
+deadline and budget constraints.
+Developed and maintained web applications & REST APIs using React.js, Node.js, Next.js & Postgres.
+Managed multiple projects simultaneously and effectively prioritized tasks to meet deadlines.
+Communicated regularly with clients to ensure project satisfaction and addressed any issues or concerns.
+
+Senior Developer - Testpress
+
+Chennai | Nov 2021 - Mar 2022
+Developed and maintained testpress features using Django, Python and Javascript.
+Implemented Unit testing and achieved test coverage of 80%.
+
+e Collaborated with sales & marketing teams and customers to derive requirements and built features based
+on them.
+
+Developer - NFN Labs
+
+Chennai | Jun 2018 - Nov 2021
+
+Developed and maintained web applications using React, Next.js, Node.js, Hasura & Postgres.
+
+Implemented CI/CD for both frontend and backend using Netlify, Bitbucket pipelines.
+
+Setup AWS servers using Nginx for Web Apps, backend APIs and Hasura.
+
+Collaborated with cross-functional teams and clients to deliver high-quality products on tight deadlines.
+Projects Worked on: Avalara, Kera, Monday Monk, Toy Around, Learn with Breadcrumb, Monument Universe,
+Orocorp, Kaching & Vookmark
+
+--- Page 2 ---
+Education
+
+B.Tech Information Technology - PSNA College of Engineering and Technology
+Dindigul | Jun 2014 - May 2018
+
+Passed out CGPA: 7.28 (72.8%)
+
+Skills
+HTMLS5, CSS, Js Node.js Postgres
+React.js, Nextjs Hasura AWS services
+Netlify REST APls & GraphQL GCP services
+Git Firebase
+
+Achievements
+
+e Won lst Prize for the Indian Govt's Smart India Hackathon 2k18 with 1 lakh cash.
+e Selected and funded for the Indian Govt's Smart India Hackathon 2k17
+

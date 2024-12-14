@@ -1,0 +1,132 @@
+--- Page 1 ---
+Jayesh Choudhary
+
+Software Engineer at Microsoft
+
+A Detailed oriented and Committed Engineering Professional with a Bachelor of Engineering in Information Technology skilled in
+JavaScript, React Js, CSS 3 & Frameworks, Next Js, React Native, Node Js.
+
+mm
+jayesh.choudhary2906@gmai
+l.com
+
+8329812727
+
+Burhanpur, India
+
+google-portfolio.vercel.app/
+
+in]
+linkedin.com/in/jayesh-
+choudhary-72444518b
+
+wv
+twitter.com/JayeshMERN
+
+©
+
+github.com/jayesh2906
+
+SKILLS
+
+LANGUAGES
+
+English
+Professional Working Proficiency
+
+Hindi
+Native or Bilingual Proficiency
+
+ACHIEVEMENTS
+
+AND INTERESTS
+
+Sharing content about
+JavaScript with 25k+
+Followers on Linkedin
+
+Web Development
+
+WORK EXPERIENCE
+
+Software Engineer
+
+Microsoft
+
+04/2023 - Present
+
+Projects
+
+5 Developing Mix Dialog conversational Al chatbots tool as a Frontend/UI Developer.
+
+Pune, India
+
+Software Engineer
+LTIMindtree
+
+03/2021 - 04/2023
+
+Projects
+
+Oo DHRE RealConnect : Developed a web application For Dubai Holding Real Estate from scratch
+
+as a frontend developer, Technologies used : React Js, Redux-thunk, Tailwind CSS, Axios,
+React-hook-form and Yup.
+
+Pune, India
+
+© Informa Pharma: Responsible For the logical part of Frontend development such as API
+integration, implementation of new Features, reusable components, and bug Fixes. Worked
+using React Js, Redux-saga, Redux-toolkit, Sass, Material Ui, Ag-grid-react and Formik.
+
+PERSONAL PROJECTS
+
+Mini Laptop Implementation ||
+
+Google Theme Portfolio
+Video Demo | Live Demo | Source Code
+
+O Implemented a laptop with Power on, Sign In, Restart, Sleep and Shut down Functionality using React Js
+and Tailwind CSS, Developed my Google Theme Portfolio using Next Js and Styled Components.
+
+O Video Demo | Live Demo | Source Code
+
+House Design with pure CSS
+O Video Demo | Live Demo | Source Code
+
+© Designed and developed Front-view of my house with pure CSS 3, Html 5 and JavaScript. User can open
+and close Gate, Windows and Slide of a House, User can also rotate a house in 360°.
+
+IPL-2022 Web Application
+
+O Video Demo | Live Demo | Source Code
+
+O Implemented a WebApp that provides the live scorecard of IPL-2022 fetched from RESTful Cricket API.
+User can create his/her playing 11 team For each franchise, User can also watch the best of IPL highlights.
+Technologies used: React Js, CSS 3, Material Ui, Local Storage, PWA(native app), Netlify.
+
+Ice Mart Mobile Application
+
+Video Demo | Source Code
+
+O Implemented an Ice Mart Mobile App that can be used by users and Admin, Uses JWT authorization.
+
+© User can search, sort, Filter various Ice creams and can make an order, Google maps for user's location.
+© Technologies used: React Native, Redux Thunk & Toolkit, Node Js, Express Js, MongoDB.
+
+Full E-Commerce Web Application
+
+O Video Demo | Source Code
+
+Designed and developed Full E-Commerce Web Application that can be used by users, sellers, and Admin.
+Uses Json web token authorization, Geo-location for auto-filling address, Twilio message notification.
+Uses Paypal payment gateway integration for demo virtual payment of orders.
+
+Technologies used: React Js, CSS 3, Redux Thunk, Node Js, Express Js, MongoDB.
+
+EDUCATION
+
+Sinhgad Institute, Pune - B.E (IT ) --> 9.38 SGPA (2020)
+HSC ( CBSE ) --> 84% (2016)
+SSC ( CBSE ) --> 8.0 CGPA (2014)
+

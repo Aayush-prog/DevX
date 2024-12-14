@@ -1,0 +1,83 @@
+--- Page 1 ---
+Robert Smith CONTACT DETAILS
+
+1737 Marshville Road,
+Alabama
+
+Python Developer (123)-456-7899
+info@qwikresume.com
+www.qwikresume.com
+
+PERSONAL STATEMENT
+
+Good experience of software development in Python and IDEs - sublime SKILLS
+text, PyCharm. Experience in Python, Robot Framework. Technical DJANGO, HTML, JQuery,
+experience in supporting applications which use an object-oriented MYSQL, PYTHON
+programming language (Java). Experience in using Pandas python libraries
+during development lifecycle. Excellent experience with Python
+development under Linux OS (Ubuntu). Experienced in writing SQL
+Queries, Stored procedures, functions, packages, tables, views, triggers. LANGUAGES
+English (Native)
+WORK EXPERIENCE French (Professional)
+
+Spanish (Professional)
+Python Developer
+Varite Inc - April 2014 - Present
+
+Responsibilities: INTERESTS
+« Involve in the developmentof the application using Python 3. 3, HTML5, Climbing
+CSS3, AJAX, JSon and JQuery. Snowboarding
+" Developed the applications using DJANGO 1. 7 MTV framework which is Scenic
+based on model template view design pattern.
+« Extensively used DJANGO technologies, which includes forms, templates
+and orm for communication with database in different forms. REFERENCES
+
+« Extensively used interceptors, validators, actions using DJANGO1. 7
+framework. Reference - 1 (Company
+
+« Used perforce version control system and Python Tools for Visual Name)
+. Reference - 2 (Company
+Studio(PTVS) IDE. Name)
+
+*" Create and write result reports in different formats like txt, csv, xls, and
+JSon.
+« Worked on CSV files while trying to get input from the MySQL database.
+
+Python Developer
+ABC Corporation - 2010 - 2014
+Responsibilities:
+
+« Wrote python scripts to parse xml documents and load the data in the
+database.
+
+« Used pandas api to put the data as time series and tabular format for
+east timestamp data manipulation and retrieval.
+
+« Was involved in the environment, code installation as well as the svn
+implementation.
+
+« Cleaned data and processed third-party spending data into
+maneuverable deliverables within specific formats with excel macros
+and python libraries.
+
+« Ensured high quality data collection and maintaining the integrity of the
+data.
+
+« Collaborated with internal teams to convert end user feedback into
+meaningful and improved solutions.
+
+« This project also used other technologies like jquery for javascript
+manipulations, bootstrap for the front-end html layout.
+
+© This Free Resume Template is the copyright of Qwikresume.com. Usage Guidelines
+
+
+--- Page 2 ---
+Education
+
+Masters in Computer Science in Computer Science - (Stanford
+University, Stanford )
+
+© This Free Resume Template is the copyright of Qwikresume.com. Usage Guidelines
+
+

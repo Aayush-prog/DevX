@@ -1,0 +1,118 @@
+--- Page 1 ---
+Wagner Caetano
+
+wagnercaetano01@gmail.com л
+Linkedin * wagnercaetano.dev
++55 (19) 982252438 л Brazil
+
+PROFESSIONAL SUMMARY
+
+Developed and implemented software solutions as a Full-stack Software Developer, leveraging
+frontend and backend expertise. Used to act in different product scopes at the same time, handling
+data crossover and maintaining flow compatibility. While working for a health insurance company
+and one of the biggest banks in Brazil, created exceptional products, driving revenue growth, and
+optimizing user experiences. Seeking role to apply technical skills and contribute to frontend
+technologies.
+
+WORK EXPERIENCE
+
+Mid-Software Developer Jul 2021 - Present
+CI&T * Campinas, Brazil
+
+вл Designed and developed code for 3 products at the same time, which has crossover points,
+so had to carefully ensuring that wouldnТt have any bugs.
+
+в Started learning how to test mobile accessibility and vulnerability improving the experience
+of customers (almost 10% of Brazilian population have a disability) interactions with the
+products.
+
+л Assess information to propose and strategize the implementation of new features or
+alterations to existing ones, communicate technical specifications to the team and delegate
+tasks and assisting if necessary.
+
+в Orchestrate backend solutions between different data sources, reduced one of those
+flows in % of execution time.
+
+в Maintain and improve Cl/CD implementation, mostly pipelines/services, added layers of testing
+ensuring 80%-90% of coverage.
+
+в Setup backend services like 3 BFFs, a few AWS services, caching, API gateway, configuration
+persistence.
+
+л Analyze production environment incidents and provide possible solutions to mitigate impact.
+
+Junior Software Developer Mar 2021 - Jun 2021
+CI&T * Campinas, Brazil
+
+в Evaluated simple interrelationships between programs, such as whether a
+contemplated change in one part of a program would cause unwanted results in a
+related part.
+
+вл Developed at every level of a testing pyramid, since unit testing, mutant test until
+developing cypress integration tests.
+
+в Created fully customized Angular components following UX prototyping, ensuring best
+practices of loosely coupled structure and easy maintainability.
+
+в Understood better how to write, modify, integrate and test software code for Internet and
+mobile applications.
+
+л Influenced others on learning and implementing better code quality achieving less product
+bugs.
+
+л Joined a team developing products for schedule and attend medical appointments online, this
+product had more than 20 users accessing per minute and tremendous impact in the company.
+
+--- Page 2 ---
+Intern Software Developer Feb 2020 - Feb 2021
+CI&T * Campinas
+
+л Learned best practices of coding, testing and architecture to produce a software, especially
+about clean arch and angular components.
+
+л Acted on more than 10 product incidents, searching logs at Graylog, understanding bugs and
+helping the final client, with help.
+
+в Introduced in different meetings and rituals of Agile, got knowledge of basic squad metrics,
+understood product analytics.
+
+л Implemented one complete product flow pairing with the senior developer, since the mobile
+code, the backend code, until the database.
+
+л Wrote, tested and improved code through code review done by 3 other senior teammates.
+
+в Joined one driven technology studies, to learn a few new technologies like Angular and
+improve Java knowledge.
+
+EDUCATION
+
+Computer Science Ч Bachelor Degree Feb 2021 - Jul 2024
+Centro Universitario Wyden Unimetrocamp * Campinas, Brazil
+
+Programming Fundamentals; Computer Architecture; Operating Systems; Database Management;
+Software Engineering.
+
+SystemТs Development Ч Technical Degree Feb 2018 - Feb 2021
+Colegio Tecnico Da Unicamp Campinas * Campinas, Brazil
+
+Object-Oriented Programming and Data structures; Databases; Web Development; Internet of
+Things (loT); Mobile Applications.
+
+CERTIFICATIONS
+
+*л Google Project Management Ч Aug 2023 л AWS Certified Practiticioner Ч Oct 2022
+SKILLS
+
+л Java Ч Advanced л Git -Ч Advanced
+
+л Angular Ч Advanced л AWS Ч Medium
+
+в Typescript - Medium л RxJS Ч Advanced
+
+л React/NextJs Ч Medium л NgRX Ч Advanced
+
+в Spring Boot Ч- Medium л Jest + Testbed Ч Advanced
+LANGUAGE
+
+в English Ч Professional Proficiency л Portuguese Ч Native
+

@@ -1,0 +1,120 @@
+--- Page 1 ---
+Anitha Maran
+
+Front-End Developer
+
+Contact: anitha@gmail.com, +91- XXXXXXXXXX, LinkedIn(hyperlink)
+
+Nationality: Indian
+
+Career Objective:
+
+¢ Enthusiastic front-end developer with 1 year of front-end experience in responsive web design for e-commerce platforms.
+¢ A self-learner certified by Google x Coursera.
+
+¢ Proven ability to build interactive and user-centered web designs to scale.
+
+SKILLSET
+
+Hard Skills Soft skills
+
+Languages- HTML, CSS, JavaScript, JAVA « Problem-solving
+
+Libraries- jQuery, Redux, React ¢ Risk management
+Frameworks- Node.js * Design thinking
+
+Version Control- Git - Active listening
+
+Content management systems- WordPress, Ghost ¢ Interpersonal communication
+
+¢ Time management
+
+WORK EXPERIENCE
+
+Front End Developer Intern
+July 2020- November 2020
+Infotech Solutions, Bangalore, Karnataka
+
+Key Qualifications & Responsibilities
+
+* Created responsive web pages for the recruitment portal websites
+
+* Created designs compatible with both iOS and Android.
+
+« Fixed server crashes to improve responsiveness
+
+¢ Collaborated with back-end team members to implement feature updates
+
+Achievements
+¢ Implemented responsive designs for Android versions which resulted in a 30% increase in mobile traffic.
+
+Front End Developer
+November 2020- November 2021
+ACS solutions, Bangalore, Karnataka
+
+Key Qualifications & Responsibilities
+¢ Assisted in building client User Interfaces without compromising on functionality.
+« Learned front-end object-oriented programming to develop client-server systems.
+
+Achievements
+¢ Awarded with the title " intern of the month" for creative designs maintaining the Visual Brand Language of the client.
+
+Projects
+
+« Dynamo- a landing page
+
+Technology used- HTML, CSS, JavaScript and BootStrap
+
+Description- a dynamic landing page for an e-commerce app like Amazon which displays users' time and name from
+local storage.
+
+« HeyChat- a chat application
+
+Technology used- Nodejs, HTML,CSS
+
+Description- a real-time chat application similar to Whatsapp including online, offline labels, conversation records,
+registration systems for one on one chats, etc
+
+
+--- Page 2 ---
+=> EDUCATION
+
+B.E Computer Science and Engineering
+
+IIT, Bangalore
+
+Graduated in: 2019
+
+CGPA: 7.07
+
+Relevant coursework: Web Development, Client-side scripting, Web architecture, Object-Oriented Programming,
+Mobile application development
+
+Languages known:
+English- 4/5
+
+Hindi- 5/5
+
+French- 4/5
+
+German- 3/5
+
+Certifications:
+
+« Front End Web Developer Certification by W3C (edX) (8 months)
+¢ Microsoft Professional Certification in Front-End Web Development (edX)(5 months)
+
+Hobbies and interests
+
+« Reading
+
++ Painting
+
+¢ Dancing
+
+¢ Content writing
+
+¢ Tennis
+
+¢ Musical instrument(Violin)
+

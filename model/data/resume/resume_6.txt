@@ -1,0 +1,129 @@
+--- Page 1 ---
+PROFESSIONAL EXPERIENCE
+
+Mar 2019 - Nov 2024 Co-founder & CTO, PACK Digital
+
+Developed vision for and built PACK platform, a cloud application used by
+ecommerce teams to develop and manage headless storefronts. Architected
+and implemented front-end application framework, build system, and theming
+layer, distributed through a suite of NPM packages. Contributed to merchant
+projects using framework to guide feature roadmap, assist with debugging
+escalations, and inform technology decisions. Contributed to backend
+engineering through the development of private REST APIs and publicGraphOL
+APIs. Worked as executive leadership to ensure technical strategy and business
+goals were aligned. Worked with product team to execute technical strategy
+and ensure feasibility and timely execution of product roadmap. Managed
+team of 12 front-end and full-stack engineers.
+
+Nov 2017 - Feb 2019 Director Technology, Brand Value Accelerator
+
+Sep 2016 - Nov 2017 Technology Lead
+
+Codified team vision, core values, and role definitions. Formalized hiring
+processes, onboarding, and training programs to support the growth of
+development team to 32 engineers in four locations across two countries.
+Created customized development programs for individual team members.
+Regularly presented on relevant topics to both developers and non-developers.
+Met with partners to help make informed technology decisions. Explored
+novel applications of technologies for use in numerous contexts. Continued
+providing support to client projects as needed.
+
+Sep 2015 - Sep 2016 Senior Front-end Developer, Brand Value Accelerator
+Oct 2014 - Sep 2015 Front-end Developer
+
+Worked on the development of 35 front-end Shopify themes by creating
+bespoke themes from scratch or augmenting existing client themes. Developed
+reusable component library for rapid feature development. Created scaffolding
+and leveraged automation to reduce the amount of time required to start a
+new project. Designed and implemented development workflows and build
+process using modern JavaScript tooling used to support 200+ projects.
+Engineered self-updating mechanism in build to ensure consistency across all
+projects and prevent time lost from debugging specific versions.
+
+Aug 2012 - Aug 2014 Front-end Developer, Google
+
+Built and maintained over 25 default templates for use with the Wildfire Pages
+App. Created CSS framework used to make static legacy templates responsive.
+Reduced the total number of files used in default themes to improve load times.
+
+EDUCATION
+
+2007 - 2012 Master of Science in Information Systems
+Bachelor of Business Administration
+The George Washington University
+
+449 NW State St, Bend, OR 97703
+
+TYLER
+
+SHAMBORA
+
+(650) 799 8252 tyler@theshamboras.com —_ github.com/tshamz
+
+linkedin.con/in/tylershambora
+
+TECHNICAL SKILLS
+
+| have direct experience using the technologies listed below. Items
+in bold are technologies | am proficiency in (list is non-exaustive).
+
+Angular Classic §GraphQL Relational Database
+AWS Gulp Ruby
+
+Bash Heroku Serverless Functions
+Chrome Extensions HTML5 Service Workers
+CSS Modules JavaScript /ES6 Shopify
+
+CSS3 / SCSS Jest Slack Applications
+Docker Lerna ThemeUl
+
+Emotion Netlify Turbo
+
+Express NextJS TypeScript
+ESBuild Node.js Vercel
+
+Firebase NPM Webpack
+
+Gatsby Puppeteer WebSockets
+
+GCP Python Web Workers
+
+Git React Yarn Workspaces
+GitHub Actions Remix Pickleball ®
+
+NOTABLE PROJECTS
+
+Slack Incident Reporter, Slack Deno App, 2023
+pav2tty5lo7geycf, Predictit HFT App, 2021
+gulp-shopify-critical, NPM Package, 2018
+brianwilliams, Slackbot, 2018
+
+jamesbrown, Slackbot, 2017
+
+Experimental Shopify SPA, Early Headless, 2014
+Google Web A11y MOOC, Angular App, 2013
+
+AWARDS, CERTIFICATIONS &
+PUBLICATIONS
+
+The Frontier Podcast, Episode 41, 2019
+
+San Diego Top Tech Exec Awards, 2018
+
+Shopify Theme Development Certification, 2018
+
+Slackbots...So Hot Right Now, Shopify Blog, 2017
+
+Setting up a Shopify Development Environment
+Partner Course, Shopify Partners, 2017
+
+Using JavaScript to Super Power Your Client’s
+Shopify Site, Shopity Blog, 2015
+
+Optimizely Developer Certification, 2015
+
+Optimizely Platform Certification, 2015
+
+Eagle Scout & Scout of the Year Award, 2007
+
+

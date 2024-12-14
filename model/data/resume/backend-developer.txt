@@ -1,0 +1,70 @@
+--- Page 1 ---
+Backend Developer Phone: (123) 456 78 99
+
+Email: info@qwikresume.com
+
+ROBERT SMITH eee EN ne:
+
+linkedin.com/qwikresume
+Address: 1737 Marshville Road,
+Alabama.
+
+Objective
+
+As a Backend Developer, responsible for providing administrative and analytic support to internal
+and external constituents. Designs, modifies, develops, maintains, and implements data software
+and tracking systems. Creating reports/dashboards, developing automated metrics dashboards of
+key business metrics at requested frequencies, and providing ad-hoc data analysis.
+
+Skills
+
+C, C++, Python, JavaScript, MySQL, HTML, CSS, Cold Fusion, Mongo DB.
+
+Work Experience
+
+Backend Developer
+ABC Corporation - December 2011 - April 2012
+
+Database designed and developed for website career stage.
+
+Data modeled tables and their relationships.
+
+Developed stored procedures to prepopulate dropdown lists.
+
+Developed User Registration Web Page employing HTML5 and PHP to implement Resume
+
+upload with dropdown menus, checkboxes, Radio Buttons, Text Areas, and other input
+controls.
+
+Unit tested each component of the resume application.
+Worked with phpMyAdmin tool web hosting platform.
+Cleaned up existing data duplication and inconsistencies, with automation where possible.
+
+Backend Developer
+Delta Corporation - 2006 - 2011
+
+Dealt with designing and managing about 350-400 websites in the college of ACES in UIUC
+-Upkeep and modification of code so that they are up to date -.
+
+Developed a Magento extension for tracking customer activity and products information on e-
+commerce websites.
+
+This information was then sent to a Dashboard via REST API for business trend analysis.
+Technologies used PHP, MySQL, Magento, and REST technologies.
+
+HEB Back End Restructure of the Purchases Order and Vendor Order.
+
+Modifying ORACLE Database store procedures, triggers, and views on PL/SQL Developer which
+they were in charge of inserting, modifying, deleting.
+
+Designed and implemented a Model-View-Controller-based Java web application with Guice-
+injected Thrift services backed by Amazon S3 Authenticated.
+
+Education
+
+GED
+
+© This Free Resume Template is the copyright of Qwikresume.com. Usage
+Guidelines
+
+

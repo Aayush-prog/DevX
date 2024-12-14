@@ -1,0 +1,67 @@
+--- Page 1 ---
+CV/ML Engineer for 3D Digital Humans (x/f/m) - Remote,
+Worldwide
+
+Who are we?
+
+Meshcapade is the 3D digital human company. We are creating realistic human avatars for
+use in apparel, games, fitness, AI, and augmented reality. Using machine learning and
+computer vision, we model the nuances of human body shape and movement. We
+automatically convert photos, 3D & 4D scans, RGB-D sequences, Mocap and even words into
+realistic 3D humans. We are a spin-off from the Max Planck Institute for Intelligent Systems
+in Tiibingen, Germany and our products are powered by state of the art, patented research.
+Our core product, Meshcapade Me, is an online platform for the creation, animation, and use
+of 3D digital humans. Our clients run the gamut of global names; a broad mix of tech, media,
+health and fitness, apparel, and education.
+
+You will be involved in Meshcapade’s internal and external collaborative initiatives.
+Meshcapade has an ongoing research and collaboration partnership with Max Planck Institute
+allowing us to participate in cutting edge R&D on statistical body modelling, body shape &
+motion estimation methods, and neural representation of bodies in digital worlds.
+
+What you will be doing:
+
+e Work and research on new generative models, neural methods and transformer for 3D
+humans in motion
+
+e Participate in ongoing research projects with external research partners and help define
+new research initiatives
+
+e Coordinate with the engineering teams to automate and productize latest research,
+both internal and collaborative
+
+e Define the technical direction on evaluation methods, improvements and further
+development of software using the machine learning and NNs
+
+Who you are:
+
+e Solid understanding of 3D computer vision, deep learning, and training new machine
+learning models for human motion, behavior & interaction estimation and modelling
+
+e 5+ years experience developing in Python and/or C++
+
+e Master’s or PhD degree in computer science or related field
+
+e Proven track record of publications on topics related to generative models, neural
+methods and transformer for 3D humans in motion
+
+e Strong understanding of computer vision, graphics and machine learning
+
+e Excellent written and oral communication skills
+Bonus Skills
+
+e Demonstrable experience with the SMPL family of statistical models
+
+Diversity isn’t just a statement at Meshcapade, it sits at the core of the company.
+
+We believe in the diversity of thought because we appreciate that this makes us stronger.
+Therefore, we encourage applications from everyone who can offer their unique experience to
+our collective achievements.
+
+Apply here: job@neckar-hub.com
+
+Your contact person is Naureen Mahmood
+
+--- Page 2 ---
+We are looking forward to receiving your application!
+

@@ -1,0 +1,130 @@
+--- Page 1 ---
+Yellenki Ritheesh Baradwaj
+
+Software Engineer
++917095195154, +818049694093| ritheeshbaradwaj@gmail.com | Linkedin| GitHub | Medium
+
+Summary
+
+Delivered high-quality and efficient applications that met project requirements and industry standards, with 2+ years of experience
+as a software engineer. Proficient in Python and C++, with a proven track record of automating processes that improved productivity
+by 25% and developing high-performance applications with low latency. Strong analytical and problem-solving skills, with the ability
+to work independently and in cross-functional teams. Proficient in multiple programming languages, experienced in software
+development life cycle, agile methodologies, and testing.
+
+Education
+
+e VNR Vignana Jyothi Institute of Engineering and Technology Jun 2016 — Sep 2020
+Bachelor of Technology — BTech, Electronics and Communication Engineering GPA: 9.62
+
+e SR Junior College Jun 2014 — Mar 2016
+Intermediate, MPC Percentage: 98%
+
+e Sharadaniketan High School Jun 2011 — Apr 2014
+SSC GPA: 9.80
+
+Work Experience
+
+DENSO Sep 2020 - Present
+Software Engineer Aichi, Japan
+
+e Developed software components for Intelligent Mobility by efficiently analyzing business and technical requirements and
+overseeing design, implementation, debugging, and maintenance phases in collaboration with project team.
+
+e Contributed to the development of CORE and LOG functionalities for the Vehicle Computer's runtime environment, leveraging my
+knowledge of data structures and algorithms to optimize performance and functionality.
+
+e Implemented asynchronous feature support with Future, Promise for CORE component adhering AUTOSAR standards.
+
+e Enhanced LOG & Trace component by implementing efficient external configuration parsing with robust error handling and
+reporting mechanisms, resulting in improved performance and reduced potential failure impact.
+
+e Improved product quality to meet ASIL B targets through software analysis, unit testing (with a 100% success rate), binary testing,
+and component testing, resulting in a 30% reduction in defects.
+
+e Developed python test framework using Paramiko and Pytest that reduced code duplication by 50%, improved the code quality
+and automated complete testing process, saving an average of 2 hours per day for developers.
+
+e = Resolved critical bugs, ensuring 100% on-time delivery of the product at the end of each Program Increment.
+
+Prymatica Jul 2020 — Aug 2020
+Junior Python Developer (Freelance) Tel Aviv, Israel
+
+e Developed and deployed a web server using Flask on the Google Cloud Platform for tracking customer email communications.
+e Implemented a client-side application to retrieve data from the server and MYSQL database, facilitating efficient data retrieval.
+e Optimized the email sending framework by migrating from functional programming to an object-oriented structure.
+
+NCR Corporation Jan 2020 — Jun 2020
+Software Intern Hyderabad, India
+
+e = Built and implemented a Continuous Integration/Continuous Delivery (CI/CD) pipeline for a Machine Learning Application using
+Jenkins and GitHub Actions, resulting in streamlined development and deployment processes.
+e Gained expertise in DevOps practices and tools by working in the DevOps team and studying CI/CD concepts.
+
+--- Page 2 ---
+e Contributed to the open-source community by publishing a GitHub Action on GitHub Marketplace, which automated the
+workflow of training and testing the Machine Learning model, creation of web server with Flask, and deploying the application
+on Google Application Engine.
+
+Skills
+
+e Programming Languages: C, C++, Python, Java
+
+e Database, Web & Testing Frameworks: Flask, Django, Google Test, Pytest, HTML, CSS, SQL
+
+e DevOps Knowledge, Git/GitHub
+
+e Cloud Platforms: GCP, AWS Services, Heroku
+
+e Operating Systems: Linux, QNX
+
+e §©Willingness to Learn, Strategy & Execution, Team Building, Collaboration, and Communication.
+
+Certifications & Courses
+
+e Become a Django Developer, by LinkedIn, 2023
+
+e C++ Essential Training, Advanced Topics, by LinkedIn, 2022
+e §6Certified SAFe® 5 Practitioner, by Scaled Agile Inc, 2022
+
+e Infosys Certified Python Programmer, by Infosys, 2019
+
+Projects
+DocMan - Snoring Analysis github.com/RitheeshBaradwaj/DocMan-SnoringAnalysis
+Software Developer Feb 2019 - Jan 2020
+
+e Technologies used: Python, Signal Processing, Machine Learning, React JS.
+
+e Conducted a survey which showed that people who snore are unaware of its consequences if left undiagnosed and untreated.
+
+e Developed an application called DocMan that enables the user to determine the stage of Obstructive Sleep Apnea by analyzing
+the recorded snoring signal using Signal Processing, Machine Learning.
+
+Meme - Generator github.com/developers-cosmos/Meme-Generator
+Python Developer Apr 2020 - May 2020
+
+e Technologies used: Python, HTML, CSS, Flask, Cloud Engine, Chef.
+e Developed an interactive web framework to recognize the facial expression, generate a random meme on the given image, and
+render the same back to the user.
+
+Awards & Honors
+
+¢ Recognized for outstanding innovation and creativity through 10+ awards, including the Best Innovation Award in hackathons and
+project competitions hosted by esteemed organizations such as BITS Pilani, DENSO, VNR VJIET, and CIE MLRIT.
+
+¢ Achieved finalist status among 20,000 candidates in the Deloitte TechnoUtsav 2.0 event in 2019 for the DocMan — Snoringproject.
+
+¢ Honored with the Academic Excellence Award for 2 consecutive years (2016-2018) during graduation.
+
+Activities
+
+e Authored and published over 10 articles on Medium for prominent publications such as Towards Data Science, Towards Al, and
+FAUN, sharing my expertise and insights on topics related to DevOps, Machine Learning and Artificial Intelligence.
+
+e Established Developer Cosmos, an open-source community on GitHub with over 40 projects, aimed at fostering collaboration and
+learning among students by encouraging them to share their ideas, projects, and learnings.
+
+e Published a research journal titled “Smart Glasses for Blind - A Personal Assistant using Computer Vision, Artificial Intelligence” (ISSN
+0005-0601) as part of graduation and received the best project grade.
+
+

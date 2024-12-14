@@ -1,0 +1,87 @@
+--- Page 1 ---
+Siddharth Kumar
+
+San José, CA
+
+0 +1 435.362.7428 e M siddharth.kumar@sjsu.edu  e @ sidkuma24.github.io
+Summary
+
+— Industry experience working on Full-stack web development using Java Spring Boot and AngularJS, building REST APIs.
+— Industry experience building complex web applications using Java, Angular and MongoDB.
+— Hands-on experience developing building distributed applications using Apache Spark and Kafka.
+
+Technical Skills
+
+o Languages: Java, c++, Python, R, JavaScript, HTML and CSS
+
+o Big Data: Apache Spark, Apache Hive, Apache Kafka
+
+o Web Frameworks: Node.js, Express, AngularJS, React, Redis
+
+o Machine Learning: Tensorflow, Keras, Caffe, NumPy, Pandas
+
+o Databases: PostgreSQL, MySQL, PL/SQL, MongoDB(NoSQL)
+
+o Cloud: AWS, GCP, Azure, Alicloud, Docker
+
+o Tools & IDEs: Apache Maven, Gradle, Jenkins, Grunt, Git, Eclipse, Android Studio, Jira
+
+Education
+
+o San José State University CGPA: 3.72/4.0 San José, CA
+Master of Science, Computer Science Aug-2019 — May 2019
+
+o Indian Institute of Engineering Science and Technology CGPA: 3.52/4.0 West Bengal, India
+Bachelor of Engineering, Computer Science Aug 2012 — April 2016
+
+Work Experience
+
+o Full-stack Development Intern, Hypergrid Inc., San José June 2018—Present
+
+- Developed REST endpoints for several new features in the platform's latest release, making them available to the customers.
+
+- Migrated the Solr dependencies to Postgres to improve application availability and maintainability, reducing memory usage by
+almost 20%.
+
+- Optimized the VM provisioning by integrating Redis in-memory caching, substantially speeding up the data intensive operations.
+
+- Integrated machine learning based VM recommendation engine to the platform, makes VM configuration recommendations
+based on user requirements, reducing the usage cost.
+
+Technologies: Java, Springboot, Gradle, JavaScript, Angular JS, Python, PostgreSQL, RESTFul web services
+
+o Application Developer, Accenture, India August 2016—May 2017
+- Enhanced and maintained enterprise Java applications in Spring MVC and AngularJS.
+- Designed scripts for automated reporting of product data using Python and Shell scripting, substantially reducing the time
+needed for generating reports previously completed manually.
+- Contributed to the development of Accenture Automatic Ticket Resolver, aimed at reducing the average issue resolution time to
+2 hours
+Technologies: Java, JavaScript, Angular JS, JQuery, Shell Scripting, Python, Maven, PL/SQL, RESTFul web services
+
+o Undergraduate Research Intern, Indian Institute of Technology, Patna, India May 2015—July 2015
+- Created an aspect-based sentiment classifier for online user reviews. More fine-grained sentiment analysis, giving the review for
+each aspect in a review.
+- Developed models for automatic extraction and classification of aspect terms and sentiments using both Conditional Random
+Field (CRF) and Support Vector Machines (SVM).
+Technologies: Java, Shell Scripting, Machine Learning, Support Vector Machines.
+
+Relevant Projects
+
+o End-to-End Speech Recognition Using Recurrent Neural Networks
+- Tested different speech recognition techniques based on LSTMs using Connectionist Temporal Classification loss.
+- Performed experiments using different models with language models on the Wall Street Journal Dataset.
+- Currently testing and implementing models based on dilated causal convolution layers.
+Technologies: Python, Tensorflow, NumPy, Neural Networks
+
+o Faster R-CNNs with Modified Region Sampling
+- Implemented Faster R-CNN framework using TensorFlow and tested it on Pascal VOC 07, 12 and MS COCO datasets.
+- Proposed modifications to the region proposal method, which slightly improved the mAP during testing.
+Technologies: Python, TensorFlow, Deep Learning, Convolutional Neural Network, Deep Residual Networks
+
+o Distributed Convolutional Neural Network using TensorFlow
+- Implemented deep convolutional neural networks in TensorFlow for distributed training.
+- Trained and tested the model using the CIPAR-10 dataset for building an image classifier.
+- Developed the program to perform parallel distributed training on several nodes on Google Cloud reducing the training time by
+almost 40%.
+Technologies: Python, TensorFlow, Deep Learning, Convolutional Neural Network
+

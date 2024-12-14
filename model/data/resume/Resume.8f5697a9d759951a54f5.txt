@@ -1,0 +1,62 @@
+--- Page 1 ---
+Jared Kozar
+New York, NY
+917-656-1034 | jared.rkozar@gmail.com
+Website: www.jaredrkozar.com | LinkedIn: https://www.linkedin.com/in/jaredkozar/ | GitHub: https://github.com/jaredrkozar
+
+OBJECTIVE SUMMARY:
+
+Seeking a position at a company where I can maximize my 2+ years of app development experience using Swift and SwiftUI to
+contribute to innovative projects that delight and excite users. Strong advocate for building visually appealing products while
+maintaining excellent code quality and top-tier performance.
+
+TECHNICAL KNOWLEDGE:
+
+Languages: Swift, UIKit, SwiftUI, React, HTML, CSS, JavaS cript, Object-oriented programming
+
+Programs: Xcode, Git, GitHub, Sketch, Adobe Photoshop
+
+Technologies: MVC, MVVM, Auto Layout, Storyboards, Core Data, Combine, RESTful APIs, AVKit, VisionKit, Core Graphics
+
+EDUCATION:
+
+University of Hartford, Hartford, CT August 2019 - May 2023
+Dual Major: Bachelor of Science, Computer Science and Bachelor of Arts, Multimedia Web Design
+
+Overall GPA: 3.88, Summa Cum Laude
+
+EXPERIENCE:
+Technology Leadership Development Program Intern, Travelers Insurance June 2022 - August 2022
+e Wrote a full stack application using Node and Express to collect data from 4 internal services for debugging user accounts,
+enhancing efficiency and accuracy in issue resolution
+e Collaborated with DevOps engineer to migrate Node.js backend service to a cloud-based architecture using AWS Lambda,
+removing the need to pull from a developer's local machine
+e Designed an easy to use and responsive UI using React and CSS so engineers can easily debug user accounts without having to
+mun a script, which improved employee productivity by 50%
+Computer Science Peer Tutor, University of Hartford October 2022 - May 2023
+e Chosen by the head of CS department to tutor 10 students per week in web development, Java, and data structures, contributing
+to the academic growth and success of the students who I tutored
+e Reviewed course material and helped students develop homework and test-taking strategies that bolstered their academic
+performance
+CS 220 Data Structures and Algorithms Teaching Assistant, University of Hartford August 2022 - December 2022
+e Attended all classes and held office hours twice a week to assist students who needed clarification on code and concepts taught
+in class, ensuring that students received the support they needed to grasp and apply complex programming principles
+
+effectively
+e Checked student work for completeness, plagiarism and functionality, contributing to a fair and high-quality educational
+experience
+PROJECTS:
+SimpleNotes (https://github.com/jaredrkozar/SimpleNotes): March 2022 - Present
+e Independently developed an iOS app using SwiftUI in an MVVM architecture to allow users to take notes using their iPhone,
+iPad, or Mac
+e Created a custom drawing engine using bezier paths and Core Graphics to allow drawing, highlighting, and inserting text and
+straight lines
+
+e Utilized the Google Drive and Dropbox APIs to allow users to upload and download notes and documents to cloud services
+VisionText (https://github.com/jaredrkozar/VisionText) June 2021 - October 2021
+e Created an iOS, iPad, and Mac app with Swift and UIKit in an MVC architecture, and used VisionKit to extract text from any
+image or PDF, and AVFoundation to read the text aloud at a user customizable speed, pitch and volume
+Implemented Core Data to quickly save, update, sort, and retrieve documents
+Designed a native iPhone, iPad, and Mac UI programmatically, with support for toolbars, multiple windows, and context
+menus to enhance the user experience
+

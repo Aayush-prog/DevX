@@ -1,0 +1,87 @@
+--- Page 1 ---
+Shubham Singh
+
+(+91) 910-675-0095 | shubham1.singh15@gmail.com | linkedin.com/in/shubhamsingh20 | shubham-singh.dev
+
+Summary
+
+With a 3 Years of Exp working as a fulltime SDE, specializes in building fullstack applications and Gen AI tech.
+Have working experience in both B2C & B2B Saas environment.
+
+Technical Skills
+
+Languages: Ruby, Python, SQL/PostgreSQL, Javascript /Typescript, PhP
+Frameworks: React, React-native, Ruby on Rails, Django, Laravel
+Developer Tools: Docker, AWS, Kubernetes
+
+Experience
+Enumerate AI - Consumer Insights July 2022 — Present
+Software Development Engineer - AI Feature 2 Yrs, Remote
+
+Python, AWS, Postgres, Typescript, React-native, Next Js
+
+¢ Developed several GenAI features, including thematic analysis, Q&A playground, and content analysis, by utilizing
+Large Language Models like GPT and Mistral, combined with heuristic methods such as clustering and fine-tuning
+
+¢ Created data processing pipelines for media content, including image upscaling, transcription, and speech
+diarization, with data sanitation measures like voice and facial activity detection.
+
+e As a full-stack developer, I successfully transitioned a web application to function on native platforms using React
+Native. This enhancement included the integration of offline capabilities, ensuring seamless operation even in
+regions with limited or no internet connectivity.
+
+¢ Transitioned the existing monolithic architecture to a scalable serverless architecture utilizing AWS ECS Fargate
+and Lambda functions.
+
+NEETPrep EdTech April 2021 - July 2022
+Software Engineer - Fullstack 1 Yr, Remote
+Ruby on Rails, Express, Postgres, GraphQL
+¢ Developed an User Streak feature to track user engagement metrics, resulting in a 20% increase in questions solved
+per month (from 3.5 million to 4.2 million) and a 23% growth in engagement metrics over four months
+
+¢ Improved user experience by eliminating redundant questions using historical analytics data and statistical tools
+like Chi-square and K-means clustering.
+
+¢ Enhanced content delivery by implementing an NLP pipeline for relevant content transcription based on question
+context, utilizing PostgreSQL full text search capabilities with custom stop words and text search dictionary.
+
+e Maintained and developed core product features, including Dynamic Test Generation, Question Bank, and Live
+
+Lectures
+Slick Technologies Jul. 2020 — Dec. 2020
+Software Development Engineer Intern 6 Months, Remote
+
+Laravel, React
+¢ As a Fullstack Developer, contributed in building a comprehensive ERP solution from scratch using React &
+Laravel
+¢ Designed and developed background services to handle Time & CPU intensive tasks
+
+Projects
+
+CodeChef Hackathon - Recommendation Engine | Django, Celery, scikit-learn, Redis
+¢ Developed a recommendation engine for a web application using the CodeChef REST API, personalizing problem
+suggestions with a K-means clustering algorithm for tag-based refinement
+
+¢ Improved performance through an asynchronous task queue, ensuring timely and accurate question
+recommendations
+
+--- Page 2 ---
+Fake News Verification System | python-asyncio, scikit-learn, python-nltk, Keras
+¢ Developed an NLP model to classify the authenticity of news articles, trained on 42k data points, and integrated
+into a web application for asynchronous scraping of relevant news using the News API.
+¢ Achieved 78% accuracy on unseen and untrained data, demonstrating the model’s real-world applicability
+
+DGTOnline - EdTech | Django, Vue Js, MySQL, Nginx, Redis, Firebase
+¢ Developed a platform for test conduction and student record management for national competitive exams,
+collaborating with a local coaching institute.
+¢ Enhanced functionality with custom services like video transcoding and SEO campaigns, serving as the sole
+developer responsible for development, testing, deployment, and understanding business demands, thereby
+improving both technical and business acumen.
+
+Education
+Gujarat Technological university Ahmedabad, IN
+Bachelor of Engineering in Computer Engineering - 9.56 CGPA Aug. 2017 — Jul. 2021
+Kendriya Vidyalaya Gandhinagar, IN
+
+HSC - 79% Mar. 2017
+

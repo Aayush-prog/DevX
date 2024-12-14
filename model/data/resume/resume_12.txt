@@ -1,0 +1,78 @@
+--- Page 1 ---
+Sudeep Agarwal
+2650 Fayette Drive, Apt 4527, Mountain View, CA 94040 + 404-934-8754 « hello@sudeep.co
+LinkedIn: http://www.linkedin.com/sudeepag * Github: https://github.com/sudeepag * Website: http://sudeep.co
+Passionate and driven machine learning engineer with 3+ years of experience designing and developing large scale,
+
+privacy-aware recommendation engines, with a focus on using statistical techniques and applied machine learning to drive
+feature development and product growth.
+
+EDUCATION
+
+Georgia Institute of Technology (Honors Program) Aug 2015 - Dec 2018
+B.S. Computer Science (Artificial Intelligence, Modeling and Simulation specializations) GPA 3.94
+SKILLS
+
+Programming Languages: C, C++, Javascript, Java, Objective-C, Python, R, SQL, Swift, Scala
+Concepts: Agile Development, Artificial Intelligence, Big Data, Cloud Computing, Computer Architecture, Database Management, Image
+Analysis, Mobile Development, Machine Learning, Deep Learning, Natural Language Processing, Parallel Processing, Signal
+Processing, Robotics, System Administration, Data Visualization, Data Mining, Statistical Analysis, Predictive Modeling
+Tools: Spark, Hadoop, Tensorflow, Avro, WebRTC, Flask, Amazon Web Services, Google Cloud Platform, Jupyter, Pandas, Scikit-Learn,
+Numpy, NLTK, PyTorch, Keras, MySQL, PostgreSQL, Tableau, D3
+Spoken Languages: English, Hindi
+
+EXPERIENCE
+
+Machine Learning Engineer (Apple News, Stocks & Weather), Apple — Cupertino, CA Nov 2020 - Present
+* Performed research to identify key issues with ranking algorithms, architected solutions, and presented findings to upper management
+
++ Built infrastructure to run accurate simulations on recommendations, enabling data-driven feature development and regression testing
+
+* Played instrumental role in planning and designing next generation of on-device personalization for News, Stocks, and Weather apps
+
+Software Engineer (Apple News, Stocks & Weather), Apple — Cupertino, CA Mar 2019 - Nov 2020
+* Developed on-device personalization algorithms that improve news recommendations for millions of users and respect user privacy
+
+* Spearheaded features that drove engagement and subscriptions, e.g. location based suggestions, personalized groups in the News+ feed
+* Designed novel architecture that clusters user preferences to guarantee k-anonymity while maintaining high prediction accuracy
+
+Software Engineering Intern (Apple News, Stocks & Weather), Apple — Cupertino, CA May 2018 - Aug 2018
+* Designed and implemented a distributed machine learning pipeline to improve personalization within News, Stocks, and Weather apps
+
+* Researched and implemented novel on-device, privacy-aware machine learning techniques for hyperparameter optimization at scale
+
+* Presented work on on-device hyperparameter search at internal Machine Learning Summit, and deployed project to production
+
+Data Scientist Intern (Sales Strategy & Operations), Cisco Systems — Research Triangle Park, NC May 2017 - Aug 2017
+* Designed an unsupervised machine learning model to predict the effectiveness of Cisco sellers in selling cloud products and services
+
+* Performed statistical analyses including random forest regression and Spearman correlation to determine attributes of top Cisco sellers
+* Developed and piloted an intelligent Cisco Spark bot that improves the sales training experience for potentially 18,000 Cisco sellers
+
+* Placed 2nd out of 18 teams at the Cisco ECN Hackathon for developing a chat bot using natural language processing techniques
+
+Data Science Intern, Vital Labs — San Francisco, CA May 2016 - Aug 2016
+* Developed signal processing routines on human physiological data resulting in improved quality of analysis
+
++ Identified patterns in datasets by conducting extensive data analysis such as silhouette analysis and k-means clustering
+
+* Enhanced signal to noise ratio using machine learning techniques like principal component analysis
+
+* Improved data processing speed by 91% by implementing a parallel computing pipeline on the cloud using Spark
+
+PUBLICATIONS
+
+Federated Evaluation and Tuning for On-Device Personalization: System Design & Applications. Paulik M, Seigel M, Mason H, Telaar D,
+Kluivers J, van Dalen R, Lau CW, Carlson L, Granqvist F, Vandevelde C, Agarwal S, et al. arXiv preprint arXiv:2102.08503 (2021).
+
+Mixed Reality for Learning Programming. Kim J, Agarwal S, Marotta K, Li S, Leo J, and Chau DH.
+In Proceedings of the 18th ACM International Conference on Interaction Design and Children (IDC '19). ACM, New York, NY, USA, 574-579.
+Won the Honorable Mention Award at IDC ‘19
+
+Augmenting Coding: Augmented Reality for Learning Programming. Dass N, Kim J, Ford S, Agarwal S, and Chau DH. In Proceedings of the
+Sixth International Symposium of Chinese CHI (Chinese CHI '18). ACM, New York, NY, USA, 156-159.
+Won the Best Poster Award at Chinese CHI ‘18
+
+Finding Data in a Literary Corpus: A Curatorial Approach. Rittenhouse B, Agarwal S. In Proceedings of Digital Humanities 2018, DH 2018,
+Book of Abstracts, El Colegio de México, UNAM, and RedHD, Mexico City, Mexico, June 26-29, 2018.
+

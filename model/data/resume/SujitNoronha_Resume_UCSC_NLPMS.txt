@@ -1,0 +1,157 @@
+--- Page 1 ---
+As a machine learning engineer, | am passionate about using my skills and
+knowledge to develop solutions to real-world problems and make a positive impact
+
+Sujit Noronha on society
+
+MACHINE LEARNING ENGINEER Education
+
+Bachelor of Engineering Information Technology, Fr. Conceicao Rodrigues
+College of Engineering, Mumbai
+
+Details
+Mumbai
+
+India CGPA: 8.17
++917506000567
+
+sujitnoronha@outlook.com .
+Employment History
+
+Machine Learning Engineer , Quantiphi, Mumbai
+
+Links
+
+Linkedin e Developed scripts to deploy cloud models in multiple regions across the
+
+Github world. Utilized multi-threading to reduce the time taken by 60% for deploying
+
+a multiple models.
+
+e Worked with a client to develop multiple models for an lol-based device
+to handle 5 Million monthly predictions. Trained edge-based models and
+optimized them using TFlite and ONNX to decrease latency and model size
+for edge-based devices.
+
+e Developed scripts that used image processing and computer vision algorithms
+to automatically identify and classify images based on their quality and
+similarity. The scripts implemented algorithms to detect bad images, such as
+those with low resolution, blurriness, or noise, and to group similar images into
+classes. This solution reduced the manual effort and time required to create
+and curate a large dataset of images. The resulting dataset was more reliable
+
+Skills and consistent, and it facilitated downstream tasks such as training machine
+
+Kaggle
+Stack Overflow
+
+Languages
+
+English
+
+Hindi
+
+Python learning models or performing data analysis.
+
+Deep Learning
+
+Internships
+
+Tensorflow
+Machine Learning Engineer Intern , Quantiphi, Mumbai
+e Developed models to recognize movie genres using their summaries.
+Implemented a wide range of models which included LSTM networks and
+transformers. Deployed the solution on the cloud using TensorFlow serving
+to allow a seamless integration into client-side apps.
+Docker e Worked on integrating CNN-based architectures to increase performance
+on datasets. Experimented with hyper-parameter tuning using OPTUNA
+and Keras tuner to help improve performance. Used TensorRT to decrease
+inference time by models.
+
+Machine Learning
+
+Google Cloud Platform
+INS
+SQL
+
+Cube Image Processing and Computer Vision Intern , Yozo Technologies, Mumbai
+
+Django Worked on developing a solution to extract documents and visiting cards in an
+Flask image and extract valuable information to help clients gain insights and customer
+Pytorch details. The solution used a variety of computer vision, NER, and NLP, techniques,
+
+. and a REST API back-end was created to integrate the solution with the application.
+JavaScript
+
+Vue.js
+
+Projects
+
+Pandas
+Edge based Al video surveillance
+
+
+--- Page 2 ---
+Working on a fully automated system for video surveillance. Created edge models
+for action recognition, object detection, face verification. Data from the cameras is
+then transferred using a REST- API built using Django.
+
+https://devfolio.co/projects/rimai-research-in-motion-be2f
+
+Movie genre prediction using summaries
+
+Trained a BERT based model to take in movie summaries and output the genres of
+the movie. Used the hugging face library to train a BERT model. Used tensorflow
+serving to optimize deployment.
+
+Farm Easy
+
+Developed for empowering and helping farmers it included a Video calling
+service, Aadhar Card Verification for the farmers registration, A marketplace for
+the sale of agricultural supplies, Qr code for accessing any inventory details
+within the warehouse, Statistics of warehouse stock, Tracking delivery/ driver
+status using GeoLocation , Websockets support for streaming sensor data.
+https://devfolio.co/submissions/farm-easy-df91
+
+Courses
+
+Deep Learning Specialization, Coursera
+
+Google Cloud Associate Certification, Google Cloud Platform
+Tensorflow in Practice, Convolution Neural Networks, Coursera
+
+Fundamentals of CUDA Computing using NUMBA, NVIDIA
+
+EXTRA-CURRICULAR ACTIVITIES AND
+ACHIEVEMENTS
+
+1st place in CRESENDO
+
+1st Place at a hackathon conducted by Fr.CRCE,Bandra developed a Tourism based
+application using Django and vue.js integrated with Google maps street view and
+sentiment analysis for comment filtering. https://github.com/sujitnoronha/cresendo
+
+2nd place at HACK-A-SOL
+
+Developed a system for helping Blood Donation volunteers to seamlessly find
+the nearest Donation camp. Created a Geo-location based filtering API using
+geopy to sort the distances and display them on a map using google maps API.
+Also included scheduling algorithm to select the best time slot for the donor
+and X-ray detection of COVID-19 to ensure the safety of the blood donors.
+https://github.com/sujitnoronha/hack_a sol 2021
+
+2nd place at InnovateNSUT
+
+Created an application for handling vaccinations in India. Integrated various
+features such as Geo-Location, push- notifications, anomaly detection, Qr
+code based entry system, Distance filtering API's, Web Sockets etc.
+https://devfolio.co/submissions/staysafe-connect-1035
+
+Finalist at Hackverse 2.0
+
+Winner of the best Begineer Hack at a National level hackathon
+
+organized by NIT-Suratkal. Created a deep learning based surveillance system.
+https://devfolio.co/submissions/rimai-research-in-motion-be2f
+
+

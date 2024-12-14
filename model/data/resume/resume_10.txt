@@ -1,0 +1,86 @@
+--- Page 1 ---
+Xinyu (Ivy) Li
+72 Morris St, Jersey City, NJ * 718-406-6863
+x12363@columbia.edu ¢ ivylee.github.io
+
+EXPERIENCE
+Turing Labs Remote
+Lead Machine Learning Engineer Dec 2020 - Current
+
+* Built Turing Lab’s probablistic Machine Learning Service from scratch as the founding ML Engineer.
+
+* Built a multi-disciplinary team, providing strategic direction, mentorship and guidance in driving the successful
+development and launch of AI-assisted formulation design, resulting in multi-million-dollar contract renewals and
+expansions.
+
+* Collaborated with cross-functional teams to define project scope, objectives, and key deliverables, ensuring align-
+ment with business goals and customer needs.
+
+* Developed and maintained customer support processes, addressing technical inquiries and ensuring the timely
+delivery of ML solutions to meet customer needs.
+
+Studio Xolo Jersey City, NJ
+Machine Learning Consultant Sept 2019 - Current
+
+* Implemented engineering best practices in a DARPA funded research project - Multi-agent reinforcement learning
+for economic mechanism design.
+
+* Developed real-time object detection system on drones.
+
+* Developed documentary footage editing software with visual search component.
+
+Phiar Technologies (Acquired by Google) Redwood City, CA
+Cofounder & CTO June 2018 - Aug 2019
+* Participated in Y Combinator 2018 summer batch. Raised seed round funding of $2.5 million.
+
+* Led agile development processes, made several key hires, managed a growing team of research and production
+engineers.
+
+* Designed and implemented deep learning research and deployment pipeline.
+
+* Developed efficient driving scene segmentation models running more than 30 frames per second on iOS devices.
+Shutterstock Inc. New York, NY
+Data Scientist Jan 2015 - May 2018
+
+Prototyped, designed and implemented image auto-tagging feature in computer vision REST API service in Python,
+which improved weekly content submission by 62% on iOS platform and 70% on Android platform.
+
+Designed and implemented AWS ECS-based visual search system consists of an API interface to a deep neural
+network model, a high performance search engine written in C++, an orchestration layer in Python, in conjunction
+with real-time and batch indexing pipelines via RabbitMQ.
+
+Created Python REST API backend for a Chrome plugin prototype which allows users to find visually similar
+images on Shutterstock from any image on any website, won company-wide hackathon in 2017.
+
+Developed an algorithm in Python to cluster visually similar new images, won company-wide hackathon in 2016.
+
+Truveris New York, NY
+Data Scientist Aug 2014 - Jan 2015
+
+* Developed Truveris National Drug Index, a volume weighted price index summarizing the average price of pre-
+scription drugs in the US over a period of time.
+
+Socure New York, NY
+Data Scientist Jan 2014 - July 2014
+
+* Researched and implemented low latency face similarity comparison algorithm in Socure’s identity verification
+REST API service written in Java/Scala.
+
+--- Page 2 ---
+EDUCATION
+
+Columbia University New York, NY
+MA in Statistics Feb 2014
+Guangdong University of Foreign Studies Guangzhou, China
+BS in Mathematics and Applied Mathematics May 2012
+PATENTS
+
+* Computer-vision based positioning for augmented reality navigation. U.S. Patent 10,871,377.
+* Mobile real-time driving safety systems and methods. U.S. Patent 10,573,183.
+
+¢ Augmented reality navigation systems and methods. U.S. Patent 10,495,476.
+
+¢ Migrating image histories between different databases. U.S. Patent 10,585,953.
+
+* Analyzing facial recognition data and social network data for user authentication. U.S. Patent 9,147,117.
+

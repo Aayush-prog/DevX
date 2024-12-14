@@ -1,0 +1,162 @@
+--- Page 1 ---
+ve Onerennes Sr. NODE.JS DEVELOPER
+
+www.Ongraph.com
+
+ABOUT ME PROFESSIONAL EXPERIENCE
+
+lam deeply passionate about SENIOR DEVELOPER (2010 - present)
+
+implementing solutions, using the .
+knowledge and skills at my OnGraph Technologies . .
+disoosal to ease out the | have stared development around 2010 and since then, working
+P . professionally as a developer also as a mentor for providing inspiration for
+challenges you may face in your many people. | have been using MEAN stack development from past 6
+
+business.| am a really apt learner, years and also have special interest in ExpressJS, MongoDB.| keep myself
+very keen on technology and updated with the latest technologies by following different blogs and
+
+clients have access to superior
+and customized business tools.
+
+EDUCATION
+
+BACHELOR OF ENGINEERING (2006 - 2010)
+
+Node JS yyy] |
+
+PROJECT EXPERIENCE
+
+Angular JS
+Javascript
+NodeJS, AngularJS, Bootstrap, MongoDB
+HTMLS Description: Innovate MR is a Survey Management system for
+different customers and provides the Suppliers/Users. In
+CSS Innovate MR Admin dashboard, there are functionality
+
+for:
+e Manage Jobs for a customer and Surveys
+inside that Job
+
+PERSONAL SKILLS Manage customers
+
+Manage Suppliers
+Communication Manage Survey end to end flow
+Record all survey transactions, calculate cost
+io. and profit based on each survey and generate
+Organization
+report
+Creativity Pf | | |
+
+API integration with third party providers
+
+Responsibility A constant scaling and improvisation of
+Architecture and DB is required to make
+available secured and fast offerings promised.
+A very complex and touch to bypass Sample
+Validation has been implemented to ensure
+offering of best quality panelists
+APIs architecture in place allowing one to
+
+
+--- Page 2 ---
+make use of and integrate it's APIs with third
+party apps
+Now supports Innovate MR with Architect,
+DevOps, Back-end development and QA
+services for them
+
+e Team Size - 2
+
+e Role: Backend Developer
+
+DOMAIN EXPERIENCE
+
+Market Research Ly] | |
+Data Analytics yy ||
+~~
+Finance yyy
+
+~ Til
+
+NodeJS, AngularJS, DynamoDB, Bootstrap
+
+Description: Rantcell provides the easy to use dashboard which
+manage cellular testing data for different providers
+
+captured by Rantcell mobile app.
+
+Features:
+Identify zone with no coverage, drop calls, low
+speed, latency and other vitals.
+Rich graphical user interface for analysis and
+reporting on test data.
+View and analyse test data for multiple devices.
+Remotely manage test devices and perform
+online tracking.
+
+Responsibility Created the website from scratch front end,
+backend and API
+Integrate design with templates, controllers and
+integration with web services.
+
+DATABASE EXPERIENCE Team Size - 2
+
+Role : Backend Developer
+MongoDB aaa
+PostgresSQL yy ||
+~ Til
+MsSQL ]
+Sqlite i
+
+NodeJS, AngularJS, Bootstrap, MongoDB
+
+Description: PureSpectrum is an intelligent marketplace for buyers
+and sellers of online sample. As a team of engineers,
+client advocates, and online sampling experts, it's
+mission to reinvent how sample is bought and sold. It
+can deliver any audience, anywhere, with excellent
+quality, at a great price.
+
+Responsibility e Using technologies like node.js, express.js,
+mongodb, angularjs, redis, socket.io and PM2.
+
+In this project there are three type of users-
+Buyer, Supplier and Operator. We are providing
+Api's end point to buyer and supplier.
+
+e These users can access admin Ul according to
+
+Copyright © 2008-2018. OnGraph Technologies Pvt. Ltd. sales@ongraph.com
+
+--- Page 3 ---
+Place - Noida
+
+Date -
+
+Copyright © 2008-2018. OnGraph Technologies Pvt. Ltd.
+
+their roles. Have integrated other third parties
+api's in this project as well.
+
+Handling 7-8k requests per minutes at our
+node.js server. To provide high performance we
+have designed our infrastructure in micro
+service based system. For high availability of
+data we have used replica sets in mongodb
+and for fast access of data we are using redis
+db also.
+
+Using AWS tools to deploy this project on
+production, for version control system we have
+used BitBucket ,for app monitoring we are using
+Newrelic.
+
+Integrated other third parties api's.
+
+Team Size - 2
+
+Role :Backend Developer
+
+sales@ongraph.com
+

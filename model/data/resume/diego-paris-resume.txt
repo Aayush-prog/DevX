@@ -1,0 +1,64 @@
+--- Page 1 ---
+LinkedIn:
+
+Diego M. Paris Figueroa
+
+Phone: 939-413-3841 | Email: diego.paris@upr.edu | Address: Mayagtiez, PR | GitHub: Diego-Paris
+
+Education
+BACHELOR OF SCIENCE IN SOFTWARE ENGINEERING, * Expected Graduation Date: May 2023
+UNIVERSITY OF PUERTO RICO, MAYAGUEZ CAMPUS * Current GPA: 3.29
+
+Relevant Coursework: Data Structures, Advanced Programming, Algorithms, Programming Languages,
+Introduction to Software Engineering, Foundations of Computing, Calculus, Discrete Mathematics
+
+Technical Skills
+: Software: (proficient) Java, JavaScript, Go, Python, Git. (familiar) Linux, AWS, C#, C language, SQL, HTML/CSS
+: Tools: (proficient) NodeJS, Express, React, GitHub, GitLab. (familiar) PostgreSQL, MongoDB, Django
+
+Work Experience
+VERIZON - CLOUD ENGINEER, INTERN JUNE 2020 - AUGUST 2020
+
+- Developed an API microservice that scans proxies to enforce best code standards and list security vulnerability
+- Enabled an orderly growth from a total of 1500 published proxies to 5000 high-quality services within the year
+: Designed a fully robust backend service in NodeJS capable of high-performance speed and reliability on demand
+- Led weekly meetings as SCRUM Master on a team of 6 engineers. Ensuring the principles of AGILE development
+
+UNIVERSITY OF NEW MEXICO - RESEARCH AND DEVELOPMENT INTERN JUNE 2019 - AUGUST 2019
+
+- Researched into Renewable Energy Resources and the optimized use through smart devices and software
+
+- Reduced data visualization delay by a total of 90% by applying Data Structures concepts, reducing complexity
+: Created a data acquisition application in Python to accurately store and visualize stored data using Matplotlib
+
+- Wrote an in-class laboratory based on research findings for UNM’s introductory Electrical Engineering course
+
+Project Experience
+
+SIGNS FOR CARE - FULL-STACK WEB DEVELOPER JULY 2020 - PRESENT
+: Designing a full-stack education platform to make American Sign Language more accessible to communities
+
+: Developing a responsive User Interface with ReactJS using Material Design for an easy-to-use user experience
+- Building the backend in NodeJS with full storing and retrieval of information from a remote MongoDB database
+PROJECT OWL UPRM STUDENT DIVISION - C LANGUAGE DEVELOPER AUGUST 2019 - PRESENT
+- Aided in the development of an emergency mesh network for real-time communication during natural disasters
+- Maintained the node units found throughout the campus by updating and replacing damaged or outdated nodes
+NODE.JS CRUD API - NODE.JS SERVER DEVELOPER JULY 2020
+- Created an API in NodeJS capable of receiving authorized requests and complete actions to a no SQL database
+
+: Developed a MongoDB database to store, retrieve, update, and delete user information organized in collections
+BROTHER ASTEROID - JAVA GAME DEVELOPER DECEMBER 2019
+- Designed a unique version of the Asteroid game written in Java, applied concepts learned from Data Structures
+- Accomplished an optimized user experience by developing quick and responsive controls and fast gameplay
+
+Leadership Experience
+
+IEEE UPRM STUDENT CHAPTER - VICE PRESIDENT DECEMBER 2019 - PRESENT
+- Advanced the study of different fields of engineering by collaborating with other local IEEE student branches
+- Engaged with a community consisting of over 200 members, providing available opportunities for development
+: Organized professional development activities for the student community and recognized by the national IEEE
+COMPUTER SOCIETY UPRM CHAPTER - VICE PRESIDENT AUGUST 2019 - PRESENT
+
+- Promoted Computer Science studies in the community by organizing interactive workshops and hackathons
+- Provided tutorship in multiple technical workshops tutoring on different fields of Software Engineering
+

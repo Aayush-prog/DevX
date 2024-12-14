@@ -1,0 +1,64 @@
+--- Page 1 ---
+Deep M. Mehta | Full Stack Software Developer deepmehta.co.in
+dmmehta2@ncsu.edu | 984-286-7140 | github.com/deep-mm | linkedin.com/in/deepmehta97 | Raleigh, NC 27606
+
+Graduating May ‘24 and actively seeking full-stack software developer positions to leverage my 3+ years of experience
+and expertise in cutting-edge technologies.
+
+EDUCATION
+North Carolina State University, Raleigh, NC
+Master of Computer Science, Aug 2022 - May 2024 GPA: 4.0/4.0
+K J Somaiya College of Engineering, Mumbai, India
+Bachelor of Technology in Computer Engineering, Aug 2015 - May 2019 GPA: 9.1/10.0
+SKILLS
+Languages: C#, Java, Python, Ruby, Javascript, SQL
+Web & Mobile: Angular, React, Android (XML, Java), React-Native, Ruby on Rails, Django
+Cloud: Azure, AWS, Firebase
+Azure: App-Service, Functions, AD, KeyVault, APIM, SQL, CosmosDB, Queue, Redis, loT-
+Hub, App-Gateway, Load-Balancer, VNet, VPN, Storage, Cognitive-Services, FHIR
+DevOps: Azure-DevOps, GitHub Actions, Terraform, ARM-Templates, Ansible, Kubernetes
+
+WORK EXPERIENCE
+
+Software Development Engineer Intern, Amazon, Seattle, WA May 2023 - Aug 2023
+e Full stack software development — Mobile App (React Native), Backend APIs (Java), Cloud (AWS)
+e Integrated AWS Textract-powered OCR feature into mobile app, reducing manual effort for 50K+ monthly active
+users by 85% and enhancing operational efficiency
+
+Technology Consultant, Microsoft, Hyderabad, India Jul 2019 — Jul 2022
+
+e Full stack software development — Web Apps (Angular, React), Backend APIs (C#, Java), Cloud (Azure)
+
+e loT— Healthcare customer, utilized Azure FHIR, loT Hub, Functions, App Service to develop a fully functional loT
+based platform for researchers to collect and analyze data from participant Fitbit devices
+
+e Cloud Governance — Banking customer, secured their cloud infrastructure with Azure Policy. Led a team for 18
+months and my efforts were recognized in the form of Spark award for a successful delivery
+
+e DevOps — Automation pipelines with Azure-DevOps and GitHub Actions. Continuous Integration, Deployment,
+Quality, Security and Operations. Developed IPs, hosted masterclasses to educate and sell to customers
+
+e = Infrastructure — Infrastructure as code with ARM-Templates and Terraform to deploy resources to cloud
+
+e =Scripting — Extensive scripting with Ansible, PowerShell and Unix Shell to automate configurations
+
+e Certifications — Azure Solutions Architect, Azure DevOps Engineer, Kubernetes Certified Application Developer
+
+e Awards — Best Consultant 2021, Spark Award 2021, Super Rookie 2020
+
+PROJECTS
+
+Generative Al: Designed and implemented an innovative GitHub bot, harnessing the capabilities of advanced
+Language Models (LLMs), to automate the generation of Continuous Integration (Cl) workflows within GitHub,
+enhancing efficiency and productivity. [github.com/apps/devops-lIlm-bot]
+
+Azure Cloud Solution: Engineered an ultra-secure password management solution leveraging Azure's cutting-edge
+security and networking capabilities, incorporating Azure AD, Azure KeyVault, Azure VNet, and Azure APIM, to ensure
+top-notch data protection and access control.
+
+DevOps: Created an IP solution bridging Azure DevOps' library group features with GitHub Actions, widely adopted
+across large Microsoft projects, and available on GitHub Marketplace as an open-source tool.
+
+Mobile App: Won first prize in an app development marathon for Oncue, a groundbreaking Android reminder app that
+utilizes Bluetooth to trigger reminders based on vicinity of a person, amassing over 500 downloads on Google Play Store.
+

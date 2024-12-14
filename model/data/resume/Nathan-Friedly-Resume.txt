@@ -1,0 +1,133 @@
+--- Page 1 ---
+Nathan Friedly
+
+Engineering Leader
+
+Smart, driven engineer and leader. Built companies and products from the
+ground up, managed remote teams, and shipped software used by millions.
+
+Recognized expert in JavaScript/Node.js/web development. Contributed
+code to Node.js core, and ranked in the top 1% of JS developers worldwide. !
+
+Wide breadth of experience covering AI, DevOps, loT, Data Science, UI/UX
+and languages including C#, Python, Go, Rust, HTML, CSS, and others.
+
+Select Work Experience More at http://nfriedly.com/portfolio
+
+11/2019 — present
+
+e Android and iOS mobile development in Rust, Java, Objective-C, and
+JavaScript for frameworks such as Ionic, React Native
+
+Staff Software Engineer, FullStory
+
+e Reduced bandwidth usage by over 90% by improving image handling
+e Full-stack web development in TypeScript and Go
+
+Senior Software Engineer, Tanium 12/2017 — 10/2019
+© Web and Systems development with Node.js, AngularJS, React, C++, Python
+e Scaled features to handle millions of endpoints with sub-second response times
+e End-to-end testing (e2e) that included creating fully virtualized networks
+
+e Provided mentoring, security training, and code reviews
+
+8/2014 — 12/2017
+
+e Led teams, mentored individuals, and gave training sessions
+
+Advisory Engineer, IBM Watson
+
+¢ Shipped node.jsand Speech JS SDKs with clean APIs and extensive testing
+e Presented at Devoxx, Tech Crunch Disrupt, RoboUniverse , and other events
+
+e Developer Cloud website — assisted redesign, improved performance by 15x
+
+4/2010 — 8/2014
+e Led front-end engineering team with JavaScript and AngularJS
+¢ Grew API to >1 billion requests/month with Java, PostgreSQL, & Memcached
+
+Principal Engineer, Sociable Labs
+
+e Analytics, A/B testing, and data science to drive product improvements
+
+e Set up continuous integration and authored a suite of automated tests
+
+6/2004 — present
+
+e Managed a world-wide team of first class designers and developers
+
+Founder, Incline Digital
+
+e Websites, apps, games, automation, and other projects for BMW, Atari,
+Cincinnati State University, Sunny Delight, and many other brands
+
+2/2005 — 8/2008
+
+e Led team building an insurance-focused SAAS product with sales tracking,
+leaderboards, appointment reminders, templated websites for agents, and more
+
+Lead Developer, iBoomerang
+
+Education
+BS Software Development University of Cincinnati. Graduated with Honors.
+AAS Web Development Sinclair Community College. Graduated with Honors.
+
+AAS Network Engineering Sinclair Community College. Graduated with Honors.
+
+1. Rankings by Elance.com, recorded in 2013, 2014, and 2015.
+
+937.409.1337
+
+nathan@nfriedly.com
+
+www.nfriedly.com
+github.com/nfriedly
+
+Side Projects
+
+Space Jump
+
+A JS/canvas game I built over
+a Christmas vacation —
+keyboard control on desktop
+and touch/tilt on mobile.
+nfriedly.github.io/space-jump/
+
+Express Rate Limit
+
+A simple rate-lmiting
+middleware for Express that
+turned out to be my most
+popular module ever.
+npmijs.com/package/express-rate-limit
+Coin Allocator
+
+Automated Bitcoin trading bot.
+Was profitable until the
+exchange got hacked and lost
+all of the coins ®
+
+github.com/nfriedly/coin-allocator
+
+Tipp JS Meetup
+
+JavaScript meetup I started in
+Tipp City in 2012. My
+presentations included Node,js,
+Jasmine, RequireJS, Raspberry
+Pi. Later joined forces with
+Gem City JS.
+http://gemcityjs.com/
+
+Unblocker
+
+Extensible, high-performance
+Node,js library for proxying
+and modifying websites.
+
+npmjs.com/package/unblocker
+
+June 2011
+June 2007
+June 2007
+

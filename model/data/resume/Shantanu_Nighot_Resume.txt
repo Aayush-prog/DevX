@@ -1,0 +1,127 @@
+--- Page 1 ---
+Shantanu Nighot
+
+Self-taught python developer
+
+Website: magbanum.com
+
+Introduction:
+
+lam an engineering graduate, who enjoys learning new technologies and creating
+interesting things on the internet. | Know Python and am currently familiar with development to
+deployment processes of technologies like Django and Heroku. | am looking for a career ina
+professional environment where | can implement and improve the skills and knowledge gained
+during my learning years.
+
+Experience:
+
+Associate Technology L1 May 2022 - Present
+Publicis Sapient
+Bangalore - WFH
+
+Junior Associate Technology Oct 2021 - May 2022
+Publicis Sapient
+Bangalore - WFH
+
+Education:
+
+Bachelor's degree in Electrical Engineering Aug 2016 - Aug 2021
+Rajiv Gandhi College of Engineering and Research, Nagpur
+Aggregate: 63.94 %
+
+HSC in Electronics Aug 2015 - June 2016
+Tarkunde Dharampeth Junior College, Nagpur
+Aggregate: 64.42 %
+
+SSC in Science Aug 2013 - May 2014
+Sanskar Dhnyanpeeth School, Samudrapur
+Aggregate: 82.33 %
+
+--- Page 2 ---
+Skills:
+
+Technologies: Python, Django, Html, CSS, Diango REST Framework,, Git, SQL, Java
+IT skills: Web development, Python programming, Web scraping
+Soft skills: Problem-solving, Team management, Teamwork & Collaboration, Remote working
+
+Working Knowledge: JavaScript, Heroku, Bootstrap
+
+Projects:
+
+Octoprofile, a Django project
+Python, Django, HTML, CSS, GitHub API, REST API, Heroku. ChartJS, ListJS
+> Visualize the GitHub profile in a better way with Charts and the top repos sorted
+according to stars, forks and sizes.
+> Uses GitHub API to get user data from GitHub.
+> Javascript libraries like ChartJS and ListJS are used for data visualization and list
+
+operations like sorting.
+
+One for all blog, a Django project
+
+Python, Django, HTML, CSS, Bootstrap, REST API, Heroku.
+> A blogging platform built with Django and deployed on Heroku.
+> It supports Markdown in writing a blog article more effectively.
+> Provides restful API endpoints for accessing posts and users.
+
+Electro-adhesive bot, B.E. final-year project
+Power Electronics, Control System, Motors, Electro-adhesion
+> Study of wall-climbing robots using electro-adhesive pads.
+> A robot is capable of climbing on any vertical surface and can be controlled with a wired
+controller.
+> Studied working of HAMR-E robot, a vertically climbing robot made by Haward.
+
+--- Page 3 ---
+Certifications:
+
+MongoDB Basics by MongoDB University 12 July 2021
+Learned Importing, Exporting and Querying data, Creating & Manipulating Documents,
+Advanced CRUD operations, Indexing & Aggregation pipelines, and Atlas products.
+
+Python: Data structures by Coursera 01 Apr 2021
+Learned about basic data structures like strings, files, lists, dictionaries, and tuples. Also, |
+learned different operations like list comprehension, slicing, looping and sorting.
+
+Achievements:
+
+e Successfully cleared “TCS-NQT 2021”, a National Qualifier Test organized by TCS every
+year, with a score of 1400/1800.
+
+e Ranked among the Top 100 Coders in “CODE CHAMP 2020", an online coding Competition
+organised by Innovinc Services.
+
+Hobbies & interests:
+
+e Dancing
+
+e Technical writing
+
+e Graphics Designing
+
+e Full-stack development
+
+Personal profile:
+
+Father's Name: Prakash Nighot
+Mother's Name: Dipa Nighot
+Address: Nagpur, Maharashtra, India
+Date Of Birth: 29th June 1999
+Languages: English, Marathi, Hindi
+
+--- Page 4 ---
+Declaration:
+
+| hereby acknowledge that the information furnished above is correct to the best of my
+
+knowledge.
+
+Place: Nagpur, Maharashtra, India Shantanu Nighot
+
+Profile links:
+
+LinkedIn: www.linkedin.com/in/shantanu-nighot
+GitHub: https://github.com/magbanum
+Portfolio: magbanum.com
+
+Blog: magbanum.tech
+

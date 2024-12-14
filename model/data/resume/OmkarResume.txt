@@ -1,0 +1,147 @@
+--- Page 1 ---
+Omkar Pathak
+
+SENIOR SOFTWARE ENGINEER
+Pune, Maharashtra, India
+0 (+91) 8087996634 | Somkarpathak27@gmail.com | @www.omkarpathak.in | £) OmkarPathak | omkarpathak27
+
+Experience
+
+Ellicium Solutions Pune, Maharashtra, India
+SENIOR CONSULTANT May 2022 - Present
+
+« Led the designing, developing and supporting enterprise-grade of two SaaS products using Microsoft stack on Azure
+
++ Managed a team of 11 developers and 9 developers respectively, for each SaaS product development. Collaborated with cross-
+functional teams, including supply chain, procurement, and IT, to define requirements, develop solutions, and implement the appli-
+cation
+
++ Conducted data analysis and risk assessments to identify critical supply chain risks and develop mitigation strategies
+
++ Oversaw the integration of the application with external data sources to provide real-time risk monitoring and alerts
+
++ Worked closely with the user interface and user experience (UI/UX) team to ensure the application was user-friendly and intuitive
+
+* Conducted various workshops on Python, Data Science, Machine Learning, and software development life cycles
+
++ Led and developed various PoCs with engagement to major product deliverables
+
+Numerator Pune, Maharashtra, India
+PYTHON ETL ENGINEER November 2020 - May 2022
+
+« Responsible for designing, setting up, and implementing ETL pipelines using Airflow for ensuring smooth data transfers between
+required sources
+
+Developed Airflow framework for fetching data from various data sources like emails, PostgreSQL database, oracle database, CSV
+files; performing data transformations and storing it in snowflake data warehouse
+
++ Author and maintainer for CI/CD pipelines for deployments in various environments
+
++ Developed various REST APIs for Numerator data lake products
+
+Schlu mberger Pune, Maharashtra, India
+DATA ENGINEER July 2018 - November 2020
+
++ Developed and managed custom containerized data ingestion framework using Nifi
+
++ Author and maintainer of Source to Hub project which loads data directly from the source into google bigquery. The project mainly
+aimed at eliminating intermediate data loading in native Hadoop clusters for more efficiency, reliability, and speed
+
+« Responsible for implementing and managing an end-to-end CI/CD Pipelines with custom validations for Informatica migrations
+which brought migration time to 1.5 hours from 9 hours without any manual intervention
+
++ Enhancing, auditing and maintaining custom data ingestion framework that ingests around 1TB of data each day to over 70 business
+units
+
++ Working with L3 developer team to ensure the discussed Scrum PBIs are delivered on time for data ingestions
+
++ Planning and Executing QA and Production Release Cycle activities
+
+Truso Pune, Maharashtra, India
+FULL STACK DEVELOPER INTERN June 2018 - July 2018
+
++ Created RESTful APIs using Django REST Framework
++ Created event-based fully dynamic frontend using Angular 5/6
+* Developed and managed MySQL databases and RDBMS architecture
+
+Propeluss Pune, Maharashtra, India
+DATA ENGINEERING INTERN October 2017 - January 2018
+
++ Wrote various automation scripts to scrape data from various websites that were managed by messaging queue using Celery
+pipelines and RabbitMQ
+
+« Applied Natural Language Processing to articles scraped from the internet to extract different entities in these articles using entity
+extraction algorithms and applying Machine Learning algorithms like Naive Bayes to classify these articles
+
++ Applied KNN with LSA for extracting relevant tags for various startups based on their works
+
+Personal Projects
+
+OMKAR PATHAK - RESUME 1
+
+--- Page 2 ---
+Pyresparser AP|/Python Package
+July 2019 - Present
+
++ Asimple resume parser used for extracting information from resumes
+
++ Extract information from thousands of resumes in just a few seconds
+
++ Author and maintainer of this project
++ 300k+ downloads on Github
+
+Pygorithm API / Python Package
+
+July 2017 - Present
++ Author and maintainer of this project
+« An educational library to teach all the major algorithms
+* Got covered in Fosstack, FullStackFeed, Kleiber and Tagged under Hotest Github Project on ITCodeMonkey
++ 35k+ downloads on Github
+
+Education
+Marathwada Mitra Mandal’s College of Engineering Pune, Maharashtra, India
+B.E. IN COMPUTER ENGINEERING 2014 - 2018
+
+Skills
+
+Programming Languages: Python, C, PHP, C++, Shell Script
+Frontend Technologies: HTML, CSS, JavaScript
+Backend Technologies: Django, Flask (Python)
+Operating Systems: Linux, Unix, Windows
+Databases: MySQL, PostgreSQL, SQLite, MongoDB, Snowflake
+DevOps/Tools: C1/CD (Travis Cl, Github Actions, Azure DevOps), Docker, Kubernetes, Apache Airflow
+Other: | Git, NLP, Scikit-Learn, Cloud (GCP, Azure, DigitalOcean)
+
+Honors & Awards
+
+. . oe . ; Schlumberger,
+2020 Winner at Paintball competition , organized by Commerzone IT Park in Jan 2020
+
+India
+
+2018 Top rated Python developer, in Pune and Fifth in India at Github India
+
+2018 Quora Top Writer, awarded for active contribution for technical QnA India
+
+2018 Awarded ‘The Best Outgoing Student Award 2017-18’, based on overall performance MMCOE, Pune
+
+2018 Won 2nd Prize, in an Hackathon organized by MIT-ADT Persona Fest 2018 Pune
+Best Paper Award, in National Level Conference on “Emerging Trends in Computing , Analytics
+
+2018 MMCOE, Pune
+
+and Security - 2018”(NCETCAS-2018)
+
+Interests
+
+e  |llustrating
+e Competitive Programming
+e Photography
+
+e Sketching
+e Reading/Writing on Quora
+
+e Contributing to Open Source projects
+
+OMKAR PATHAK - RESUME 2
+

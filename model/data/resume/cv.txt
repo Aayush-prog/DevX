@@ -1,0 +1,293 @@
+--- Page 1 ---
+Monisha Jegadeesan
+
+SOFTWARE ENGINEER, GOOGLE
+
+2015-2020
+
+2015
+2013
+EE
+
+Dec 2022 -
+Present
+
+Aug 2020 -
+Nov 2022
+
+May 2019 -
+July 2019
+
+May 2018 -
+July 2018
+
+Sep 2019 -
+May 2020
+
+May 2017 -
+July 2017
+
+[Publication
+and Poster]
+
+[Publication
+and Poster]
+
+[Poster]
+
+[Filed Patent]
+
+§) +91 9035212894
+
+& monishaj.65@gmail.com
+“fl monisha-jega.github. io
+® monisha-jega
+
+() monisha-jegadeesan
+
+Education
+
+Dual Degree (B.Tech + M.Tech) in Computer Science and Engineering
+
+Indian Institute of Technology Madras, Chennai, India CGPA: 8.78
+XII - Karnataka Board, KLE Society’s Independent PU College, Bangalore 97.30 %
+X - ICSE, B P Indian Public School, Bangalore 96.33%
+
+Professional Experience
+
+Software Engineer, Level IV, Google LLC, New York
+o Working on Keep, a notetaking editor in Google Workspace.
+
+Software Engineer, Level IV, Google India Pvt Ltd, Bangalore
+
+© Developing intelligent features for the Google Workspace Editors (Docs, Slides, Keep, etc) using my expertise on the
+products’ client-side software, supporting tools and libraries, and natural language processing infrastructure.
+
+o Using cutting-edge frontend tools like Web Assembly and Emscripten, and Google-internal technologies like j2Cl,
+client-side cross-platform frameworks and build systems, to develop user-facing features such as spellcheck in encrypted
+documents for five languages and writing style suggestions for English text.
+
+© Formulating technical designs for independent end-to-end problems, driving cross-team collaboration, upholding software
+reliability practices, technical-debt resolution and documentation, and proactively identifying areas of future work.
+
+© Guiding junior engineers on programming and software design tasks to enable timely delivery of products to customers.
+
+Software Engineering Intern, Google India Pvt Ltd, Bangalore
+
+Worked on the Editors client-side software infrastructure to develop a user interface with control options to undo or provide
+feedback on the correction and a logging framework, for the Google Docs text auto-correction feature.
+
+Research Intern, Big Data Experience Labs, Adobe Research, Bangalore
+
+Developed a mobile application for Text to Scene Conversion in Augmented Reality, based on novel research techniques
+for prediction of three-dimensional object sizes and positions from textual features.
+
+Research Experience
+
+Paraphrase Generation with a Bilingual Model and Continuous Embeddings
+
+Master's Thesis, Language Technologies Institute, Carnegie Mellon University
+
+Machinated a novel technique for paraphrase generation using the von Mises-Fisher (vMF) Loss on a transformer network,
+and showed that it produces superior paraphrases as compared to the log-likelihood model by employing bilingual data to
+induce zero-shot paraphrasing, guided by Prof. Yulia Tsvetkov.
+
+Cognitive Approach to Natural Language Processing
+
+Research Intern, Department of Computer Science and Automation, Indian Institute of Science (11Sc), Bangalore
+Developed a cognitive text parser that combines syntactic and semantic approaches, to process textual data into cognitive
+structural representations, to be used as a feature extractor for downstream NLP tasks, and demonstrated the correlation
+of the extracted cognitive features with semantic and syntactic text features, guided by Prof. Veni Madhavan.
+
+Publications and Patents
+
+Improving the Diversity of Unsupervised Paraphrasing with Embedding Outputs (Paper, Poster)
+Monisha Jegadeesan, Sachin Kumar, John Wieting, Yulia Tsvetkov
+
+In Workshop on Multilingual Representation Learning,
+
+The 2021 Conference on Empirical Methods in Natural Language Processing (EMNLP 2021)
+
+Adversarial Demotion of Gender Bias in Natural Language Generation (Paper, Poster)
+
+Monisha Jegadeesan
+
+In ACM CODS-COMAD 2020 - Young Researchers’ Symposium
+
+ARComposer: Authoring Augmented Reality Experiences through Text (Poster)
+
+Sumit Kumar, Paridhi Maheshwari, Monisha Jegadeesan, Amrit Singhal, Kush Kumar Singh, Kundan Krishna
+In ACM User Interface Software and Technology Symposium 2019 (ACM UIST 2019)
+
+Visualizing Natural Language through 3D Scenes in Augmented Reality
+
+Sumit Kumar, Paridhi Maheshwari, Monisha Jegadeesan, Amrit Singhal, Kush Kumar Singh, Kundan Krishna
+Filed at the US PTO (Application Number: 16/247,235)
+
+--- Page 2 ---
+[Publication
+and Poster]
+
+July 2019 -
+Dec 2019
+
+March 2019 -
+April 2019
+
+Aug 2018 -
+Dec 2018
+
+July 2018 -
+Dec 2018
+
+Oct 2018 -
+Nov 2018
+
+Feb 2018 -
+March 2018
+
+Nov 2016 -
+Dec 2016
+
+Nov 2017
+
+Sept2017 -
+Oct 2017
+
+Jan 2020 -
+May 2020
+
+[Statistical
+Learning]
+[Curriculum]
+[Mathematics]
+
+Languages
+Tools
+
+Leveraging Ontological Knowledge for Neural Language Models (Paper, Poster)
+
+Ameet Deshpande, Monisha Jegadeesan
+In ACM CODS-COMAD 2019 - Young Researchers’ Symposium
+
+Projects
+
+Graph Neural Networks for Extreme Summarization
+
+Indian Institute of Technology Madras
+
+Formulated appropriate graph-based deep neural models for the Extreme Summarization (XSum) task with sentence-level
+and/or document-level graphs, and obtained better performance than simple recurrent and hierarchical models.
+Risk-Sensitivity in Multi-Armed Bandits
+
+Indian Institute of Technology Madras
+
+Surveyed and implemented risk-sensitivity methods for stochastic bandit problems, and upgraded the Explore-Then-Commit
+algorithm for VaR and cVaR measures with competent performance.
+
+Leveraging Ontological Knowledge for Neural Language Models
+
+Indian Institute of Technology Madras
+
+Incorporated Weight Initialization in learning word embeddings using the WordNet Ontology for a task in the Construction
+domain, resulting in a faster convergence rate and better representation of domain-specific terms.
+
+Multimodal Dialogue Generation
+
+Indian Institute of Technology Madras
+
+Developed a deep neural model to establish the positive effect of domain features in the performance of image retrieval in
+multimodal dialogue systems and explored the performance of attention and memory-based models with adaptations for
+multimodal dialogue and domain knowledge integration.
+
+Risk-Sensitive Reinforcement Learning
+
+Indian Institute of Technology Madras
+
+Empirically analyzed the existing methods for risk-sensitive reinforcement learning, tested the effectiveness of modified
+versions and proposed a new distance-based risk measure and algorithm for Gridworld.
+
+Summarization and Keyword Extraction using TextRank
+
+Indian Institute of Technology Madras
+
+Analysed the TextRank algorithm for keyword extraction with syntactic filters and augmentation via Explicit Semantic
+Analysis, and for text summarization with exploration of various textual similarity methods.
+
+Scaling Graph Algorithms
+
+Indian Institute of Technology Madras
+
+Implemented optimized graph algorithms for maximum network flow and finding a maximum matching in a bipartite graph
+for real data graphs with up to 10,000 vertices and 100,000 edges.
+
+Skin Disease Diagnostic System
+
+Microsoft code.fun.do Contest, Indian Institute of Technology Madras
+Designed a web application that attempts to diagnose skin diseases based on images of the user’s skin powered by a deep
+neural model trained on a dataset created by scraping images from the web.
+
+Breakout Game
+
+Indian Institute of Technology Madras
+Developed an Android application for the Breakout game with basic playing and scoring features.
+
+Teaching Experience
+
+Natural Language Processing - Course Teaching Assistant, /ndian Institute of Technology Madras
+
+o Designed and evaluated theoretical and practical assignments on various topics in Natural Language Processing.
+
+© Presented lectures on Edit Distance and the Cocke-Young-Kasami (CYK) algorithm, to a class of 70 students.
+
+o Mentored sixteen pairs of students on research projects, with supervision through regular team-wise progress meetings.
+
+Courses
+
+Advanced Deep Learning, Deep Learning, Machine Learning, Natural Language Processing, Reinforcement Learning,
+Multi-Armed Bandits, Probabilistic Graphical Models, Computational Models of Cognition
+
+Computer Networks, Database Systems, Operating Systems, Data Structures and Algorithms, Object-Oriented Programming
+Probability-Statistics-Stochastic Processes, Discrete Mathematics, Linear Algebra, Graph Theory
+
+Skills
+
+C, C++, C#, Java, Python, HTML, CSS, Javascript, Web Assembly
+Unity, ARCore, Android Studio, Stanford CoreNLP, Git, Bootstrap, jQuery, Emscripten, Blaze, j2Cl
+
+--- Page 3 ---
+Libraries
+
+June 2019
+
+June 2016 -
+Dec 2016
+PC
+
+Cultural
+Sports
+
+NLTK, django, scipy, pandas, sklearn, gensim, keras, tensorflow, pytorch
+
+Scholastic Achievements
+
+© First runner-up in the AWS Deep Learning Hackathon held during Shaastra 2018, IIT Madras:
+
+Developed a prototype for image-translation of English text on signboards and posters into vernacular languages.
+o State Rank 17 in Karnataka Common Entrance Test for Engineering, 2015, out of approximately 1.2 lakh students.
+© Topped respective academic institutions in both Class X and Class XII board exams.
+
+Positions of Responsibility
+
+Organizer, Management Team, Tech Intern Connect, Google India Pvt Ltd, Bangalore
+o Member of the central managing committee that organized a networking event hosting technology interns from the city.
+
+Technical Operations Coordinator, Shaastra 2017, Indian Institute of Technology Madras
+© Developed the front-end components of major websites and internal portals for the annual technical fest of IIT Madras.
+
+Extra Curricular Activities
+
+Trained in and have performed the Indian classical dance form of Bharatanatyam for eight years.
+
+Part of NSO (Institute Sports) Basketball during the first year of engineering (2015-2016).
+

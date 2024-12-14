@@ -1,0 +1,143 @@
+--- Page 1 ---
+JOHN H. SMITH
+
+P.O. Box 1673 Callahan, FL 32011 800.991.5187 * info@greatresumesfast.com
+LinkedIn Profile: www.linkedin.com/in/jhs123/
+
+GIS Developer
+
+Top-performing Geospatial software developer and architect who designs and implements innovative IT solutions that enhance
+customer satisfaction and drive business growth
+
+Architectural Strategy | IT Solutions Leader | Technical Versatility & Depth
+~Available for Relocation~
+
+Analytical and highly technical hands-on solutions Geospatial (GIS) Software Engineer with a strong ability to engage IT teams, learn
+new systems, analyze data, manage large-scale technical issues, and optimize site architecture. IT leader who bridges the gap
+between business and technology with solutions that transform technology into usable services while maintaining solution and
+architectural integrity. Thrives on challenge and works well under pressure, with technical expertise to learn new environments quickly,
+locate inefficiencies in code, and provide quick solutions with project management skills that drive a quality software development
+process forward.
+
+¢ Software Development @ Product Management ¢ Defect Management
+Data Modeling ¢ Spatial Analysis @ System Architecture & Design
+¢ Agile Methodologies # Quality Management @ Requirements Analysis
+
+Professional Highlights
+
+e Technical savvy professional who consistently expands knowledge of new technology—expertise in EX/Web
+Development, Geospatial Application Logic, Geospatial Web Services, and Enterprise Database Architecture.
+
+e Expertise in building high-performance solutions, and managing large-scale and aggressive technical projects, including a
+multimillion-dollar enterprise-level Geospatial (GIS) application to support the Regional CAD Interoperability project (RCIP) of
+New Windsor in conjunction with the Department of Homeland Security and MIT Home Labs.
+
+e Honored with Graduate Program Scholarship Award for exceptional academic work in maintaining a GPA of 4.20 during
+Master’s program in Geographic Information Systems (GIS) from the State University.
+
+Technology and Platform Knowledge
+
+Operating Systems: Windows, Linux
+
+Development Environments: — Eclipse, Visual Studio, Microsoft Blend, Adobe Edge Tools
+
+Languages: JavaScript, HTML, CSS, Java, Python, Visual C#, XAML
+
+Database Tools: Microsoft SQL Server, PostgreSQL, Hibernate
+
+Source Control: Subversion (SVN), Sonatype Nexus
+
+Performance Analysis: Web Performance Load Tester
+
+APIs and Frameworks: ExtJS, OpenLayers, GeoServer, ArcGIS, Apache Maven, Spring Framework, Liferay Portal, JBoss BRMS,
+
+Apache Solr, Silverlight
+
+Professional Experience
+
+Streamline—New Windsor, AZ (February 2010—Present)
+LEAD GEOSPATIAL (GIS) SOFTWARE ENGINEER
+
+Technical Roadmaps | Geospatial Software Solutions Expert | Multimillion-Dollar Projects
+
+Top-performing Geospatial Software Engineer with consistent promotional career track consistently sought out to engineer geospatial
+solutions for products. Subject matter leader who drives accelerated growth of the company’s core GIS services and provides cutting-
+edge architectural solutions for scalable software projects. Lead architectural and strategic direction for delivering IT solutions while
+aligning technology roadmaps to the client's business strategy with expertise in Geospatial web services, application logic, and
+enterprise database systems.
+
+e Improved system performance and functionality through cutting-edge design strategy for an enterprise database system—
+
+established standards for database operations, programming, and security.
+
+1| Page
+
+--- Page 2 ---
+JOHN H. SMITH
+
+800.991.5187 * info@greatresumesfast.com
+
+e Architectural leader in the design of Geospatial products and solutions; responsible for producing multimillion-dollar software
+solutions for various government agencies; ensured compatibility, designed system requirements, and developed
+specifications.
+
+e Developed cutting-edge web services applications and iPad applications for the St. Louis County Sheriffs department—
+new system provided real-time data to the system to track patrol unit location.
+
+e Pioneered the first-ever CAD dispatching portal that included development of the Common Regional Operating Picture
+(CROP) application; application provided locations for emergency resources to speed up response time and expand coverage
+areas.
+
+e Trusted advisor to top executive team and recognized for leading complex projects that achieved cost-effective results from
+concept through implementation.
+
+e Developed a CAD and GIS interoperability project using post-Hurricane Katrina to track availability of emergency resources in
+a real time application for New Windsor public safety agencies to streamline coordinated response to emergency situations.
+
+e Exceptionally creative and entrepreneurially-minded professional who utilizes creative solutions to ensure professional
+development.
+
+Texas & Lakeview—Las Vegas, NV (April 2007—January 2009)
+GEOSPATIAL ANALYST, Research Group
+
+GIS Analysis | Automated Processes | Growth Opportunities
+
+Provided GIS analysis for potential real estate initiatives—identified growth opportunities through the development and implementation
+
+of complex geospatial analysis by utilizing a Relational Database Management system (RDBMS) for geospatial data storage. Worked
+cross-functionally across a variety of disciplines including operations and research.
+
+e Spearheaded the development of a project-racking solution using ASP.net, AJAX, and SQL server to increase project tracking
+
+and enhance task automation—solution maximized client productivity and eliminated project overlap.
+
+e Increased client satisfaction by 45% for each specialty area and increased brand awareness up to 70% through the
+application of marketing strategies, developing a tracking system to monitor progress, and researching new analysis
+techniques.
+
+e Increased analysis requests by 95% through the development and implementation of complex geospatial analysis—built a
+solution to analyze large, complex datasets and automated reporting and documentation.
+Simon Ellis (SE)—Las Vegas, NV (April 2001—April 2007)
+SENIOR MAPPING SPECIALIST
+
+Client-Stakeholder Management | Complex GIS Analysis | System Roadmap
+
+Led nationwide GIS services for a $3-billion multinational commercial real estate services firm. Directed geospatial projects for 15
+Offices across the U.S. that included business needs assessment, project management, formulation of analytical testing, workload
+management, and exceptional customer service.
+
+e Reduced project development processing time by 90% through strategic use of assessment and analytical testing.
+
+e Identified project improvements through business requirement analysis and recommendation for a matrix output for multi-
+variant analysis.
+
+EARLY CAREER: GIS Technician/Cartographer—State University—Chad, Research Foundation
+
+Education
+
+Master's degree in Geographic Information Systems (GIS) with emphasis in Software Development—State University
+
+Bachelor's degree in Geographic Information Systems (GIS) and Cartography—Brown State University—Chad
+
+2|Page
+
