@@ -8,7 +8,7 @@ load_dotenv()
 # Google Custom Search API Configuration from .env
 API_KEY = os.getenv("API_KEY")  
 CX = os.getenv("CX")  
-QUERY = "front end developer resume filetype:pdf " 
+QUERY = "node js developer resume filetype:pdf " 
 
 # Custom download directory from .env
 DOWNLOAD_DIR = os.getenv("DOWNLOAD_DIR") 
