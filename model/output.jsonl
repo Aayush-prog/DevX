@@ -1,0 +1,1 @@
+{"image_path": "/data/upload/3/f0e3ef2f-Ameer-Muawia-WordpressDeveloper-Junior-Python-Developer-Resume.-pdf_page_1.png", "input_ids": [0, 3061, 14360, 2], "attention_mask": [1, 1, 1, 1], "bboxes": [[0, 0, 0, 0], [0.004922, 0.026506, 0.01378, 0.02738], [0.005906, 0.010712, 0.01378, 0.012078], [0, 0, 0, 0]], "labels": ["O", "Text", "Handwriting", "O"]}
