@@ -1,0 +1,920 @@
+[
+  {
+    "uid": "1872242232333970459",
+    "ciphertext": "~021872242232333970459",
+    "title": "CVAT Task Specification: Training/Test Mode for Annotation Tasks",
+    "description": "Project Description:\nWe are seeking a skilled <span class=\"highlight\">software</span> <span class=\"highlight\">engineer</span> to implement a new feature in CVAT that allows designating annotation tasks as \"Training\" or \"Test\" mode. This feature will provide different permissions to annotators regarding access to quality analytics and ground truth data, enabling more effective training and evaluation of annotators.\n\nProblem:\nCurrently, CVAT lacks a mechanism to differentiate between annotation tasks used for training purposes and those used for testing annotator performance. \n\nDesired Solution:\nWe require a solution that modifies CVAT to allow designating tasks as \"Training\" or \"Test\" with the following functionalities:\n\nTask Mode Selection:\nA new option should be added to the task creation page, allowing the task creator to select the task mode as either \"Training\" or \"Test.\"\nThis selection can be implemented as a checkbox or a dropdown menu.\n\nAnnotator Permissions:\nTraining Mode (this is the default setting):\nAnnotators assigned to a \"Training\" task will have permission to:\n- View their individual Quality Analytics score.\n- View conflicts between their annotations and the Ground Truth.\n- All other permissions and functionalities for the annotator will remain the same as in the standard CVAT workflow.\n\nTest Mode:\nAnnotators assigned to a \"Test\" task will not have permission to:\n- View their individual Quality Analytics score.\n- View conflicts between their annotations and the Ground Truth.\n\nGround Truth Visibility:\n- The Ground Truth data for a task should be completely hidden from annotators in \"Test\" mode.\n- The Ground Truth data should be visible to the task creator (supervisor) in both \"Training\" and \"Test\" modes.\n\nSkills Required:\nProficiency in Python and Django (CVAT backend).\nExperience with PostgreSQL database.\nFrontend development skills (React).\nGood understanding of REST APIs.\nExperience with Git and version control.\n\nDeliverables:\n- Modified CVAT codebase with the implemented solution.\n- Clear documentation of the changes made.",
+    "createdOn": "2024-12-26T11:25:07.707Z",
+    "publishedOn": "2024-12-26T11:25:08.120Z",
+    "renewedOn": null,
+    "type": 2,
+    "durationLabel": "Less than 1 month",
+    "engagement": "usnuxt_Engagement_421.partTime",
+    "amount": { "amount": 0 },
+    "connectPrice": null,
+    "client": {
+      "location": { "country": null },
+      "isPaymentVerified": false,
+      "totalSpent": null,
+      "totalReviews": null,
+      "totalFeedback": null,
+      "hasFinancialPrivacy": null
+    },
+    "clientRelation": null,
+    "freelancersToHire": null,
+    "relevanceEncoded": "{\"position\":\"0\"}",
+    "enterpriseJob": null,
+    "tierText": "jsn_Intermediate_206",
+    "isApplied": false,
+    "proposalsTier": null,
+    "premium": false,
+    "attrs": [
+      {
+        "uid": "1031626732309299200",
+        "parentSkillUid": null,
+        "prefLabel": "Django",
+        "prettyName": "Django",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1031626773660942336",
+        "parentSkillUid": null,
+        "prefLabel": "React",
+        "prettyName": "React",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "996364628000108546",
+        "parentSkillUid": null,
+        "prefLabel": "PostgreSQL",
+        "prettyName": "PostgreSQL",
+        "freeText": null,
+        "highlighted": false
+      }
+    ],
+    "hourlyBudget": { "min": 8, "max": 15 },
+    "weeklyBudget": { "amount": 0 },
+    "id": "1872242232333970459"
+  },
+  {
+    "uid": "1871966934595563208",
+    "ciphertext": "~021871966934595563208",
+    "title": "Structural <span class=\"highlight\">Engineering</span> for Solar Car Parking Installation – 500 kWp System Simulation and Analysis",
+    "description": "Description:\nWe are seeking an experienced structural <span class=\"highlight\">engineer</span> to perform a detailed structural analysis and simulation for a 500 kWp solar car parking installation. The project involves the design and evaluation of the structural system that will support solar panels at a specific location while considering high wind speeds, as well as the integration of all relevant components such as foundations, base plates, and J-bolts.\nScope of Work:\n•\tProject Overview: A 500 kWp solar car parking system \n•\tWind Speed Requirement: The structure must be designed to withstand 56 m/s for 3-second gusts.\n•\tMaterials: The sections used in the structural design should follow British Standard sections (e.g., Universal Beams, Columns, and Angles).\n•\tSimulation Report: The simulation must include the following:\no\tCalculation of reaction forces on the structure due to wind loads and other forces.\no\tFoundation design to support the solar car parking structure.\no\tBase plates and proper specification of J-bolts.\no\tIntegration of solar modules: The analysis must incorporate the solar panels' layout, including their wind load effects.\n•\tAdditional Documents: We will provide the Bill of Materials (BoM) and the solar panel datasheet for reference and accurate integration of components.\nDeliverables:\n1.\tSimulation Report containing:\no\tComprehensive analysis of reaction forces at key structural points.\no\tDetailed foundation design and base plate requirements.\no\tJ-bolt specifications.\no\tIntegration details of solar modules and their interaction with the overall structure.\n2.\tStructural Drawings (if applicable), including layouts and design calculations based on the simulation results.\n3.\tAny additional design recommendations for enhancing the safety and stability of the solar car parking structure under the specified wind conditions.\nRequired Skills:\n•\tExpertise in structural <span class=\"highlight\">engineering</span> and simulation for high-wind environments.\n•\tFamiliarity with British Standard sections for structural materials.\n•\tExperience in designing solar parking structures, including solar carports.\n•\tProficiency in generating structural reports and providing detailed design calculations.\n•\tExperience with ANSYS, SAP2000, or similar structural simulation <span class=\"highlight\">software</span>.\nPreferred Qualifications:\n•\tBachelor’s or Master’s degree in Civil/Structural <span class=\"highlight\">Engineering</span>.\n•\tSpecific experience with solar car parking systems or solar infrastructure.\n•\tFamiliarity with wind load analysis and solar panel integration into parking structures.\nTimeline:\n•\tThe project is expected to be completed within 2 days from the start date.",
+    "createdOn": "2024-12-25T17:11:11.508Z",
+    "publishedOn": "2024-12-25T17:11:12.525Z",
+    "renewedOn": null,
+    "type": 1,
+    "durationLabel": "Less than 1 month",
+    "engagement": null,
+    "amount": { "amount": 520 },
+    "connectPrice": null,
+    "client": {
+      "location": { "country": null },
+      "isPaymentVerified": false,
+      "totalSpent": null,
+      "totalReviews": null,
+      "totalFeedback": null,
+      "hasFinancialPrivacy": null
+    },
+    "clientRelation": null,
+    "freelancersToHire": null,
+    "relevanceEncoded": "{\"position\":\"1\"}",
+    "enterpriseJob": null,
+    "tierText": "jsn_Intermediate_206",
+    "isApplied": false,
+    "proposalsTier": null,
+    "premium": false,
+    "attrs": [
+      {
+        "uid": "1031626783370756096",
+        "parentSkillUid": null,
+        "prefLabel": "Structural Engineering",
+        "prettyName": "Structural Engineering",
+        "freeText": null,
+        "highlighted": true
+      },
+      {
+        "uid": "1031626757294768128",
+        "parentSkillUid": null,
+        "prefLabel": "Mechanical Engineering",
+        "prettyName": "Mechanical Engineering",
+        "freeText": null,
+        "highlighted": true
+      },
+      {
+        "uid": "1110580702804955136",
+        "parentSkillUid": null,
+        "prefLabel": "Statics",
+        "prettyName": "Statics",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1031626783358173184",
+        "parentSkillUid": null,
+        "prefLabel": "Structural Analysis",
+        "prettyName": "Structural Analysis",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1110580704558174208",
+        "parentSkillUid": null,
+        "prefLabel": "Structural Dynamics",
+        "prettyName": "Structural Dynamics",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1031626782573838336",
+        "parentSkillUid": null,
+        "prefLabel": "STAAD",
+        "prettyName": "STAAD",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1031626781625925632",
+        "parentSkillUid": null,
+        "prefLabel": "SolidWorks",
+        "prettyName": "SolidWorks",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1031626717486628864",
+        "parentSkillUid": null,
+        "prefLabel": "Autodesk AutoCAD",
+        "prettyName": "Autodesk AutoCAD",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1031626786457763840",
+        "parentSkillUid": null,
+        "prefLabel": "3D Modeling",
+        "prettyName": "3D Modeling",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1031626722280718336",
+        "parentSkillUid": null,
+        "prefLabel": "CAD",
+        "prettyName": "CAD",
+        "freeText": null,
+        "highlighted": false
+      }
+    ],
+    "hourlyBudget": { "min": 0, "max": 0 },
+    "weeklyBudget": { "amount": 0 },
+    "id": "1871966934595563208"
+  },
+  {
+    "uid": "1871813640102906924",
+    "ciphertext": "~021871813640102906924",
+    "title": "Custom Data Table to Embed on WP page",
+    "description": "I'm looking for a Data Table expert to build out a Salary Data table for Nursing Salaries.\n\nFeatures we will implement:\n-Collapsible Row (see here for example https://www.levels.fyi/t/<span class=\"highlight\">software</span>-<span class=\"highlight\">engineer</span>?countryId=254&country=254 and see mockup table below)\n-Custom CSS to match styling above below examples\n-Multiple Filters (filter by city, specialty, Years Experience, company, hospital type)\n-Search bar above table where user can type a company/city/specialty and the appropriate facilities appear\n-Pagination\n-Sort row from Highest Number to Lowest\n-Mobile Responsive\n-There are empty fields in my CSV. Ideally empty rows are hidden.\n-No page refresh with filter selection\n-Hide cells that are empty from displaying on frontend (in collapsible row)\n\nStyling and functionality I am shooting for: https://www.levels.fyi/t/<span class=\"highlight\">software</span>-<span class=\"highlight\">engineer</span>?countryId=254&country=254 and see mockup table below\n\nMockup table: We will need to display the fields listed in my mockup. This mockup is also a table design we should shoot for. These fields in this table match the column in my sample data. https://figma.com/design/xezq8KptGoXAg5chYfQsiP/RN-Data-Table?node-id=0-1&p=f&t=pMc56ehYGzMccXTg-0\n\nAll data from this table comes from a CSV file I export from this form: https://form.fillout.com/t/fpXbEuU9Wmus. We don't need automatic syncing between CSV and the DB. I can upload it manually.\n\nPlease respond with \n1) any questions\n2) estimated cost\n3) estimated time to complete\n4) when you can start\n\nLooking to move forward ASAP",
+    "createdOn": "2024-12-25T07:02:03.274Z",
+    "publishedOn": "2024-12-25T07:02:03.552Z",
+    "renewedOn": null,
+    "type": 2,
+    "durationLabel": "Less than 1 month",
+    "engagement": "usnuxt_Engagement_421.partTime",
+    "amount": { "amount": 0 },
+    "connectPrice": null,
+    "client": {
+      "location": { "country": null },
+      "isPaymentVerified": false,
+      "totalSpent": null,
+      "totalReviews": null,
+      "totalFeedback": null,
+      "hasFinancialPrivacy": null
+    },
+    "clientRelation": null,
+    "freelancersToHire": null,
+    "relevanceEncoded": "{\"position\":\"2\"}",
+    "enterpriseJob": null,
+    "tierText": "jsn_Expert_207",
+    "isApplied": false,
+    "proposalsTier": null,
+    "premium": false,
+    "attrs": [
+      {
+        "uid": "1052162208999198724",
+        "parentSkillUid": null,
+        "prefLabel": "WordPress",
+        "prettyName": "WordPress",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1031626728794472448",
+        "parentSkillUid": null,
+        "prefLabel": "CSS",
+        "prettyName": "CSS",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "996364628025274385",
+        "parentSkillUid": null,
+        "prefLabel": "PHP",
+        "prettyName": "PHP",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1031626745110315008",
+        "parentSkillUid": null,
+        "prefLabel": "HTML",
+        "prettyName": "HTML",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "996364628025274383",
+        "parentSkillUid": null,
+        "prefLabel": "JavaScript",
+        "prettyName": "JavaScript",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1031626751737315328",
+        "parentSkillUid": null,
+        "prefLabel": "jQuery",
+        "prettyName": "jQuery",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "996364627995914247",
+        "parentSkillUid": null,
+        "prefLabel": "MySQL",
+        "prettyName": "MySQL",
+        "freeText": null,
+        "highlighted": false
+      }
+    ],
+    "hourlyBudget": { "min": 50, "max": 500 },
+    "weeklyBudget": { "amount": 0 },
+    "id": "1871813640102906924"
+  },
+  {
+    "uid": "1871806745891867692",
+    "ciphertext": "~021871806745891867692",
+    "title": "Customize wpDataTables",
+    "description": "I'm looking for a wpDataTables expert to build out a Salary Data table for Nursing Salary.\n\nFeatures we will implement:\n-Collapsible Row (https://wpdatatables.com/table-with-collapsible-rows/?utm_source=wpdt-lite&utm_medium=lite-upgrade&utm_campaign=wpdt&utm_content=wpdt)\n-Custom CSS to match styling\n-Multiple Filters (filter by city, specialty, Years Experience, company, hospital type)\n-Search bar above table where user can type a company/city/specialty and the appropriate facilities appear\n-Pagination\n-Sort row from Highest Number to Lowest\n-Mobile Responsive\n-Hide cells that are empty from displaying on frontend (in collapsible row)\n\nStyling I am shooting for: https://www.levels.fyi/t/<span class=\"highlight\">software</span>-<span class=\"highlight\">engineer</span>?countryId=254&country=254 and see mockup table below\n\nMockup table: We will need to display the fields listed in my mockup. This mockup is also a table design we should shoot for. These fields in this table match the column in my sample data. Mockup link: https://www.figma.com/design/xezq8KptGoXAg5chYfQsiP/RN-Data-Table?node-id=0-1&p=f&t=Sb6ZX8yHQzZv37cf-0\n\nAll data from this table comes from a CSV file I export from this form: https://form.fillout.com/t/fpXbEuU9Wmus. We don't need automatic syncing between CSV and the DB. I can upload it manually.\n\nSee attached CSV (Updated_v2_Salary_Review_Form_With_Random_Dates) for data sample. Ignore the other CSV. Notice all of the empty cells, this is due to conditional logic in the fillout form. We will ideally hide all of those empty fields on the front end in the collapsible row.\n\nPlease respond with \n1) any questions\n2) estimated cost\n3) estimated time to complete\n4) when you can start\n\nLooking to move forward ASAP",
+    "createdOn": "2024-12-25T06:34:39.572Z",
+    "publishedOn": "2024-12-25T06:34:39.814Z",
+    "renewedOn": null,
+    "type": 2,
+    "durationLabel": "Less than 1 month",
+    "engagement": "usnuxt_Engagement_421.partTime",
+    "amount": { "amount": 0 },
+    "connectPrice": null,
+    "client": {
+      "location": { "country": null },
+      "isPaymentVerified": false,
+      "totalSpent": null,
+      "totalReviews": null,
+      "totalFeedback": null,
+      "hasFinancialPrivacy": null
+    },
+    "clientRelation": null,
+    "freelancersToHire": null,
+    "relevanceEncoded": "{\"position\":\"3\"}",
+    "enterpriseJob": null,
+    "tierText": "jsn_Expert_207",
+    "isApplied": false,
+    "proposalsTier": null,
+    "premium": false,
+    "attrs": [
+      {
+        "uid": "996364628025274383",
+        "parentSkillUid": null,
+        "prefLabel": "JavaScript",
+        "prettyName": "JavaScript",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "996364628025274385",
+        "parentSkillUid": null,
+        "prefLabel": "PHP",
+        "prettyName": "PHP",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1052162208999198724",
+        "parentSkillUid": null,
+        "prefLabel": "WordPress",
+        "prettyName": "WordPress",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1031626728794472448",
+        "parentSkillUid": null,
+        "prefLabel": "CSS",
+        "prettyName": "CSS",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1031626745110315008",
+        "parentSkillUid": null,
+        "prefLabel": "HTML",
+        "prettyName": "HTML",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1031626751796035584",
+        "parentSkillUid": null,
+        "prefLabel": "JSON",
+        "prettyName": "JSON",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1031626720951123968",
+        "parentSkillUid": null,
+        "prefLabel": "Bootstrap",
+        "prettyName": "Bootstrap",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "996364627995914247",
+        "parentSkillUid": null,
+        "prefLabel": "MySQL",
+        "prettyName": "MySQL",
+        "freeText": null,
+        "highlighted": false
+      }
+    ],
+    "hourlyBudget": { "min": 50, "max": 200 },
+    "weeklyBudget": { "amount": 0 },
+    "id": "1871806745891867692"
+  },
+  {
+    "uid": "1870980123406130065",
+    "ciphertext": "~021870980123406130065",
+    "title": "Structural <span class=\"highlight\">engineer</span> / architectural plans / MEP / 3D rendering",
+    "description": "I've created a table outlining a proposed schedule for your 20,000 square foot warehouse project in Lake City, GA. This timeline aims to accomplish all tasks within 90 days, including structural <span class=\"highlight\">engineering</span>, architectural plans, MEP (Mechanical, Electrical, and Plumbing) design, and 3D rendering.\nPhase\tTask\tDuration\tDue Date\tPayment Schedule\n1\tProject Kickoff & Initial Consultation\t3 days\tDay 3\t10% of total fee\n2\tConceptual Design & Schematic Layout\t10 days\tDay 13\t15% of total fee\n3\tStructural <span class=\"highlight\">Engineering</span> Analysis\t14 days\tDay 27\t20% of total fee\n4\tArchitectural Plans Development\t21 days\tDay 48\t20% of total fee\n5\tMEP Design\t14 days\tDay 62\t15% of total fee\n6\t3D Rendering\t14 days\tDay 76\t10% of total fee\n7\tFinal Review and Revisions\t7 days\tDay 83\t5% of total fee\n8\tProject Completion & Deliverables\t7 days\tDay 90\t5% of total fee\nPlease note that this timeline is ambitious and may need to be adjusted based on the structural <span class=\"highlight\">engineer</span>'s workload and the complexity of the project13. The payment schedule is structured to align with key milestones and deliverables throughout the project.\nSome key considerations for the structural <span class=\"highlight\">engineer</span>:\nThe timeline allows for overlap between some phases to maximize efficiency.\nThe structural <span class=\"highlight\">engineering</span> analysis is given priority to ensure a solid foundation for subsequent design work.\n3D rendering is scheduled towards the end of the project when most design elements are finalized4.\nA final review period is included to address any necessary revisions or adjustments.\nWhen presenting this proposal to the structural <span class=\"highlight\">engineer</span>, emphasize that you're open to discussing adjustments to the timeline if needed, while still aiming to complete the project within the 90-day timeframe. Additionally, be prepared to provide any specific requirements or constraints for the warehouse that might impact the design process\n\nMust be licensed in the State of Georgia.",
+    "createdOn": "2024-12-22T23:49:57.388Z",
+    "publishedOn": "2024-12-22T23:49:57.817Z",
+    "renewedOn": null,
+    "type": 1,
+    "durationLabel": "3 to 6 months",
+    "engagement": null,
+    "amount": { "amount": 20000 },
+    "connectPrice": null,
+    "client": {
+      "location": { "country": null },
+      "isPaymentVerified": false,
+      "totalSpent": null,
+      "totalReviews": null,
+      "totalFeedback": null,
+      "hasFinancialPrivacy": null
+    },
+    "clientRelation": null,
+    "freelancersToHire": null,
+    "relevanceEncoded": "{\"position\":\"4\"}",
+    "enterpriseJob": null,
+    "tierText": "jsn_Expert_207",
+    "isApplied": false,
+    "proposalsTier": null,
+    "premium": false,
+    "attrs": [
+      {
+        "uid": "1031626717662789632",
+        "parentSkillUid": null,
+        "prefLabel": "Autodesk Revit",
+        "prettyName": "Autodesk Revit",
+        "freeText": null,
+        "highlighted": true
+      },
+      {
+        "uid": "1052162208781094925",
+        "parentSkillUid": null,
+        "prefLabel": "Architectural Design",
+        "prettyName": "Architectural Design",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1031626717486628864",
+        "parentSkillUid": null,
+        "prefLabel": "Autodesk AutoCAD",
+        "prettyName": "Autodesk AutoCAD",
+        "freeText": null,
+        "highlighted": false
+      }
+    ],
+    "hourlyBudget": { "min": 0, "max": 0 },
+    "weeklyBudget": { "amount": 0 },
+    "id": "1870980123406130065"
+  },
+  {
+    "uid": "1869885395439983777",
+    "ciphertext": "~021869885395439983777",
+    "title": "Mechanical <span class=\"highlight\">Engineer</span> for Dental Implant System Design with Excellent Professional Design Capabilities",
+    "description": "I am a licensed dentist with extensive experience in implantology and have developed a novel dental implant system for retaining removable prosthetic devices. I am seeking a highly skilled and professional mechanical <span class=\"highlight\">engineer</span> with extensive experience in SolidWorks or ANSYS to bring my designs to life and ensure they meet the highest standards of precision and functionality.  An NDA is required before discussing this project.\n\nKey Responsibilities:\n•\tCollaborate to refine and develop existing designs for a dental implant system.\n•\tUtilize SolidWorks or similar <span class=\"highlight\">software</span> to create detailed 3D CAD models.\n•\tConduct finite element analysis (FEA) using SolidWorks and/or ANSYS or equivalent tools to evaluate and optimize designs.\n•\tWork with reputable FEA <span class=\"highlight\">engineers</span> as needed to ensure accuracy and reliability in simulations.\n•\tProvide feedback and suggestions to improve design durability, efficiency, and manufacturability.\n•\tMaintain a professional approach to timelines and deliverables, ensuring projects are completed on time and with meticulous attention to detail.\nRequirements:\n•\tProven experience in mechanical design, preferably in the medical or dental device industry.\n•\tMastery of SolidWorks, ANSYS, or equivalent CAD and FEA <span class=\"highlight\">software</span>.\n•\tStrong understanding of <span class=\"highlight\">engineering</span> principles, particularly in materials and stress analysis.\n•\tAbility to communicate effectively, ask insightful questions, and incorporate feedback.\n•\tA commitment to professionalism, attention to detail, and delivering high-quality work.\nPreferred Qualifications:\n•\tPrevious experience with dental implant or prosthetic device design.\n•\tAccess to and collaboration with reputable FEA <span class=\"highlight\">engineers</span>.\n•\tFamiliarity with regulatory considerations in medical device design.\n\nWhat I Offer:\n\nThis is an exciting opportunity to contribute to an innovative dental implant system. You will work closely with a dedicated professional and have the chance to be part of a project that prioritizes quality and ingenuity. If you meet the above qualifications and are eager to take on this challenging and rewarding project, please submit your proposal, including a portfolio of relevant work.\nLet’s work together to create something extraordinary!",
+    "createdOn": "2024-12-19T23:19:53.896Z",
+    "publishedOn": "2024-12-19T23:19:54.227Z",
+    "renewedOn": null,
+    "type": 2,
+    "durationLabel": "Less than 1 month",
+    "engagement": "usnuxt_Engagement_421.partTime",
+    "amount": { "amount": 0 },
+    "connectPrice": null,
+    "client": {
+      "location": { "country": null },
+      "isPaymentVerified": false,
+      "totalSpent": null,
+      "totalReviews": null,
+      "totalFeedback": null,
+      "hasFinancialPrivacy": null
+    },
+    "clientRelation": null,
+    "freelancersToHire": null,
+    "relevanceEncoded": "{\"position\":\"5\"}",
+    "enterpriseJob": null,
+    "tierText": "jsn_Expert_207",
+    "isApplied": false,
+    "proposalsTier": null,
+    "premium": false,
+    "attrs": [
+      {
+        "uid": "1031626757294768128",
+        "parentSkillUid": null,
+        "prefLabel": "Mechanical Engineering",
+        "prettyName": "Mechanical Engineering",
+        "freeText": null,
+        "highlighted": true
+      },
+      {
+        "uid": "1031626735194980352",
+        "parentSkillUid": null,
+        "prefLabel": "Engineering Design",
+        "prettyName": "Engineering Design",
+        "freeText": null,
+        "highlighted": true
+      },
+      {
+        "uid": "1031626713044860928",
+        "parentSkillUid": null,
+        "prefLabel": "ANSYS",
+        "prettyName": "ANSYS",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1031626781625925632",
+        "parentSkillUid": null,
+        "prefLabel": "SolidWorks",
+        "prettyName": "SolidWorks",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1031626786457763840",
+        "parentSkillUid": null,
+        "prefLabel": "3D Modeling",
+        "prettyName": "3D Modeling",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1031626757286379520",
+        "parentSkillUid": null,
+        "prefLabel": "Mechanical Design",
+        "prettyName": "Mechanical Design",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1031626770871730176",
+        "parentSkillUid": null,
+        "prefLabel": "Product Design",
+        "prettyName": "Product Design",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1031626770884313088",
+        "parentSkillUid": null,
+        "prefLabel": "Product Development",
+        "prettyName": "Product Development",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1031626786432598016",
+        "parentSkillUid": null,
+        "prefLabel": "3D Design",
+        "prettyName": "3D Design",
+        "freeText": null,
+        "highlighted": false
+      }
+    ],
+    "hourlyBudget": { "min": 25, "max": 50 },
+    "weeklyBudget": { "amount": 0 },
+    "id": "1869885395439983777"
+  },
+  {
+    "uid": "1869811465439990357",
+    "ciphertext": "~021869811465439990357",
+    "title": "Reverse <span class=\"highlight\">Engineer</span> – Chromium-Based Desktop Application (Discovery Phase)",
+    "description": "We are looking for a skilled Reverse <span class=\"highlight\">Engineer</span> to analyze the internal workings of a complex Chromium-based desktop application used for content acquisition. This initial phase focuses on thorough documentation of the application’s architecture, including its approaches to audio/video handling and any encryption or DRM (Digital Rights Management) mechanisms. Your findings will help us assess feasibility, complexity, and the scope of a potential second-phase project aimed at recreating some or all of the application’s functionality.\n\nKey Responsibilities (Phase 1 – Discovery):\n\n\t•\tConduct a detailed analysis of a Chromium-based application, including its use of Electron, Mantle, ReactiveObjC, Squirrel, WebDevine, GPU rendering, and other frameworks.\n\t•\tInvestigate how the application handles audio and video streams, including potential DRM, encryption, or decryption steps.\n\t•\tMap out the data flows, architectural patterns, and system components critical for content acquisition.\n\t•\tProduce comprehensive documentation detailing system architecture, component interactions, update mechanisms, and integration points for handling protected content.\n\nPotential Future Phase (Replication):\n\n\t•\tDepending on the complexity and feasibility revealed by the discovery phase, a subsequent project may involve recreating or replicating the application’s functionality. This might include designing new workflows for handling encrypted content, integrating audio/video pipelines, and ensuring that the platform can scale and remain secure.\n\nQualifications:\n\n\t•\tProven experience in reverse <span class=\"highlight\">engineering</span> complex <span class=\"highlight\">software</span> applications, preferably those built on Chromium or Electron frameworks.\n\t•\tFamiliarity with audio/video stream handling, including codecs, DRM schemes, and potential decryption techniques.\n\t•\tStrong understanding of low-level analysis techniques such as binary analysis, debugging, and decompilation.\n\t•\tProficiency in Objective-C, C++, JavaScript, or other languages relevant to Electron and related frameworks.\n\t•\tKnowledge of GPU acceleration, advanced rendering pipelines, and update mechanisms like Squirrel.\n\t•\tExcellent documentation skills and attention to detail.",
+    "createdOn": "2024-12-19T18:26:07.625Z",
+    "publishedOn": "2024-12-19T18:26:07.905Z",
+    "renewedOn": "2024-12-19T18:26:24.168Z",
+    "type": 1,
+    "durationLabel": "1 to 3 months",
+    "engagement": null,
+    "amount": { "amount": 2000 },
+    "connectPrice": null,
+    "client": {
+      "location": { "country": null },
+      "isPaymentVerified": false,
+      "totalSpent": null,
+      "totalReviews": null,
+      "totalFeedback": null,
+      "hasFinancialPrivacy": null
+    },
+    "clientRelation": null,
+    "freelancersToHire": null,
+    "relevanceEncoded": "{\"position\":\"6\"}",
+    "enterpriseJob": null,
+    "tierText": "jsn_Expert_207",
+    "isApplied": false,
+    "proposalsTier": null,
+    "premium": false,
+    "attrs": [
+      {
+        "uid": "1031626775099588608",
+        "parentSkillUid": null,
+        "prefLabel": "Reverse Engineering",
+        "prettyName": "Reverse Engineering",
+        "freeText": null,
+        "highlighted": true
+      },
+      {
+        "uid": "996364628025274381",
+        "parentSkillUid": null,
+        "prefLabel": "C++",
+        "prettyName": "C++",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1031626731394940928",
+        "parentSkillUid": null,
+        "prefLabel": "Desktop Application",
+        "prettyName": "Desktop Application",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "996364628025274383",
+        "parentSkillUid": null,
+        "prefLabel": "JavaScript",
+        "prettyName": "JavaScript",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1031626734515503104",
+        "parentSkillUid": null,
+        "prefLabel": "Electron",
+        "prettyName": "Electron",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1110580559393312768",
+        "parentSkillUid": null,
+        "prefLabel": "Encryption",
+        "prettyName": "Encryption",
+        "freeText": null,
+        "highlighted": false
+      }
+    ],
+    "hourlyBudget": { "min": 0, "max": 0 },
+    "weeklyBudget": { "amount": 0 },
+    "id": "1869811465439990357"
+  },
+  {
+    "uid": "1866321581687240374",
+    "ciphertext": "~021866321581687240374",
+    "title": "Full Stack Websites and Automations <span class=\"highlight\">Engineer</span> (Must have experience with the Monday.com API)",
+    "description": "About Valiant:\n‎ ‎\nValiant is a full-service content creation and digital marketing agency for service businesses in the trading, reselling, sports betting, and e-commerce niches.\n\nOur clients include some of the largest companies in the online side-hustle niche including Whop.com, one of the largest digital marketplace in the world. Our current offerings include short-form video creation, email marketing, and paid advertising, among others. Over the next 12 months we have plans to expand and as a result are looking to hire additional marketing staff in our paid ads, social media, and email marketing teams.\n\nOur vision is to be the go-to marketing agency for all types of services that help people make money online. We are already very well known in the sports betting and reselling niches however are looking to venture much further into niches we’re less known in and build a market-wide reputation for ruthlessly outperforming other marketers in the space.\n\n\nCompensation & Perks:\n\n💸 $4,000 to $6,000 in monthly starting salary.\n📈 Up to $8k in monthly salary based on initial 90-day performance.\n🌎 Full-time remote-based position with flexible working hours.\n✈️ Flights, US visa sponsorship, and accommodation for team meetups.\n\n\nJob Responsibilities:\n\n– Automate our company operations and work with the Monday.com API\n– Implementing and optimizing pre-made website designs on WordPress, Webflow, or Framer.  \n– Writing scripts to scrape websites for potential future sales leads.\n– Leading and advising our website designer and setting a good example in and outside of work.\n– Maintaining existing Discord bots and existing websites made on WordPress.\n\n\nRequired Qualifications:\n \n– Experienced with the Monday.com API, Zapier and Make.com\n– 1 or more years of experience as a <span class=\"highlight\">software</span> <span class=\"highlight\">engineer</span>.\n– Willing to commit to working full-time exclusively for our company (cannot be in school, running your own business, or working other jobs).\n– Experience with the following technologies: HTML, CSS, and JavaScript. \n– Preferably experience with Wordpress, Webflow or Framer, or other CMS.\n- Ability to make scripts and automation that can scrape websites for data.\n– Capable of turning website mock-ups and designs into code.\n– Capable of making websites responsive and mobile optimized.\n\n\nPreferred Qualifications:\n\n– Experience with integrating 3rd party APIs (Stripe API, etc)\n– Experience with Material UI / Material Design.\n– Experience with UI/UX design tools such as Figma and Adobe.\n– Previous experience starting a business or experience working at smaller companies/startups.\n– Bachelors or Masters in computer science, computer <span class=\"highlight\">engineering</span>, electrical <span class=\"highlight\">engineering</span>, or equivalent experience.\n– Knowledge, or interest in sports betting, trading, reselling, online selling, or e-commerce.\n\n\nWho We Need:\n\n– You’ve got positive energy. You’re optimistic about the future and determined to get there.\n– You are looking for an exciting opportunity that isn’t just about the money.\n– You’re comfortable with agile workflow and are quick to iterate.\n– You work well with direct, rapid, and candid feedback.\n– You’re both an active communicator and an eager listener.\n– You’re passionate about <span class=\"highlight\">software</span> development and have high standards for your code.\n– You are willing to take 100% responsibility for your code.\n– You’re willing to go outside of your comfort zone and you’re up for new challenges.\n– You are a very hard-working and driven person, and are flexible with your work days/hours.\n– You have a winners mindset. You want to win and you’re not satisfied with the status quo.\n– You are comfortable with startup culture. It’s casual, and not corporate, but is demanding.",
+    "createdOn": "2024-12-10T03:18:34.561Z",
+    "publishedOn": "2024-12-10T03:18:35.032Z",
+    "renewedOn": "2024-12-19T16:01:47.206Z",
+    "type": 1,
+    "durationLabel": "More than 6 months",
+    "engagement": null,
+    "amount": { "amount": 72000 },
+    "connectPrice": null,
+    "client": {
+      "location": { "country": null },
+      "isPaymentVerified": false,
+      "totalSpent": null,
+      "totalReviews": null,
+      "totalFeedback": null,
+      "hasFinancialPrivacy": null
+    },
+    "clientRelation": null,
+    "freelancersToHire": null,
+    "relevanceEncoded": "{\"position\":\"7\"}",
+    "enterpriseJob": null,
+    "tierText": "jsn_Expert_207",
+    "isApplied": false,
+    "proposalsTier": null,
+    "premium": false,
+    "attrs": [
+      {
+        "uid": "1031626728794472448",
+        "parentSkillUid": null,
+        "prefLabel": "CSS",
+        "prettyName": "CSS",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1031626745110315008",
+        "parentSkillUid": null,
+        "prefLabel": "HTML",
+        "prettyName": "HTML",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1052162208982421516",
+        "parentSkillUid": null,
+        "prefLabel": "Webflow",
+        "prettyName": "Webflow",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1052162208999198724",
+        "parentSkillUid": null,
+        "prefLabel": "WordPress",
+        "prettyName": "WordPress",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1031626745118703616",
+        "parentSkillUid": null,
+        "prefLabel": "HTML5",
+        "prettyName": "HTML5",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "996364628025274383",
+        "parentSkillUid": null,
+        "prefLabel": "JavaScript",
+        "prettyName": "JavaScript",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1052162208978227201",
+        "parentSkillUid": null,
+        "prefLabel": "Website",
+        "prettyName": "Website",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1031626728807055360",
+        "parentSkillUid": null,
+        "prefLabel": "CSS 3",
+        "prettyName": "CSS 3",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1031626795211276288",
+        "parentSkillUid": null,
+        "prefLabel": "Web Development",
+        "prettyName": "Web Development",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1031626795181916160",
+        "parentSkillUid": null,
+        "prefLabel": "Web Design",
+        "prettyName": "Web Design",
+        "freeText": null,
+        "highlighted": false
+      }
+    ],
+    "hourlyBudget": { "min": 0, "max": 0 },
+    "weeklyBudget": { "amount": 0 },
+    "id": "1866321581687240374"
+  },
+  {
+    "uid": "1868295021492474197",
+    "ciphertext": "~021868295021492474197",
+    "title": "Lead <span class=\"highlight\">Engineer</span>",
+    "description": "If interested, send your proposal along with your resume.\n\nJob Title: Lead <span class=\"highlight\">Engineer</span>\n\nDepartment: <span class=\"highlight\">Engineering</span>\n\nOur company exists to provide ease, access, and connection to become the central hub for exceptional experiences. Our mission is to create a frictionless nightlife and entertainment experience for venues and patrons through simple, user-focused technology.\n\nWe are looking for a Lead <span class=\"highlight\">Engineer</span> interested in building and leading the front-end development of our platform, delivering seamless, responsive, and high-performance user interfaces on both the iOS and Android platforms. You will be responsible for designing and planning these applications, as well as coordinating with the teams responsible for other layers of the product infrastructure. Building a product is a highly collaborative effort, and as such, a strong team player with a commitment to perfection is required.\n\nResponsibilities:\n\n●\tLead Front-End Development: Take ownership of the entire front-end development process, ensuring high-quality code, performance optimization, and maintainability.\n●\tArchitecture and Design: Design and implement efficient, scalable, and modular front-end architecture for a SaaS platform using modern technologies\n●\tCollaboration: Work closely with product managers, UX/UI designers, and back-end developers to deliver features from concept to deployment and ensure smooth integration with back-end services and leverage native APIs with both platforms.\n●\tMentorship: Guide and mentor junior front-end developers, conducting code reviews and sharing best practices.\n●\tPerformance Optimization: Ensure the platform is responsive and performant across all devices and browsers.\n●\tTesting and Debugging: Write automated tests and maintain code, and ensure the front-end components are reliable and bug-free. Diagnose and fix bugs while eliminating performance bottlenecks.\n●\tMaintain and build new features for our React Native application.\n●\tContinuous Improvement: Stay up to date with the latest front-end development trends, frameworks, and best practices, and introduce innovative solutions to improve the product - Reach out to the open source community to encourage and help implement mission-critical <span class=\"highlight\">software</span> fixes—React Native moves fast and often breaks things.\n●\tDesign and/or implement UI/UX team designs into existing application\n●\tDevelop with a security first mentality following the OWASP Top 10 and PCI-DSS compliance\n●\tAgile Methodology: Participate in Agile development practices including daily standups, sprint planning, and retrospectives.\n\n\n\nSkills\n●\tProficiency in JavaScript and TypeScript language and its nuances, including ES6+ syntax, and modern front-end frameworks. \n●\tExpert in React.js (preferred) for building interactive UIs and component-based architectures.\n●\tUI/UX: Understanding of responsive design principles, CSS frameworks like TailwindCSS or Bootstrap, and experience with design tools like Figma, Sketch, or Adobe XD.\n●\tRESTful APIs & GraphQL: Strong knowledge of integrating front-end applications with RESTful APIs and GraphQL services.\n●\tKnowledge of object-oriented programming\n●\tAbility to write well-documented, clean Javascript/Typescript code\n●\tRock solid at working with third-party dependencies and debugging dependency conflicts\n●\tFamiliarity with native build tools, like XCode, Gradle Android Studio\n●\tUnderstanding of REST APIs, the document request model, and offline storage\n●\tExperience with automated/unit testing suites, like React Native Testing Library, Jest, Mocha, WebdriverIO, Appium, Jasmine\n●\tExperience with Jenkins, Figma, JIRA, Github, Static Code analyzers like MOBSF\n●\tAgile/Scrum: Familiarity with Agile development processes and tools like JIRA or Trello.\n\n\n\nEducation and/or Experience\n●\tBachelor's degree in computer science, information technology, computer <span class=\"highlight\">engineering</span>, or a related field \n●\t5+ years of professional experience as a Front-End Developer, with at least 2+ years in a lead or senior role\n\nA payment of $3K USD per month will be paid to the Lead <span class=\"highlight\">Engineer</span>.",
+    "createdOn": "2024-12-15T14:00:19.266Z",
+    "publishedOn": "2024-12-15T14:00:19.674Z",
+    "renewedOn": null,
+    "type": 1,
+    "durationLabel": "More than 6 months",
+    "engagement": null,
+    "amount": { "amount": 3000 },
+    "connectPrice": null,
+    "client": {
+      "location": { "country": null },
+      "isPaymentVerified": false,
+      "totalSpent": null,
+      "totalReviews": null,
+      "totalFeedback": null,
+      "hasFinancialPrivacy": null
+    },
+    "clientRelation": null,
+    "freelancersToHire": null,
+    "relevanceEncoded": "{\"position\":\"8\"}",
+    "enterpriseJob": null,
+    "tierText": "jsn_Expert_207",
+    "isApplied": false,
+    "proposalsTier": null,
+    "premium": false,
+    "attrs": [
+      {
+        "uid": "996364628025274383",
+        "parentSkillUid": null,
+        "prefLabel": "JavaScript",
+        "prettyName": "JavaScript",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "996364628025274389",
+        "parentSkillUid": null,
+        "prefLabel": "TypeScript",
+        "prettyName": "TypeScript",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1110580682663907328",
+        "parentSkillUid": null,
+        "prefLabel": "RESTful API",
+        "prettyName": "RESTful API",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1031626743004774400",
+        "parentSkillUid": null,
+        "prefLabel": "GraphQL",
+        "prettyName": "GraphQL",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1313512603317481472",
+        "parentSkillUid": null,
+        "prefLabel": "Tailwind CSS",
+        "prettyName": "Tailwind CSS",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1052162208781094930",
+        "parentSkillUid": null,
+        "prefLabel": "Figma",
+        "prettyName": "Figma",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1031626751162695680",
+        "parentSkillUid": null,
+        "prefLabel": "Jest",
+        "prettyName": "Jest",
+        "freeText": null,
+        "highlighted": false
+      }
+    ],
+    "hourlyBudget": { "min": 0, "max": 0 },
+    "weeklyBudget": { "amount": 0 },
+    "id": "1868295021492474197"
+  },
+  {
+    "uid": "1867653821441547169",
+    "ciphertext": "~021867653821441547169",
+    "title": "Full-Stack <span class=\"highlight\">Software</span> <span class=\"highlight\">Engineer</span> for AI-Powered Document Solutions",
+    "description": "As a Full-Stack <span class=\"highlight\">Software</span> <span class=\"highlight\">Engineer</span> at Nootate, you will take our MVP and turn it into a fully functional production web application. Working from a completed Figma design of the final product, you’ll focus on creating a seamless user experience and implementing core features. You’ll help define a detailed roadmap, establish milestones, and execute a step-by-step development plan.\n\nYour key responsibilities include:\n\t•\tRoadmap & Planning: Collaborate with the founder to develop a technical roadmap and break down work into milestones and dates\nFeature Development:\n\t•\tIntegrate multiple AI providers for responses.\n\t•\tEnhance parsing capabilities, potentially leveraging third-party services like Zerox/OmniAI.\n\t•\tImplement logging features to improve PDF document structure and prompt performance, with potential export capabilities for users’ notes.\n\t•\tDevelop AI-assisted document features, such as highlighting tools and dynamic annotations\n\tDatabase Development:\n\t•\tSet up and optimize SQL user databases and schemas.\n\t•\tImplement a Vector Pinecone database with schema, API, and front-end integration.\nPDF-Specific Features:\n\t•\tDevelop and refine features like toolbar tools (zoom, pointer, search, etc.).\n\t•\tEnable efficient AI-assisted document search.\nAdmin Panel & Dashboard:\n\t•\tDevelop and connect admin tools to monitor and manage user activities.\n\t•\tCreate a polished documents dashboard for easy access and management.\nUI/UX Implementation:\n\t•\tBuild workflows, landing pages, and overall layouts based on Figma designs.\n\t•\tOptimize sidebars, layouts, and interface polish to ensure a seamless experience.\n\nYou will work closely with the founder and have check-in meetings with senior advisors.",
+    "createdOn": "2024-12-13T19:32:25.267Z",
+    "publishedOn": "2024-12-13T19:32:26.283Z",
+    "renewedOn": "2024-12-13T19:44:38.416Z",
+    "type": 1,
+    "durationLabel": "1 to 3 months",
+    "engagement": null,
+    "amount": { "amount": 5000 },
+    "connectPrice": null,
+    "client": {
+      "location": { "country": null },
+      "isPaymentVerified": false,
+      "totalSpent": null,
+      "totalReviews": null,
+      "totalFeedback": null,
+      "hasFinancialPrivacy": null
+    },
+    "clientRelation": null,
+    "freelancersToHire": null,
+    "relevanceEncoded": "{\"position\":\"9\"}",
+    "enterpriseJob": null,
+    "tierText": "jsn_Intermediate_206",
+    "isApplied": false,
+    "proposalsTier": null,
+    "premium": false,
+    "attrs": [
+      {
+        "uid": "1031626773660942336",
+        "parentSkillUid": null,
+        "prefLabel": "React",
+        "prettyName": "React",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1031626762688643072",
+        "parentSkillUid": null,
+        "prefLabel": "Next.js",
+        "prettyName": "Next.js",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1031626714051493888",
+        "parentSkillUid": null,
+        "prefLabel": "API Development",
+        "prettyName": "API Development",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1031626782364123136",
+        "parentSkillUid": null,
+        "prefLabel": "SQL",
+        "prettyName": "SQL",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1733104400580624384",
+        "parentSkillUid": null,
+        "prefLabel": "OpenAI API",
+        "prettyName": "OpenAI API",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1031626741293498368",
+        "parentSkillUid": null,
+        "prefLabel": "Git",
+        "prettyName": "Git",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "996364628025274383",
+        "parentSkillUid": null,
+        "prefLabel": "JavaScript",
+        "prettyName": "JavaScript",
+        "freeText": null,
+        "highlighted": false
+      },
+      {
+        "uid": "1031626716094119936",
+        "parentSkillUid": null,
+        "prefLabel": "Artificial Intelligence",
+        "prettyName": "Artificial Intelligence",
+        "freeText": null,
+        "highlighted": false
+      }
+    ],
+    "hourlyBudget": { "min": 0, "max": 0 },
+    "weeklyBudget": { "amount": 0 },
+    "id": "1867653821441547169"
+  }
+]

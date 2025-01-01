@@ -22,13 +22,8 @@ def extract_text_from_image(image_path):
 def clean_text(text):
     # Remove special characters and numbers
     text = re.sub(r'[^a-zA-Z\s]', '', text)
-    # Convert to lowercase
-    text = text.lower()
-    # Tokenize text
-    words = word_tokenize(text)
-    # Remove stopwords
-    filtered_words = [word for word in words if word not in stopwords.words('english')]
-    return ' '.join(filtered_words)
+    text = re.sub(r'\s+', ' ', text).strip() 
+    return text
 
 def process_resumes(folder_path):
     data = []
