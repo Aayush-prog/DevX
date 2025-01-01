@@ -16,7 +16,7 @@ export const AuthProvider = ({ children }) => {
   }, []);
 
   // Function to save token after login
-  const login = (token, role) => {
+  const login = (token, userRole) => {
     localStorage.setItem("authToken", token);
     localStorage.setItem("role", userRole);
     setAuthToken(token);
