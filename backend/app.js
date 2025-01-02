@@ -7,7 +7,12 @@ const axios = require("axios");
 require("dotenv").config();
 //routes
 const login = require("./handlers/login");
+const signUp = require("./handlers/signUp");
+const developerRoute = require("./modules/developers/dev.route");
+const clientRoute = require("./modules/client/client.route");
+const jobsRoute = require("./modules/jobs/job.route");
 //models
+require("./models/userModel");
 
 const app = express();
 app.use(cors());
@@ -20,7 +25,8 @@ mongoose
   .catch((e) => console.log(e));
 
 app.post("/login", login);
-
+app.post("/signUp", signUp);
+// app.use();
 app.listen(8000, () => {
   console.log("server started");
 });

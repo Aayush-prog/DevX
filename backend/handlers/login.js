@@ -21,7 +21,6 @@ const login = async (req, res) => {
     for (const model of models) {
       user = await model.findOne({ email });
       if (user) {
-        console.log(user);
         modelName = model.modelName;
         break;
       }
