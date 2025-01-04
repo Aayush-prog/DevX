@@ -21,7 +21,7 @@ export default function Nav() {
   };
 
   return (
-    <nav>
+    <nav className="">
       {/* Navbar Section */}
       <div className="relative flex justify-between items-center p-4 bg-white z-50 xl:px-20 lg:px-10 px-5">
         {/* Left Section */}
@@ -138,6 +138,18 @@ export default function Nav() {
           >
             Why DevX
           </NavLink>
+          <Link
+            to="/login"
+            className="text-black hover:underline underline-offset-8"
+          >
+            Login
+          </Link>
+          <Link
+            to="/signUp"
+            className="bg-green rounded-lg p-2 px-3  text-white"
+          >
+            Sign Up
+          </Link>
         </ul>
       </div>
     </nav>
