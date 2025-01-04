@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const path = require("path");
 const axios = require("axios");
-
+const nodemailer = require("nodemailer");
 require("dotenv").config();
 //routes
 const login = require("./handlers/login");

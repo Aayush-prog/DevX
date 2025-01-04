@@ -11,6 +11,9 @@ const userSchema = new mongoose.Schema(
       required: [true, "Email is required"],
       unique: true,
     },
+    description: {
+      type: String,
+    },
     phone: {
       type: String,
       require: [true, "Phone number is requires"],
@@ -28,6 +31,9 @@ const userSchema = new mongoose.Schema(
       type: String,
     },
     tag: {
+      type: String,
+    },
+    cv: {
       type: String,
     },
   },
