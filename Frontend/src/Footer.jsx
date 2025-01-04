@@ -1,18 +1,14 @@
 import React from "react";
-
+import logo from "../src/assets/devx.png";
 export default function Footer() {
   return (
-    <footer className="bg-gray-800 py-8">
-      <div className="max-w-6xl mx-auto px-4 sm:flex sm:justify-between">
-        <div className="sm:w-1/3">
-          <div className="mb-4">
-            <img
-              src="/path-to-logo.png"
-              alt="Company Logo"
-              className="h-12 w-auto"
-            />
+    <footer className="bg-primary text-white  py-8 mt-10">
+      <div className="max-w-6xl mx-auto px-4 sm:flex sm:justify-evenly">
+        <div className="lg:w-1/3">
+          <div className="flex items-center space-x-1  ">
+            <span className="font-bold text-xl">DevX</span>
           </div>
-          <p className="text-sm">
+          <p className="text-sm ">
             123 Main Street, Suite 456
             <br />
             Cityville, ST 78910
@@ -24,7 +20,7 @@ export default function Footer() {
           </p>
         </div>
 
-        <div className="sm:w-1/3 mt-6 sm:mt-0">
+        <div className="hidden lg:block mt-6 sm:mt-0 ">
           <h3 className="text-lg font-semibold mb-3">Quick Links</h3>
           <ul className="space-y-2">
             <li>

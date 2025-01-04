@@ -21,9 +21,9 @@ export default function Nav() {
   };
 
   return (
-    <div>
+    <nav>
       {/* Navbar Section */}
-      <div className="relative flex justify-between items-center p-4 bg-white z-50 lg:px-20">
+      <div className="relative flex justify-between items-center p-4 bg-white z-50 xl:px-20 lg:px-10 px-5">
         {/* Left Section */}
         <div className="flex items-center space-x-8">
           <div className="flex items-center space-x-1">
@@ -69,7 +69,7 @@ export default function Nav() {
             <input
               type="text"
               placeholder="Search"
-              className="p-2 pl-3 outline-none"
+              className="p-2 pl-3 outline-none xl:w-[100px] 2xl:w-[200px]"
               name="Search"
               onChange={handleChange}
             />
@@ -88,7 +88,7 @@ export default function Nav() {
             </Link>
             <Link
               to="/signUp"
-              className="bg-green rounded-lg p-2 px-3 text-white"
+              className="bg-green rounded-lg p-2 px-3  text-white"
             >
               Sign Up
             </Link>
@@ -140,6 +140,6 @@ export default function Nav() {
           </NavLink>
         </ul>
       </div>
-    </div>
+    </nav>
   );
 }
