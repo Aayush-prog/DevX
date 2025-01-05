@@ -1,24 +1,29 @@
 const multer = require("multer");
 const path = require("path");
+
+// Configure multer storage
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, "public/images"); // Ensure this directory exists
+    const folder =
+      file.fieldname === "image" ? "public/profile-pictures" : "public/resumes";
+    cb(null, folder); // Ensure these directories exist
   },
   filename: function (req, file, cb) {
     cb(null, Date.now() + path.extname(file.originalname));
   },
 });
 
+// Create multer instance with storage
 const upload = multer({ storage: storage });
 
+// Middleware for handling profile picture and CV uploads
 const uploadMiddleware = (req, res, next) => {
-  console.log("in midle");
-  if (req.file) {
-    console.log("File already uploaded, skipping multer");
-    return next();
-  }
-  console.log(req.body);
-  upload.single("image")(req, res, function (err) {
+  const uploadFields = upload.fields([
+    { name: "image", maxCount: 1 }, // Single profile picture
+    { name: "resume", maxCount: 1 }, // Single CV
+  ]);
+
+  uploadFields(req, res, function (err) {
     if (err instanceof multer.MulterError) {
       // A Multer error occurred when uploading.
       return res
@@ -32,7 +37,7 @@ const uploadMiddleware = (req, res, next) => {
       });
     }
 
-    // If no file was provided, just continue to the next middleware
+    // Proceed to the next middleware even if one file is missing
     next();
   });
 };

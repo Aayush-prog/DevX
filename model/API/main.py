@@ -11,6 +11,7 @@ import requests
 from io import BytesIO
 import torch
 from transformers import BertTokenizer, BertForSequenceClassification
+import uvicorn
 
 # Initialize FastAPI
 app = FastAPI()
@@ -69,6 +70,7 @@ def extract_skills(text):
 # Endpoint for processing resume
 @app.get("/process-resume")
 async def process_resume(file_url: str = Query(..., description="URL of the resume file")):
+    print("called")
     try:
         # Fetch file from URL
         response = requests.get(file_url)
@@ -94,7 +96,7 @@ async def process_resume(file_url: str = Query(..., description="URL of the resu
         skills = extract_skills(cleaned_text)
 
         # Load model and tokenizer
-        model_path = 'D:\ResumeClassifier'
+        model_path = 'D:/ResumeClassifier'
         tokenizer = BertTokenizer.from_pretrained(model_path)
         model = BertForSequenceClassification.from_pretrained(model_path)
 
@@ -106,8 +108,11 @@ async def process_resume(file_url: str = Query(..., description="URL of the resu
         return {
             "status": "success",
             "skills": skills,
-            "role": predicted_label
+            "role": outputs.logits
         }
 
     except Exception as e:
         return {"error": f"An error occurred: {str(e)}"}
+
+if __name__ == "__main__":
+    uvicorn.run(app, host="127.0.0.1", port=8001) 

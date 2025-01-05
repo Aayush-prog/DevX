@@ -7,10 +7,20 @@ const signUp = async (req, res) => {
   const UserModel = mongoose.model("User");
   const { role } = req.params;
   const { name, email, description, phone, password, confirmpass } = req.body;
-  const image = req.file ? path.basename(req.file.path) : null;
-  console.log(req.body);
+  const image = req.files?.image?.[0]
+    ? path.basename(req.files.image[0].path)
+    : null;
+
+  // Access the uploaded CV
+  const resume = req.files?.resume?.[0]
+    ? path.basename(req.files.resume[0].path)
+    : null;
+  console.log(resume);
   const encPass = await bcrypt.hash(password, 10);
   try {
+    const tag = await axios.get("http://localhost:8001/process-resume", {
+      params: { file_url: `http://localhost:8000/resumes/${resume}` },
+    });
     const data = await UserModel.create({
       name,
       description,
@@ -19,6 +29,8 @@ const signUp = async (req, res) => {
       password: encPass,
       image,
       role,
+      resume,
+      tag,
     });
     // Send Welcome Email
     const transporter = nodemailer.createTransport({

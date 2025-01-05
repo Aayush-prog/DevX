@@ -33,7 +33,10 @@ const userSchema = new mongoose.Schema(
     tag: {
       type: String,
     },
-    cv: {
+    resume: {
+      type: String,
+    },
+    org: {
       type: String,
     },
   },

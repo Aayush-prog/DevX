@@ -11,21 +11,25 @@ const signUp = require("./handlers/signUp");
 const developerRoute = require("./modules/developers/dev.route");
 const clientRoute = require("./modules/client/client.route");
 const jobsRoute = require("./modules/jobs/job.route");
+const uploadMiddleware = require("./middleware/upload");
 //models
 require("./models/userModel");
 
 const app = express();
 app.use(cors());
 app.use(express.json());
-app.use("/images", express.static(path.join(__dirname, "public/images")));
-
+app.use(
+  "/images",
+  express.static(path.join(__dirname, "public/profile-pictures"))
+);
+app.use("/resumes", express.static(path.join(__dirname, "public/resumes")));
 mongoose
   .connect(process.env.mongo_connect, {})
   .then(() => console.log("mongo connected"))
   .catch((e) => console.log(e));
 
 app.post("/login", login);
-app.post("/signUp", signUp);
+app.post("/signUp", uploadMiddleware, signUp);
 // app.use();
 app.listen(8000, () => {
   console.log("server started");
