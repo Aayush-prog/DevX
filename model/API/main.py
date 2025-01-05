@@ -1,4 +1,5 @@
 from fastapi import FastAPI, Query
+from fastapi.middleware.cors import CORSMiddleware
 import pandas as pd
 import re
 from nltk.tokenize import word_tokenize
@@ -15,7 +16,29 @@ import uvicorn
 
 # Initialize FastAPI
 app = FastAPI()
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:8000","http://localhost:5173"],
+    allow_credentials=True,
+    allow_methods=["*"],  # Allow all HTTP methods
+    allow_headers=["*"],  # Allow all headers
+)
 
+label=[
+  "Data Scientist",
+  "Database Engineer",
+  "Designer",
+  "DevOps Engineer",
+  "DotNet Developer",
+  "Information Technology",
+  "Java Developer",
+  "Network Security Engineer",
+  "Python Developer",
+  "QA",
+  "React Developer",
+  "SAP Developer",
+  "SQL Developer"
+]
 # Developer skills 
 developer_skills = set([
     "python", "java", "c++", "javascript", "html", "css", "react", "angular",
@@ -104,11 +127,11 @@ async def process_resume(file_url: str = Query(..., description="URL of the resu
         inputs = tokenizer(cleaned_text, return_tensors="pt", truncation=True, padding=True, max_length=128)
         outputs = model(**inputs)
         predicted_label = torch.argmax(outputs.logits, dim=1).item()
-
+        role=label[predicted_label]
         return {
             "status": "success",
             "skills": skills,
-            "role": outputs.logits
+            "role": role
         }
 
     except Exception as e:

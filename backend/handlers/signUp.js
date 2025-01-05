@@ -3,6 +3,7 @@ const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 const path = require("path");
 const nodemailer = require("nodemailer");
+const axios = require("axios");
 const signUp = async (req, res) => {
   const UserModel = mongoose.model("User");
   const { role } = req.params;
@@ -18,9 +19,14 @@ const signUp = async (req, res) => {
   console.log(resume);
   const encPass = await bcrypt.hash(password, 10);
   try {
-    const tag = await axios.get("http://localhost:8001/process-resume", {
-      params: { file_url: `http://localhost:8000/resumes/${resume}` },
-    });
+    const fileURL = `http://localhost:8000/resumes/${resume}`;
+    const encodedURL = encodeURIComponent(fileURL);
+    const res = await axios.get(
+      `http://127.0.0.1:8001/process-resume?file_url=${encodedURL}`
+    );
+    console.log(res);
+    const tag = res.data.role;
+    const skills = res.data.skills;
     const data = await UserModel.create({
       name,
       description,
@@ -31,6 +37,7 @@ const signUp = async (req, res) => {
       role,
       resume,
       tag,
+      skills,
     });
     // Send Welcome Email
     const transporter = nodemailer.createTransport({
