@@ -1,12 +1,12 @@
 import React, { useState, useContext } from "react";
 import axios from "axios";
-import Nav from "./Nav.jsx";
+import Nav from "../Nav.jsx";
 import Footer from "../Footer.jsx";
 import { AuthContext } from "../AuthContext.jsx";
 import { Link, useNavigate } from "react-router-dom";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 
-export default function AuthForms() {
+export default function Login() {
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState();
   const togglePasswordVisibility = () => {
@@ -36,7 +36,7 @@ export default function AuthForms() {
         formData,
         {
           headers: {
-            "Content-Type": "application/json", // Ensure you're sending JSON
+            "Content-Type": "application/json",
           },
         }
       );
@@ -45,6 +45,7 @@ export default function AuthForms() {
         login(response.data.token, response.data.role);
       }
     } catch (error) {
+      console.log(error);
       setError(` ${error.response?.data?.msg || "error occured"} `);
     }
   };
@@ -54,31 +55,22 @@ export default function AuthForms() {
       <Nav />
       <div className="grid place-items-center ">
         <section className="bg-white ">
-          <div className="py-8 pb-0 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
-            <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl">
-              Log In
+          <div className="py-8 pb-0 px-4 mx-auto max-w-screen-xl text-center ">
+            <h1 className="text-xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-center">
+              <span className="text-blue">Welcome</span> Back!
             </h1>
-            <p className="text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 ">
-              At UniSphere, we focus on creating a vibrant student community
-              where academics, social experiences, and local culture come
-              together to inspire growth, foster innovation, and build lifelong
-              connections.
-            </p>
           </div>
         </section>
         <form onSubmit={handleSubmit} className="w-2/3 md:w-1/2 py-10 ">
           <div className="mb-6">
-            <label
-              for="email"
-              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-            >
+            <label htmlFor="email" className="block mb-2 text-sm font-medium t">
               Email address
             </label>
             <input
               type="email"
               id="email"
               name="email"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              className=" border text-sm rounded-lg focus:ring-blue focus:border-blue block w-full p-2.5 "
               placeholder="john.doe@company.com"
               onChange={handleChange}
               required
@@ -86,8 +78,8 @@ export default function AuthForms() {
           </div>
           <div className="mb-6">
             <label
-              for="password"
-              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              htmlFor="password"
+              className="block mb-2 text-sm font-medium "
             >
               Password
             </label>
@@ -96,7 +88,7 @@ export default function AuthForms() {
                 type={showPassword ? "text" : "password"}
                 id="password"
                 name="password"
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                className=" border text-sm rounded-lg focus:ring-blue focus:border-blue block w-full p-2.5"
                 placeholder="•••••••••"
                 onChange={handleChange}
                 required
@@ -109,15 +101,16 @@ export default function AuthForms() {
                 {showPassword ? <FaEyeSlash /> : <FaEye />}
               </button>
             </div>
-            {error && (
-              <span className="font-semibold text-lg text-red-500">
-                {error}
-              </span>
-            )}
+            <div className=" w-full text-right mt-5">
+              <Link to="/forgot-password" className="text-blue text-sm">
+                Forgot Password?
+              </Link>
+            </div>
+            {error && <span className=" text-red">{error}</span>}
           </div>
           <button
             type="submit"
-            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            className="text-white bg-blue hover:bg-blue-dark focus:ring-2 focus:outline-none focus:ring-blue font-medium rounded-lg text-sm w-full  px-5 py-2.5 text-center "
           >
             Submit
           </button>

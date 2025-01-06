@@ -15,6 +15,7 @@ export default {
       primary: "#2C2A4A",
       white: "#FFFFFF",
       grey: "#D9D9D9",
+      red: "#E44A24",
     },
     fontFamily: {
       sans: ['"Roboto"', "sans-serif"],

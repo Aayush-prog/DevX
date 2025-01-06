@@ -3,58 +3,54 @@ const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 
 const login = async (req, res) => {
+  const UserModel = mongoose.model("User");
   const { email, password } = req.body;
+
   try {
-    if (!email) throw "No email provided";
-    if (!password) throw "No password provided";
-
-    const models = [
-      mongoose.model("std"),
-      mongoose.model("clg"),
-      mongoose.model("restro"),
-      mongoose.model("admin"),
-    ];
-
-    let user = null;
-    let modelName = "";
-
-    for (const model of models) {
-      user = await model.findOne({ email });
-      if (user) {
-        modelName = model.modelName;
-        break;
-      }
+    if (!email) {
+      return res
+        .status(400)
+        .json({ status: "failed", msg: "No email provided" });
+    }
+    if (!password) {
+      return res
+        .status(400)
+        .json({ status: "failed", msg: "No password provided" });
     }
 
-    if (!user) throw "No such user";
+    const user = await UserModel.findOne({ email });
+
+    if (!user) {
+      return res.status(404).json({ status: "failed", msg: "No such user" });
+    }
     const match = await bcrypt.compare(password, user.password);
-    if (!match) throw "Password does not match";
-    let jwtSalt;
-    switch (modelName.toLowerCase()) {
-      case "std":
-        jwtSalt = process.env.jwt_salt;
-        break;
-      case "clg":
-        jwtSalt = process.env.clg_salt;
-        break;
-      case "restro":
-        jwtSalt = process.env.restro_salt;
-        break;
-      case "admin":
-        jwtSalt = process.env.admin_salt;
-        break;
-      default:
-        throw "Invalid user type";
+
+    if (!match) {
+      return res
+        .status(401)
+        .json({ status: "failed", msg: "Password does not match" });
     }
-    const token = jwt.sign({ _id: user._id, type: modelName }, jwtSalt);
+
+    const jwtSalt = process.env.jwt_salt;
+    if (!jwtSalt) {
+      return res
+        .status(500)
+        .json({
+          status: "failed",
+          msg: "JWT secret not defined in environment",
+        });
+    }
+
+    const token = jwt.sign({ _id: user._id, role: user.role }, jwtSalt);
 
     res.status(200).json({
       status: "success",
       token,
-      userType: modelName,
+      role: user.role, // Correctly use user.role
     });
-  } catch (e) {
-    res.status(400).json({ status: "failed", msg: e });
+  } catch (error) {
+    console.error("Login Error:", error); // Log the error for debugging
+    res.status(500).json({ status: "failed", msg: "Internal server error" });
   }
 };
 

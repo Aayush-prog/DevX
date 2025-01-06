@@ -15,6 +15,7 @@ export default function DevSignUp() {
     phone: "",
     password: "",
     confirmPassword: "",
+    agreeToTerms: false,
   });
 
   const handleInputChange = (e) => {
@@ -30,15 +31,20 @@ export default function DevSignUp() {
   formDataToSend.append("name", formData.name);
   formDataToSend.append("email", formData.email);
   formDataToSend.append("password", formData.password);
-  formDataToSend.append("confirmpass", formData.confirmpass);
+  formDataToSend.append("description", formData.description);
+  formDataToSend.append("phone", formData.phone);
   formDataToSend.append("image", formData.image);
   formDataToSend.append("resume", formData.resume);
   const handleSubmit = async (e) => {
     console.log(formData);
     e.preventDefault();
+    if (formData.password !== formData.confirmPassword) {
+      setError("Passwords do not match");
+      return;
+    }
     try {
       const response = await axios.post(
-        "http://localhost:8000/signup?role=developer",
+        "http://localhost:8000/signup/developer",
         formDataToSend,
         {
           headers: {
@@ -48,7 +54,7 @@ export default function DevSignUp() {
       );
       console.log(response);
       if (response.data.status === "success") {
-        navigate("/login");
+        // navigate("/login");
       }
     } catch (error) {
       setError(` ${error.response?.data?.msg || "error occurred"} `);
@@ -73,6 +79,7 @@ export default function DevSignUp() {
             <input
               type="file"
               name="image"
+              required
               onChange={handleFileChange}
               className="block w-full mt-1 text-sm text-gray file:mr-4 file:py-2 file:px-4 file:border file:text-sm file:font-semibold file:bg-green file:text-white hover:file:bg-green"
             />
@@ -176,6 +183,7 @@ export default function DevSignUp() {
           <input
             type="file"
             name="resume"
+            required
             onChange={handleFileChange}
             className="block w-full mt-1 text-sm text-gray file:mr-4 file:py-2 file:px-4 file:border file:text-sm file:font-semibold file:bg-blue file:text-white hover:file:bg-blue"
           />
@@ -197,7 +205,7 @@ export default function DevSignUp() {
             </a>
           </label>
         </div>
-
+        {error && <div className="text-red">{error}</div>}
         {/* Submit Button */}
         <button
           type="submit"

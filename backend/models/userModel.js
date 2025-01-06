@@ -17,7 +17,6 @@ const userSchema = new mongoose.Schema(
     phone: {
       type: String,
       require: [true, "Phone number is requires"],
-      unique: true,
     },
     password: {
       type: String,
@@ -41,6 +40,14 @@ const userSchema = new mongoose.Schema(
     },
     skills: {
       type: [String],
+    },
+    resetPasswordToken: {
+      type: String,
+      default: null,
+    },
+    resetPasswordExpires: {
+      type: Date,
+      default: null,
     },
   },
   { timestamps: true }

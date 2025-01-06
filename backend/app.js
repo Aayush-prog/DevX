@@ -12,6 +12,7 @@ const developerRoute = require("./modules/developers/dev.route");
 const clientRoute = require("./modules/client/client.route");
 const jobsRoute = require("./modules/jobs/job.route");
 const uploadMiddleware = require("./middleware/upload");
+const forgotPassword = require("./handlers/forgotPass");
 //models
 require("./models/userModel");
 
@@ -29,7 +30,9 @@ mongoose
   .catch((e) => console.log(e));
 
 app.post("/login", login);
-app.post("/signUp", uploadMiddleware, signUp);
+app.post("/signUp/:role", uploadMiddleware, signUp);
+app.post("/forgot-password", forgotPassword.forgotPassword);
+app.post("/reset-password/:token", forgotPassword.resetPassword);
 // app.use();
 app.listen(8000, () => {
   console.log("server started");

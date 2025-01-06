@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import Nav from "../Nav";
 import Footer from "../Footer";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 const ClientSignUp = () => {
   const navigate = useNavigate();
-  const [error, setError] = useState();
+  const [error, setError] = useState(null);
   const [formData, setFormData] = useState({
-    profilePicture: null,
+    image: null,
     name: "",
     description: "",
     email: "",
@@ -14,6 +15,7 @@ const ClientSignUp = () => {
     password: "",
     confirmPassword: "",
     companyName: "",
+    agreeToTerms: false,
   });
 
   const handleInputChange = (e) => {
@@ -22,24 +24,35 @@ const ClientSignUp = () => {
   };
 
   const handleFileChange = (e) => {
-    setFormData({ ...formData, profilePicture: e.target.files[0] });
+    setFormData({ ...formData, image: e.target.files[0] });
   };
-
+  const formDataToSend = new FormData();
+  formDataToSend.append("name", formData.name);
+  formDataToSend.append("email", formData.email);
+  formDataToSend.append("password", formData.password);
+  formDataToSend.append("companyName", formData.companyName);
+  formDataToSend.append("phone", formData.phone);
+  formDataToSend.append("description", formData.description);
+  formDataToSend.append("image", formData.image);
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (formData.password !== formData.confirmPassword) {
+      setError("Passwords do not match");
+      return;
+    }
     try {
       const response = await axios.post(
-        "http://localhost:8000/signup?role=client",
-        formData,
+        "http://localhost:8000/signup/client",
+        formDataToSend,
         {
           headers: {
-            "Content-Type": "application/json",
+            "Content-Type": "multipart/form-data",
           },
         }
       );
       console.log(response);
       if (response.data.status === "success") {
-        navigate("/login");
+        // navigate("/login");
       }
     } catch (error) {
       setError(` ${error.response?.data?.msg || "error occured"} `);
@@ -60,10 +73,13 @@ const ClientSignUp = () => {
 
         {/* Profile Picture Upload */}
         <div>
-          <label className="block text-sm font-medium">Profile Picture</label>
+          <label className="block text-sm font-medium">
+            Profile Picture / Logo
+          </label>
           <input
             type="file"
-            name="profilePicture"
+            name="image"
+            required
             onChange={handleFileChange}
             className="block w-full mt-1 text-sm text-gray file:mr-4 file:py-2 file:px-4 file:border file:text-sm file:font-semibold file:bg-green file:text-white hover:file:bg-green"
           />
@@ -132,8 +148,8 @@ const ClientSignUp = () => {
             </label>
             <input
               type="tel"
-              name="phoneNumber"
-              value={formData.phoneNumber}
+              name="phone"
+              value={formData.phone}
               onChange={handleInputChange}
               required
               placeholder="e.g. +9779800000000"
@@ -189,6 +205,7 @@ const ClientSignUp = () => {
             </a>
           </label>
         </div>
+        {error && <div className="text-red">{error}</div>}
         {/* Submit Button */}
         <button
           type="submit"
