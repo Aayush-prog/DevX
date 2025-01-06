@@ -4,7 +4,7 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-import Home from "./loggedOut/Home.jsx";
+import LandinPage from "./loggedOut/Home.jsx";
 import SignUp from "./loggedOut/SignUp.jsx";
 import Login from "./loggedOut/Login.jsx";
 import ClientSignUp from "./loggedOut/ClientSignUp.jsx";
@@ -15,7 +15,7 @@ function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<LandinPage />} />
         <Route path="/signUp" element={<SignUp />} />
         <Route path="/client" element={<ClientSignUp />} />
         <Route path="/talent" element={<DevSignUp />} />

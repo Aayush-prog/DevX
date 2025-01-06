@@ -1,12 +1,32 @@
-import React, { useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import logo from "./assets/devx.png";
 import { CiSearch } from "react-icons/ci";
 import { NavLink, Link } from "react-router-dom";
-
+import { AuthContext } from "./AuthContext";
+import axios from "axios";
 export default function Nav() {
+  const { authToken, role, logout } = useContext(AuthContext);
   const [search, setSearch] = useState(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
+  const [user, setUser] = useState(null);
+  useEffect(() => {
+    const fetchProfile = async () => {
+      try {
+        const response = await axios.get("http://localhost:8000/user", {
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${authToken}`,
+          },
+        });
+        setUser(response.data.data);
+      } catch (e) {
+        console.log(e);
+      }
+    };
+    if (authToken && role) {
+      fetchProfile();
+    }
+  }, [authToken, role]);
   const handleChange = (e) => {
     const { value } = e.target;
     setSearch(value);
@@ -15,7 +35,9 @@ export default function Nav() {
   const handleClick = () => {
     console.log("clicked");
   };
-
+  const handleLogout = () => {
+    logout();
+  };
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
@@ -77,9 +99,25 @@ export default function Nav() {
               <CiSearch className="text-2xl" />
             </button>
           </div>
-
+          {/* Logout and Profile */}
+          <div
+            className={`${
+              role ? "block" : "hidden"
+            } flex items-center space-x-4 `}
+          >
+            <button onClick={handleLogout}>Log Out</button>
+            <Link to="/settings">
+              <img
+                src={`http://localhost:8000/images/${user ? user.image : null}`}
+              ></img>
+            </Link>
+          </div>
           {/* Login & Signup Buttons */}
-          <div className="flex items-center space-x-4">
+          <div
+            className={`${
+              role ? "hidden" : "block"
+            } flex items-center space-x-4 `}
+          >
             <Link
               to="/login"
               className="text-black hover:underline underline-offset-8"
@@ -138,15 +176,30 @@ export default function Nav() {
           >
             Why DevX
           </NavLink>
+          <Link to="/settings" className={`${role ? "block" : "hidden"} `}>
+            <img
+              src={`http://localhost:8000/images/${user ? user.image : null}`}
+            ></img>
+          </Link>
+          <button
+            onClick={handleLogout}
+            className={`${role ? "block" : "hidden"}`}
+          >
+            Log Out
+          </button>
           <Link
             to="/login"
-            className="text-black hover:underline underline-offset-8"
+            className={`${
+              role ? "hidden" : "block"
+            } text-black hover:underline underline-offset-8`}
           >
             Login
           </Link>
           <Link
             to="/signUp"
-            className="bg-green rounded-lg p-2 px-3  text-white"
+            className={`${
+              role ? "hidden" : "block"
+            }bg-green rounded-lg p-2 px-3  text-white`}
           >
             Sign Up
           </Link>

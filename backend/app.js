@@ -13,6 +13,8 @@ const clientRoute = require("./modules/client/client.route");
 const jobsRoute = require("./modules/jobs/job.route");
 const uploadMiddleware = require("./middleware/upload");
 const forgotPassword = require("./handlers/forgotPass");
+const auth = require("./middleware/auth");
+const user = require("./handlers/user");
 //models
 require("./models/userModel");
 
@@ -33,7 +35,11 @@ app.post("/login", login);
 app.post("/signUp/:role", uploadMiddleware, signUp);
 app.post("/forgot-password", forgotPassword.forgotPassword);
 app.post("/reset-password/:token", forgotPassword.resetPassword);
-// app.use();
+app.use("/developer", developerRoute);
+app.use("/client", clientRoute);
+
+app.use(auth);
+app.get("/user", user);
 app.listen(8000, () => {
   console.log("server started");
 });
