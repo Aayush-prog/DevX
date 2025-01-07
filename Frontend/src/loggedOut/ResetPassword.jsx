@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useParams, useNavigate } from "react-router-dom";
+import Nav from "../Nav";
+import Footer from "../Footer";
 
 const ResetPassword = () => {
   const { token } = useParams();
@@ -38,26 +40,43 @@ const ResetPassword = () => {
 
   return (
     <div>
-      <h2>Reset Password</h2>
-      {message && <p style={{ color: "green" }}>{message}</p>}
-      {error && <p style={{ color: "red" }}>{error}</p>}
-      <form onSubmit={handleSubmit}>
-        <input
-          type="password"
-          placeholder="New Password"
-          value={newPassword}
-          onChange={(e) => setNewPassword(e.target.value)}
-          required
-        />
-        <input
-          type="password"
-          placeholder="Confirm New Password"
-          value={confirmPassword}
-          onChange={(e) => setConfirmPassword(e.target.value)}
-          required
-        />
-        <button type="submit">Reset Password</button>
-      </form>
+      <Nav />
+      <div className="xl:px-20 lg:px-10 px-5 lg:space-y-14 space-y-8 mt-12">
+        <h1 className="text-xl lg:text-3xl xl:text-4xl 2xl:text-6xl font-bold text-center">
+          Reset Password
+        </h1>
+
+        <form
+          onSubmit={handleSubmit}
+          className="w-full max-w-xl bg-white p-6 rounded-lg space-y-4 mx-auto "
+        >
+          {message && <p>{message}</p>}
+          {error && <p className="text-red">{error}</p>}
+          <input
+            type="password"
+            placeholder="New Password"
+            value={newPassword}
+            onChange={(e) => setNewPassword(e.target.value)}
+            required
+            className="border p-2 rounded block w-full"
+          />
+          <input
+            type="password"
+            placeholder="Confirm New Password"
+            value={confirmPassword}
+            onChange={(e) => setConfirmPassword(e.target.value)}
+            required
+            className="border p-2 rounded block w-full"
+          />
+          <button
+            type="submit"
+            className="mt-4 bg-green text-white py-2 px-4 rounded block w-full hover:bg-blue"
+          >
+            Reset Password
+          </button>
+        </form>
+      </div>
+      <Footer />
     </div>
   );
 };
