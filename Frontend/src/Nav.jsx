@@ -41,7 +41,8 @@ export default function Nav() {
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
-
+  const targetPath = role ? "/home" : "/";
+  console.log(targetPath);
   return (
     <nav className="">
       {/* Navbar Section */}
@@ -57,7 +58,7 @@ export default function Nav() {
           <div className="hidden xl:block">
             <ul className="flex space-x-6 font-medium">
               <NavLink
-                to="/"
+                to={targetPath}
                 className="cursor-pointer hover:text-blue-500 hover:underline underline-offset-8"
               >
                 Home
@@ -150,7 +151,7 @@ export default function Nav() {
       >
         <ul className="space-y-6 text-xl font-medium w-full flex flex-col items-center">
           <NavLink
-            to="/"
+            to={targetPath}
             className="cursor-pointer hover:text-blue-500 hover:underline underline-offset-8 w-full text-center py-4"
             onClick={toggleMobileMenu}
           >
@@ -180,6 +181,7 @@ export default function Nav() {
           <Link to="/settings" className={`${role ? "block" : "hidden"} `}>
             <img
               src={`http://localhost:8000/images/${user ? user.image : null}`}
+              className="rounded-xl w-10 h-10"
             ></img>
           </Link>
           <button
