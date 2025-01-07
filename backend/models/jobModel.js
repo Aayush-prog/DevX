@@ -5,8 +5,8 @@ const jobSchema = new mongoose.Schema(
     budget: { type: Number, required: true },
     status: {
       type: String,
-      enum: ["open", "in progress", "completed"],
-      default: "open",
+      enum: ["Open", "In Progress", "Completed"],
+      default: "Open",
     },
     client: {
       type: mongoose.Schema.Types.ObjectId,
@@ -19,8 +19,12 @@ const jobSchema = new mongoose.Schema(
       default: null,
     },
     requiredTags: {
-      type: [String], // Array of tags required for the job
+      type: [String],
       default: [],
+    },
+    applied: {
+      type: [{ type: mongoose.Schema.Types.ObjectId }],
+      ref: "User",
     },
   },
   { timeStamps: true }

@@ -41,6 +41,18 @@ const userSchema = new mongoose.Schema(
     skills: {
       type: [String],
     },
+    openJobs: {
+      type: [{ type: mongoose.Schema.Types.ObjectId }],
+      ref: "Job",
+    },
+    ongoingJobs: {
+      type: [{ type: mongoose.Schema.Types.ObjectId }],
+      ref: "Job",
+    },
+    completedJobs: {
+      type: [{ type: mongoose.Schema.Types.ObjectId }],
+      ref: "Job",
+    },
     resetPasswordToken: {
       type: String,
       default: null,

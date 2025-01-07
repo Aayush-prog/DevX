@@ -7,6 +7,8 @@ const clientDashboard = async (req, res) => {
     _id: _id,
   });
   res.status(200).send({ data: getUser });
+  const jobs = await JobModel.find({ developer: getUser._id });
+  res.status(200).send({ data: getUser, jobs });
 };
 
 module.exports = clientDashboard;
