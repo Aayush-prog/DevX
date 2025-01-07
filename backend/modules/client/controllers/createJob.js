@@ -29,4 +29,4 @@ const createJob = async (req, res) => {
     });
   }
 };
-modeul.exports = createJob;
+module.exports = createJob;

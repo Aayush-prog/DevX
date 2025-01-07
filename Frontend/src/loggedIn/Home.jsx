@@ -1,11 +1,13 @@
-import React, { useContext, useEffect } from "react";
-import AuthContext from "../AuthContext";
+import React, { useState, useContext, useEffect } from "react";
+import { AuthContext } from "../AuthContext";
 import Nav from "../Nav";
 import Footer from "../Footer";
-import { useNavigate } from "react-router-dom";
 import axios from "axios";
-function ClientHome({ authToken, role }) {
+
+function ClientHome() {
+  const { authToken } = useContext(AuthContext);
   const [user, setUser] = useState(null);
+
   useEffect(() => {
     const fetchProfile = async () => {
       try {
@@ -23,22 +25,29 @@ function ClientHome({ authToken, role }) {
         console.log(e);
       }
     };
-    fetchProfile();
-  }, []);
+    if (authToken) {
+      // Only fetch if authToken is available
+      fetchProfile();
+    }
+  }, [authToken]); // Add authToken to the dependency array
+
   return (
     <div>
       <Nav />
       <div>
         <h2>Welcome, Client!</h2>
         <p>Here's your personalized client dashboard.</p>
-        <p>{user}</p>
+        <p>{user ? user.name : "aaudai cha"}</p>
       </div>
       <Footer />
     </div>
   );
 }
-function DevHome({ authToken, role }) {
+
+function DevHome() {
+  const { authToken } = useContext(AuthContext);
   const [user, setUser] = useState(null);
+
   useEffect(() => {
     const fetchProfile = async () => {
       try {
@@ -52,31 +61,40 @@ function DevHome({ authToken, role }) {
           }
         );
         setUser(response.data.data);
+        console.log(response.data.data);
       } catch (e) {
         console.log(e);
       }
     };
-    fetchProfile();
-  }, []);
+    if (authToken) {
+      // Only fetch if authToken is available
+      fetchProfile();
+    }
+  }, [authToken]); // Add authToken to the dependency array
+
   return (
     <div>
       <Nav />
       <div>
         <h2>Welcome, Developer!</h2>
         <p>Here's your personalized developer dashboard.</p>
-        <p>{user}</p>
+        <p>{user ? user.name : "aaudai cha"}</p>
       </div>
       <Footer />
     </div>
   );
 }
+
 export default function Home() {
-  const { authToken, role } = useContext(AuthContext);
+  const { role } = useContext(AuthContext);
+
   if (role === "client") {
-    return <ClientHome authToken={authToken} role={role} />;
+    return <ClientHome />;
   }
 
   if (role === "developer") {
-    return <DevHome authToken={authToken} role={role} />;
+    return <DevHome />;
   }
+
+  return <div>Loading...</div>; // Or some default component
 }

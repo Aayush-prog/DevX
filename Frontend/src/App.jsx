@@ -5,7 +5,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import PrivateRouter from "./PrivateRouter.jsx";
-import LandinPage from "./loggedOut/Home.jsx";
+import LandingPage from "./loggedOut/Home.jsx";
 import SignUp from "./loggedOut/SignUp.jsx";
 import Login from "./loggedOut/Login.jsx";
 import ClientSignUp from "./loggedOut/ClientSignUp.jsx";
@@ -19,7 +19,7 @@ function App() {
     createRoutesFromElements(
       <Route>
         {/* Public Routes */}
-        <Route path="/" element={<LandinPage />} />
+        <Route path="/" element={<LandingPage />} />
         <Route path="/signUp" element={<SignUp />} />
         <Route path="/client" element={<ClientSignUp />} />
         <Route path="/talent" element={<DevSignUp />} />

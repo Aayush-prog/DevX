@@ -20,7 +20,7 @@ export const AuthProvider = ({ children }) => {
     localStorage.setItem("authToken", token);
     localStorage.setItem("role", userRole);
     setAuthToken(token);
-    setRole(role);
+    setRole(userRole);
   };
 
   // Function to log out

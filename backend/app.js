@@ -17,6 +17,7 @@ const auth = require("./middleware/auth");
 const user = require("./handlers/user");
 //models
 require("./models/userModel");
+require("./models/jobModel");
 
 const app = express();
 app.use(cors());

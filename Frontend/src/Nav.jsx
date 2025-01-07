@@ -109,6 +109,7 @@ export default function Nav() {
             <Link to="/settings">
               <img
                 src={`http://localhost:8000/images/${user ? user.image : null}`}
+                className="rounded-xl w-10 h-10"
               ></img>
             </Link>
           </div>
