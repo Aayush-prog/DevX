@@ -31,6 +31,7 @@ function ClientHome({ authToken, role }) {
       <div>
         <h2>Welcome, Client!</h2>
         <p>Here's your personalized client dashboard.</p>
+        <p>{user}</p>
       </div>
       <Footer />
     </div>
@@ -63,6 +64,7 @@ function DevHome({ authToken, role }) {
       <div>
         <h2>Welcome, Developer!</h2>
         <p>Here's your personalized developer dashboard.</p>
+        <p>{user}</p>
       </div>
       <Footer />
     </div>

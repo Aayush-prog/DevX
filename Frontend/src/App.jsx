@@ -4,6 +4,7 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
+import PrivateRouter from "./PrivateRouter.jsx";
 import LandinPage from "./loggedOut/Home.jsx";
 import SignUp from "./loggedOut/SignUp.jsx";
 import Login from "./loggedOut/Login.jsx";
@@ -11,10 +12,13 @@ import ClientSignUp from "./loggedOut/ClientSignUp.jsx";
 import DevSignUp from "./loggedOut/DevSignUp.jsx";
 import ForgotPassword from "./loggedOut/ForgotPassword.jsx";
 import ResetPassword from "./loggedOut/ResetPassword.jsx";
+import Home from "./loggedIn/Home.jsx";
+
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route>
+        {/* Public Routes */}
         <Route path="/" element={<LandinPage />} />
         <Route path="/signUp" element={<SignUp />} />
         <Route path="/client" element={<ClientSignUp />} />
@@ -22,6 +26,8 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/forgot-password/" element={<ForgotPassword />} />
         <Route path="/reset-password/:token" element={<ResetPassword />} />
+        {/* Private Routes */}
+        <Route path="/home" element={<PrivateRouter element={<Home />} />} />
         {/* <Route path="/dev" element={<Try />}>
           <Route path=":id" element={<Nested />} />
         </Route> */}

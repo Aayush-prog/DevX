@@ -54,7 +54,7 @@ export default function DevSignUp() {
       );
       console.log(response);
       if (response.data.status === "success") {
-        // navigate("/login");
+        navigate("/login");
       }
     } catch (error) {
       setError(` ${error.response?.data?.msg || "error occurred"} `);

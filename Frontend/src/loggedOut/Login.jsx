@@ -43,6 +43,7 @@ export default function Login() {
       console.log(response);
       if (response.data.status === "success") {
         login(response.data.token, response.data.role);
+        navigate("/home");
       }
     } catch (error) {
       console.log(error);
