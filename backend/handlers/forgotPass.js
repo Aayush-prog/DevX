@@ -101,7 +101,7 @@ const resetPassword = async (req, res) => {
 
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: email,
+      to: user.email,
       subject: "Password Reseted",
       html: `
               <p>You password has been reset.</p>

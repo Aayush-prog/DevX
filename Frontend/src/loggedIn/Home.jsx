@@ -42,7 +42,7 @@ function ClientHome() {
         <div className="xl:px-20 lg:px-10 px-5 mt-5 xl:mt-10 xl:space-y-20 space-y-8">
           <div className="relative">
             <div className="absolute inset-0 -z-10 mx-auto w-[300px] h-[50px] lg:w-[600px]  bg-gradient-to-r from-[#4A90E2] to-[#50E3C2] rounded-full blur-3xl opacity-50"></div>
-            <h1 className="mx-auto w-1/2 text-center text-xl lg:text-3xl xl:text-4xl 2xl:text-6xl font-bold ">
+            <h1 className="mx-auto text-center text-xl lg:text-3xl xl:text-4xl 2xl:text-6xl font-bold ">
               Welcome <span className="text-blue">{user.name} </span> !
             </h1>
           </div>

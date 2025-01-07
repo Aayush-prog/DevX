@@ -122,7 +122,7 @@ export default function Login() {
             <br></br>
             <Link
               to="/signup"
-              className="inline-flex items-center font-medium text-blue-600 dark:text-blue-500 hover:underline"
+              className="text-blue inline-flex items-center font-medium text-blue-600 dark:text-blue-500 hover:underline"
             >
               Sign Up Now
               <svg
