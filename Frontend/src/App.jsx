@@ -13,6 +13,7 @@ import DevSignUp from "./loggedOut/DevSignUp.jsx";
 import ForgotPassword from "./loggedOut/ForgotPassword.jsx";
 import ResetPassword from "./loggedOut/ResetPassword.jsx";
 import Home from "./loggedIn/Home.jsx";
+import Chat from "./loggedIn/Chat.jsx";
 
 function App() {
   const router = createBrowserRouter(
@@ -28,6 +29,7 @@ function App() {
         <Route path="/reset-password/:token" element={<ResetPassword />} />
         {/* Private Routes */}
         <Route path="/home" element={<PrivateRouter element={<Home />} />} />
+        <Route path="/chats" element={<PrivateRouter element={<Chat />} />} />
         {/* <Route path="/dev" element={<Try />}>
           <Route path=":id" element={<Nested />} />
         </Route> */}
