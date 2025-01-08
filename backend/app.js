@@ -11,9 +11,9 @@ require("dotenv").config();
 // Routes
 const login = require("./handlers/login");
 const signUp = require("./handlers/signUp");
-const developerRoute = require("./modules/developers/dev.route");
-const clientRoute = require("./modules/client/client.route");
-const jobsRoute = require("./modules/jobs/job.route");
+const developerRoute = require("./modules/developers/dev.routes");
+const clientRoute = require("./modules/client/client.routes");
+const jobsRoute = require("./modules/jobs/job.routes");
 const uploadMiddleware = require("./middleware/upload");
 const forgotPassword = require("./handlers/forgotPass");
 const auth = require("./middleware/auth");

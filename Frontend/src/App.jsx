@@ -14,6 +14,7 @@ import ForgotPassword from "./loggedOut/ForgotPassword.jsx";
 import ResetPassword from "./loggedOut/ResetPassword.jsx";
 import Home from "./loggedIn/Home.jsx";
 import Chat from "./loggedIn/Chat.jsx";
+import FindWork from "./loggedIn/FindWork.jsx";
 
 function App() {
   const router = createBrowserRouter(
@@ -30,6 +31,10 @@ function App() {
         {/* Private Routes */}
         <Route path="/home" element={<PrivateRouter element={<Home />} />} />
         <Route path="/chats" element={<PrivateRouter element={<Chat />} />} />
+        <Route
+          path="/findWork"
+          element={<PrivateRouter element={<FindWork />} />}
+        />
         {/* <Route path="/dev" element={<Try />}>
           <Route path=":id" element={<Nested />} />
         </Route> */}
