@@ -13,6 +13,7 @@ function ClientHome() {
   const [user, setUser] = useState(null);
   const [createJob, setCreateJob] = useState(false);
   const [error, setError] = useState(null);
+
   const [jobForm, setJobForm] = useState({
     title: "",
     description: "",
@@ -47,7 +48,9 @@ function ClientHome() {
       data.append(`requiredTags[${index}]`, item);
     });
     try {
-      console.log(jobForm.title);
+      for (const [key, value] of data.entries()) {
+        console.log(key, value);
+      }
       const response = await axios.post(
         "http://localhost:8000/client/createJob",
         data,

@@ -5,10 +5,10 @@ const clientDashboard = require("./controllers/clientDashboard");
 const createJob = require("./controllers/createJob");
 const delJob = require("./controllers/delJob");
 const editJob = require("./controllers/editJob");
-
+const upload = require("../../middleware/upload");
 clientRouter.use(auth);
 clientRouter.get("/dashboard", clientDashboard);
-clientRouter.post("/createJob", createJob);
+clientRouter.post("/createJob", upload, createJob);
 clientRouter.delete("/delJob/:jobId", delJob);
 clientRouter.patch("/editJob/:jobId", editJob);
 module.exports = clientRouter;

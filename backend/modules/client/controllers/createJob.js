@@ -5,13 +5,13 @@ const createJob = async (req, res) => {
   const JobModel = mongoose.model("Job");
   const { title, description, budget, requiredTags } = req.body;
   try {
-    console.log(req.body);
+    const client = req.user._id;
     const newJob = await JobModel.create({
       title,
       description,
       budget,
       requiredTags,
-      client: req.user._id,
+      client,
     });
     console.log(newJob);
     await UserModel.updateOne(
