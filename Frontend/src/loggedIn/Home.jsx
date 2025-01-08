@@ -47,6 +47,7 @@ function ClientHome() {
       data.append(`requiredTags[${index}]`, item);
     });
     try {
+      console.log(jobForm.title);
       const response = await axios.post(
         "http://localhost:8000/client/createJob",
         data,

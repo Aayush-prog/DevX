@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 
 const clientDashboard = async (req, res) => {
+  console.log("in client dashboard");
   const UserModel = mongoose.model("User");
   const JobModel = mongoose.model("Job");
   const _id = req.user._id;

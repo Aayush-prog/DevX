@@ -8,7 +8,7 @@ const editJob = require("./controllers/editJob");
 
 clientRouter.use(auth);
 clientRouter.get("/dashboard", clientDashboard);
-clientRouter.get("/createJob", createJob);
-clientRouter.get("/delJob/:jobId", delJob);
-clientRouter.get("/editJob/:jobId", editJob);
+clientRouter.post("/createJob", createJob);
+clientRouter.delete("/delJob/:jobId", delJob);
+clientRouter.patch("/editJob/:jobId", editJob);
 module.exports = clientRouter;
