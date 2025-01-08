@@ -61,7 +61,7 @@ function ClientHome() {
           },
         }
       );
-      setCreateModule(false);
+      setCreateJob(false);
       navigate("/home");
     } catch (e) {
       setError(e.message);
@@ -200,13 +200,13 @@ function ClientHome() {
               <div className="flex items-center gap-5 ">
                 <IoCodeWorking className=" text-xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold" />
                 <h1 className="2xl:text-2xl xl:text-xl font-semibold  ">
-                  {user.openJobs.length}
+                  {user.ongoingJobs.length}
                 </h1>
               </div>
               <div className="flex items-center gap-5 ">
                 <FaFolderClosed className="text-green text-xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold" />
                 <h1 className="2xl:text-2xl xl:text-xl font-semibold  ">
-                  {user.openJobs.length}
+                  {user.completedJobs.length}
                 </h1>
               </div>
             </div>
