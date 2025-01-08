@@ -45,7 +45,7 @@ export default function Footer() {
             </li>
           </ul>
           <p className="text-sm text-gray-400 mt-4">
-            © 2025 Company Name. All rights reserved.
+            © 2025 DevX. All rights reserved.
           </p>
         </div>
       </div>

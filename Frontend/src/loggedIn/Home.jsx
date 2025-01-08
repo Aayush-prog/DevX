@@ -6,16 +6,64 @@ import axios from "axios";
 import { FaFolderOpen } from "react-icons/fa";
 import { FaFolderClosed } from "react-icons/fa6";
 import { IoCodeWorking } from "react-icons/io5";
-
+import { useNavigate } from "react-router-dom";
 function ClientHome() {
+  const navigate = useNavigate();
   const { authToken } = useContext(AuthContext);
   const [user, setUser] = useState(null);
   const [createJob, setCreateJob] = useState(false);
+  const [error, setError] = useState(null);
   const [jobForm, setJobForm] = useState({
-    name: "",
-    status: "",
-    tags: [],
+    title: "",
+    description: "",
+    budget: "",
+    requiredTags: [""],
   });
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setJobForm({ ...jobForm, [name]: value });
+  };
+  const handleTagsChange = (index, value) => {
+    console.log("on tag change");
+    const newTags = [...jobForm.requiredTags];
+    newTags[index] = value;
+    setJobForm({ ...jobForm, requiredTags: newTags });
+  };
+  const addTag = () => {
+    console.log("on tag change");
+    setJobForm({ ...jobForm, requiredTags: [...jobForm.requiredTags, ""] });
+  };
+  const removeTag = (index) => {
+    const newTag = jobForm.requiredTags.filter((_, i) => i !== index);
+    setJobForm({ ...jobForm, requiredTags: newTag });
+  };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const data = new FormData();
+    data.append("title", jobForm.title);
+    data.append("description", jobForm.description);
+    data.append("budget", jobForm.budget);
+    jobForm.requiredTags.forEach((item, index) => {
+      data.append(`requiredTags[${index}]`, item);
+    });
+    try {
+      const response = await axios.post(
+        "http://localhost:8000/client/createJob",
+        data,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+            Authorization: `Bearer ${authToken}`,
+          },
+        }
+      );
+      setCreateModule(false);
+      navigate("/home");
+    } catch (e) {
+      setError(e.message);
+    }
+  };
+
   useEffect(() => {
     const fetchProfile = async () => {
       try {
@@ -44,8 +92,86 @@ function ClientHome() {
     <div>
       <Nav />
       {createJob && (
-        <div className="xl:px-20 lg:px-10 px-5 mt-5 xl:mt-10 xl:space-y-20 space-y-8">
-          <form></form>
+        <div className="xl:px-20 lg:px-10 px-5 mt-5 xl:mt-10 space-y-8">
+          <h1 className="text-2xl lg:text-4xl xl:text-5xl 2xl:text-5xl font-bold text-center">
+            Pitch your <span className="text-green">idea</span> for{" "}
+            <span className="text-blue">talents</span> to be hired!
+          </h1>
+          <form onSubmit={handleSubmit} className="max-w-3xl mx-auto space-y-4">
+            <div>
+              <label className="block text-sm font-medium">Job Title</label>
+              <input
+                type="text"
+                name="title"
+                value={jobForm.title}
+                onChange={handleChange}
+                className=" p-2 mt-1 block w-full border rounded-md shadow-sm"
+                placeholder="Enter your job title"
+                required
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium">
+                Job Description
+              </label>
+              <textarea
+                name="description"
+                value={jobForm.description}
+                onChange={handleChange}
+                className=" p-2 mt-1 block w-full border rounded-md shadow-sm"
+                placeholder="Enter your job description"
+                required
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium">Job Budget</label>
+              <input
+                type="text"
+                name="budget"
+                value={jobForm.budget}
+                onChange={handleChange}
+                className=" p-2 mt-1 block w-full border rounded-md shadow-sm"
+                placeholder="Enter your job budget or keep it negotiable"
+                required
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium ">
+                Required Tags for better talent finds
+              </label>
+              {jobForm.requiredTags.map((item, index) => (
+                <div key={index} className="flex items-center space-x-2 mb-2">
+                  <input
+                    type="text"
+                    value={item}
+                    onChange={(e) => handleTagsChange(index, e.target.value)}
+                    className="mt-1 block p-2 w-full border  rounded-md shadow-sm"
+                    placeholder={`Required Tag ${index + 1}`}
+                  />
+                  <button
+                    type="button"
+                    onClick={() => removeTag(index)}
+                    className=" bg-red p-2 rounded-md"
+                  >
+                    Remove
+                  </button>
+                </div>
+              ))}
+              <button
+                type="button"
+                onClick={addTag}
+                className="mt-2 inline-flex items-center px-3 py-2 bg-blue text-white text-sm font-medium rounded-md "
+              >
+                Add Syllabus Item
+              </button>
+            </div>
+            <button
+              type="submit"
+              className=" text-center p-2 bg-green text-white text-sm font-medium rounded-md w-full"
+            >
+              Submit
+            </button>
+          </form>
         </div>
       )}
       {user && !createJob && (
@@ -83,6 +209,28 @@ function ClientHome() {
           </div>
         </div>
       )}
+      <button
+        className="fixed bottom-6 right-6 bg-blue hover:bg-green text-white p-4 rounded-full shadow-lg focus:outline-none"
+        aria-label="Floating Action Button"
+        onClick={(e) => {
+          setCreateJob(!createJob);
+        }}
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M12 4v16m8-8H4"
+          />
+        </svg>
+      </button>
       <Footer />
     </div>
   );
