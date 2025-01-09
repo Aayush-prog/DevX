@@ -1,9 +1,14 @@
 import { useEffect, useState } from "react";
+import { useSearchParams } from "react-router-dom";
 import io from "socket.io-client";
 
 const socket = io("http://localhost:8000");
 
-const Chat = ({ currentUserId, chatWithUserId }) => {
+const Chat = () => {
+  const [searchParams] = useSearchParams();
+
+  const currentUserId = searchParams.get("currentUser");
+  const chatWithUserId = searchParams.get("chatUser");
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState([]);
   const [roomId, setRoomId] = useState("");

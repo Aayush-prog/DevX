@@ -1,11 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function TalentCard(props) {
   const dev = props.dev;
-
+  const navigate = useNavigate();
   const handleClick = () => {
-    console.log(`Navigating to dev details for: ${dev.title}`);
-    // Add navigation logic here if needed
+    navigate(`/dev/${dev._id}`);
   };
 
   return (

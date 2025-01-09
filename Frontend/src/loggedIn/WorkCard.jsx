@@ -1,12 +1,12 @@
 import React from "react";
 import { FaDollarSign } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 export default function WorkCard(props) {
   const job = props.job;
-
+  const navigate = useNavigate();
   const handleClick = () => {
-    console.log(`Navigating to job details for: ${job.title}`);
-    // Add navigation logic here if needed
+    navigate(`/job/${job._id}`);
   };
 
   return (

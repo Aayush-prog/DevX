@@ -24,6 +24,7 @@ export default function FindWork() {
     };
     fetchJobs();
   }, []);
+
   return (
     <div>
       <Nav />

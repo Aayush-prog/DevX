@@ -33,12 +33,10 @@ const login = async (req, res) => {
 
     const jwtSalt = process.env.jwt_salt;
     if (!jwtSalt) {
-      return res
-        .status(500)
-        .json({
-          status: "failed",
-          msg: "JWT secret not defined in environment",
-        });
+      return res.status(500).json({
+        status: "failed",
+        msg: "JWT secret not defined in environment",
+      });
     }
 
     const token = jwt.sign({ _id: user._id, role: user.role }, jwtSalt);
@@ -46,7 +44,8 @@ const login = async (req, res) => {
     res.status(200).json({
       status: "success",
       token,
-      role: user.role, // Correctly use user.role
+      role: user.role,
+      id: user._id, // Correctly use user.role
     });
   } catch (error) {
     console.error("Login Error:", error); // Log the error for debugging

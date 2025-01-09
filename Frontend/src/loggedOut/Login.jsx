@@ -42,7 +42,7 @@ export default function Login() {
       );
       console.log(response);
       if (response.data.status === "success") {
-        login(response.data.token, response.data.role);
+        login(response.data.token, response.data.role, response.data.id);
         navigate("/home");
       }
     } catch (error) {
