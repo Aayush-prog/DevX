@@ -6,7 +6,7 @@ const getDevById = require("./controllers/getDevById");
 const developerRouter = express.Router();
 
 developerRouter.get("/", getDev);
-developerRouter.get("/:id", getDevById);
+developerRouter.get("/getDevById/:id", getDevById);
 developerRouter.use(auth);
 developerRouter.get("/dashboard", devDashboard);
 
