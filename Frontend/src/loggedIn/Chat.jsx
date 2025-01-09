@@ -1,18 +1,22 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import io from "socket.io-client";
-
+import axios from "axios";
+import { AuthContext } from "../AuthContext";
+import Nav from "../Nav";
+import Footer from "../Footer";
 const socket = io("http://localhost:8000");
 
 const Chat = () => {
+  const { authToken } = useContext(AuthContext);
   const [searchParams] = useSearchParams();
-
   const currentUserId = searchParams.get("currentUser");
   const chatWithUserId = searchParams.get("chatUser");
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState([]);
   const [roomId, setRoomId] = useState("");
-
+  const [currentUser, setCurrentUser] = useState();
+  const [chatUser, setChatUser] = useState();
   useEffect(() => {
     // Start the chat by creating or joining a room
     const generatedRoomId = [currentUserId, chatWithUserId].sort().join("_");
@@ -34,29 +38,91 @@ const Chat = () => {
     };
   }, [currentUserId, chatWithUserId]);
 
+  useEffect(() => {
+    const fetch = async () => {
+      const responseCurrent = await axios.get(
+        `http://localhost:8000/getUser/${currentUserId}`,
+        {
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${authToken}`,
+          },
+        }
+      );
+      setCurrentUser(responseCurrent.data.data);
+      const responseChat = await axios.get(
+        `http://localhost:8000/getUser/${chatWithUserId}`,
+        {
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${authToken}`,
+          },
+        }
+      );
+      setChatUser(responseChat.data.data);
+    };
+    fetch();
+  }, []);
   const sendMessage = () => {
     socket.emit("send_message", { roomId, message, senderId: currentUserId });
-    setMessages((prev) => [...prev, { senderId: currentUserId, message }]);
-    setMessage("");
+    setMessage(""); // Clear input only after sending.
   };
 
   return (
     <div>
-      <h1>Chat with User {chatWithUserId}</h1>
-      <div>
-        {messages.map((msg, idx) => (
-          <p key={idx}>
-            <strong>{msg.senderId}:</strong> {msg.message}
-          </p>
-        ))}
+      <Nav />
+      <div className="flex flex-col h-screen w-full max-w-2xl mx-auto border border-grey">
+        <header className="p-4 border-b border-grey text-center">
+          <h1 className="text-xl font-semibold text-primary">
+            Chat with {chatUser ? chatUser.name : ""}
+          </h1>
+        </header>
+
+        <main className="flex-1 overflow-y-auto p-4">
+          <div className="flex flex-col gap-2">
+            {messages.map((msg, idx) => {
+              const isCurrentUser = msg.senderId === currentUserId;
+              return (
+                <div
+                  key={idx}
+                  className={`rounded-xl py-2 px-4 my-1 max-w-fit  ${
+                    isCurrentUser
+                      ? "bg-green self-end text-white"
+                      : "bg-blue self-start text-white"
+                  }`}
+                >
+                  {/* <span className="font-medium">
+                  {isCurrentUser ? "You" : `User ${msg.senderId}`} :
+                </span> */}
+                  <span className="m-1"> {msg.message}</span>
+                </div>
+              );
+            })}
+          </div>
+        </main>
+
+        <footer className="flex p-4 border-t border-grey">
+          <input
+            type="text"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            placeholder="Type a message..."
+            className="flex-1 border border-grey rounded-md p-2 mr-2"
+            onKeyDown={(e) => {
+              if (e.key === "Enter") {
+                sendMessage();
+              }
+            }}
+          />
+          <button
+            onClick={sendMessage}
+            className="bg-green hover:bg-green text-white rounded-md px-4 py-2"
+          >
+            Send
+          </button>
+        </footer>
       </div>
-      <input
-        type="text"
-        value={message}
-        onChange={(e) => setMessage(e.target.value)}
-        placeholder="Type a message..."
-      />
-      <button onClick={sendMessage}>Send</button>
+      <Footer />
     </div>
   );
 };

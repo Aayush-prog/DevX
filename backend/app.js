@@ -18,6 +18,7 @@ const uploadMiddleware = require("./middleware/upload");
 const forgotPassword = require("./handlers/forgotPass");
 const auth = require("./middleware/auth");
 const user = require("./handlers/user");
+const getUserByID = require("./handlers/getUserById");
 
 // Models
 require("./models/userModel");
@@ -56,7 +57,7 @@ app.post("/reset-password/:token", forgotPassword.resetPassword);
 app.use("/developer", developerRoute);
 app.use("/client", clientRoute);
 app.use("/jobs", jobsRoute);
-
+app.get("/getUser/:id", getUserByID);
 app.use(auth);
 app.get("/user", user);
 
