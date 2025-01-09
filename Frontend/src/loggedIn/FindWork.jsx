@@ -1,15 +1,19 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import Nav from "../Nav";
 import Footer from "../Footer";
 import WorkCard from "./WorkCard";
+import { AuthContext } from "../AuthContext";
+import { useContext } from "react";
 export default function FindWork() {
+  const { authToken } = useContext(AuthContext);
   const navigate = useNavigate();
-  const [jobs, setJobs] = useState(null);
+  const [jobs, setJobs] = useState([]);
   useEffect(() => {
     const fetchJobs = async () => {
-      const response = await axios.get("http://localhost:8000/jobs/", {
+      console.log("fetching jobs");
+      const response = await axios.get("http://localhost:8000/jobs", {
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${authToken}`,
@@ -30,10 +34,12 @@ export default function FindWork() {
             Find <span className="text-blue">Work </span>
           </h1>
         </div>
-        <div>
-          {jobs.array.forEach((element) => {
-            <WorkCard job={element} />;
-          })}
+        <div className="grid lg:grid-cols-2 ">
+          {jobs &&
+            jobs.map((element) => {
+              console.log(element);
+              return <WorkCard job={element} />;
+            })}
         </div>
       </div>
       <Footer />

@@ -1,9 +1,5 @@
 const jwt = require("jsonwebtoken");
 const auth = (req, res, next) => {
-  console.log("Auth middleware called");
-  console.log("Request headers:", req.headers);
-  console.log("Request method:", req.method);
-  console.log("Request URL:", req.url);
   const authorizationHeader = req.headers.authorization;
   if (!authorizationHeader) {
     res.status(401).json({ msg: "authorization failed ,login" });
@@ -17,8 +13,6 @@ const auth = (req, res, next) => {
       process.env.jwt_salt
     );
     req.user = checkAuth;
-    console.log("in auth");
-    console.log(req.user);
   } catch (e) {
     res.status(401).json({ msg: "authorization failed ,invalid token" });
     return;

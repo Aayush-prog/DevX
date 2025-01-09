@@ -8,7 +8,7 @@ const clientDashboard = async (req, res) => {
   const getUser = await UserModel.findOne({
     _id: _id,
   });
-  const jobs = await JobModel.find({ developer: getUser._id });
+  const jobs = await JobModel.find({ client: getUser._id });
   res.status(200).send({ data: getUser, jobs });
 };
 

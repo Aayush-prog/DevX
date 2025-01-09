@@ -55,6 +55,7 @@ app.post("/forgot-password", forgotPassword.forgotPassword);
 app.post("/reset-password/:token", forgotPassword.resetPassword);
 app.use("/developer", developerRoute);
 app.use("/client", clientRoute);
+app.use("/jobs", jobsRoute);
 
 app.use(auth);
 app.get("/user", user);
