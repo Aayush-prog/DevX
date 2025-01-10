@@ -18,6 +18,7 @@ import FindWork from "./loggedIn/FindWork.jsx";
 import FindTalent from "./loggedIn/FindTalent.jsx";
 import JobDisplay from "./loggedIn/jobDisplay.jsx";
 import DevDisplay from "./loggedIn/DevDisplay.jsx";
+import WhyDevX from "./loggedOut/WhyDevX.jsx";
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
@@ -28,6 +29,7 @@ function App() {
         <Route path="/client" element={<ClientSignUp />} />
         <Route path="/talent" element={<DevSignUp />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/whyDevX" element={<WhyDevX />} />
         <Route path="/forgot-password/" element={<ForgotPassword />} />
         <Route path="/reset-password/:token" element={<ResetPassword />} />
         <Route path="/job/:jobId" element={<JobDisplay />} />

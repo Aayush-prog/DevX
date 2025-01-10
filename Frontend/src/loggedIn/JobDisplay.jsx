@@ -254,33 +254,47 @@ const JobDisplay = () => {
           </div>
         )}
         {!editJob && (
-          <div className="mb-6 flex flex-col md:flex-row">
-            {/* Job details container */}
-            <div className="md:w-2/3 p-4">
-              <h2 className="text-2xl font-bold mb-2 text-primary">
-                {job.title}
-              </h2>
-              <button className="p-2 bg-green" onClick={handleClientClick}>
-                Chat with client
-              </button>
-              <div className="flex mb-4">
-                <span className="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-gray-200 text-gray-800 mr-2">
-                  {job.budget}
-                </span>
-                <span className="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-gray-200 text-gray-800 mr-2">
-                  {job.status}
-                </span>
-              </div>
+          <div className="max-w-3xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden mt-8">
+            {/* Header Section */}
+            <div className="bg-gray-100 p-6 border-b border-gray-200">
+              <h2 className="text-2xl font-bold text-gray-800">{job.title}</h2>
+            </div>
 
-              <p className="text-gray-800 leading-relaxed mb-6">
-                {job.description}
-              </p>
-              {/* Apply Now Button (conditionally rendered) */}
-              {role && role === "developer" && (
-                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                  Apply Now
-                </button>
-              )}
+            {/* Body Section */}
+            <div className="p-6">
+              {/* Job Description */}
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                Job Description
+              </h3>
+              <p className="text-gray-700 leading-relaxed">{job.description}</p>
+
+              {/* Budget */}
+              <h3 className="text-xl font-semibold text-gray-800 mt-4 mb-2">
+                Budget
+              </h3>
+              <p className="text-gray-700">${job.budget}</p>
+
+              {/* Status */}
+              <h3 className="text-xl font-semibold text-gray-800 mt-4 mb-2">
+                Status
+              </h3>
+              <p className="text-gray-700">{job.status}</p>
+
+              {/* Required Tags */}
+              <h3 className="text-xl font-semibold text-gray-800 mt-4 mb-2">
+                Required Tags
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {job.requiredTags &&
+                  job.requiredTags.map((tag, index) => (
+                    <span
+                      key={index}
+                      className="bg-gray-200 text-gray-700 px-2 py-1 rounded-md text-sm"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+              </div>
             </div>
           </div>
         )}
