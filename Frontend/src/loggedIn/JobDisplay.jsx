@@ -63,6 +63,9 @@ const JobDisplay = () => {
     jobForm.requiredTags.forEach((item, index) => {
       data.append(`requiredTags[${index}]`, item);
     });
+    for (const [key, value] of data.entries()) {
+      console.log(`${key}: ${value}`);
+    }
     try {
       const response = await axios.patch(
         `http://localhost:8000/client/editJob/${jobId}`,
@@ -87,6 +90,18 @@ const JobDisplay = () => {
     navigate(`/chat?currentUser=${id}&chatUser=${job.client}`);
   };
 
+  const handleDelete = async () => {
+    const response = await axios.delete(
+      `http://localhost:8000/client/delJob/${jobId}`,
+      {
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${authToken}`,
+        },
+      }
+    );
+    navigate("/home");
+  };
   useEffect(() => {
     const fetchData = async () => {
       setLoading(true);
@@ -228,6 +243,12 @@ const JobDisplay = () => {
                 className=" text-center p-2 bg-green text-white text-sm font-medium rounded-md w-full"
               >
                 Submit
+              </button>
+              <button
+                className=" text-center p-2 bg-red text-white text-sm font-medium rounded-md w-full"
+                onClick={handleDelete}
+              >
+                Delete
               </button>
             </form>
           </div>

@@ -5,6 +5,7 @@ const editJob = async (req, res) => {
   const { jobId } = req.params;
   const { title, description, budget, requiredTags, status } = req.body;
   try {
+    console.log(title);
     const job = await JobModel.findById(jobId);
     if (!job) {
       return res.status(404).json({

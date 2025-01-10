@@ -10,5 +10,5 @@ clientRouter.use(auth);
 clientRouter.get("/dashboard", clientDashboard);
 clientRouter.post("/createJob", upload, createJob);
 clientRouter.delete("/delJob/:jobId", delJob);
-clientRouter.patch("/editJob/:jobId", editJob);
+clientRouter.patch("/editJob/:jobId", upload, editJob);
 module.exports = clientRouter;

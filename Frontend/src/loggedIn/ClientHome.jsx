@@ -8,6 +8,7 @@ import { FaFolderClosed } from "react-icons/fa6";
 import { IoCodeWorking } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
 import WorkCard from "./WorkCard";
+import PieChartCard from "./PieChartCard";
 
 export default function ClientHome() {
   const navigate = useNavigate();
@@ -193,7 +194,7 @@ export default function ClientHome() {
             <h1 className="text-xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold">
               Here are your insights
             </h1>
-            <div className="grid grid-cols-3 gap-3 items-center">
+            <div className="grid grid-cols-4 gap-3 items-center">
               <div className="flex items-center gap-5 ">
                 <FaFolderOpen className="text-green text-5xl font-bold" />
                 <h1 className="2xl:text-2xl xl:text-xl font-semibold  ">
@@ -212,6 +213,14 @@ export default function ClientHome() {
                   {user.completedJobs.length}
                 </h1>
               </div>
+              <PieChartCard
+                title="Distribution of jobs"
+                data={[
+                  user.openJobs.length,
+                  user.ongoingJobs.length,
+                  user.completedJobs.length,
+                ]}
+              />
             </div>
           </div>
           <div>
