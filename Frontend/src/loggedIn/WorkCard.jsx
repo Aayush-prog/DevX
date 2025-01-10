@@ -24,9 +24,7 @@ export default function WorkCard(props) {
         <h1 className="text-xl lg:text-2xl 2xl:text-4xl font-bold text-primary">
           {job.title}
         </h1>
-        <h2 className="underline" onClick={handleClientClick}>
-          By {job.client}
-        </h2>
+
         <p>{job.description}</p>
         <div className="flex gap-2 flex-wrap">
           {job.requiredTags.map((element, index) => (
