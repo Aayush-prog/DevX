@@ -5,6 +5,7 @@ import axios from "axios";
 import { AuthContext } from "../AuthContext";
 import Nav from "../Nav";
 import Footer from "../Footer";
+const api = import.meta.env.VITE_URL;
 const socket = io(`${api}`);
 
 const Chat = () => {
