@@ -7,13 +7,14 @@ import { AuthContext } from "../AuthContext";
 import { useContext } from "react";
 import TalentCard from "./TalentCard";
 export default function FindWork() {
+  const api = import.meta.env.VITE_URL;
   const { authToken } = useContext(AuthContext);
   const navigate = useNavigate();
   const [devs, setDevs] = useState([]);
   useEffect(() => {
     const fetchJobs = async () => {
       console.log("fetching devs");
-      const response = await axios.get("http://localhost:8000/developer/", {
+      const response = await axios.get(`${api}/developer/`, {
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${authToken}`,

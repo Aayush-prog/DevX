@@ -4,6 +4,7 @@ import Footer from "../Footer";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 const ClientSignUp = () => {
+  const api = import.meta.env.VITE_URL;
   const navigate = useNavigate();
   const [error, setError] = useState(null);
   const [formData, setFormData] = useState({
@@ -42,7 +43,7 @@ const ClientSignUp = () => {
     }
     try {
       const response = await axios.post(
-        "http://localhost:8000/signup/client",
+        `${api}/signup/client`,
         formDataToSend,
         {
           headers: {

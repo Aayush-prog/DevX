@@ -13,6 +13,7 @@ const ResetPassword = () => {
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
+    const api = import.meta.env.VITE_URL;
     e.preventDefault();
     console.log(newPassword);
     console.log(confirmPassword);
@@ -23,12 +24,9 @@ const ResetPassword = () => {
     }
 
     try {
-      const response = await axios.post(
-        `http://localhost:8000/reset-password/${token}`,
-        {
-          newPassword,
-        }
-      );
+      const response = await axios.post(`${api}/reset-password/${token}`, {
+        newPassword,
+      });
       setMessage(response.data.msg);
       setError("");
       navigate("/login");

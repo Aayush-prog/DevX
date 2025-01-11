@@ -4,6 +4,7 @@ import Nav from "../Nav";
 import Footer from "../Footer";
 
 const ForgotPassword = () => {
+  const api = import.meta.env.VITE_URL;
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
@@ -12,7 +13,7 @@ const ForgotPassword = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:8000/forgot-password",
+        `${api}/forgot-password`,
         { email },
         {
           headers: {

@@ -9,18 +9,19 @@ export default {
       xl: "1024px",
       "2xl": "1440px",
     },
-    colors: {
-      blue: "#23A6F0",
-      green: "#63C132",
-      primary: "#2C2A4A",
-      white: "#FFFFFF",
-      grey: "#D9D9D9",
-      red: "#E44A24",
-    },
     fontFamily: {
       sans: ['"Roboto"', "sans-serif"],
     },
-    extend: {},
+    extend: {
+      colors: {
+        blue: "#23A6F0",
+        green: "#63C132",
+        primary: "#2C2A4A",
+        white: "#FFFFFF",
+        grey: "#D9D9D9",
+        red: "#E44A24",
+      },
+    },
   },
   plugins: [],
 };

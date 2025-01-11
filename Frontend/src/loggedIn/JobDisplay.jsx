@@ -6,6 +6,7 @@ import Footer from "../Footer";
 import Nav from "../Nav";
 
 const JobDisplay = () => {
+  const api = import.meta.env.VITE_URL;
   const { jobId } = useParams();
   const { authToken, role, id } = useContext(AuthContext);
   const [job, setJob] = useState(null);
@@ -68,7 +69,7 @@ const JobDisplay = () => {
     }
     try {
       const response = await axios.patch(
-        `http://localhost:8000/client/editJob/${jobId}`,
+        `${api}/client/editJob/${jobId}`,
         data,
         {
           headers: {
@@ -91,30 +92,24 @@ const JobDisplay = () => {
   };
 
   const handleDelete = async () => {
-    const response = await axios.delete(
-      `http://localhost:8000/client/delJob/${jobId}`,
-      {
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${authToken}`,
-        },
-      }
-    );
+    const response = await axios.delete(`${api}/client/delJob/${jobId}`, {
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${authToken}`,
+      },
+    });
     navigate("/home");
   };
   useEffect(() => {
     const fetchData = async () => {
       setLoading(true);
       try {
-        const response = await axios.get(
-          `http://localhost:8000/jobs/getJobById/${jobId}`,
-          {
-            headers: {
-              "Content-Type": "application/json",
-              Authorization: `Bearer ${authToken}`,
-            },
-          }
-        );
+        const response = await axios.get(`${api}/jobs/getJobById/${jobId}`, {
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${authToken}`,
+          },
+        });
 
         setJob(response.data.data);
       } catch (error) {

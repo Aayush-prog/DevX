@@ -5,7 +5,7 @@ import axios from "axios";
 import { AuthContext } from "../AuthContext";
 import Nav from "../Nav";
 import Footer from "../Footer";
-const socket = io("http://localhost:8000");
+const socket = io(`${api}`);
 
 const Chat = () => {
   const { authToken } = useContext(AuthContext);
@@ -18,6 +18,7 @@ const Chat = () => {
   const [currentUser, setCurrentUser] = useState();
   const [chatUser, setChatUser] = useState();
   useEffect(() => {
+    const api = import.meta.env.VITE_URL;
     // Start the chat by creating or joining a room
     const generatedRoomId = [currentUserId, chatWithUserId].sort().join("_");
     setRoomId(generatedRoomId);
@@ -41,7 +42,7 @@ const Chat = () => {
   useEffect(() => {
     const fetch = async () => {
       const responseCurrent = await axios.get(
-        `http://localhost:8000/getUser/${currentUserId}`,
+        `${api}/getUser/${currentUserId}`,
         {
           headers: {
             "Content-Type": "application/json",
@@ -50,15 +51,12 @@ const Chat = () => {
         }
       );
       setCurrentUser(responseCurrent.data.data);
-      const responseChat = await axios.get(
-        `http://localhost:8000/getUser/${chatWithUserId}`,
-        {
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${authToken}`,
-          },
-        }
-      );
+      const responseChat = await axios.get(`${api}/getUser/${chatWithUserId}`, {
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${authToken}`,
+        },
+      });
       setChatUser(responseChat.data.data);
     };
     fetch();

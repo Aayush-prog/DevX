@@ -4,6 +4,7 @@ import Footer from "../Footer";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 export default function DevSignUp() {
+  const api = import.meta.env.VITE_URL;
   const navigate = useNavigate();
   const [error, setError] = useState();
   const [formData, setFormData] = useState({
@@ -44,7 +45,7 @@ export default function DevSignUp() {
     }
     try {
       const response = await axios.post(
-        "http://localhost:8000/signup/developer",
+        `${api}/signup/developer`,
         formDataToSend,
         {
           headers: {

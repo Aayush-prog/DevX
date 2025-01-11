@@ -7,6 +7,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 export default function Login() {
+  const api = import.meta.env.VITE_URL;
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState();
   const togglePasswordVisibility = () => {
@@ -31,15 +32,11 @@ export default function Login() {
     // You can now use formData values
     console.log("Form Submitted:", formData);
     try {
-      const response = await axios.post(
-        "http://localhost:8000/login",
-        formData,
-        {
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
-      );
+      const response = await axios.post(`${api}/login`, formData, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
       console.log(response);
       if (response.data.status === "success") {
         login(response.data.token, response.data.role, response.data.id);

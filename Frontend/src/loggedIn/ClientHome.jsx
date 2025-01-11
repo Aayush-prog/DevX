@@ -11,6 +11,7 @@ import WorkCard from "./WorkCard";
 import PieChartCard from "./PieChartCard";
 
 export default function ClientHome() {
+  const api = import.meta.env.VITE_URL;
   const navigate = useNavigate();
   const { authToken } = useContext(AuthContext);
   const [user, setUser] = useState(null);
@@ -54,16 +55,12 @@ export default function ClientHome() {
       for (const [key, value] of data.entries()) {
         console.log(key, value);
       }
-      const response = await axios.post(
-        "http://localhost:8000/client/createJob",
-        data,
-        {
-          headers: {
-            "Content-Type": "multipart/form-data",
-            Authorization: `Bearer ${authToken}`,
-          },
-        }
-      );
+      const response = await axios.post(`${api}/client/createJob`, data, {
+        headers: {
+          "Content-Type": "multipart/form-data",
+          Authorization: `Bearer ${authToken}`,
+        },
+      });
       setCreateJob(false);
       navigate("/home");
     } catch (e) {
@@ -74,15 +71,12 @@ export default function ClientHome() {
   useEffect(() => {
     const fetchProfile = async () => {
       try {
-        const response = await axios.get(
-          "http://localhost:8000/client/dashboard",
-          {
-            headers: {
-              "Content-Type": "application/json",
-              Authorization: `Bearer ${authToken}`,
-            },
-          }
-        );
+        const response = await axios.get(`${api}/client/dashboard`, {
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${authToken}`,
+          },
+        });
         setUser(response.data.data);
         setJobs(response.data.jobs);
         console.log(response.data);

@@ -8,21 +8,19 @@ import { FaFolderClosed } from "react-icons/fa6";
 import { IoCodeWorking } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
 export default function DevHome() {
+  const api = import.meta.env.VITE_URL;
   const { authToken } = useContext(AuthContext);
   const [user, setUser] = useState(null);
 
   useEffect(() => {
     const fetchProfile = async () => {
       try {
-        const response = await axios.get(
-          "http://localhost:8000/developer/dashboard",
-          {
-            headers: {
-              "Content-Type": "application/json",
-              Authorization: `Bearer ${authToken}`,
-            },
-          }
-        );
+        const response = await axios.get(`${api}/developer/dashboard`, {
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${authToken}`,
+          },
+        });
         setUser(response.data.data);
         console.log(response.data.data);
       } catch (e) {
