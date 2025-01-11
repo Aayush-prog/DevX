@@ -19,7 +19,6 @@ const Chat = () => {
   const [currentUser, setCurrentUser] = useState();
   const [chatUser, setChatUser] = useState();
   useEffect(() => {
-    const api = import.meta.env.VITE_URL;
     // Start the chat by creating or joining a room
     const generatedRoomId = [currentUserId, chatWithUserId].sort().join("_");
     setRoomId(generatedRoomId);
