@@ -15,6 +15,7 @@ export default function DevSignUp() {
     email: "",
     phone: "",
     password: "",
+    rate: 0,
     confirmPassword: "",
     agreeToTerms: false,
   });
@@ -33,6 +34,7 @@ export default function DevSignUp() {
   formDataToSend.append("email", formData.email);
   formDataToSend.append("password", formData.password);
   formDataToSend.append("description", formData.description);
+  formDataToSend.append("rate", formData.rate);
   formDataToSend.append("phone", formData.phone);
   formDataToSend.append("image", formData.image);
   formDataToSend.append("resume", formData.resume);

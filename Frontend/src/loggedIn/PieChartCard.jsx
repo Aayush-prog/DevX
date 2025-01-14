@@ -26,15 +26,16 @@ const PieChartCard = ({ data, title }) => {
       {
         data: percentages,
         backgroundColor: [
-          "#ef4444", // Red (Open)
-          "#f97316", // Orange (Ongoing)
-          "#22c55e", // Green (Completed)
+          "rgba(255, 99, 132, 0.6)",
+          "rgba(75, 192, 192, 0.6)",
+          "rgba(255, 206, 86, 0.6)",
         ],
-        hoverBackgroundColor: [
-          "#dc2626", // Darker Red (Open)
-          "#ea580c", // Darker Orange (Ongoing)
-          "#16a34a", // Darker Green (Completed)
+        borderColor: [
+          "rgba(255, 99, 132, 1)",
+          "rgba(75, 192, 192, 1)",
+          "rgba(255, 206, 86, 1)",
         ],
+        borderWidth: 1,
       },
     ],
   };
@@ -69,8 +70,8 @@ const PieChartCard = ({ data, title }) => {
       <h2 className="text-center text-xl font-semibold mb-4">
         {title || "Task Status"}
       </h2>
-      <div style={{ height: "300px" }}>
-        <Pie data={chartData} options={chartOptions} />
+      <div w-full>
+        <Pie data={chartData} />
       </div>
     </div>
   );

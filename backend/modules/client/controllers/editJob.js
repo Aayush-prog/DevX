@@ -3,7 +3,15 @@ const editJob = async (req, res) => {
   const UserModel = mongoose.model("User");
   const JobModel = mongoose.model("Job");
   const { jobId } = req.params;
-  const { title, description, budget, requiredTags, status } = req.body;
+  const {
+    title,
+    catchphrase,
+    additionalInfo,
+    description,
+    budget,
+    requiredTags,
+    status,
+  } = req.body;
   try {
     console.log(title);
     const job = await JobModel.findById(jobId);
@@ -22,6 +30,8 @@ const editJob = async (req, res) => {
 
     const updatedJob = await JobModel.findByIdAndUpdate(jobId, {
       title,
+      catchphrase,
+      additionalInfo,
       description,
       budget,
       requiredTags,

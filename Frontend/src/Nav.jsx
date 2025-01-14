@@ -58,24 +58,28 @@ export default function Nav() {
           <div className="hidden xl:block">
             <ul className="flex space-x-6 font-medium">
               <NavLink
+                data-testid="desktopHome"
                 to={targetPath}
                 className="cursor-pointer hover:text-blue-500 hover:underline underline-offset-8"
               >
                 Home
               </NavLink>
               <NavLink
+                data-testid="desktopFindTalent"
                 to="/findTalent"
                 className="cursor-pointer hover:text-blue-500 hover:underline underline-offset-8"
               >
                 Find Talent
               </NavLink>
               <NavLink
+                data-testid="desktopFindWork"
                 to="/findWork"
                 className="cursor-pointer hover:text-blue-500 hover:underline underline-offset-8"
               >
                 Find Work
               </NavLink>
               <NavLink
+                data-testid="desktopWhyDevX"
                 to="/whyDevX"
                 className="cursor-pointer hover:text-blue-500 hover:underline underline-offset-8"
               >
@@ -106,9 +110,12 @@ export default function Nav() {
               role ? "block" : "hidden"
             } flex items-center space-x-4 `}
           >
-            <button onClick={handleLogout}>Log Out</button>
+            <button data-testid="desktopLogout" onClick={handleLogout}>
+              Log Out
+            </button>
             <Link to="/settings">
               <img
+                data-testid="desktopProfile"
                 src={`http://localhost:8000/images/${user ? user.image : null}`}
                 className="rounded-xl w-10 h-10"
               ></img>
@@ -121,12 +128,14 @@ export default function Nav() {
             } flex items-center space-x-4 `}
           >
             <Link
+              data-testid="desktopLogin"
               to="/login"
               className="text-black hover:underline underline-offset-8"
             >
               Login
             </Link>
             <Link
+              data-testid="desktopSignUp"
               to="/signUp"
               className="bg-green rounded-lg p-2 px-3  text-white"
             >

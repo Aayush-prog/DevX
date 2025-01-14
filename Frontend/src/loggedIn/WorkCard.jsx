@@ -12,40 +12,46 @@ export default function WorkCard(props) {
   };
 
   return (
-    <div className="relative">
-      {/* Background "cube" effect */}
-      <div className="absolute inset-0 translate-x-2 translate-y-2 rounded-xl bg-grey shadow-lg -z-10 "></div>
-
-      {/* Foreground card */}
-      <div
-        className="border p-3 rounded-xl space-y-2 lg:space-y-4 cursor-pointer bg-white shadow-md hover:shadow-lg active:shadow-sm active:translate-y-1 transition-transform duration-200"
-        onClick={handleClick}
-      >
-        <h1 className="text-xl lg:text-2xl 2xl:text-4xl font-bold text-primary">
-          {job.title}
-        </h1>
-
-        <p>{job.description}</p>
-        <div className="flex gap-2 flex-wrap">
-          {job.requiredTags.map((element, index) => (
-            <div key={index} className="p-2 border rounded-lg text-primary">
-              <h2>{element}</h2>
-            </div>
-          ))}
-        </div>
-        <div className="flex justify-between items-center">
-          <div className="flex gap-4">
-            <div className="flex gap-2 items-center text-lg lg:text-2xl font-bold text-primary">
-              <FaDollarSign className="text-green" />
-              <h2>{job.budget}</h2>
-            </div>
-            <div className="h-8 w-px bg-grey"></div>
-            <div className="flex gap-2 items-center text-lg lg:text-2xl font-bold text-primary">
-              <h2>{job.applicants?.count || "0"}</h2>
-              <p className="text-grey">proposals</p>
+    <div
+      className="p-6 border rounded-lg shadow-sm bg-white"
+      onClick={handleClick}
+    >
+      <div className="space-y-4">
+        <div>
+          <h3 className="text-xl font-semibold mb-2">{job.title}</h3>
+          <div className="flex flex-wrap gap-4 text-sm text-gray-500">
+            <div className="flex items-center">
+              <span className="text-[#63c132] mr-1">✔</span>
+              <span>{job.client}</span>
             </div>
           </div>
-          <button className="p-3 rounded-xl bg-green text-white hover:bg-blue active:bg-primary transition-colors duration-200">
+        </div>
+
+        <p className="text-gray-600">{job.description}</p>
+
+        <div className="flex flex-wrap gap-2">
+          {job.requiredTags.map((tag, tagIndex) => (
+            <span
+              key={tagIndex}
+              className="px-2 py-1 bg-gray-100 text-gray-700 rounded-md"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
+
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-4">
+            <div className="flex items-center">
+              <span className="text-[#63c132] font-semibold">{job.budget}</span>
+              <span className="text-gray-500">/hour</span>
+            </div>
+            <div className="flex items-center text-gray-500">
+              <span className="font-semibold">{job.applicants.length}</span>
+              <span className="ml-1">proposals</span>
+            </div>
+          </div>
+          <button className="px-4 py-2 bg-green text-white rounded-md hover:bg-green/90">
             Apply Now
           </button>
         </div>

@@ -31,6 +31,7 @@ export default function SignUp() {
             <h1>I'm a client hiring for a project.</h1>
           </div>
           <div
+            data-testid="talent-card"
             className="flex flex-col space-y-5 items-center border rounded-lg m-5 lg:m-10 p-10 cursor-pointer "
             onClick={handleDevClick}
           >

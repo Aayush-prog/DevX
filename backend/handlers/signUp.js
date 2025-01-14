@@ -43,9 +43,9 @@ const signUp = async (req, res) => {
           `http://127.0.0.1:8001/process-resume?file_url=${encodedURL}`
         );
         console.log(response.data);
-        const tag = response.data.role;
-        const skills = response.data.skills;
-
+        const tag = req.body.role;
+        const skills = req.body.skills;
+        const rate = req.body.rate;
         userData = await UserModel.create({
           name,
           description,
@@ -56,6 +56,7 @@ const signUp = async (req, res) => {
           role,
           resume,
           tag,
+          rate,
           skills,
         });
       } catch (e) {

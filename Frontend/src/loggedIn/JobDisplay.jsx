@@ -4,7 +4,8 @@ import { AuthContext } from "../AuthContext";
 import axios from "axios";
 import Footer from "../Footer";
 import Nav from "../Nav";
-
+import { LuMessageSquareText } from "react-icons/lu";
+import { FaUser } from "react-icons/fa";
 const JobDisplay = () => {
   const api = import.meta.env.VITE_URL;
   const { jobId } = useParams();
@@ -14,6 +15,7 @@ const JobDisplay = () => {
   const [error, setError] = useState(null);
   const [owner, setOwner] = useState(false);
   const [editJob, setEditJob] = useState(false);
+  const [activeTab, setActiveTab] = useState("description");
   const navigate = useNavigate();
 
   const [jobForm, setJobForm] = useState({
@@ -22,6 +24,8 @@ const JobDisplay = () => {
     budget: "",
     requiredTags: [],
     status: "",
+    catchphrase: "",
+    additionalInfo: "",
   });
 
   useEffect(() => {
@@ -32,6 +36,8 @@ const JobDisplay = () => {
         budget: job.budget,
         requiredTags: job.requiredTags || [],
         status: job.status,
+        catchphrase: job.catchphrase,
+        additionalInfo: job.additionalInfo,
       });
     }
   }, [job]);
@@ -61,6 +67,8 @@ const JobDisplay = () => {
     data.append("title", jobForm.title);
     data.append("description", jobForm.description);
     data.append("budget", jobForm.budget);
+    data.append("catchphrase", jobForm.catchphrase);
+    data.append("additionalInfo", jobForm.additionalInfo);
     jobForm.requiredTags.forEach((item, index) => {
       data.append(`requiredTags[${index}]`, item);
     });
@@ -156,7 +164,7 @@ const JobDisplay = () => {
   return (
     <div>
       <Nav />
-      <div className="max-w-5xl mx-auto my-8 p-4 md:p-8 bg-white rounded-lg shadow-md">
+      <div className=" mx-auto  p-4 md:p-8 bg-gray-50 ">
         {editJob && (
           <div className="xl:px-20 lg:px-10 px-5 mt-5 xl:mt-10 space-y-8">
             <h1 className="text-2xl lg:text-4xl xl:text-5xl 2xl:text-5xl font-bold text-center">
@@ -166,15 +174,47 @@ const JobDisplay = () => {
               onSubmit={handleSubmit}
               className="max-w-3xl mx-auto space-y-4"
             >
+              <div className="flex gap-4">
+                <div>
+                  <label className="w-full text-sm font-medium">
+                    Job Title
+                  </label>
+                  <input
+                    type="text"
+                    name="title"
+                    value={jobForm.title}
+                    onChange={handleChange}
+                    className=" p-2 mt-1 block w-full border rounded-md shadow-sm"
+                    placeholder="Enter your job title"
+                    required
+                  />
+                </div>
+                <div>
+                  <label className="w-full  text-sm font-medium">
+                    Job Budget
+                  </label>
+                  <input
+                    type="text"
+                    name="budget"
+                    value={jobForm.budget}
+                    onChange={handleChange}
+                    className=" p-2 mt-1 block w-full border rounded-md shadow-sm"
+                    placeholder="Enter your job budget or keep it negotiable"
+                    required
+                  />
+                </div>
+              </div>
               <div>
-                <label className="block text-sm font-medium">Job Title</label>
+                <label className="block text-sm font-medium">
+                  Job CatchPhrase
+                </label>
                 <input
                   type="text"
-                  name="title"
-                  value={jobForm.title}
+                  name="catchphrase"
+                  value={jobForm.catchphrase}
                   onChange={handleChange}
                   className=" p-2 mt-1 block w-full border rounded-md shadow-sm"
-                  placeholder="Enter your job title"
+                  placeholder="Enter your catchphrase to attract talents"
                   required
                 />
               </div>
@@ -192,17 +232,19 @@ const JobDisplay = () => {
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium">Job Budget</label>
-                <input
-                  type="text"
-                  name="budget"
-                  value={jobForm.budget}
+                <label className="block text-sm font-medium">
+                  Additional Info
+                </label>
+                <textarea
+                  name="additionalInfo"
+                  value={jobForm.additionalInfo}
                   onChange={handleChange}
                   className=" p-2 mt-1 block w-full border rounded-md shadow-sm"
-                  placeholder="Enter your job budget or keep it negotiable"
+                  placeholder="Enter your job description"
                   required
                 />
               </div>
+
               <div>
                 <label className="block text-sm font-medium ">
                   Required Tags for better talent finds
@@ -230,7 +272,7 @@ const JobDisplay = () => {
                   onClick={addTag}
                   className="mt-2 inline-flex items-center px-3 py-2 bg-blue text-white text-sm font-medium rounded-md "
                 >
-                  Add Syllabus Item
+                  Add Tag
                 </button>
               </div>
               <button
@@ -249,48 +291,119 @@ const JobDisplay = () => {
           </div>
         )}
         {!editJob && (
-          <div className="max-w-3xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden mt-8">
-            {/* Header Section */}
-            <div className="bg-gray-100 p-6 border-b border-gray-200">
-              <h2 className="text-2xl font-bold text-gray-800">{job.title}</h2>
-            </div>
+          <div className="min-h-screen ">
+            {/* Main Content */}
+            <main className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+              <div className="px-4 py-6 sm:px-0">
+                <div className="bg-white shadow rounded-lg p-6">
+                  <div className="space-y-6">
+                    <div>
+                      <h1 className="text-3xl font-bold text-gray-900 mb-4">
+                        {job.title}
+                      </h1>
+                      <div className="flex flex-wrap gap-4 items-center text-sm text-gray-500">
+                        <div className="flex items-center gap-2">
+                          <FaUser />
+                          <span>Client Name</span>
+                        </div>
+                        <button
+                          className="flex items-center gap-2"
+                          onClick={handleClientClick}
+                        >
+                          <LuMessageSquareText />
+                          <span>Chat with Client</span>
+                        </button>
+                      </div>
+                    </div>
 
-            {/* Body Section */}
-            <div className="p-6">
-              {/* Job Description */}
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                Job Description
-              </h3>
-              <p className="text-gray-700 leading-relaxed">{job.description}</p>
+                    <p className="text-gray-600">{job.catchphrase}</p>
 
-              {/* Budget */}
-              <h3 className="text-xl font-semibold text-gray-800 mt-4 mb-2">
-                Budget
-              </h3>
-              <p className="text-gray-700">${job.budget}</p>
+                    <div className="flex flex-wrap gap-2">
+                      {job.requiredTags.map((tag, index) => {
+                        <span
+                          key={index}
+                          className="bg-gray-100 text-gray-800 text-sm px-2 py-1 rounded"
+                        >
+                          {tag}
+                        </span>;
+                      })}
+                    </div>
 
-              {/* Status */}
-              <h3 className="text-xl font-semibold text-gray-800 mt-4 mb-2">
-                Status
-              </h3>
-              <p className="text-gray-700">{job.status}</p>
+                    <div className="flex items-center gap-6 text-sm">
+                      <div className="flex items-center gap-1">
+                        <span className="text-[#82c91e] font-semibold">
+                          ${job.budget}
+                        </span>
+                        <span className="text-gray-500">/hour</span>
+                      </div>
+                      <div className="flex items-center gap-1">
+                        <span className="font-semibold">
+                          {job.applicants.length}
+                        </span>
+                        <span className="text-gray-500">proposals</span>
+                      </div>
+                    </div>
 
-              {/* Required Tags */}
-              <h3 className="text-xl font-semibold text-gray-800 mt-4 mb-2">
-                Required Tags
-              </h3>
-              <div className="flex flex-wrap gap-2">
-                {job.requiredTags &&
-                  job.requiredTags.map((tag, index) => (
-                    <span
-                      key={index}
-                      className="bg-gray-200 text-gray-700 px-2 py-1 rounded-md text-sm"
-                    >
-                      {tag}
-                    </span>
-                  ))}
+                    <button className="bg-[#82c91e] text-white px-4 py-2 rounded-md hover:bg-[#74b816]">
+                      Apply Now
+                    </button>
+                  </div>
+
+                  {/* Tabs Section */}
+                  <div className="mt-8">
+                    <div className="flex border-b">
+                      <button
+                        className={`px-4 py-2 text-sm font-medium ${
+                          activeTab === "description"
+                            ? "text-gray-900 border-b-2 border-[#82c91e]"
+                            : "text-gray-600 hover:text-gray-900"
+                        }`}
+                        id="description-tab"
+                        onClick={() => setActiveTab("description")}
+                      >
+                        Description
+                      </button>
+                      <button
+                        className={`px-4 py-2 text-sm font-medium ${
+                          activeTab === "additional-info"
+                            ? "text-gray-900 border-b-2 border-[#82c91e]"
+                            : "text-gray-600 hover:text-gray-900"
+                        }`}
+                        id="additional-info-tab"
+                        onClick={() => setActiveTab("additional-info")}
+                      >
+                        Additional Information
+                      </button>
+                      {owner && (
+                        <button
+                          className={`px-4 py-2 text-sm font-medium ${
+                            activeTab === "applicants"
+                              ? "text-gray-900 border-b-2 border-[#82c91e]"
+                              : "text-gray-600 hover:text-gray-900"
+                          }`}
+                          id="applicants-tab"
+                          onClick={() => setActiveTab("applicants")}
+                        >
+                          Applicants
+                        </button>
+                      )}
+                    </div>
+
+                    <div className="mt-4">
+                      {activeTab === "description" && (
+                        <p className="text-gray-600">{job.description}</p>
+                      )}
+                      {activeTab === "additional-info" && (
+                        <p className="text-gray-600">{job.additionalInfo}</p>
+                      )}
+                      {activeTab === "additional-info" && (
+                        <p className="text-gray-600">{job.applicants}</p>
+                      )}
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
+            </main>
           </div>
         )}
         {owner && (

@@ -9,7 +9,7 @@ import { IoCodeWorking } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
 import WorkCard from "./WorkCard";
 import PieChartCard from "./PieChartCard";
-
+import Card from "./justCard";
 export default function ClientHome() {
   const api = import.meta.env.VITE_URL;
   const navigate = useNavigate();
@@ -22,6 +22,8 @@ export default function ClientHome() {
     title: "",
     description: "",
     budget: "",
+    catchphrase: "",
+    additionalInfo: "",
     requiredTags: [""],
   });
   const handleChange = (e) => {
@@ -48,6 +50,8 @@ export default function ClientHome() {
     data.append("title", jobForm.title);
     data.append("description", jobForm.description);
     data.append("budget", jobForm.budget);
+    data.append("catchphrase", jobForm.catchphrase);
+    data.append("additionalInfo", jobForm.additionalInfo);
     jobForm.requiredTags.forEach((item, index) => {
       data.append(`requiredTags[${index}]`, item);
     });
@@ -94,7 +98,7 @@ export default function ClientHome() {
     <div>
       <Nav />
       {createJob && (
-        <div className="xl:px-20 lg:px-10 px-5 mt-5 xl:mt-10 space-y-8">
+        <div className="xl:px-20 lg:px-10 px-5 my-5 xl:my-10 space-y-8">
           <h1 className="text-2xl lg:text-4xl xl:text-5xl 2xl:text-5xl font-bold text-center">
             Pitch your <span className="text-green">idea</span> for{" "}
             <span className="text-blue">talents</span> to be hired!
@@ -114,11 +118,38 @@ export default function ClientHome() {
             </div>
             <div>
               <label className="block text-sm font-medium">
+                Job CatchPhrase
+              </label>
+              <input
+                type="text"
+                name="catchphrase"
+                value={jobForm.catchphrase}
+                onChange={handleChange}
+                className=" p-2 mt-1 block w-full border rounded-md shadow-sm"
+                placeholder="Enter your catchphrase to attract talents"
+                required
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium">
                 Job Description
               </label>
               <textarea
                 name="description"
                 value={jobForm.description}
+                onChange={handleChange}
+                className=" p-2 mt-1 block w-full border rounded-md shadow-sm"
+                placeholder="Enter your job description"
+                required
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium">
+                Additional Info
+              </label>
+              <textarea
+                name="additionalInfo"
+                value={jobForm.additionalInfo}
                 onChange={handleChange}
                 className=" p-2 mt-1 block w-full border rounded-md shadow-sm"
                 placeholder="Enter your job description"
@@ -177,50 +208,58 @@ export default function ClientHome() {
         </div>
       )}
       {user && !createJob && (
-        <div className="xl:px-20 lg:px-10 px-5 mt-5 xl:mt-10 xl:space-y-20 space-y-8">
+        <div className="px-4 lg:px-8 xl:px-10 my-5 xl:my-10 space-y-8 xl:space-y-20 mx-auto max-w-7xl">
           <div className="relative">
             <div className="absolute inset-0 -z-10 mx-auto w-[300px] h-[50px] lg:w-[600px]  bg-gradient-to-r from-[#4A90E2] to-[#50E3C2] rounded-full blur-3xl opacity-50"></div>
             <h1 className="mx-auto text-center text-xl lg:text-3xl xl:text-4xl 2xl:text-6xl font-bold ">
               Welcome <span className="text-blue">{user.name} </span> !
             </h1>
           </div>
+
           <div className="space-y-14">
-            <h1 className="text-xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold">
+            <h2
+              className="text-xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold"
+              aria-label="User Insights"
+            >
               Here are your insights
-            </h1>
-            <div className="grid grid-cols-4 gap-3 items-center">
-              <div className="flex items-center gap-5 ">
-                <FaFolderOpen className="text-green text-5xl font-bold" />
-                <h1 className="2xl:text-2xl xl:text-xl font-semibold  ">
-                  {user.openJobs.length}
-                </h1>
-              </div>
-              <div className="flex items-center gap-5 ">
-                <IoCodeWorking className=" text-5xl font-bold" />
-                <h1 className="2xl:text-2xl xl:text-xl font-semibold  ">
-                  {user.ongoingJobs.length}
-                </h1>
-              </div>
-              <div className="flex items-center gap-5 ">
-                <FaFolderClosed className="text-green text-5xl font-bold" />
-                <h1 className="2xl:text-2xl xl:text-xl font-semibold  ">
-                  {user.completedJobs.length}
-                </h1>
-              </div>
-              <PieChartCard
-                title="Distribution of jobs"
-                data={[
-                  user.openJobs.length,
-                  user.ongoingJobs.length,
-                  user.completedJobs.length,
-                ]}
-              />
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+              {["Ongoing", "Completed", "Open"].map((status, index) => (
+                <div key={status} className="bg-white shadow rounded-lg p-4">
+                  <h2 className="text-sm font-medium">{`${status} Jobs`}</h2>
+                  <div className="text-2xl font-bold mt-2">
+                    {status === "Ongoing"
+                      ? user.ongoingJobs.length
+                      : status === "Completed"
+                      ? user.completedJobs.length
+                      : user.openJobs.length}
+                  </div>
+                </div>
+              ))}
             </div>
-          </div>
-          <div>
-            {jobs.map((element, index) => {
-              return <WorkCard job={element} key={index} />;
-            })}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <div className="bg-white shadow rounded-lg p-4">
+                <h2 className="text-lg font-bold mb-4">Job Status Overview</h2>
+                <div className="w-full max-w-xs mx-auto">
+                  <PieChartCard
+                    data={[
+                      user.openJobs.length,
+                      user.ongoingJobs.length,
+                      user.completedJobs.length,
+                    ]}
+                  />
+                </div>
+              </div>
+
+              <div className="bg-white shadow rounded-lg p-4">
+                <h2 className="text-lg font-bold mb-4">All Jobs</h2>
+                <div className="space-y-4">
+                  {jobs.map((job) => (
+                    <Card job={job} />
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       )}

@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-
+import { FaPhoneAlt } from "react-icons/fa";
 export default function TalentCard(props) {
   const dev = props.dev;
   const navigate = useNavigate();
@@ -9,23 +9,54 @@ export default function TalentCard(props) {
   };
 
   return (
-    <div className="relative">
-      {/* Background "cube" effect */}
-      <div className="absolute inset-0 translate-x-2 translate-y-2 rounded-xl bg-grey shadow-lg -z-10 "></div>
-
-      {/* Foreground card */}
-      <div
-        className="border p-3 rounded-xl space-y-2 lg:space-y-4 cursor-pointer bg-white shadow-md hover:shadow-lg active:shadow-sm active:translate-y-1 transition-transform duration-200"
-        onClick={handleClick}
-      >
-        <h1 className="text-xl lg:text-2xl 2xl:text-4xl font-bold text-primary">
-          {dev.name}
-        </h1>
-        <p>{dev.description}</p>
-        <div className="flex gap-2 flex-wrap">
-          <div className="p-2 border rounded-lg text-primary">
-            <h2>{dev.tag}</h2>
+    <div
+      className="p-6 border rounded-lg shadow-sm bg-white"
+      onClick={handleClick}
+    >
+      <div className="space-y-4">
+        <div>
+          <h3 className="text-xl font-semibold mb-2">{dev.name}</h3>
+          <div className="flex flex-wrap gap-4 text-sm text-gray-500">
+            <div className="flex items-center">
+              <span className="text-[#63c132] mr-1">✔</span>
+              <span>{dev.tag}</span>
+            </div>
+            <div className="flex items-center">
+              <span className="mr-1">
+                <FaPhoneAlt />
+              </span>
+              <span>{dev.phone}</span>
+            </div>
           </div>
+        </div>
+
+        <p className="text-gray-600">{dev.description}</p>
+
+        <div className="flex flex-wrap gap-2">
+          {dev.skills.map((skill, skillIndex) => (
+            <span
+              key={skillIndex}
+              className="px-2 py-1 bg-gray-100 text-gray-700 rounded-md"
+            >
+              {skill}
+            </span>
+          ))}
+        </div>
+
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-4">
+            <div className="flex items-center">
+              <span className="text-[#63c132] font-semibold">${dev.rate}</span>
+              <span className="text-gray-500">/hour</span>
+            </div>
+            <div className="flex items-center text-gray-500">
+              <span className="font-semibold">{dev.completedJobs.length}</span>
+              <span className="ml-1">projects completed</span>
+            </div>
+          </div>
+          <button className="px-4 py-2 bg-[#23a6f0] text-white rounded-md hover:bg-[#23a6f0]/90">
+            Hire Now
+          </button>
         </div>
       </div>
     </div>

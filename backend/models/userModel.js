@@ -18,6 +18,10 @@ const userSchema = new mongoose.Schema(
       type: String,
       require: [true, "Phone number is requires"],
     },
+    rate: {
+      type: String,
+      default: "Flexible",
+    },
     password: {
       type: String,
       required: [true, "Password is required"],
