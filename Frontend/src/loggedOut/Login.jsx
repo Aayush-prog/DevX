@@ -49,9 +49,9 @@ export default function Login() {
   };
 
   return (
-    <div>
+    <div className="h-screen">
       <Nav />
-      <div className="grid place-items-center ">
+      <div className="grid place-items-center xl:pb-6">
         <section className="bg-white ">
           <div className="py-8 pb-0 px-4 mx-auto max-w-screen-xl text-center ">
             <h1 className="text-xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-center">

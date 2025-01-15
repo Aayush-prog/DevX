@@ -10,14 +10,17 @@ import { useNavigate } from "react-router-dom";
 import WorkCard from "./WorkCard";
 import PieChartCard from "./PieChartCard";
 import Card from "./justCard";
+import { BoltLoader } from "react-awesome-loaders";
 export default function ClientHome() {
   const api = import.meta.env.VITE_URL;
   const navigate = useNavigate();
   const { authToken } = useContext(AuthContext);
   const [user, setUser] = useState(null);
   const [createJob, setCreateJob] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [jobs, setJobs] = useState([]);
+  const [filteredJobs, setFilteredJobs] = useState([]); // New state for filtered jobs
   const [jobForm, setJobForm] = useState({
     title: "",
     description: "",
@@ -26,6 +29,8 @@ export default function ClientHome() {
     additionalInfo: "",
     requiredTags: [""],
   });
+  const [statusFilter, setStatusFilter] = useState("All"); // State for dropdown filter
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setJobForm({ ...jobForm, [name]: value });
@@ -83,6 +88,8 @@ export default function ClientHome() {
         });
         setUser(response.data.data);
         setJobs(response.data.jobs);
+        setFilteredJobs(response.data.jobs); // Initially set filtered jobs to all jobs
+        setLoading(false);
         console.log(response.data);
       } catch (e) {
         console.log(e);
@@ -94,6 +101,29 @@ export default function ClientHome() {
     }
   }, [authToken]); // Add authToken to the dependency array
 
+  // Function to handle status filter changes
+  const handleStatusFilterChange = (e) => {
+    const selectedStatus = e.target.value;
+    setStatusFilter(selectedStatus);
+
+    if (selectedStatus === "All") {
+      setFilteredJobs(jobs); // Show all jobs
+    } else {
+      const filtered = jobs.filter((job) => job.status === selectedStatus);
+      setFilteredJobs(filtered); // Apply filter
+    }
+  };
+  if (loading) {
+    return (
+      <div className="flex justify-center items-center h-screen">
+        <BoltLoader
+          className={"loaderbolt"}
+          boltColor={"#6366F1"}
+          backgroundBlurColor={"#E0E7FF"}
+        />
+      </div>
+    );
+  }
   return (
     <div>
       <Nav />
@@ -239,7 +269,9 @@ export default function ClientHome() {
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               <div className="bg-white shadow rounded-lg p-4">
-                <h2 className="text-lg font-bold mb-4">Job Status Overview</h2>
+                <h2 className="text-lg font-bold mb-4">
+                  Job Status Overview (%)
+                </h2>
                 <div className="w-full max-w-xs mx-auto">
                   <PieChartCard
                     data={[
@@ -252,10 +284,22 @@ export default function ClientHome() {
               </div>
 
               <div className="bg-white shadow rounded-lg p-4">
-                <h2 className="text-lg font-bold mb-4">All Jobs</h2>
+                <div className="flex justify-between items-center mb-4">
+                  <h2 className="text-lg font-bold ">All Jobs</h2>
+                  <select
+                    className="border rounded-md p-2 text-sm"
+                    value={statusFilter}
+                    onChange={handleStatusFilterChange}
+                  >
+                    <option value="All">All</option>
+                    <option value="Open">Open</option>
+                    <option value="In Progress">In Progress</option>
+                    <option value="Completed">Completed</option>
+                  </select>
+                </div>
                 <div className="space-y-4">
-                  {jobs.map((job) => (
-                    <Card job={job} />
+                  {filteredJobs.map((job) => (
+                    <Card job={job} key={job._id} />
                   ))}
                 </div>
               </div>

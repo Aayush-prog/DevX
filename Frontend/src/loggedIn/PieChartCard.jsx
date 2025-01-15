@@ -67,9 +67,6 @@ const PieChartCard = ({ data, title }) => {
   };
   return (
     <div className="p-6 bg-white rounded-lg">
-      <h2 className="text-center text-xl font-semibold mb-4">
-        {title || "Task Status"}
-      </h2>
       <div w-full>
         <Pie data={chartData} />
       </div>

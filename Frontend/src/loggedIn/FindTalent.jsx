@@ -1,16 +1,37 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import Nav from "../Nav";
 import Footer from "../Footer";
 import { AuthContext } from "../AuthContext";
-import { useContext } from "react";
 import TalentCard from "./TalentCard";
+
+const jobRoles = [
+  "Data Scientist",
+  "Database Engineer",
+  "Designer",
+  "DevOps Engineer",
+  "DotNet Developer",
+  "Information Technology",
+  "Java Developer",
+  "Network Security Engineer",
+  "Python Developer",
+  "QA",
+  "React Developer",
+  "SAP Developer",
+  "SQL Developer",
+];
+
 export default function FindWork() {
   const api = import.meta.env.VITE_URL;
   const { authToken } = useContext(AuthContext);
   const navigate = useNavigate();
+  const [allDevs, setAllDevs] = useState([]);
   const [devs, setDevs] = useState([]);
+  const [selectedRole, setSelectedRole] = useState("");
+  const [showCount, setShowCount] = useState(16);
+  const [sortBy, setSortBy] = useState("default");
+
   useEffect(() => {
     const fetchJobs = async () => {
       console.log("fetching devs");
@@ -20,12 +41,64 @@ export default function FindWork() {
           Authorization: `Bearer ${authToken}`,
         },
       });
-      setDevs(response.data.data);
+      setAllDevs(response.data.data);
       console.log(response.data.data);
     };
     fetchJobs();
   }, []);
 
+  useEffect(() => {
+    applyFiltersAndSort();
+  }, [selectedRole, showCount, sortBy, allDevs]);
+
+  const handleFilterChange = (event) => {
+    setSelectedRole(event.target.value);
+  };
+
+  const handleShowChange = (event) => {
+    setShowCount(parseInt(event.target.value, 10));
+  };
+
+  const handleSortChange = (event) => {
+    setSortBy(event.target.value);
+  };
+
+  const applyFiltersAndSort = () => {
+    let filteredAndSortedDevs = [...allDevs];
+
+    // Apply filter
+    if (selectedRole && selectedRole !== "all") {
+      filteredAndSortedDevs = filteredAndSortedDevs.filter(
+        (dev) => dev.tag === selectedRole
+      );
+    }
+
+    //Apply sorting
+    if (sortBy === "rate") {
+      filteredAndSortedDevs.sort((a, b) => {
+        const rateA = parseFloat(a.rate);
+        const rateB = parseFloat(b.rate);
+
+        // Ensure that 'Negotiable' or non-numeric values are always last by treating as Max Value (for this example)
+        const isANegotiable = isNaN(rateA);
+        const isBNegotiable = isNaN(rateB);
+
+        if (isANegotiable && isBNegotiable) return 0;
+        if (isANegotiable) return 1; // 'Negotiable' or non-numeric values come last.
+        if (isBNegotiable) return -1; // 'Negotiable' or non-numeric values come last.
+
+        return rateA - rateB; // Numerical Sort
+      });
+    } else if (sortBy === "projects") {
+      filteredAndSortedDevs.sort(
+        (a, b) => b.completedJobs.length - a.completedJobs.length
+      );
+    }
+
+    //Apply Show Count
+    filteredAndSortedDevs = filteredAndSortedDevs.slice(0, showCount);
+    setDevs(filteredAndSortedDevs);
+  };
   return (
     <div>
       <Nav />
@@ -38,15 +111,33 @@ export default function FindWork() {
         </div>
         <div className="bg-[#23a6f0] text-white p-4 rounded-md flex flex-wrap gap-4 items-center justify-between mb-8">
           <div className="flex items-center gap-4">
-            <button className="px-4 py-2 bg-transparent text-white hover:bg-white/20 rounded-md">
-              Filter
-            </button>
-            <span>Showing 1–16 of 32 results</span>
+            <div className="flex items-center gap-2">
+              <span>Filter</span>
+              <select
+                className="w-[150px] bg-white text-black px-2 py-1 border rounded-md"
+                onChange={handleFilterChange}
+                value={selectedRole}
+              >
+                <option value="all">All</option>
+                {jobRoles.map((role) => (
+                  <option key={role} value={role}>
+                    {role}
+                  </option>
+                ))}
+              </select>
+            </div>
+            <span>
+              Showing {devs.length} of {allDevs.length} results
+            </span>
           </div>
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-2">
               <span>Show</span>
-              <select className="w-[70px] bg-white text-black px-2 py-1 border rounded-md">
+              <select
+                className="w-[70px] bg-white text-black px-2 py-1 border rounded-md"
+                onChange={handleShowChange}
+                value={showCount}
+              >
                 <option value="16">16</option>
                 <option value="32">32</option>
                 <option value="48">48</option>
@@ -54,7 +145,11 @@ export default function FindWork() {
             </div>
             <div className="flex items-center gap-2">
               <span>Sort By</span>
-              <select className="w-[120px] bg-white text-black px-2 py-1 border rounded-md">
+              <select
+                className="w-[120px] bg-white text-black px-2 py-1 border rounded-md"
+                onChange={handleSortChange}
+                value={sortBy}
+              >
                 <option value="default">Default</option>
                 <option value="rate">Hourly Rate</option>
                 <option value="projects">Projects</option>
@@ -65,8 +160,7 @@ export default function FindWork() {
         <div className="grid lg:grid-cols-2 gap-5 ">
           {devs &&
             devs.map((element) => {
-              console.log(element);
-              return <TalentCard dev={element} />;
+              return <TalentCard key={element._id} dev={element} />;
             })}
         </div>
       </div>

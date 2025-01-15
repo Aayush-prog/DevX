@@ -3,7 +3,12 @@ import Nav from "../Nav";
 import Footer from "../Footer";
 import Problem from "../assets/problem.png";
 import Solution from "../assets/solution.png";
+import { useNavigate } from "react-router-dom";
 const WhyDevX = () => {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate("/signUp");
+  };
   return (
     <div>
       <Nav />
@@ -143,7 +148,10 @@ const WhyDevX = () => {
             <h2 className="text-3xl font-semibold text-primary mb-6">
               Ready to experience a better way to hire and find opportunities?
             </h2>
-            <button className="bg-blue hover:bg-green text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300">
+            <button
+              className="bg-blue hover:bg-green text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300"
+              onClick={handleClick}
+            >
               Join DevX Today
             </button>
           </div>
