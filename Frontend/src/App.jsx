@@ -16,10 +16,11 @@ import Home from "./loggedIn/Home.jsx";
 import Chat from "./loggedIn/Chat.jsx";
 import FindWork from "./loggedIn/FindWork.jsx";
 import FindTalent from "./loggedIn/FindTalent.jsx";
-import JobDisplay from "./loggedIn/jobDisplay.jsx";
+import JobDisplay from "./loggedIn/JobDisplay.jsx";
 import DevDisplay from "./loggedIn/DevDisplay.jsx";
 import WhyDevX from "./loggedOut/WhyDevX.jsx";
 import DashboardPage from "./loggedOut/tryFindtalent.jsx";
+import { JobApplication } from "./loggedIn/JobApplication.jsx";
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
@@ -45,6 +46,10 @@ function App() {
         <Route
           path="/findTalent"
           element={<PrivateRouter element={<FindTalent />} />}
+        />
+        <Route
+          path="/applyJob/:jobId"
+          element={<PrivateRouter element={<JobApplication />} />}
         />
         <Route path="/try" element={<DashboardPage />} />
         {/* <Route path="/dev" element={<Try />}>

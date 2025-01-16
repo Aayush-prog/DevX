@@ -3,14 +3,9 @@ import { AuthContext } from "../AuthContext";
 import Nav from "../Nav";
 import Footer from "../Footer";
 import axios from "axios";
-import { FaFolderOpen } from "react-icons/fa";
-import { FaFolderClosed } from "react-icons/fa6";
-import { IoCodeWorking } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
-import WorkCard from "./WorkCard";
 import PieChartCard from "./PieChartCard";
 import Card from "./justCard";
-import { BoltLoader } from "react-awesome-loaders";
 export default function ClientHome() {
   const api = import.meta.env.VITE_URL;
   const navigate = useNavigate();
@@ -20,7 +15,7 @@ export default function ClientHome() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [jobs, setJobs] = useState([]);
-  const [filteredJobs, setFilteredJobs] = useState([]); // New state for filtered jobs
+  const [filteredJobs, setFilteredJobs] = useState([]);
   const [jobForm, setJobForm] = useState({
     title: "",
     description: "",
@@ -116,11 +111,7 @@ export default function ClientHome() {
   if (loading) {
     return (
       <div className="flex justify-center items-center h-screen">
-        <BoltLoader
-          className={"loaderbolt"}
-          boltColor={"#6366F1"}
-          backgroundBlurColor={"#E0E7FF"}
-        />
+        <span>Loading...</span>
       </div>
     );
   }

@@ -39,6 +39,10 @@ const userSchema = new mongoose.Schema(
     resume: {
       type: String,
     },
+    applied: {
+      type: [{ type: mongoose.Schema.Types.ObjectId }],
+      ref: "Job",
+    },
     org: {
       type: String,
     },

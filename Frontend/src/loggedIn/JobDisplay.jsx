@@ -108,6 +108,11 @@ const JobDisplay = () => {
     });
     navigate("/home");
   };
+
+  const handleApply = () => {
+    navigate(`/applyJob/${job._id}`);
+  };
+
   useEffect(() => {
     const fetchData = async () => {
       setLoading(true);
@@ -344,7 +349,10 @@ const JobDisplay = () => {
                       </div>
                     </div>
 
-                    <button className="bg-[#82c91e] text-white px-4 py-2 rounded-md hover:bg-[#74b816]">
+                    <button
+                      className="bg-[#82c91e] text-white px-4 py-2 rounded-md hover:bg-[#74b816]"
+                      onClick={handleApply}
+                    >
                       Apply Now
                     </button>
                   </div>

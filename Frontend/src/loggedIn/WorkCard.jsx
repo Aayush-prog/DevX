@@ -10,7 +10,9 @@ export default function WorkCard(props) {
   const handleClick = () => {
     navigate(`/job/${job._id}`);
   };
-
+  const handleApply = () => {
+    navigate(`/applyJob/${job._id}`);
+  };
   return (
     <div
       className="p-6 border rounded-lg shadow-sm bg-white"
@@ -51,7 +53,10 @@ export default function WorkCard(props) {
               <span className="ml-1">proposals</span>
             </div>
           </div>
-          <button className="px-4 py-2 bg-green text-white rounded-md hover:bg-green/90">
+          <button
+            className="px-4 py-2 bg-green text-white rounded-md hover:bg-green/90"
+            onClick={handleApply}
+          >
             Apply Now
           </button>
         </div>

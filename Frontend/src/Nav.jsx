@@ -1,10 +1,11 @@
 import React, { useContext, useState, useEffect } from "react";
 import logo from "./assets/devx.png";
 import { CiSearch } from "react-icons/ci";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "./AuthContext";
 import axios from "axios";
 export default function Nav() {
+  const navigate = useNavigate();
   const { authToken, role, logout } = useContext(AuthContext);
   const [search, setSearch] = useState(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -37,6 +38,7 @@ export default function Nav() {
   };
   const handleLogout = () => {
     logout();
+    navigate("/");
   };
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);

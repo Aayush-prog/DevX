@@ -8,7 +8,8 @@ const devDashboard = async (req, res) => {
     _id: _id,
   });
   const jobs = await JobModel.find({ developer: getUser._id });
-  res.status(200).send({ data: getUser, jobs });
+  const applied = await JobModel.find({ applicants: getUser._id });
+  res.status(200).send({ data: getUser, jobs, applied });
 };
 
 module.exports = devDashboard;

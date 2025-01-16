@@ -23,7 +23,7 @@ const getUserByID = require("./handlers/getUserById");
 // Models
 require("./models/userModel");
 require("./models/jobModel");
-
+require("./models/applicationModel");
 // Initialize Express
 const app = express();
 const server = http.createServer(app);
