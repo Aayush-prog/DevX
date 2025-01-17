@@ -54,9 +54,6 @@ export default function TalentCard(props) {
               <span className="ml-1">projects completed</span>
             </div>
           </div>
-          <button className="px-4 py-2 bg-[#23a6f0] text-white rounded-md hover:bg-[#23a6f0]/90">
-            Hire Now
-          </button>
         </div>
       </div>
     </div>

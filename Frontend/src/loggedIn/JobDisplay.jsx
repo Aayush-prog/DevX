@@ -6,6 +6,8 @@ import Footer from "../Footer";
 import Nav from "../Nav";
 import { LuMessageSquareText } from "react-icons/lu";
 import { FaUser } from "react-icons/fa";
+import ApplicantCard from "./ApplicantCard";
+
 const JobDisplay = () => {
   const api = import.meta.env.VITE_URL;
   const { jobId } = useParams();
@@ -16,6 +18,7 @@ const JobDisplay = () => {
   const [owner, setOwner] = useState(false);
   const [editJob, setEditJob] = useState(false);
   const [activeTab, setActiveTab] = useState("description");
+  const [applications, setApplications] = useState([]);
   const navigate = useNavigate();
 
   const [jobForm, setJobForm] = useState({
@@ -123,14 +126,16 @@ const JobDisplay = () => {
             Authorization: `Bearer ${authToken}`,
           },
         });
-
+        console.log(response.data.applicants);
         setJob(response.data.data);
+        setApplications(response.data.applications);
       } catch (error) {
         setError(error.message);
       } finally {
         setLoading(false);
       }
     };
+
     fetchData();
   }, [jobId, authToken]);
 
@@ -298,7 +303,7 @@ const JobDisplay = () => {
         {!editJob && (
           <div className="min-h-screen ">
             {/* Main Content */}
-            <main className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+            <main className="max-w-7xl mx-auto py-3 sm:px-3 lg:px-8">
               <div className="px-4 py-6 sm:px-0">
                 <div className="bg-white shadow rounded-lg p-6">
                   <div className="space-y-6">
@@ -349,12 +354,14 @@ const JobDisplay = () => {
                       </div>
                     </div>
 
-                    <button
-                      className="bg-[#82c91e] text-white px-4 py-2 rounded-md hover:bg-[#74b816]"
-                      onClick={handleApply}
-                    >
-                      Apply Now
-                    </button>
+                    {job.status === "Open" && (
+                      <button
+                        className="bg-[#82c91e] text-white px-4 py-2 rounded-md hover:bg-[#74b816]"
+                        onClick={handleApply}
+                      >
+                        Apply Now
+                      </button>
+                    )}
                   </div>
 
                   {/* Tabs Section */}
@@ -404,9 +411,10 @@ const JobDisplay = () => {
                       {activeTab === "additional-info" && (
                         <p className="text-gray-600">{job.additionalInfo}</p>
                       )}
-                      {activeTab === "additional-info" && (
-                        <p className="text-gray-600">{job.applicants}</p>
-                      )}
+                      {activeTab === "applicants" &&
+                        applications.map((application, key) => {
+                          return <ApplicantCard application={application} />;
+                        })}
                     </div>
                   </div>
                 </div>

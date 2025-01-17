@@ -53,12 +53,14 @@ export default function WorkCard(props) {
               <span className="ml-1">proposals</span>
             </div>
           </div>
-          <button
-            className="px-4 py-2 bg-green text-white rounded-md hover:bg-green/90"
-            onClick={handleApply}
-          >
-            Apply Now
-          </button>
+          {job.status === "Open" && (
+            <button
+              className="px-4 py-2 bg-green text-white rounded-md hover:bg-green/90"
+              onClick={handleApply}
+            >
+              Apply Now
+            </button>
+          )}
         </div>
       </div>
     </div>
