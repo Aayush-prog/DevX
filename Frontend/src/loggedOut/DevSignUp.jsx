@@ -148,7 +148,20 @@ export default function DevSignUp() {
             />
           </div>
         </div>
-
+        <div>
+          <label className="block text-sm font-medium text-gray-700">
+            Rate
+          </label>
+          <input
+            type="string"
+            name="rate"
+            value={formData.phone}
+            onChange={handleInputChange}
+            required
+            placeholder="e.g. Negotiable"
+            className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
         <div className="grid lg:grid-cols-2 gap-3">
           {/* Password */}
           <div>

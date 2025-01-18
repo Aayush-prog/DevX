@@ -19,7 +19,8 @@ import FindTalent from "./loggedIn/FindTalent.jsx";
 import JobDisplay from "./loggedIn/JobDisplay.jsx";
 import DevDisplay from "./loggedIn/DevDisplay.jsx";
 import WhyDevX from "./loggedOut/WhyDevX.jsx";
-import DashboardPage from "./loggedOut/tryFindtalent.jsx";
+import SettingsPage from "./loggedIn/Settings.jsx";
+
 import { JobApplication } from "./loggedIn/JobApplication.jsx";
 function App() {
   const router = createBrowserRouter(
@@ -51,7 +52,10 @@ function App() {
           path="/applyJob/:jobId"
           element={<PrivateRouter element={<JobApplication />} />}
         />
-        <Route path="/try" element={<DashboardPage />} />
+        <Route
+          path="/settings"
+          element={<PrivateRouter element={<SettingsPage />} />}
+        />
         {/* <Route path="/dev" element={<Try />}>
           <Route path=":id" element={<Nested />} />
         </Route> */}
