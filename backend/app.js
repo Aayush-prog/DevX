@@ -19,7 +19,7 @@ const forgotPassword = require("./handlers/forgotPass");
 const auth = require("./middleware/auth");
 const user = require("./handlers/user");
 const getUserByID = require("./handlers/getUserById");
-
+const settings = require("./handlers/settings");
 // Models
 require("./models/userModel");
 require("./models/jobModel");
@@ -52,6 +52,7 @@ mongoose
 // Routes
 app.post("/login", login);
 app.post("/signUp/:role", uploadMiddleware, signUp);
+app.post("/settings", uploadMiddleware, settings);
 app.post("/forgot-password", forgotPassword.forgotPassword);
 app.post("/reset-password/:token", forgotPassword.resetPassword);
 app.use("/developer", developerRoute);
