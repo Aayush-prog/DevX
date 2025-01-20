@@ -49,10 +49,10 @@ export default function Home() {
           </div>
           <img src={group} className=" 2xl:h-[600px] xl:h-[400px] h-[300px] " />
         </div>
-        <div className="flex flex-col lg:flex-row lg:items-center justify-evenly 2xl:space-x-[200px] pb-7">
+        <div className="flex flex-col lg:flex-row items-center justify-evenly 2xl:space-x-[200px] pb-7">
           <img
             src={creator}
-            className="2xl:h-[700px] xl:h-[400px] h-[300px] order-2 lg:order-1"
+            className="2xl:h-[700px] xl:h-[400px] h-[300px] w-1/2 order-2 lg:order-1 "
           />
           <div className=" xl:space-y-5 space-y-2 order-1 text-center lg:text-lef lg:order-2t">
             <h1 className="text-xl lg:text-3xl xl:text-4xl 2xl:text-6xl font-bold ">
