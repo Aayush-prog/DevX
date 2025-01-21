@@ -24,6 +24,7 @@ const settings = require("./handlers/settings");
 require("./models/userModel");
 require("./models/jobModel");
 require("./models/applicationModel");
+require("./models/reviewModel");
 // Initialize Express
 const app = express();
 const server = http.createServer(app);

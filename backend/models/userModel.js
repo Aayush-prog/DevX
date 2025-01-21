@@ -61,6 +61,10 @@ const userSchema = new mongoose.Schema(
       type: [{ type: mongoose.Schema.Types.ObjectId }],
       ref: "Job",
     },
+    review: {
+      type: [{ type: mongoose.Schema.Types.ObjectId }],
+      ref: "Review",
+    },
     resetPasswordToken: {
       type: String,
       default: null,
