@@ -25,6 +25,8 @@ require("./models/userModel");
 require("./models/jobModel");
 require("./models/applicationModel");
 require("./models/reviewModel");
+require("./models/msgModel");
+
 // Initialize Express
 const app = express();
 const server = http.createServer(app);
@@ -43,7 +45,7 @@ app.use(
   express.static(path.join(__dirname, "public/profile-pictures"))
 );
 app.use("/resumes", express.static(path.join(__dirname, "public/resumes")));
-
+app.use("/uploads", express.static(path.join(__dirname, "public/uploads")));
 // Database Connection
 mongoose
   .connect(process.env.mongo_connect, {})
@@ -68,9 +70,25 @@ io.on("connection", (socket) => {
   console.log("New user connected:", socket.id);
 
   // Handle room creation or joining
-  socket.on("start_chat", (data) => {
+  socket.on("start_chat", async (data) => {
     const { userId1, userId2 } = data;
+    const MessageModel = mongoose.model("Message");
+    const UserModel = mongoose.model("User");
+    const updateUser1 = await UserModel.findByIdAndUpdate(
+      userId1,
+      {
+        $addToSet: { chats: userId2 },
+      },
+      { new: true }
+    );
 
+    const updateUser2 = await UserModel.findByIdAndUpdate(
+      userId2,
+      {
+        $addToSet: { chats: userId1 },
+      },
+      { new: true }
+    );
     // Generate a unique room ID based on user IDs
     const roomId = [userId1, userId2].sort().join("_"); // Ensures consistent room ID order
     socket.join(roomId);
@@ -79,16 +97,85 @@ io.on("connection", (socket) => {
 
     // Notify other users in the room (optional)
     socket.to(roomId).emit("user_joined", { userId: userId1 });
+    // Load past messages from database for this room
+    try {
+      const pastMessages = await MessageModel.find({ roomId }).sort({
+        timestamp: 1,
+      });
+      socket.emit("past_messages", pastMessages);
+    } catch (error) {
+      console.error("Error fetching past messages:", error);
+    }
   });
 
   // Handle sending messages
-  socket.on("send_message", (data) => {
+  socket.on("send_message", async (data) => {
     const { roomId, message, senderId } = data;
+    const MessageModel = mongoose.model("Message");
+    try {
+      // Save message to DB
+      const newMessage = await MessageModel.create({
+        roomId,
+        senderId,
+        message,
+      });
 
-    console.log(`Message sent to room ${roomId}: ${message}`);
-    io.to(roomId).emit("receive_message", { senderId, message });
+      io.to(roomId).emit("receive_message", {
+        senderId,
+        message,
+        messageId: newMessage._id,
+      });
+      console.log(`Message saved to db and sent to room ${roomId}: ${message}`);
+    } catch (error) {
+      console.error("Error saving message to database:", error);
+      // consider informing user that the message was not saved.
+    }
   });
+  // Handle file upload
+  socket.on("send_media", async (data) => {
+    const { roomId, senderId, fileData, fileType, fileName } = data;
+    const MessageModel = mongoose.model("Message");
+    try {
+      if (!fileData) {
+        console.error("File data is missing.");
+        return;
+      }
 
+      // Generate file path and name
+      const filePath = path.join(
+        __dirname,
+        "public/uploads",
+        Date.now() + "-" + fileName
+      );
+
+      // Create a buffer from the base64 data
+      const buffer = Buffer.from(fileData, "base64");
+
+      // Write the file to the disk
+      await fs.writeFile(filePath, buffer);
+      console.log("File saved successfully:", filePath);
+
+      // Generate a URL from the file
+      const mediaUrl = `${path.basename(filePath)}`;
+
+      // Save message metadata to the DB
+      const newMediaMessage = await MessageModel.create({
+        roomId,
+        senderId,
+        mediaUrl,
+      });
+
+      // Emit to the room
+      io.to(roomId).emit("receive_media", {
+        senderId,
+        mediaUrl,
+        messageId: newMediaMessage._id,
+      });
+      console.log("Media metadata saved to db.");
+    } catch (error) {
+      console.error("Error saving media to database:", error);
+    }
+  });
   // Handle client disconnection
   socket.on("disconnect", () => {
     console.log("Client disconnected:", socket.id);

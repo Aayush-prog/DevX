@@ -7,6 +7,7 @@ import Nav from "../Nav";
 import { LuMessageSquareText } from "react-icons/lu";
 import { FaUser } from "react-icons/fa";
 import ApplicantCard from "./ApplicantCard";
+import TalentCard from "./ApplicantCard";
 
 const JobDisplay = () => {
   const api = import.meta.env.VITE_URL;
@@ -399,7 +400,7 @@ const JobDisplay = () => {
                           id="applicants-tab"
                           onClick={() => setActiveTab("applicants")}
                         >
-                          Applicants
+                          {job.developer ? "Developer" : "Applicants"}
                         </button>
                       )}
                     </div>
@@ -412,6 +413,7 @@ const JobDisplay = () => {
                         <p className="text-gray-600">{job.additionalInfo}</p>
                       )}
                       {activeTab === "applicants" &&
+                        !job.developer &&
                         applications.map((application, key) => {
                           return <ApplicantCard application={application} />;
                         })}

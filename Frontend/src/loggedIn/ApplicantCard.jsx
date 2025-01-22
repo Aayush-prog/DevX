@@ -14,10 +14,19 @@ export default function TalentCard(props) {
     navigate(`/dev/${dev._id}`);
   };
 
-  const handleHire = (event) => {
+  const handleHire = async (event) => {
     // Add 'event' as the parameter
     event.stopPropagation(); // Prevent click from bubbling up
-    console.log("hired");
+    const response = await axios.post(`${api}/jobs/hire/${application._id}`, {
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${authToken}`,
+      },
+    });
+    if (response.data.status == "success") {
+      alert("Hired succefully");
+      navigate("/home");
+    }
   };
   useEffect(() => {
     const fetchProfile = async () => {
@@ -70,7 +79,9 @@ export default function TalentCard(props) {
           {dev.name}
         </p>
       </div>
-      <button onClick={handleHire}>Hire Now</button>
+      <button onClick={handleHire} className="bg-green rounded-lg py-3">
+        Hire Now
+      </button>
     </div>
   );
 }

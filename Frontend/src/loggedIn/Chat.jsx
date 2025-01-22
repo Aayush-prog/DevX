@@ -5,6 +5,7 @@ import axios from "axios";
 import { AuthContext } from "../AuthContext";
 import Nav from "../Nav";
 import Footer from "../Footer";
+
 const api = import.meta.env.VITE_URL;
 const socket = io(`${api}`);
 
@@ -18,14 +19,20 @@ const Chat = () => {
   const [roomId, setRoomId] = useState("");
   const [currentUser, setCurrentUser] = useState();
   const [chatUser, setChatUser] = useState();
+
   useEffect(() => {
-    // Start the chat by creating or joining a room
     const generatedRoomId = [currentUserId, chatWithUserId].sort().join("_");
     setRoomId(generatedRoomId);
-
+    // Start the chat by creating or joining a room
     socket.emit("start_chat", {
       userId1: currentUserId,
       userId2: chatWithUserId,
+    });
+
+    // Listen for past messages
+    socket.on("past_messages", (pastMessages) => {
+      console.log("Received past messages:", pastMessages);
+      setMessages(pastMessages); // Set existing messages
     });
 
     // Listen for incoming messages
@@ -35,6 +42,7 @@ const Chat = () => {
 
     // Clean up when component unmounts
     return () => {
+      socket.off("past_messages");
       socket.off("receive_message");
     };
   }, [currentUserId, chatWithUserId]);
@@ -60,7 +68,8 @@ const Chat = () => {
       setChatUser(responseChat.data.data);
     };
     fetch();
-  }, []);
+  }, [authToken, api, chatWithUserId, currentUserId]);
+
   const sendMessage = () => {
     socket.emit("send_message", { roomId, message, senderId: currentUserId });
     setMessage(""); // Clear input only after sending.
@@ -82,17 +91,14 @@ const Chat = () => {
               const isCurrentUser = msg.senderId === currentUserId;
               return (
                 <div
-                  key={idx}
+                  key={msg._id || idx}
                   className={`rounded-xl py-2 px-4 my-1 max-w-fit  ${
                     isCurrentUser
                       ? "bg-green self-end text-white"
                       : "bg-blue self-start text-white"
                   }`}
                 >
-                  {/* <span className="font-medium">
-                  {isCurrentUser ? "You" : `User ${msg.senderId}`} :
-                </span> */}
-                  <span className="m-1"> {msg.message}</span>
+                  <span className="m-1"> {msg.message || msg.mediaUrl}</span>
                 </div>
               );
             })}

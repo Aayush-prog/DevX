@@ -85,7 +85,7 @@ export default function DevHome() {
               Here are your insights
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-              {["Applied", "Completed", "Open"].map((status, index) => (
+              {["Applied", "Completed", "In Progress"].map((status, index) => (
                 <div key={status} className="bg-white shadow rounded-lg p-4">
                   <h2 className="text-sm font-medium">{`${status} Jobs`}</h2>
                   <div className="text-2xl font-bold mt-2">
@@ -93,7 +93,7 @@ export default function DevHome() {
                       ? applied.length
                       : status === "Completed"
                       ? user.completedJobs.length
-                      : user.openJobs.length}
+                      : user.ongoingJobs.length}
                   </div>
                 </div>
               ))}
