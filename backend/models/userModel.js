@@ -71,6 +71,8 @@ const userSchema = new mongoose.Schema(
       type: [{ type: mongoose.Schema.Types.ObjectId }],
       ref: "Review",
     },
+    averageRating: { type: Number, default: 0 },
+    totalReviews: { type: Number, default: 0 },
     resetPasswordToken: {
       type: String,
       default: null,

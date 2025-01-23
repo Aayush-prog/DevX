@@ -1,26 +1,22 @@
 const mongoose = require("mongoose");
 const nodemailer = require("nodemailer");
-const hire = async (req, res) => {
-  const { applicationId } = req.params;
+const completeJob = async (req, res) => {
+  const { jobId } = req.params;
   const JobModel = mongoose.model("Job");
   const UserModel = mongoose.model("User");
-  const ApplicationModel = mongoose.model("Application");
-  const application = await ApplicationModel.findById(applicationId);
-  const job = await JobModel.findByIdAndUpdate(application.job, {
-    status: "In Progress",
-    applicants: [],
-    developer: application.developer,
+  const job = await JobModel.findByIdAndUpdate(jobId, {
+    status: "Completed",
   });
-  const dev = await UserModel.findByIdAndUpdate(application.developer, {
-    $push: { ongoingJobs: application.job },
+  const dev = await UserModel.findByIdAndUpdate(job.developer, {
+    $push: { completedJobs: jobId },
     $pull: {
-      applied: application.job,
+      ongoingJobs: jobId,
     },
   });
   const client = await UserModel.findByIdAndUpdate(job.client, {
-    $push: { ongoingJobs: application.job },
+    $push: { completedJobs: jobId },
     $pull: {
-      openJobs: application.job,
+      ongoingJobs: jobId,
     },
   });
   const transporter = nodemailer.createTransport({
@@ -33,9 +29,9 @@ const hire = async (req, res) => {
   const mailOptions = {
     from: process.env.EMAIL_USER,
     to: updateUser.email,
-    subject: "Thank you applying!",
+    subject: "Thank you performing your best!",
     html: `
-                  <p>COngratulations for getting hired in  ${job.title}.</p>
+                  <p>Congratulations for completing in  ${job.title}.</p>
                   <p>Have a great time ahead!!!</p>
                   <p>If you have any questions or need assistance, feel free to contact us.</p>
                   <p>Best regards,<br>DevX</p>
@@ -46,4 +42,4 @@ const hire = async (req, res) => {
     status: "success",
   });
 };
-module.exports = hire;
+module.exports = completeJob;

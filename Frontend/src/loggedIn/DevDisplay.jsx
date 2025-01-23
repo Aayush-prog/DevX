@@ -7,10 +7,12 @@ import Footer from "../Footer";
 import { CiMail } from "react-icons/ci";
 import { FaPhoneAlt } from "react-icons/fa";
 import { LuMessageSquareText } from "react-icons/lu";
+import ReviewForm from "./ReviewForm";
+import ReviewCard from "./ReviewCard";
 function DevDisplay() {
   const api = import.meta.env.VITE_URL;
   const navigate = useNavigate();
-  const { authToken, id } = useContext(AuthContext);
+  const { authToken, id, role } = useContext(AuthContext);
   const { devId } = useParams();
   const [dev, setDev] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -153,17 +155,19 @@ function DevDisplay() {
                     >
                       Projects
                     </button>
-                    <button
-                      className={`px-4 py-2 text-sm font-medium ${
-                        activeTab === "reviews"
-                          ? "text-gray-900 border-b-2 border-[#82c91e]"
-                          : "text-gray-600 hover:text-gray-900"
-                      }`}
-                      id="reviews-tab"
-                      onClick={() => setActiveTab("reviews")}
-                    >
-                      Reviews
-                    </button>
+                    {role === "client" && (
+                      <button
+                        className={`px-4 py-2 text-sm font-medium ${
+                          activeTab === "reviews"
+                            ? "text-gray-900 border-b-2 border-[#82c91e]"
+                            : "text-gray-600 hover:text-gray-900"
+                        }`}
+                        id="reviews-tab"
+                        onClick={() => setActiveTab("reviews")}
+                      >
+                        Reviews
+                      </button>
+                    )}
                   </div>
 
                   <div className="mt-4">
@@ -173,7 +177,14 @@ function DevDisplay() {
                       </p>
                     )}
                     {activeTab === "reviews" && (
-                      <p className="text-gray-600">reviews go here</p>
+                      <>
+                        <ReviewForm revieweeId={dev._id} reviewerId={id} />
+                        {dev.reviews.length > 0
+                          ? dev.reviews.map((review, index) => {
+                              return <ReviewCard review={review} key={index} />;
+                            })
+                          : "No reivews yet "}
+                      </>
                     )}
                   </div>
                 </div>
