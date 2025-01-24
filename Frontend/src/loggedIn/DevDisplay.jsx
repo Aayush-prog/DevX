@@ -179,9 +179,11 @@ function DevDisplay() {
                     {activeTab === "reviews" && (
                       <>
                         <ReviewForm revieweeId={dev._id} reviewerId={id} />
-                        {dev.reviews.length > 0
-                          ? dev.reviews.map((review, index) => {
-                              return <ReviewCard review={review} key={index} />;
+                        {dev.review?.length > 0
+                          ? dev.review.map((reviewId, index) => {
+                              return (
+                                <ReviewCard reviewId={reviewId} key={index} />
+                              );
                             })
                           : "No reivews yet "}
                       </>

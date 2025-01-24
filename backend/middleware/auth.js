@@ -13,6 +13,7 @@ const auth = (req, res, next) => {
       process.env.jwt_salt
     );
     req.user = checkAuth;
+    console.log(req.user);
   } catch (e) {
     res.status(401).json({ msg: "authorization failed ,invalid token" });
     return;

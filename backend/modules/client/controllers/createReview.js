@@ -1,9 +1,10 @@
 const mongoose = require("mongoose");
 const createReview = async (req, res) => {
+  console.log("called");
   const ReviewModel = mongoose.model("Review");
   const UserModel = mongoose.model("User");
   const { rating, comment } = req.body;
-  const { reviewee, reviewer } = req.params;
+  const { reviewee, reviewer } = req.query;
   // Basic input validation (you can add more robust validation if needed)
   if (!rating || !comment || !reviewer) {
     throw new Error("Rating, comment, and reviewer are required");
@@ -31,7 +32,10 @@ const createReview = async (req, res) => {
       reviewee,
     });
     await newReview.save();
-    res.status(200).send({ status: "Reviewed successfully" });
+    const updateUser = await UserModel.findByIdAndUpdate(reviewee, {
+      $push: { review: newReview._id },
+    });
+    res.status(200).send({ status: "success" });
   } catch (error) {
     res.status(500).send({ status: "Failed" });
   }

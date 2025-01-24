@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { FaStar } from "react-icons/fa";
-
+import { AuthContext } from "../AuthContext";
+import axios from "axios";
 const ReviewForm = ({ revieweeId, reviewerId }) => {
+  const api = import.meta.env.VITE_URL;
+  const { authToken, id } = useContext(AuthContext);
   const [rating, setRating] = useState(0); // Use a number for rating state
   const [comment, setComment] = useState("");
   const [message, setMessage] = useState("");
@@ -28,6 +31,7 @@ const ReviewForm = ({ revieweeId, reviewerId }) => {
   };
 
   const handleSubmit = async (e) => {
+    console.log("here");
     e.preventDefault();
     setError("");
     setMessage("");
@@ -38,21 +42,21 @@ const ReviewForm = ({ revieweeId, reviewerId }) => {
     }
 
     try {
-      const response = await fetch(
-        revieweeId
-          ? `/api/users/${revieweeId}/reviews/${reviewerId}`
-          : "/api/reviews",
+      console.log("sendiong to backend");
+      const response = await axios.post(
+        `${api}/client/createReview?reviewee=${revieweeId}&reviewer=${reviewerId}`,
         {
-          method: "POST",
+          rating, // Include rating in the request body
+          comment, // Include comment in the request body
+        },
+        {
           headers: {
             "Content-Type": "application/json",
+            Authorization: `Bearer ${authToken}`,
           },
-          body: JSON.stringify({ rating: Number(rating), comment }),
         }
       );
-      const data = await response.json();
-
-      if (response.ok) {
+      if ((response.data.status = "success")) {
         setMessage(data.status || "Review submitted successfully!");
         setRating(0);
         setComment("");
@@ -67,8 +71,8 @@ const ReviewForm = ({ revieweeId, reviewerId }) => {
   return (
     <div className="max-w-md mx-auto p-4">
       <h2 className="text-2xl font-bold mb-4">Leave a Review</h2>
-      {message && <p className="mb-2 text-green-500">{message}</p>}
-      {error && <p className="mb-2 text-red-500">{error}</p>}
+      {message && <p className="mb-2 text-green">{message}</p>}
+      {error && <p className="mb-2 text-red">{error}</p>}
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
           <label
@@ -96,7 +100,7 @@ const ReviewForm = ({ revieweeId, reviewerId }) => {
         </div>
         <button
           type="submit"
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          className="bg-blue hover:bg-green text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
         >
           Submit Review
         </button>
