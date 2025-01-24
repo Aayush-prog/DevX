@@ -147,7 +147,17 @@ const JobDisplay = () => {
       setOwner(false);
     }
   }, [job, id]);
-
+  const completeJob = async () => {
+    const res = await axios.post(`${api}/jobs/completeJob/${job._id}`, {
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${authToken}`,
+      },
+    });
+    if (res.data.status === "success") {
+      alert("Successfully completed the job");
+    }
+  };
   if (loading) {
     return (
       <div className="flex justify-center items-center h-screen">
@@ -347,12 +357,24 @@ const JobDisplay = () => {
                         </span>
                         <span className="text-gray-500">/hour</span>
                       </div>
-                      <div className="flex items-center gap-1">
-                        <span className="font-semibold">
-                          {job.applicants.length}
-                        </span>
-                        <span className="text-gray-500">proposals</span>
-                      </div>
+                      {job.status === "Open" && (
+                        <div className="flex items-center gap-1">
+                          <span className="font-semibold">
+                            {job.applicants.length}
+                          </span>
+                          <span className="text-gray-500">proposals</span>
+                        </div>
+                      )}
+                      {job.status === "In Progress" && owner && (
+                        <div className="flex items-center gap-1">
+                          <button
+                            className="p-3 bg-green rounded-lg"
+                            onClick={completeJob}
+                          >
+                            Complete Job
+                          </button>
+                        </div>
+                      )}
                     </div>
 
                     {job.status === "Open" && (

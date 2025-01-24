@@ -28,7 +28,7 @@ const completeJob = async (req, res) => {
   });
   const mailOptions = {
     from: process.env.EMAIL_USER,
-    to: updateUser.email,
+    to: dev.email,
     subject: "Thank you performing your best!",
     html: `
                   <p>Congratulations for completing in  ${job.title}.</p>

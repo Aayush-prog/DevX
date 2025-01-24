@@ -8,7 +8,7 @@ import { AuthContext } from "../AuthContext";
 
 export default function FindWork() {
   const api = import.meta.env.VITE_URL;
-  const { authToken } = useContext(AuthContext);
+  const { authToken, role } = useContext(AuthContext);
   const navigate = useNavigate();
   const [jobs, setJobs] = useState([]);
   const [originalJobs, setOriginalJobs] = useState([]); // Store the original jobs
@@ -18,8 +18,12 @@ export default function FindWork() {
   useEffect(() => {
     const fetchJobs = async () => {
       console.log("fetching jobs");
+      var url = `${api}/jobs`;
+      if (role === "developer") {
+        url = `${api}/jobs/matchJob`;
+      }
       try {
-        const response = await axios.get(`${api}/jobs`, {
+        const response = await axios.get(url, {
           headers: {
             "Content-Type": "application/json",
             Authorization: `Bearer ${authToken}`,
