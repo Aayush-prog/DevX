@@ -110,8 +110,6 @@ app.use("/developer", developerRoute);
 app.use("/client", clientRoute);
 app.use("/jobs", jobsRoute);
 app.get("/getUser/:id", getUserByID);
-app.use(auth);
-app.get("/user", user);
 app.post("/join-room", async (req, res) => {
   // return 400 if the request has an empty body or no roomName
   if (!req.body || !req.body.roomName) {
@@ -127,6 +125,8 @@ app.post("/join-room", async (req, res) => {
     token: token,
   });
 });
+app.use(auth);
+app.get("/user", user);
 
 // WebSocket Logic
 io.on("connection", (socket) => {

@@ -9,15 +9,67 @@ const Call = () => {
   const [message, setMessage] = useState("");
   const { authToken } = useContext(AuthContext);
   const [twilioRoom, setTwilioRoom] = useState(null);
+  const [localTrack, setLocalTrack] = useState(null);
   const localVideoRef = useRef(null);
   const remoteVideoContainerRef = useRef(null);
   const api = import.meta.env.VITE_URL;
 
   const handleRoomNameChange = (e) => setRoomName(e.target.value);
 
+  // ✅ Creates and attaches local video, runs once on mount
+  useEffect(() => {
+    const createAndAttachLocalVideo = async () => {
+      try {
+        console.log("Creating local video track on mount");
+        const videoTrack = await TwilioVideo.createLocalVideoTrack();
+        setLocalTrack(videoTrack);
+
+        if (localVideoRef.current) {
+          console.log("Attaching track to localVideoRef on mount", videoTrack);
+          videoTrack.attach(localVideoRef.current);
+        }
+      } catch (error) {
+        console.error("Error creating local video track:", error);
+        setMessage("Error accessing camera. Please check permissions.");
+      }
+    };
+
+    createAndAttachLocalVideo();
+
+    return () => {
+      if (localTrack) {
+        console.log("Cleaning up localTrack on unmount");
+        localTrack.detach().forEach((element) => element.remove());
+      }
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []); // Empty array means run only once on mount
+
+  // ✅ Attach local video on track and ref changes, handles ref change
+  useEffect(() => {
+    if (localTrack && localVideoRef.current) {
+      console.log(
+        "Attaching track to localVideoRef:",
+        localTrack,
+        localVideoRef.current
+      );
+      localTrack.attach(localVideoRef.current);
+    }
+    return () => {
+      if (localTrack && localVideoRef.current) {
+        console.log("Detaching track from localVideoRef", localTrack);
+        localTrack
+          .detach(localVideoRef.current)
+          .forEach((element) => element.remove());
+      }
+    };
+  }, [localTrack, localVideoRef.current]);
+
   const connectToRoom = async (token) => {
+    console.log("Connecting to room with token:", token);
     setLoading(true);
     setMessage("");
+
     try {
       const room = await TwilioVideo.connect(token, {
         name: roomName,
@@ -27,42 +79,16 @@ const Call = () => {
       setTwilioRoom(room);
       console.log("Connected to Twilio Room:", room);
 
-      room.localParticipant.tracks.forEach((publication) => {
-        if (publication.track) {
-          if (publication.track.kind === "video") {
-            publication.track.attach(localVideoRef.current);
-          } else if (publication.track.kind === "audio") {
-            publication.track.enable();
-          }
-        }
-      });
+      // ✅ Publish existing local track
+      if (localTrack) {
+        console.log("Publishing local track", localTrack);
+        room.localParticipant.publishTrack(localTrack);
+      }
 
-      room.participants.forEach((participant) => {
-        participant.tracks.forEach((publication) => {
-          if (publication.isSubscribed) {
-            handleTrackSubscribed(publication.track, participant);
-          }
-        });
-        participant.on("trackSubscribed", (track) =>
-          handleTrackSubscribed(track, participant)
-        );
-        participant.on("trackUnsubscribed", handleTrackUnsubscribed);
-      });
-
-      room.on("participantConnected", (participant) => {
-        participant.on("trackSubscribed", (track) =>
-          handleTrackSubscribed(track, participant)
-        );
-        participant.on("trackUnsubscribed", handleTrackUnsubscribed);
-      });
-
-      room.on("participantDisconnected", (participant) => {
-        setRemoteParticipants((prev) => {
-          const newParticipants = new Map(prev);
-          newParticipants.delete(participant.sid);
-          return newParticipants;
-        });
-      });
+      // ✅ Attach remote participants
+      room.participants.forEach(handleParticipant);
+      room.on("participantConnected", handleParticipant);
+      room.on("participantDisconnected", removeParticipantTracks);
     } catch (error) {
       console.error("Error connecting to Twilio room:", error);
       setMessage(error.message || "An error occurred.");
@@ -71,9 +97,22 @@ const Call = () => {
     }
   };
 
-  const handleTrackSubscribed = (track, participant) => {
-    console.log("Track Subscribed:", track, participant);
+  const handleParticipant = (participant) => {
+    console.log("Participant Connected:", participant);
 
+    participant.tracks.forEach((publication) => {
+      if (publication.isSubscribed) {
+        handleTrackSubscribed(publication.track, participant);
+      }
+    });
+
+    participant.on("trackSubscribed", (track) =>
+      handleTrackSubscribed(track, participant)
+    );
+    participant.on("trackUnsubscribed", handleTrackUnsubscribed);
+  };
+
+  const handleTrackSubscribed = (track, participant) => {
     if (track.kind === "video") {
       let existingVideo = remoteVideoContainerRef.current.querySelector(
         `[data-participant="${participant.sid}"]`
@@ -104,16 +143,25 @@ const Call = () => {
     track.detach().forEach((element) => element.remove());
   };
 
+  const removeParticipantTracks = (participant) => {
+    document
+      .querySelectorAll(`[data-participant="${participant.sid}"]`)
+      .forEach((element) => element.remove());
+  };
+
   const disconnectFromRoom = () => {
     if (twilioRoom) {
+      console.log("Disconnecting from room");
       twilioRoom.disconnect();
       setTwilioRoom(null);
     }
   };
 
   const joinRoom = async () => {
+    console.log("Joining Room with name:", roomName);
     setLoading(true);
     setMessage("");
+
     try {
       const response = await axios.post(
         `${api}/join-room`,
@@ -154,35 +202,40 @@ const Call = () => {
             onChange={handleRoomNameChange}
           />
         </div>
-        {twilioRoom ? (
-          <div className="flex flex-col items-center">
-            <h4 className="text-lg font-bold">Local Video</h4>
-            <video
-              ref={localVideoRef}
-              autoPlay
-              className="border w-[320px] h-[240px] m-4"
-            />
-            <h4 className="text-lg font-bold">Remote Participants</h4>
-            <div
-              ref={remoteVideoContainerRef}
-              className="flex flex-wrap m-4"
-            ></div>
+
+        <div className="flex flex-col items-center">
+          <h4 className="text-lg font-bold">Local Video</h4>
+          <video
+            ref={localVideoRef}
+            autoPlay
+            playsInline
+            className="border w-[320px] h-[240px] m-4"
+          />
+          {twilioRoom && (
+            <>
+              <h4 className="text-lg font-bold">Remote Participants</h4>
+              <div
+                ref={remoteVideoContainerRef}
+                className="flex flex-wrap m-4"
+              ></div>
+              <button
+                className="bg-red text-white font-bold py-2 px-4 rounded mt-4"
+                onClick={disconnectFromRoom}
+              >
+                Leave Room
+              </button>
+            </>
+          )}
+          {!twilioRoom && (
             <button
-              className="bg-red text-white font-bold py-2 px-4 rounded mt-4"
-              onClick={disconnectFromRoom}
+              className="bg-blue text-white font-bold py-2 px-4 rounded"
+              onClick={joinRoom}
+              disabled={loading}
             >
-              Leave Room
+              {loading ? "Connecting..." : "Join Room"}
             </button>
-          </div>
-        ) : (
-          <button
-            className="bg-blue text-white font-bold py-2 px-4 rounded"
-            onClick={joinRoom}
-            disabled={loading}
-          >
-            {loading ? "Connecting..." : "Join Room"}
-          </button>
-        )}
+          )}
+        </div>
         {message && <div className="mt-4 text-red-600">{message}</div>}
       </div>
     </div>
