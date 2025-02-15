@@ -5,6 +5,8 @@ import axios from "axios";
 import { AuthContext } from "../AuthContext";
 import Nav from "../Nav";
 import Footer from "../Footer";
+import { FaPhoneAlt } from "react-icons/fa"; // Import the call icon
+import { useNavigate } from "react-router-dom"; // Import use navigate hook
 
 const api = import.meta.env.VITE_URL;
 const socket = io(`${api}`);
@@ -19,6 +21,7 @@ const Chat = () => {
   const [roomId, setRoomId] = useState("");
   const [currentUser, setCurrentUser] = useState();
   const [chatUser, setChatUser] = useState();
+  const navigate = useNavigate(); // use navigate hook
 
   useEffect(() => {
     const generatedRoomId = [currentUserId, chatWithUserId].sort().join("_");
@@ -75,14 +78,25 @@ const Chat = () => {
     setMessage(""); // Clear input only after sending.
   };
 
+  const handleCallClick = () => {
+    navigate(`/call`);
+  };
+
   return (
     <div>
       <Nav />
       <div className="flex flex-col h-screen w-full max-w-2xl mx-auto border border-grey">
-        <header className="p-4 border-b border-grey text-center">
+        <header className="p-4 border-b border-grey text-center flex justify-between">
           <h1 className="text-xl font-semibold text-primary">
             Chat with {chatUser ? chatUser.name : ""}
           </h1>
+          <button
+            onClick={handleCallClick}
+            className="text-green hover:text-green-dark text-2xl"
+            aria-label="Start Call"
+          >
+            <FaPhoneAlt />
+          </button>
         </header>
 
         <main className="flex-1 overflow-y-auto p-4">

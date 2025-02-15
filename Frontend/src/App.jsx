@@ -22,6 +22,7 @@ import WhyDevX from "./loggedOut/WhyDevX.jsx";
 import SettingsPage from "./loggedIn/Settings.jsx";
 
 import { JobApplication } from "./loggedIn/JobApplication.jsx";
+import Call from "./loggedIn/Call.jsx";
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
@@ -30,13 +31,14 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/signUp" element={<SignUp />} />
         <Route path="/client" element={<ClientSignUp />} />
-        <Route path="/talent" element={<DevSignUp />} />
+        <Route path="/talent" element={<DevSignUp />} />2
         <Route path="/login" element={<Login />} />
         <Route path="/whyDevX" element={<WhyDevX />} />
         <Route path="/forgot-password/" element={<ForgotPassword />} />
         <Route path="/reset-password/:token" element={<ResetPassword />} />
         <Route path="/job/:jobId" element={<JobDisplay />} />
         <Route path="/dev/:devId" element={<DevDisplay />} />
+        <Route path="/call" element={<Call />} />
         {/* Private Routes */}
         <Route path="/home" element={<PrivateRouter element={<Home />} />} />
         <Route path="/chat" element={<PrivateRouter element={<Chat />} />} />

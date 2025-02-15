@@ -13,6 +13,11 @@ from io import BytesIO
 import torch
 from transformers import BertTokenizer, BertForSequenceClassification
 import uvicorn
+from google import genai
+import asyncio
+import json
+import base64
+import websockets
 
 # Initialize FastAPI
 app = FastAPI()
