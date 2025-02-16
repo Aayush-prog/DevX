@@ -3,14 +3,7 @@ import axios from "axios";
 import { AuthContext } from "../AuthContext";
 import * as TwilioVideo from "twilio-video";
 import { useSearchParams } from "react-router-dom";
-import {
-  FaMicrophone,
-  FaMicrophoneSlash,
-  FaVideo,
-  FaVideoSlash,
-  FaTimes,
-} from "react-icons/fa";
-import { MdCallEnd } from "react-icons/md"; // Import the new icon
+import { MdCallEnd } from "react-icons/md";
 
 const Call = () => {
   const [searchParams] = useSearchParams();
@@ -41,7 +34,7 @@ const Call = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [roomName]);
 
-  // ✅ Creates and attaches local video, runs once on mount
+  //Creates and attaches local video, runs once on mount
   useEffect(() => {
     const createAndAttachLocalVideo = async () => {
       try {
@@ -70,7 +63,7 @@ const Call = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []); // Empty array means run only once on mount
 
-  // ✅ Attach local video on track and ref changes, handles ref change
+  //Attach local video on track and ref changes, handles ref change
   useEffect(() => {
     if (localTrack && localVideoRef.current) {
       console.log(
@@ -117,13 +110,13 @@ const Call = () => {
       setTwilioRoom(room);
       console.log("Connected to Twilio Room:", room);
 
-      // ✅ Publish existing local track
+      //Publish existing local track
       if (localTrack) {
         console.log("Publishing local track", localTrack);
         room.localParticipant.publishTrack(localTrack);
       }
 
-      // ✅ Attach remote participants
+      //Attach remote participants
       room.participants.forEach(handleParticipant);
       room.on("participantConnected", handleParticipant);
       room.on("participantDisconnected", removeParticipantTracks);
@@ -200,6 +193,7 @@ const Call = () => {
       }
       twilioRoom.disconnect();
       setTwilioRoom(null);
+      naivagte("/home");
     }
   };
 
@@ -244,7 +238,7 @@ const Call = () => {
         >
           <MdCallEnd size={24} className="text-red" />
         </button>
-        <div className="flex items-center space-x-4">
+        {/* <div className="flex items-center space-x-4">
           <button
             onClick={handleAudioToggle}
             className={`rounded-full p-2 hover:bg-gray-200 ${
@@ -269,7 +263,7 @@ const Call = () => {
               <FaVideoSlash size={20} />
             )}
           </button>
-        </div>
+        </div> */}
       </div>
       <div
         className="absolute bottom-4 right-4 z-10"

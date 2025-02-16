@@ -79,7 +79,7 @@ const Chat = () => {
   };
 
   const handleCallClick = () => {
-    navigate(`/call`);
+    navigate(`/call?roomName=${roomId}`);
   };
 
   return (
