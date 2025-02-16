@@ -194,6 +194,12 @@ io.on("connection", (socket) => {
       // consider informing user that the message was not saved.
     }
   });
+  socket.on("on_call", async (data) => {
+    const { roomId } = data;
+    io.to(roomId).emit("recieve_call", {
+      roomId,
+    });
+  });
   // Handle file upload
   socket.on("send_media", async (data) => {
     const { roomId, senderId, fileData, fileType, fileName } = data;

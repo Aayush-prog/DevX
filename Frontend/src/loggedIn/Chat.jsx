@@ -1,16 +1,75 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState, useRef } from "react";
 import { useSearchParams } from "react-router-dom";
 import io from "socket.io-client";
 import axios from "axios";
 import { AuthContext } from "../AuthContext";
 import Nav from "../Nav";
 import Footer from "../Footer";
-import { FaPhoneAlt } from "react-icons/fa"; // Import the call icon
-import { useNavigate } from "react-router-dom"; // Import use navigate hook
-
+import { FaPhoneAlt } from "react-icons/fa";
+import { MdCallEnd } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
 const api = import.meta.env.VITE_URL;
 const socket = io(`${api}`);
 
+function CallPopup({ roomId, onClose, onAccept }) {
+  const audioRef = useRef(null);
+
+  useEffect(() => {
+    const audioElement = audioRef.current;
+    if (audioElement) {
+      audioElement
+        .play()
+        .catch((error) => console.error("Audio play error:", error));
+      audioElement.loop = true;
+    }
+    return () => {
+      if (audioElement) {
+        audioElement.pause();
+        audioElement.currentTime = 0;
+      }
+    };
+  }, []);
+
+  return (
+    <div className="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center z-50">
+      <div className="bg-white p-6 rounded-lg shadow-xl text-center">
+        <h2 className="text-2xl font-semibold mb-4">Incoming Call</h2>
+        <div className="flex justify-around mt-4">
+          <button
+            onClick={() => {
+              if (audioRef.current) {
+                audioRef.current.pause();
+                audioRef.current.currentTime = 0;
+              }
+              onAccept();
+            }}
+            className=" text-green font-bold py-2 px-4 rounded"
+          >
+            <FaPhoneAlt />
+          </button>
+          <button
+            onClick={() => {
+              if (audioRef.current) {
+                audioRef.current.pause();
+                audioRef.current.currentTime = 0;
+              }
+              onClose();
+            }}
+            className="text-red font-bold py-2 px-4 rounded"
+          >
+            <MdCallEnd />
+          </button>
+        </div>
+      </div>
+
+      {/* Audio element with remote URL */}
+      <audio ref={audioRef}>
+        <source src="/src/ringtone.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  );
+}
 const Chat = () => {
   const { authToken } = useContext(AuthContext);
   const [searchParams] = useSearchParams();
@@ -22,6 +81,21 @@ const Chat = () => {
   const [currentUser, setCurrentUser] = useState();
   const [chatUser, setChatUser] = useState();
   const navigate = useNavigate(); // use navigate hook
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [popupRoomId, setPopupRoomId] = useState("");
+
+  const openPopup = (roomId) => {
+    setPopupRoomId(roomId);
+    setIsPopupOpen(true);
+  };
+
+  const closePopup = () => {
+    setIsPopupOpen(false);
+  };
+  const handleAcceptCall = () => {
+    navigate(`/call?roomName=${popupRoomId}`);
+    closePopup();
+  };
 
   useEffect(() => {
     const generatedRoomId = [currentUserId, chatWithUserId].sort().join("_");
@@ -43,6 +117,9 @@ const Chat = () => {
       setMessages((prev) => [...prev, data]);
     });
 
+    socket.on("recieve_call", (data) => {
+      openPopup(data.roomId);
+    });
     // Clean up when component unmounts
     return () => {
       socket.off("past_messages");
@@ -79,6 +156,7 @@ const Chat = () => {
   };
 
   const handleCallClick = () => {
+    socket.emit("on_call", { roomId });
     navigate(`/call?roomName=${roomId}`);
   };
 
@@ -100,6 +178,13 @@ const Chat = () => {
         </header>
 
         <main className="flex-1 overflow-y-auto p-4">
+          {isPopupOpen && (
+            <CallPopup
+              roomId={popupRoomId}
+              onClose={closePopup}
+              onAccept={handleAcceptCall}
+            />
+          )}
           <div className="flex flex-col gap-2">
             {messages.map((msg, idx) => {
               const isCurrentUser = msg.senderId === currentUserId;

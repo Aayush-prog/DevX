@@ -2,7 +2,7 @@ import React, { useState, useRef, useContext, useEffect } from "react";
 import axios from "axios";
 import { AuthContext } from "../AuthContext";
 import * as TwilioVideo from "twilio-video";
-import { useSearchParams } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import { MdCallEnd } from "react-icons/md";
 
 const Call = () => {
@@ -18,7 +18,7 @@ const Call = () => {
   const [isAudioEnabled, setIsAudioEnabled] = useState(true);
   const [isVideoEnabled, setIsVideoEnabled] = useState(true);
   const api = import.meta.env.VITE_URL;
-
+  const navigate = useNavigate();
   useEffect(() => {
     const roomNameParam = searchParams.get("roomName");
     if (roomNameParam) {
@@ -193,7 +193,7 @@ const Call = () => {
       }
       twilioRoom.disconnect();
       setTwilioRoom(null);
-      naivagte("/home");
+      navigate("/home");
     }
   };
 
