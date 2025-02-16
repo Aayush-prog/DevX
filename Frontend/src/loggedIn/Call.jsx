@@ -2,8 +2,18 @@ import React, { useState, useRef, useContext, useEffect } from "react";
 import axios from "axios";
 import { AuthContext } from "../AuthContext";
 import * as TwilioVideo from "twilio-video";
+import { useSearchParams } from "react-router-dom";
+import {
+  FaMicrophone,
+  FaMicrophoneSlash,
+  FaVideo,
+  FaVideoSlash,
+  FaTimes,
+} from "react-icons/fa";
+import { MdCallEnd } from "react-icons/md"; // Import the new icon
 
 const Call = () => {
+  const [searchParams] = useSearchParams();
   const [roomName, setRoomName] = useState("");
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
@@ -12,9 +22,24 @@ const Call = () => {
   const [localTrack, setLocalTrack] = useState(null);
   const localVideoRef = useRef(null);
   const remoteVideoContainerRef = useRef(null);
+  const [isAudioEnabled, setIsAudioEnabled] = useState(true);
+  const [isVideoEnabled, setIsVideoEnabled] = useState(true);
   const api = import.meta.env.VITE_URL;
 
-  const handleRoomNameChange = (e) => setRoomName(e.target.value);
+  useEffect(() => {
+    const roomNameParam = searchParams.get("roomName");
+    if (roomNameParam) {
+      setRoomName(roomNameParam);
+    }
+  }, [searchParams]);
+
+  // Auto joins room if a room name is present
+  useEffect(() => {
+    if (roomName) {
+      joinRoom();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [roomName]);
 
   // ✅ Creates and attaches local video, runs once on mount
   useEffect(() => {
@@ -65,6 +90,19 @@ const Call = () => {
     };
   }, [localTrack, localVideoRef.current]);
 
+  const handleAudioToggle = () => {
+    if (localTrack) {
+      setIsAudioEnabled(!isAudioEnabled);
+      localTrack.mediaStreamTrack.enabled = !isAudioEnabled;
+    }
+  };
+  const handleVideoToggle = () => {
+    if (localTrack) {
+      setIsVideoEnabled(!isVideoEnabled);
+      localTrack.mediaStreamTrack.enabled = !isVideoEnabled;
+    }
+  };
+
   const connectToRoom = async (token) => {
     console.log("Connecting to room with token:", token);
     setLoading(true);
@@ -73,8 +111,8 @@ const Call = () => {
     try {
       const room = await TwilioVideo.connect(token, {
         name: roomName,
-        audio: true,
-        video: true,
+        audio: isAudioEnabled,
+        video: isVideoEnabled,
       });
       setTwilioRoom(room);
       console.log("Connected to Twilio Room:", room);
@@ -122,6 +160,10 @@ const Call = () => {
         videoElement.autoplay = true;
         videoElement.playsInline = true;
         videoElement.setAttribute("data-participant", participant.sid);
+        videoElement.style.width = "100%";
+        videoElement.style.height = "100vh";
+        videoElement.style.objectFit = "cover";
+
         track.attach(videoElement);
         remoteVideoContainerRef.current.appendChild(videoElement);
       }
@@ -152,6 +194,10 @@ const Call = () => {
   const disconnectFromRoom = () => {
     if (twilioRoom) {
       console.log("Disconnecting from room");
+      // Turn off audio/video before disconnecting
+      if (localTrack) {
+        localTrack.mediaStreamTrack.enabled = false;
+      }
       twilioRoom.disconnect();
       setTwilioRoom(null);
     }
@@ -185,59 +231,60 @@ const Call = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-      <div className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-full max-w-sm">
-        <h2 className="text-2xl font-bold mb-4 text-gray-800">
-          Connect to Room
-        </h2>
-        <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2">
-            Room Name
-          </label>
-          <input
-            className="shadow border rounded w-full py-2 px-3 text-gray-700"
-            type="text"
-            placeholder="Enter Room Name"
-            value={roomName}
-            onChange={handleRoomNameChange}
-          />
-        </div>
+    <div className="relative flex flex-col items-center justify-center w-screen h-screen bg-gray-100 overflow-hidden">
+      <div
+        ref={remoteVideoContainerRef}
+        className="absolute top-0 left-0 w-full h-full z-0"
+      ></div>
 
-        <div className="flex flex-col items-center">
-          <h4 className="text-lg font-bold">Local Video</h4>
-          <video
-            ref={localVideoRef}
-            autoPlay
-            playsInline
-            className="border w-[320px] h-[240px] m-4"
-          />
-          {twilioRoom && (
-            <>
-              <h4 className="text-lg font-bold">Remote Participants</h4>
-              <div
-                ref={remoteVideoContainerRef}
-                className="flex flex-wrap m-4"
-              ></div>
-              <button
-                className="bg-red text-white font-bold py-2 px-4 rounded mt-4"
-                onClick={disconnectFromRoom}
-              >
-                Leave Room
-              </button>
-            </>
-          )}
-          {!twilioRoom && (
-            <button
-              className="bg-blue text-white font-bold py-2 px-4 rounded"
-              onClick={joinRoom}
-              disabled={loading}
-            >
-              {loading ? "Connecting..." : "Join Room"}
-            </button>
-          )}
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20 flex items-center space-x-4">
+        <button
+          onClick={disconnectFromRoom}
+          className="text-white bg-red-500 rounded-full p-2 hover:bg-red-600"
+        >
+          <MdCallEnd size={24} className="text-red" />
+        </button>
+        <div className="flex items-center space-x-4">
+          <button
+            onClick={handleAudioToggle}
+            className={`rounded-full p-2 hover:bg-gray-200 ${
+              isAudioEnabled ? "text-gray-600" : "text-red-500"
+            }`}
+          >
+            {isAudioEnabled ? (
+              <FaMicrophone size={20} />
+            ) : (
+              <FaMicrophoneSlash size={20} />
+            )}
+          </button>
+          <button
+            onClick={handleVideoToggle}
+            className={`rounded-full p-2 hover:bg-gray-200 ${
+              isVideoEnabled ? "text-gray-600" : "text-red-500"
+            }`}
+          >
+            {isVideoEnabled ? (
+              <FaVideo size={20} />
+            ) : (
+              <FaVideoSlash size={20} />
+            )}
+          </button>
         </div>
-        {message && <div className="mt-4 text-red-600">{message}</div>}
       </div>
+      <div
+        className="absolute bottom-4 right-4 z-10"
+        style={{ width: "300px" }}
+      >
+        <video
+          ref={localVideoRef}
+          autoPlay
+          playsInline
+          className="border rounded w-full aspect-video"
+        />
+      </div>
+      {message && (
+        <div className="absolute top-4 left-4 text-red-600 z-20">{message}</div>
+      )}
     </div>
   );
 };
