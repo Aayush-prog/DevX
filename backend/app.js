@@ -18,6 +18,7 @@ const signUp = require("./handlers/signUp");
 const developerRoute = require("./modules/developers/dev.routes");
 const clientRoute = require("./modules/client/client.routes");
 const jobsRoute = require("./modules/jobs/job.routes");
+const questionsRoute = require("./modules/question/questions.routes");
 const uploadMiddleware = require("./middleware/upload");
 const forgotPassword = require("./handlers/forgotPass");
 const auth = require("./middleware/auth");
@@ -30,6 +31,7 @@ require("./models/jobModel");
 require("./models/applicationModel");
 require("./models/reviewModel");
 require("./models/msgModel");
+require("./models/questionModel");
 
 // Initialize Express
 const app = express();
@@ -109,6 +111,7 @@ app.post("/reset-password/:token", forgotPassword.resetPassword);
 app.use("/developer", developerRoute);
 app.use("/client", clientRoute);
 app.use("/jobs", jobsRoute);
+app.use("/questions", questionsRoute);
 app.get("/getUser/:id", getUserByID);
 app.post("/join-room", async (req, res) => {
   // return 400 if the request has an empty body or no roomName
