@@ -24,6 +24,7 @@ import SettingsPage from "./loggedIn/Settings.jsx";
 import { JobApplication } from "./loggedIn/JobApplication.jsx";
 import Call from "./loggedIn/Call.jsx";
 import Quiz from "./loggedIn/Quiz.jsx";
+import QuestionForm from "./loggedIn/QuestionForm.jsx";
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
@@ -41,6 +42,7 @@ function App() {
         <Route path="/dev/:devId" element={<DevDisplay />} />
         <Route path="/call" element={<Call />} />
         <Route path="/quiz" element={<Quiz />} />
+        <Route path="/quiz/upload" element={<QuestionForm />} />
         {/* Private Routes */}
         <Route path="/home" element={<PrivateRouter element={<Home />} />} />
         <Route path="/chat" element={<PrivateRouter element={<Chat />} />} />
