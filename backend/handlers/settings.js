@@ -14,11 +14,15 @@ const transporter = nodemailer.createTransport({
   },
 });
 const settings = async (req, res) => {
+  console.log("here in settings");
   const UserModel = mongoose.model("User");
   const { name, email, description, phone, password, companyName } = req.body;
-  const image = req.files?.image?.[0]
-    ? path.basename(req.files.image[0].path)
-    : null;
+
+  // Get the image path if a new image is provided
+  let image;
+  if (req.files?.image && req.files.image.length > 0) {
+    image = path.basename(req.files.image[0].path);
+  }
 
   // Access the uploaded CV
   const resume = req.files?.resume?.[0]
@@ -27,15 +31,15 @@ const settings = async (req, res) => {
   const encPass = await bcrypt.hash(password, 10);
   try {
     const userExists = await UserModel.findOne({ email });
-    if (userExists) {
+    if (!userExists) {
       return res
         .status(400)
-        .json({ message: "User with that email already exists." });
+        .json({ message: "User with that email doesnot exists." });
     }
     let userData;
     // Handle candidate signup with resume processing logic.
 
-    if (role === "developer" && resume) {
+    if (userExists.role === "developer" && resume) {
       try {
         const fileURL = `http://localhost:8000/resumes/${resume}`;
         const encodedURL = encodeURIComponent(fileURL);
@@ -46,18 +50,30 @@ const settings = async (req, res) => {
         const tag = req.body.role;
         const skills = req.body.skills;
         const rate = req.body.rate;
-        userData = await UserModel.findByIdAndUpdate(req.user._id, {
+        const { github, linkedIn, portfolio, location } = req.body;
+        const tools = JSON.parse(req.body.tools);
+        const softSkills = JSON.parse(req.body.softSkills);
+        let updateData = {
           name,
           description,
           email,
           phone,
           password: encPass,
-          image,
           resume,
           tag,
           rate,
           skills,
-        });
+          location,
+          github,
+          linkedIn,
+          portfolio,
+          tools,
+          softSkills,
+        };
+        if (image) {
+          updateData.image = image;
+        }
+        userData = await UserModel.findByIdAndUpdate(req.user._id, updateData);
       } catch (e) {
         console.log("Error parsing resume ", e);
         return res.status(500).json({
@@ -65,41 +81,55 @@ const settings = async (req, res) => {
           msg: "Failed to process resume.",
         });
       }
-    } else if (role === "developer" && !resume) {
+    } else if (userExists.role === "developer" && !resume) {
       try {
         const rate = req.body.rate;
-        userData = await UserModel.findByIdAndUpdate(req.user._id, {
+        const { github, linkedIn, portfolio, location } = req.body;
+        const tools = JSON.parse(req.body.tools);
+        const softSkills = JSON.parse(req.body.softSkills);
+        let updateData = {
           name,
           description,
           email,
           phone,
           password: encPass,
-          image,
           rate,
-          skills,
-        });
+          location,
+          github,
+          linkedIn,
+          portfolio,
+          tools,
+          softSkills,
+        };
+        if (image) {
+          updateData.image = image;
+        }
+        userData = await UserModel.findByIdAndUpdate(req.user._id, updateData);
       } catch (e) {
         console.log("Error parsing resume ", e);
         return res.status(500).json({
           status: "failed",
-          msg: "Failed to process resume.",
+          msg: e,
         });
       }
     } else {
       // Handle other signup scenarios
       let org;
-      if (role === "client" && companyName) {
+      if (userExists.role === "client" && companyName) {
         org = companyName;
       }
-      userData = await UserModel.findByIdAndUpdate(req.user._id, {
+      let updateData = {
         name,
         description,
         email,
         phone,
         password: encPass,
-        image,
         org,
-      });
+      };
+      if (image) {
+        updateData.image = image;
+      }
+      userData = await UserModel.findByIdAndUpdate(req.user._id, updateData);
     }
     // Send Welcome Email
     const mailOptions = {

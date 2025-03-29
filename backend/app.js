@@ -105,7 +105,7 @@ const getAccessToken = (roomName) => {
 // Routes
 app.post("/login", login);
 app.post("/signUp/:role", uploadMiddleware, signUp);
-app.post("/settings", uploadMiddleware, settings);
+
 app.post("/forgot-password", forgotPassword.forgotPassword);
 app.post("/reset-password/:token", forgotPassword.resetPassword);
 app.use("/developer", developerRoute);
@@ -130,7 +130,7 @@ app.post("/join-room", async (req, res) => {
 });
 app.use(auth);
 app.get("/user", user);
-
+app.post("/settings", uploadMiddleware, settings);
 // WebSocket Logic
 io.on("connection", (socket) => {
   console.log("New user connected:", socket.id);

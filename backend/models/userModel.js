@@ -73,6 +73,18 @@ const userSchema = new mongoose.Schema(
     },
     averageRating: { type: Number, default: 0 },
     totalReviews: { type: Number, default: 0 },
+    location: { type: String },
+    github: { type: String },
+    linkedIn: { type: String },
+    portfolio: {
+      type: String,
+    },
+    tools: {
+      type: [{ type: String }],
+    },
+    softSkills: {
+      type: [{ type: String }],
+    },
     resetPasswordToken: {
       type: String,
       default: null,
