@@ -141,6 +141,10 @@ async def process_resume(file_url: str = Query(..., description="URL of the resu
 
     except Exception as e:
         return {"error": f"An error occurred: {str(e)}"}
+    
+@app.get("/")
+def read_root():
+    return {"message": "Hello, it's running on port 8001"}
 
 if __name__ == "__main__":
     uvicorn.run(app, host="127.0.0.1", port=8001) 

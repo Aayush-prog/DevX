@@ -38,9 +38,10 @@ const signUp = async (req, res) => {
     if (role === "developer" && resume) {
       try {
         const fileURL = `http://localhost:8000/resumes/${resume}`;
+        const modelAPI = process.env.modelAPI;
         const encodedURL = encodeURIComponent(fileURL);
         const response = await axios.get(
-          `http://127.0.0.1:8001/process-resume?file_url=${encodedURL}`
+          `${modelAPI}/process-resume?file_url=${encodedURL}`
         );
         console.log(response.data);
         const tag = req.body.role;
